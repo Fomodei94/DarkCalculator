@@ -12,6 +12,7 @@ class MainWindow : public QMainWindow
 private:
     QWidget *centralWidget;
     Caratteristiche_gui *CaratteristicheP1;
+    Caratteristiche_gui *CaratteristicheP2;
 
 public:
     MainWindow(QWidget *parent = 0);

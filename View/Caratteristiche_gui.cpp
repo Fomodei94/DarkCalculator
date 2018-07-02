@@ -1,9 +1,9 @@
 #include "Caratteristiche_gui.h"
 
-Caratteristiche_gui::Caratteristiche_gui(QWidget *parent) : QWidget(parent)
+Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car) : QWidget(parent)
 {
     layout = new QGridLayout(this);
-    label_Caratt = new QLabel("<h3>Caratteristiche Personaggio 1</h3>", this);
+    label_Caratt = new QLabel(QString("<h3>Caratteristiche Personaggio %1</h3>").arg(p), this);
 
     label_Vitalita = new QLabel("Vitalità", this);
     spinBox_Vitalita = new QSpinBox(this);
@@ -56,4 +56,6 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent) : QWidget(parent)
     layout->setSpacing(15);
     setLayout(layout);
 
+    //connect(spinBox_Vitalita, SIGNAL(valueChanged(int)), this, SLOT(car->SetVitalita(spinBox_Vitalita->value(int))));
 }
+

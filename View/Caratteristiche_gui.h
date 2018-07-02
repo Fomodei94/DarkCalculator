@@ -8,11 +8,13 @@
 #include<QLabel>
 #include<QSpinBox>
 #include<QLCDNumber>
+#include<QMessageBox>
+#include "../Model/Caratteristiche.h"
 
 class Caratteristiche_gui : public QWidget {
     Q_OBJECT
 public:
-    Caratteristiche_gui(QWidget *parent = nullptr);
+    Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car);
 
 private:
     QGridLayout *layout;
