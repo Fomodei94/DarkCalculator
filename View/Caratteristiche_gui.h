@@ -40,6 +40,7 @@ private:
 signals:
 
 public slots:
+    void setVitalita(Caratteristiche* c) {c->SetVitalita(spinBox_Vitalita->value());}
 };
 
 #endif // CARATTERISTICHE_GUI_H

@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     Caratt_P1 = new Caratteristiche;
     Caratt_P2 = new Caratteristiche;
     CaratteristicheP1 = new Caratteristiche_gui(centralWidget, 1, Caratt_P1);
-    CaratteristicheP2 = new Caratteristiche_gui(centralWidget, 2, Caratt_P2);
+    //CaratteristicheP2 = new Caratteristiche_gui(centralWidget, 2, Caratt_P2);
 }
 
 MainWindow::~MainWindow()
