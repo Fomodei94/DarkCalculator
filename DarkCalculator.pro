@@ -28,8 +28,10 @@ SOURCES += \
     Model/Caratteristiche.cpp \
     View/MainWindow.cpp \
     View/Caratteristiche_gui.cpp \
+    View/TabWidget.cpp
 
 HEADERS += \
     Model/Caratteristiche.h \
     View/MainWindow.h \
     View/Caratteristiche_gui.h \
+    View/TabWidget.h

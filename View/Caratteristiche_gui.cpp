@@ -56,8 +56,5 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
     layout->setSpacing(15);
     setLayout(layout);
 
-    connect(spinBox_Vitalita, SIGNAL(valueChanged(int)), this, SLOT(setVitalita(car)));
-
-    //connect(spinBox_Vitalita, SIGNAL(valueChanged(int)), this, SLOT(car->SetVitalita(spinBox_Vitalita->value(int))));
 }
 

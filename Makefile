@@ -53,14 +53,18 @@ OBJECTS_DIR   = ./
 SOURCES       = main.cpp \
 		Model/Caratteristiche.cpp \
 		View/MainWindow.cpp \
-		View/Caratteristiche_gui.cpp moc_MainWindow.cpp \
-		moc_Caratteristiche_gui.cpp
+		View/Caratteristiche_gui.cpp \
+		View/TabWidget.cpp moc_MainWindow.cpp \
+		moc_Caratteristiche_gui.cpp \
+		moc_TabWidget.cpp
 OBJECTS       = main.o \
 		Caratteristiche.o \
 		MainWindow.o \
 		Caratteristiche_gui.o \
+		TabWidget.o \
 		moc_MainWindow.o \
-		moc_Caratteristiche_gui.o
+		moc_Caratteristiche_gui.o \
+		moc_TabWidget.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
 		/usr/lib/qt/mkspecs/common/linux.conf \
@@ -289,10 +293,12 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
 		DarkCalculator.pro Model/Caratteristiche.h \
 		View/MainWindow.h \
-		View/Caratteristiche_gui.h main.cpp \
+		View/Caratteristiche_gui.h \
+		View/TabWidget.h main.cpp \
 		Model/Caratteristiche.cpp \
 		View/MainWindow.cpp \
-		View/Caratteristiche_gui.cpp
+		View/Caratteristiche_gui.cpp \
+		View/TabWidget.cpp
 QMAKE_TARGET  = DarkCalculator
 DESTDIR       = 
 TARGET        = DarkCalculator
@@ -780,8 +786,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents Model/Caratteristiche.h View/MainWindow.h View/Caratteristiche_gui.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp Model/Caratteristiche.cpp View/MainWindow.cpp View/Caratteristiche_gui.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents Model/Caratteristiche.h View/MainWindow.h View/Caratteristiche_gui.h View/TabWidget.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp Model/Caratteristiche.cpp View/MainWindow.cpp View/Caratteristiche_gui.cpp View/TabWidget.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -813,19 +819,27 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 	g++ -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_MainWindow.cpp moc_Caratteristiche_gui.cpp
+compiler_moc_header_make_all: moc_MainWindow.cpp moc_Caratteristiche_gui.cpp moc_TabWidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_MainWindow.cpp moc_Caratteristiche_gui.cpp
+	-$(DEL_FILE) moc_MainWindow.cpp moc_Caratteristiche_gui.cpp moc_TabWidget.cpp
 moc_MainWindow.cpp: View/Caratteristiche_gui.h \
+		Model/Caratteristiche.h \
+		View/TabWidget.h \
 		View/MainWindow.h \
 		moc_predefs.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/MainWindow.h -o moc_MainWindow.cpp
 
-moc_Caratteristiche_gui.cpp: View/Caratteristiche_gui.h \
+moc_Caratteristiche_gui.cpp: Model/Caratteristiche.h \
+		View/Caratteristiche_gui.h \
 		moc_predefs.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/Caratteristiche_gui.h -o moc_Caratteristiche_gui.cpp
+
+moc_TabWidget.cpp: View/TabWidget.h \
+		moc_predefs.h \
+		/usr/bin/moc
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabWidget.h -o moc_TabWidget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -845,24 +859,34 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean
 
 main.o: main.cpp View/MainWindow.h \
 		View/Caratteristiche_gui.h \
-		Model/Caratteristiche.h
+		Model/Caratteristiche.h \
+		View/TabWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 Caratteristiche.o: Model/Caratteristiche.cpp Model/Caratteristiche.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Caratteristiche.o Model/Caratteristiche.cpp
 
 MainWindow.o: View/MainWindow.cpp View/MainWindow.h \
-		View/Caratteristiche_gui.h
+		View/Caratteristiche_gui.h \
+		Model/Caratteristiche.h \
+		View/TabWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o View/MainWindow.cpp
 
-Caratteristiche_gui.o: View/Caratteristiche_gui.cpp View/Caratteristiche_gui.h
+Caratteristiche_gui.o: View/Caratteristiche_gui.cpp View/Caratteristiche_gui.h \
+		Model/Caratteristiche.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Caratteristiche_gui.o View/Caratteristiche_gui.cpp
+
+TabWidget.o: View/TabWidget.cpp View/TabWidget.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabWidget.o View/TabWidget.cpp
 
 moc_MainWindow.o: moc_MainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_MainWindow.o moc_MainWindow.cpp
 
 moc_Caratteristiche_gui.o: moc_Caratteristiche_gui.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Caratteristiche_gui.o moc_Caratteristiche_gui.cpp
+
+moc_TabWidget.o: moc_TabWidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabWidget.o moc_TabWidget.cpp
 
 ####### Install
 
