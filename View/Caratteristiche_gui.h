@@ -43,6 +43,11 @@ signals:
 public slots:
     void setVitalita(int i);
     void setEnergia(int i);
+    void setVigore(int i);
+    void setForza(int i);
+    void setDestrezza(int i);
+    void setIntelligenza(int i);
+    void setFede(int i);
     void refreshLivello();
 };
 

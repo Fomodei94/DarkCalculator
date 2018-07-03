@@ -20,22 +20,32 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
     label_Vigore = new QLabel("Vigore",this);
     spinBox_Vigore = new QSpinBox(this);
     spinBox_Vigore->setRange(5,99);
+    connect(spinBox_Vigore, SIGNAL(valueChanged(int)), this, SLOT(setVigore(int)));
+    connect(spinBox_Vigore, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Forza = new QLabel("Forza",this);
     spinBox_Forza = new QSpinBox(this);
     spinBox_Forza->setRange(5,99);
+    connect(spinBox_Forza, SIGNAL(valueChanged(int)), this, SLOT(setForza(int)));
+    connect(spinBox_Forza, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Destrezza = new QLabel("Destrezza",this);
     spinBox_Destrezza = new QSpinBox(this);
     spinBox_Destrezza->setRange(5,99);
+    connect(spinBox_Destrezza, SIGNAL(valueChanged(int)), this, SLOT(setDestrezza(int)));
+    connect(spinBox_Destrezza, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Intelligenza = new QLabel("Intelligenza",this);
     spinBox_Intelligenza = new QSpinBox(this);
     spinBox_Intelligenza->setRange(5,99);
+    connect(spinBox_Intelligenza, SIGNAL(valueChanged(int)), this, SLOT(setIntelligenza(int)));
+    connect(spinBox_Intelligenza, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Fede = new QLabel("Fede",this);
     spinBox_Fede = new QSpinBox(this);
     spinBox_Fede->setRange(5,99);
+    connect(spinBox_Fede, SIGNAL(valueChanged(int)), this, SLOT(setFede(int)));
+    connect(spinBox_Fede, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Livello = new QLabel("<h4>Livello</h4>",this);
     lcdNumber_Livello = new QLCDNumber(3);
@@ -69,6 +79,26 @@ void Caratteristiche_gui::setVitalita(int i){
 
 void Caratteristiche_gui::setEnergia(int i){
     car->SetEnergia(i);
+}
+
+void Caratteristiche_gui::setVigore(int i){
+    car->SetVigore(i);
+}
+
+void Caratteristiche_gui::setForza(int i){
+    car->SetForza(i);
+}
+
+void Caratteristiche_gui::setDestrezza(int i){
+    car->SetDestrezza(i);
+}
+
+void Caratteristiche_gui::setIntelligenza(int i){
+    car->SetIntelligenza(i);
+}
+
+void Caratteristiche_gui::setFede(int i){
+    car->SetFede(i);
 }
 
 void Caratteristiche_gui::refreshLivello(){
