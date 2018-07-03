@@ -13,14 +13,14 @@ public:
     TabWidget(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche *car=nullptr);
 
 private:
-    QGridLayout *layout;
-    QTabWidget *tabwid;
+  QGridLayout *layout;
+  QTabWidget *tabwid;
 	TabArma* tabArma;
 	TabArmaFisica* tabArmaFisica;
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;
-    Caratteristiche* car;
+  Caratteristiche* car;
 signals:
-        void MostraDannoEffettivo3(int x);
+	void MostraDannoEffettivo3(int x);
 };
 
 #endif // TABWIDGET_H

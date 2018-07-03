@@ -21,7 +21,7 @@ class TabArmaFisica: public TabArma{
 	public:
 		TabArmaFisica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* car=nullptr);
 		virtual void FinishInit() override;
-        signals:
-                void MostraDannoEffettivo2(int x);
+	signals:
+		void MostraDannoEffettivo2(int x);
 };
 #endif

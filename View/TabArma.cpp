@@ -1,8 +1,9 @@
 #include "TabArma.h"
 
-TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap){
+TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car): QWidget(parent), equipMap(equipMap), car(car){
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
+	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
 	LblUsura = new QLabel("Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDannoBase = new QLabel("Danno Base:", this);
@@ -27,4 +28,8 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 
 void TabArma::FinishInit(){
 	setLayout(winLayout);
+}
+
+void TabArma::setPeso(double d){
+	arma->SetPeso(d);
 }

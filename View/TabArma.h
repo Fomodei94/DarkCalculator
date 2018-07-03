@@ -14,6 +14,7 @@ class TabArma : public QWidget
 
 private:
     Arma* arma;
+    Caratteristiche* car;
     QLabel* LblPeso;
     QDoubleSpinBox* peso;
     QLabel* LblUsura;
@@ -30,9 +31,12 @@ private:
 	std::map<std::string, Equipaggiamento*>* equipMap;
 
 public:
-    TabArma(QWidget *parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1);
+    TabArma(QWidget *parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* car = nullptr);
     virtual void FinishInit();
     ~TabArma() = default;
+    
+public slots:
+	void setPeso(double d);
 };
 
 #endif //  TABARMA_H

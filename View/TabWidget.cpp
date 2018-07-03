@@ -4,7 +4,7 @@ TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* 
 {
     layout = new QGridLayout(this);
     tabwid = new QTabWidget(parent);
-    tabArma = new TabArma(this, equipMap, playerNumber);
+    tabArma = new TabArma(this, equipMap, playerNumber, car);
     tabArmaFisica = new TabArmaFisica(this, equipMap, playerNumber, car);
     tabwid->addTab(tabArma,QString("Arma"));
     tabwid->addTab(tabArmaFisica,QString("Arma Fisica"));
