@@ -6,6 +6,7 @@
 #include<QGridLayout>
 #include"View/Caratteristiche_gui.h"
 #include"View/TabWidget.h"
+#include <map>
 
 class MainWindow : public QMainWindow
 {
@@ -18,7 +19,7 @@ private:
     Caratteristiche_gui *CaratteristicheP2;
     TabWidget *EquipaggiamentoP1;
     TabWidget *EquipaggiamentoP2;
-
+	std::map<std::string, Equipaggiamento*> *mappaEquipaggiamenti;
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();

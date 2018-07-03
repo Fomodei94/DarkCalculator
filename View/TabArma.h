@@ -13,7 +13,6 @@ class TabArma : public QWidget
     Q_OBJECT
 
 private:
-    QGridLayout *winLayout;
     Arma* arma;
     QLabel* LblPeso;
     QDoubleSpinBox* peso;
@@ -25,9 +24,14 @@ private:
     QSpinBox* forzaRichiesta;
     QLabel* LblIntelligenzaRichiesta;
     QSpinBox* intelligenzaRichiesta;
+    
+ protected:
+	QGridLayout *winLayout;
+	std::map<std::string, Equipaggiamento*>* equipMap;
 
 public:
-    TabArma(QWidget *parent = nullptr, Arma* armaptr=nullptr);
+    TabArma(QWidget *parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1);
+    virtual void FinishInit();
     ~TabArma() = default;
 };
 

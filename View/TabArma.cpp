@@ -1,6 +1,6 @@
 #include "TabArma.h"
 
-TabArma::TabArma(QWidget* parent, Arma* armaptr): QWidget(parent), arma(armaptr){
+TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap){
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
 	LblUsura = new QLabel("Usura:", this);
@@ -22,5 +22,9 @@ TabArma::TabArma(QWidget* parent, Arma* armaptr): QWidget(parent), arma(armaptr)
 	winLayout->addWidget(forzaRichiesta, 1, 3);
 	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
 	winLayout->addWidget(intelligenzaRichiesta, 2,1);
+	FinishInit();
+}
+
+void TabArma::FinishInit(){
 	setLayout(winLayout);
 }
