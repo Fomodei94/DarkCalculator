@@ -15,7 +15,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++
+INCPATH       = -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++
 QMAKE         = /usr/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -51,19 +51,37 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = main.cpp \
+		Model/Arma.cpp \
+		Model/ArmaFisica.cpp \
+		Model/ArmaMagica.cpp \
+		Model/Armamento.cpp \
+		Model/Armatura.cpp \
 		Model/Caratteristiche.cpp \
-		View/MainWindow.cpp \
+		Model/Equipaggiamento.cpp \
+		Model/Scudo.cpp \
 		View/Caratteristiche_gui.cpp \
-		View/TabWidget.cpp moc_MainWindow.cpp \
-		moc_Caratteristiche_gui.cpp \
+		View/MainWindow.cpp \
+		View/TabArma.cpp \
+		View/TabWidget.cpp moc_Caratteristiche_gui.cpp \
+		moc_MainWindow.cpp \
+		moc_TabArma.cpp \
 		moc_TabWidget.cpp
 OBJECTS       = main.o \
+		Arma.o \
+		ArmaFisica.o \
+		ArmaMagica.o \
+		Armamento.o \
+		Armatura.o \
 		Caratteristiche.o \
-		MainWindow.o \
+		Equipaggiamento.o \
+		Scudo.o \
 		Caratteristiche_gui.o \
+		MainWindow.o \
+		TabArma.o \
 		TabWidget.o \
-		moc_MainWindow.o \
 		moc_Caratteristiche_gui.o \
+		moc_MainWindow.o \
+		moc_TabArma.o \
 		moc_TabWidget.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
@@ -291,13 +309,29 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/exceptions.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
-		DarkCalculator.pro Model/Caratteristiche.h \
-		View/MainWindow.h \
+		DarkCalculator.pro Model/Arma.h \
+		Model/ArmaFisica.h \
+		Model/ArmaMagica.h \
+		Model/Armamento.h \
+		Model/Armatura.h \
+		Model/Caratteristiche.h \
+		Model/Equipaggiamento.h \
+		Model/Scudo.h \
 		View/Caratteristiche_gui.h \
+		View/MainWindow.h \
+		View/TabArma.h \
 		View/TabWidget.h main.cpp \
+		Model/Arma.cpp \
+		Model/ArmaFisica.cpp \
+		Model/ArmaMagica.cpp \
+		Model/Armamento.cpp \
+		Model/Armatura.cpp \
 		Model/Caratteristiche.cpp \
-		View/MainWindow.cpp \
+		Model/Equipaggiamento.cpp \
+		Model/Scudo.cpp \
 		View/Caratteristiche_gui.cpp \
+		View/MainWindow.cpp \
+		View/TabArma.cpp \
 		View/TabWidget.cpp
 QMAKE_TARGET  = DarkCalculator
 DESTDIR       = 
@@ -786,8 +820,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents Model/Caratteristiche.h View/MainWindow.h View/Caratteristiche_gui.h View/TabWidget.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp Model/Caratteristiche.cpp View/MainWindow.cpp View/Caratteristiche_gui.cpp View/TabWidget.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents Model/Arma.h Model/ArmaFisica.h Model/ArmaMagica.h Model/Armamento.h Model/Armatura.h Model/Caratteristiche.h Model/Equipaggiamento.h Model/Scudo.h View/Caratteristiche_gui.h View/MainWindow.h View/TabArma.h View/TabWidget.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp Model/Arma.cpp Model/ArmaFisica.cpp Model/ArmaMagica.cpp Model/Armamento.cpp Model/Armatura.cpp Model/Caratteristiche.cpp Model/Equipaggiamento.cpp Model/Scudo.cpp View/Caratteristiche_gui.cpp View/MainWindow.cpp View/TabArma.cpp View/TabWidget.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -819,27 +853,34 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 	g++ -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_MainWindow.cpp moc_Caratteristiche_gui.cpp moc_TabWidget.cpp
+compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_TabArma.cpp moc_TabWidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_MainWindow.cpp moc_Caratteristiche_gui.cpp moc_TabWidget.cpp
-moc_MainWindow.cpp: View/Caratteristiche_gui.h \
-		Model/Caratteristiche.h \
-		View/TabWidget.h \
-		View/MainWindow.h \
-		moc_predefs.h \
-		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/MainWindow.h -o moc_MainWindow.cpp
-
+	-$(DEL_FILE) moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_TabArma.cpp moc_TabWidget.cpp
 moc_Caratteristiche_gui.cpp: Model/Caratteristiche.h \
 		View/Caratteristiche_gui.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/Caratteristiche_gui.h -o moc_Caratteristiche_gui.cpp
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/Caratteristiche_gui.h -o moc_Caratteristiche_gui.cpp
 
-moc_TabWidget.cpp: View/TabWidget.h \
+moc_MainWindow.cpp: View/Caratteristiche_gui.h \
+		Model/Caratteristiche.h \
+		View/TabWidget.h \
+		View/TabArma.h \
+		View/MainWindow.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabWidget.h -o moc_TabWidget.cpp
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/MainWindow.h -o moc_MainWindow.cpp
+
+moc_TabArma.cpp: View/TabArma.h \
+		moc_predefs.h \
+		/usr/bin/moc
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabArma.h -o moc_TabArma.cpp
+
+moc_TabWidget.cpp: View/TabArma.h \
+		View/TabWidget.h \
+		moc_predefs.h \
+		/usr/bin/moc
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabWidget.h -o moc_TabWidget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -860,30 +901,92 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean
 main.o: main.cpp View/MainWindow.h \
 		View/Caratteristiche_gui.h \
 		Model/Caratteristiche.h \
-		View/TabWidget.h
+		View/TabWidget.h \
+		View/TabArma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+
+Arma.o: Model/Arma.cpp Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Arma.o Model/Arma.cpp
+
+ArmaFisica.o: Model/ArmaFisica.cpp Model/ArmaFisica.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/Armatura.h \
+		Model/Scudo.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ArmaFisica.o Model/ArmaFisica.cpp
+
+ArmaMagica.o: Model/ArmaMagica.cpp Model/ArmaMagica.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/Armatura.h \
+		Model/Scudo.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ArmaMagica.o Model/ArmaMagica.cpp
+
+Armamento.o: Model/Armamento.cpp Model/Armamento.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Armamento.o Model/Armamento.cpp
+
+Armatura.o: Model/Armatura.cpp Model/Armatura.h \
+		Model/Armamento.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Arma.h \
+		Model/ArmaFisica.h \
+		Model/Scudo.h \
+		Model/ArmaMagica.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Armatura.o Model/Armatura.cpp
 
 Caratteristiche.o: Model/Caratteristiche.cpp Model/Caratteristiche.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Caratteristiche.o Model/Caratteristiche.cpp
 
-MainWindow.o: View/MainWindow.cpp View/MainWindow.h \
-		View/Caratteristiche_gui.h \
+Equipaggiamento.o: Model/Equipaggiamento.cpp Model/Equipaggiamento.h \
+		Model/Caratteristiche.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Equipaggiamento.o Model/Equipaggiamento.cpp
+
+Scudo.o: Model/Scudo.cpp Model/Scudo.h \
+		Model/Armamento.h \
+		Model/Equipaggiamento.h \
 		Model/Caratteristiche.h \
-		View/TabWidget.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o View/MainWindow.cpp
+		Model/Arma.h \
+		Model/ArmaFisica.h \
+		Model/Armatura.h \
+		Model/ArmaMagica.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Scudo.o Model/Scudo.cpp
 
 Caratteristiche_gui.o: View/Caratteristiche_gui.cpp View/Caratteristiche_gui.h \
 		Model/Caratteristiche.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Caratteristiche_gui.o View/Caratteristiche_gui.cpp
 
-TabWidget.o: View/TabWidget.cpp View/TabWidget.h
+MainWindow.o: View/MainWindow.cpp View/MainWindow.h \
+		View/Caratteristiche_gui.h \
+		Model/Caratteristiche.h \
+		View/TabWidget.h \
+		View/TabArma.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o View/MainWindow.cpp
+
+TabArma.o: View/TabArma.cpp View/TabArma.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabArma.o View/TabArma.cpp
+
+TabWidget.o: View/TabWidget.cpp View/TabWidget.h \
+		View/TabArma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabWidget.o View/TabWidget.cpp
+
+moc_Caratteristiche_gui.o: moc_Caratteristiche_gui.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Caratteristiche_gui.o moc_Caratteristiche_gui.cpp
 
 moc_MainWindow.o: moc_MainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_MainWindow.o moc_MainWindow.cpp
 
-moc_Caratteristiche_gui.o: moc_Caratteristiche_gui.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Caratteristiche_gui.o moc_Caratteristiche_gui.cpp
+moc_TabArma.o: moc_TabArma.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabArma.o moc_TabArma.cpp
 
 moc_TabWidget.o: moc_TabWidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabWidget.o moc_TabWidget.cpp

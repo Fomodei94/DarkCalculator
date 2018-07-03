@@ -36,7 +36,7 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
     label_Livello = new QLabel("<h4>Livello</h4>",this);
     lcdNumber_Livello = new QLCDNumber(3);
 
-    layout->addWidget(label_Caratt,0,0,1,-2);
+    layout->addWidget(label_Caratt,0,0,1,-1);
     layout->addWidget(label_Vitalita,1,0);
     layout->addWidget(spinBox_Vitalita,1,1);
     layout->addWidget(label_Energia,2,0);

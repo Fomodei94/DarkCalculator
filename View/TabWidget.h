@@ -3,6 +3,7 @@
 
 #include<QGridLayout>
 #include<QTabWidget>
+#include"TabArma.h"
 
 class TabWidget : public QWidget {
     Q_OBJECT
@@ -12,7 +13,7 @@ public:
 private:
     QGridLayout *layout;
     QTabWidget *tabwid;
-
+	TabArma* tabArma;
 };
 
 #endif // TABWIDGET_H

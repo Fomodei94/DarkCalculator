@@ -1,0 +1,372 @@
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o Arma.o Model/Arma.cpp
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o ArmaFisica.o Model/ArmaFisica.cpp
+Model/ArmaFisica.cpp: In member function ‘double ArmaFisica::Frantuma(const Caratteristiche&, Equipaggiamento*) const’:
+Model/ArmaFisica.cpp:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o ArmaMagica.o Model/ArmaMagica.cpp
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o Armamento.o Model/Armamento.cpp
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o Armatura.o Model/Armatura.cpp
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o Equipaggiamento.o Model/Equipaggiamento.cpp
+g++ -c -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++ -o Scudo.o Model/Scudo.cpp
+g++ -Wl,-O1 -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -o DarkCalculator main.o Arma.o ArmaFisica.o ArmaMagica.o Armamento.o Armatura.o Equipaggiamento.o Scudo.o Caratteristiche_gui.o MainWindow.o TabArma.o TabWidget.o moc_Caratteristiche_gui.o moc_MainWindow.o moc_TabArma.o moc_TabWidget.o   -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
+ArmaFisica.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+ArmaFisica.cpp:(.text+0x4d0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+ArmaFisica.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+ArmaFisica.cpp:(.text+0x4d0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetVitalita() const':
+ArmaFisica.cpp:(.text+0x550): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetEnergia() const':
+ArmaFisica.cpp:(.text+0x560): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetVigore() const':
+ArmaFisica.cpp:(.text+0x570): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetForza() const':
+ArmaFisica.cpp:(.text+0x580): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetDestrezza() const':
+ArmaFisica.cpp:(.text+0x590): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetIntelligenza() const':
+ArmaFisica.cpp:(.text+0x6e0): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+ArmaFisica.o: In function `Caratteristiche::GetFede() const':
+ArmaFisica.cpp:(.text+0x6f0): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetVitalita(int)':
+ArmaFisica.cpp:(.text+0x700): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetEnergia(int)':
+ArmaFisica.cpp:(.text+0x710): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetVigore(int)':
+ArmaFisica.cpp:(.text+0x720): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetForza(int)':
+ArmaFisica.cpp:(.text+0x730): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetDestrezza(int)':
+ArmaFisica.cpp:(.text+0x740): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetIntelligenza(int)':
+ArmaFisica.cpp:(.text+0x750): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+ArmaFisica.o: In function `Caratteristiche::SetFede(int)':
+ArmaFisica.cpp:(.text+0x760): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+ArmaFisica.o: In function `Caratteristiche::Livello() const':
+ArmaFisica.cpp:(.text+0x770): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+ArmaFisica.o: In function `Caratteristiche::CalcolaSalute() const':
+ArmaFisica.cpp:(.text+0x790): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+ArmaFisica.o: In function `Caratteristiche::CalcolaStamina() const':
+ArmaFisica.cpp:(.text+0x7d0): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+ArmaFisica.o:(.data+0x8): multiple definition of `Armamento::pesoMinimoEquilibrio'
+Arma.o:(.data+0x0): first defined here
+ArmaMagica.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+ArmaMagica.cpp:(.text+0x5a0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+ArmaMagica.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+ArmaMagica.cpp:(.text+0x5a0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetVitalita() const':
+ArmaMagica.cpp:(.text+0x620): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetEnergia() const':
+ArmaMagica.cpp:(.text+0x630): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetVigore() const':
+ArmaMagica.cpp:(.text+0x640): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetForza() const':
+ArmaMagica.cpp:(.text+0x650): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetDestrezza() const':
+ArmaMagica.cpp:(.text+0x660): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetIntelligenza() const':
+ArmaMagica.cpp:(.text+0x670): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+ArmaMagica.o: In function `Caratteristiche::GetFede() const':
+ArmaMagica.cpp:(.text+0x680): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetVitalita(int)':
+ArmaMagica.cpp:(.text+0x930): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetEnergia(int)':
+ArmaMagica.cpp:(.text+0x940): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetVigore(int)':
+ArmaMagica.cpp:(.text+0x950): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetForza(int)':
+ArmaMagica.cpp:(.text+0x960): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetDestrezza(int)':
+ArmaMagica.cpp:(.text+0x970): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetIntelligenza(int)':
+ArmaMagica.cpp:(.text+0x980): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+ArmaMagica.o: In function `Caratteristiche::SetFede(int)':
+ArmaMagica.cpp:(.text+0x990): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+ArmaMagica.o: In function `Caratteristiche::Livello() const':
+ArmaMagica.cpp:(.text+0x9a0): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+ArmaMagica.o: In function `Caratteristiche::CalcolaSalute() const':
+ArmaMagica.cpp:(.text+0x9c0): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+ArmaMagica.o: In function `Caratteristiche::CalcolaStamina() const':
+ArmaMagica.cpp:(.text+0xa00): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+ArmaMagica.o:(.data+0x0): multiple definition of `Armatura::pesoMinimoHyperArmor'
+ArmaFisica.o:(.data+0x0): first defined here
+ArmaMagica.o:(.data+0x8): multiple definition of `Armamento::pesoMinimoEquilibrio'
+Arma.o:(.data+0x0): first defined here
+Armamento.o:(.data+0x0): multiple definition of `Armamento::pesoMinimoEquilibrio'
+Arma.o:(.data+0x0): first defined here
+Armamento.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Armamento.cpp:(.text+0x3f0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Armamento.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Armamento.cpp:(.text+0x3f0): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Armamento.o: In function `Caratteristiche::GetVitalita() const':
+Armamento.cpp:(.text+0x470): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+Armamento.o: In function `Caratteristiche::GetEnergia() const':
+Armamento.cpp:(.text+0x480): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+Armamento.o: In function `Caratteristiche::GetVigore() const':
+Armamento.cpp:(.text+0x490): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+Armamento.o: In function `Caratteristiche::GetForza() const':
+Armamento.cpp:(.text+0x4c0): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+Armamento.o: In function `Caratteristiche::GetDestrezza() const':
+Armamento.cpp:(.text+0x4d0): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+Armamento.o: In function `Caratteristiche::GetIntelligenza() const':
+Armamento.cpp:(.text+0x4e0): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+Armamento.o: In function `Caratteristiche::GetFede() const':
+Armamento.cpp:(.text+0x4f0): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+Armamento.o: In function `Caratteristiche::SetVitalita(int)':
+Armamento.cpp:(.text+0x500): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+Armamento.o: In function `Caratteristiche::SetEnergia(int)':
+Armamento.cpp:(.text+0x510): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+Armamento.o: In function `Caratteristiche::SetVigore(int)':
+Armamento.cpp:(.text+0x520): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+Armamento.o: In function `Caratteristiche::SetForza(int)':
+Armamento.cpp:(.text+0x530): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+Armamento.o: In function `Caratteristiche::SetDestrezza(int)':
+Armamento.cpp:(.text+0x540): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+Armamento.o: In function `Caratteristiche::SetIntelligenza(int)':
+Armamento.cpp:(.text+0x550): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+Armamento.o: In function `Caratteristiche::SetFede(int)':
+Armamento.cpp:(.text+0x560): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+Armamento.o: In function `Caratteristiche::Livello() const':
+Armamento.cpp:(.text+0x570): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+Armamento.o: In function `Caratteristiche::CalcolaSalute() const':
+Armamento.cpp:(.text+0x590): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+Armamento.o: In function `Caratteristiche::CalcolaStamina() const':
+Armamento.cpp:(.text+0x5d0): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+Armatura.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Armatura.cpp:(.text+0x690): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Armatura.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Armatura.cpp:(.text+0x690): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Armatura.o: In function `Caratteristiche::GetVitalita() const':
+Armatura.cpp:(.text+0x710): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+Armatura.o: In function `Caratteristiche::GetEnergia() const':
+Armatura.cpp:(.text+0x720): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+Armatura.o: In function `Caratteristiche::GetVigore() const':
+Armatura.cpp:(.text+0x730): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+Armatura.o: In function `Caratteristiche::GetForza() const':
+Armatura.cpp:(.text+0x740): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+Armatura.o: In function `Caratteristiche::GetDestrezza() const':
+Armatura.cpp:(.text+0x750): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+Armatura.o: In function `Caratteristiche::GetIntelligenza() const':
+Armatura.cpp:(.text+0x760): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+Armatura.o: In function `Caratteristiche::GetFede() const':
+Armatura.cpp:(.text+0x770): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+Armatura.o: In function `Caratteristiche::SetVitalita(int)':
+Armatura.cpp:(.text+0x780): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+Armatura.o: In function `Caratteristiche::SetEnergia(int)':
+Armatura.cpp:(.text+0x790): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+Armatura.o: In function `Caratteristiche::SetVigore(int)':
+Armatura.cpp:(.text+0x7a0): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+Armatura.o: In function `Caratteristiche::SetForza(int)':
+Armatura.cpp:(.text+0x7b0): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+Armatura.o: In function `Caratteristiche::SetDestrezza(int)':
+Armatura.cpp:(.text+0x7c0): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+Armatura.o: In function `Caratteristiche::SetIntelligenza(int)':
+Armatura.cpp:(.text+0x7d0): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+Armatura.o: In function `Caratteristiche::SetFede(int)':
+Armatura.cpp:(.text+0x7e0): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+Armatura.o: In function `Caratteristiche::Livello() const':
+Armatura.cpp:(.text+0x7f0): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+Armatura.o: In function `Caratteristiche::CalcolaSalute() const':
+Armatura.cpp:(.text+0x810): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+Armatura.o: In function `Caratteristiche::CalcolaStamina() const':
+Armatura.cpp:(.text+0x850): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+Armatura.o:(.data+0x0): multiple definition of `Armatura::pesoMinimoHyperArmor'
+ArmaFisica.o:(.data+0x0): first defined here
+Armatura.o:(.data+0x8): multiple definition of `Armamento::pesoMinimoEquilibrio'
+Arma.o:(.data+0x0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Equipaggiamento.cpp:(.text+0x60): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Equipaggiamento.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Equipaggiamento.cpp:(.text+0x60): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetVitalita() const':
+Equipaggiamento.cpp:(.text+0xe0): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetEnergia() const':
+Equipaggiamento.cpp:(.text+0xf0): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetVigore() const':
+Equipaggiamento.cpp:(.text+0x100): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetForza() const':
+Equipaggiamento.cpp:(.text+0x110): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetDestrezza() const':
+Equipaggiamento.cpp:(.text+0x120): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetIntelligenza() const':
+Equipaggiamento.cpp:(.text+0x130): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::GetFede() const':
+Equipaggiamento.cpp:(.text+0x140): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetVitalita(int)':
+Equipaggiamento.cpp:(.text+0x150): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetEnergia(int)':
+Equipaggiamento.cpp:(.text+0x160): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetVigore(int)':
+Equipaggiamento.cpp:(.text+0x170): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetForza(int)':
+Equipaggiamento.cpp:(.text+0x180): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetDestrezza(int)':
+Equipaggiamento.cpp:(.text+0x190): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetIntelligenza(int)':
+Equipaggiamento.cpp:(.text+0x1a0): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+Equipaggiamento.o: In function `Caratteristiche::SetFede(int)':
+Equipaggiamento.cpp:(.text+0x1b0): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+Equipaggiamento.o: In function `Caratteristiche::Livello() const':
+Equipaggiamento.cpp:(.text+0x1c0): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::CalcolaSalute() const':
+Equipaggiamento.cpp:(.text+0x1e0): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+Equipaggiamento.o: In function `Caratteristiche::CalcolaStamina() const':
+Equipaggiamento.cpp:(.text+0x220): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+Scudo.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Scudo.cpp:(.text+0x470): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Scudo.o: In function `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)':
+Scudo.cpp:(.text+0x470): multiple definition of `Caratteristiche::Caratteristiche(int, int, int, int, int, int, int)'
+Arma.o:Arma.cpp:(.text+0x300): first defined here
+Scudo.o: In function `Caratteristiche::GetVitalita() const':
+Scudo.cpp:(.text+0x4f0): multiple definition of `Caratteristiche::GetVitalita() const'
+Arma.o:Arma.cpp:(.text+0x380): first defined here
+Scudo.o: In function `Caratteristiche::GetEnergia() const':
+Scudo.cpp:(.text+0x500): multiple definition of `Caratteristiche::GetEnergia() const'
+Arma.o:Arma.cpp:(.text+0x390): first defined here
+Scudo.o: In function `Caratteristiche::GetVigore() const':
+Scudo.cpp:(.text+0x510): multiple definition of `Caratteristiche::GetVigore() const'
+Arma.o:Arma.cpp:(.text+0x3a0): first defined here
+Scudo.o: In function `Caratteristiche::GetForza() const':
+Scudo.cpp:(.text+0x6c0): multiple definition of `Caratteristiche::GetForza() const'
+Arma.o:Arma.cpp:(.text+0x3b0): first defined here
+Scudo.o: In function `Caratteristiche::GetDestrezza() const':
+Scudo.cpp:(.text+0x6d0): multiple definition of `Caratteristiche::GetDestrezza() const'
+Arma.o:Arma.cpp:(.text+0x3c0): first defined here
+Scudo.o: In function `Caratteristiche::GetIntelligenza() const':
+Scudo.cpp:(.text+0x6e0): multiple definition of `Caratteristiche::GetIntelligenza() const'
+Arma.o:Arma.cpp:(.text+0x3d0): first defined here
+Scudo.o: In function `Caratteristiche::GetFede() const':
+Scudo.cpp:(.text+0x6f0): multiple definition of `Caratteristiche::GetFede() const'
+Arma.o:Arma.cpp:(.text+0x420): first defined here
+Scudo.o: In function `Caratteristiche::SetVitalita(int)':
+Scudo.cpp:(.text+0x700): multiple definition of `Caratteristiche::SetVitalita(int)'
+Arma.o:Arma.cpp:(.text+0x430): first defined here
+Scudo.o: In function `Caratteristiche::SetEnergia(int)':
+Scudo.cpp:(.text+0x710): multiple definition of `Caratteristiche::SetEnergia(int)'
+Arma.o:Arma.cpp:(.text+0x440): first defined here
+Scudo.o: In function `Caratteristiche::SetVigore(int)':
+Scudo.cpp:(.text+0x720): multiple definition of `Caratteristiche::SetVigore(int)'
+Arma.o:Arma.cpp:(.text+0x450): first defined here
+Scudo.o: In function `Caratteristiche::SetForza(int)':
+Scudo.cpp:(.text+0x730): multiple definition of `Caratteristiche::SetForza(int)'
+Arma.o:Arma.cpp:(.text+0x460): first defined here
+Scudo.o: In function `Caratteristiche::SetDestrezza(int)':
+Scudo.cpp:(.text+0x740): multiple definition of `Caratteristiche::SetDestrezza(int)'
+Arma.o:Arma.cpp:(.text+0x470): first defined here
+Scudo.o: In function `Caratteristiche::SetIntelligenza(int)':
+Scudo.cpp:(.text+0x750): multiple definition of `Caratteristiche::SetIntelligenza(int)'
+Arma.o:Arma.cpp:(.text+0x480): first defined here
+Scudo.o: In function `Caratteristiche::SetFede(int)':
+Scudo.cpp:(.text+0x760): multiple definition of `Caratteristiche::SetFede(int)'
+Arma.o:Arma.cpp:(.text+0x490): first defined here
+Scudo.o: In function `Caratteristiche::Livello() const':
+Scudo.cpp:(.text+0x770): multiple definition of `Caratteristiche::Livello() const'
+Arma.o:Arma.cpp:(.text+0x4a0): first defined here
+Scudo.o: In function `Caratteristiche::CalcolaSalute() const':
+Scudo.cpp:(.text+0x790): multiple definition of `Caratteristiche::CalcolaSalute() const'
+Arma.o:Arma.cpp:(.text+0x4c0): first defined here
+Scudo.o: In function `Caratteristiche::CalcolaStamina() const':
+Scudo.cpp:(.text+0x7d0): multiple definition of `Caratteristiche::CalcolaStamina() const'
+Arma.o:Arma.cpp:(.text+0x500): first defined here
+Scudo.o:(.data+0x0): multiple definition of `Armatura::pesoMinimoHyperArmor'
+ArmaFisica.o:(.data+0x0): first defined here
+Scudo.o:(.data+0x8): multiple definition of `Armamento::pesoMinimoEquilibrio'
+Arma.o:(.data+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:342: DarkCalculator] Error 1
