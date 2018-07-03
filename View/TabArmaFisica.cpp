@@ -1,6 +1,6 @@
 #include "TabArmaFisica.h"
 
-TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): TabArma(parent, equipMap), playerNumber(playerNumber){
+TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car): TabArma(parent, equipMap), playerNumber(playerNumber), car(car){
 	FinishInit();
 };
 
@@ -32,7 +32,8 @@ void TabArmaFisica::FinishInit() {
 	}else{
 		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
-	operazioni = new OperazioniArmaFisica(this, arma);
+	operazioni = new OperazioniArmaFisica(this, arma, car);
+        connect(operazioni, SIGNAL(MostraDannoEffettivo(int)), this, SIGNAL(MostraDannoEffettivo2(int)));
 	winLayout->addWidget(LblTipoDanno, 3,0);
 	winLayout->addWidget(TipoDanno, 3,1);
 	winLayout->addWidget(LblScalingForza, 4,0);

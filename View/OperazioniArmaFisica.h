@@ -7,6 +7,7 @@
 #include "../Model/ArmaFisica.h"
 
 class OperazioniArmaFisica: public QWidget{
+        Q_OBJECT
 	private:
 	QPushButton *DannoEffettivo,
 					*Efficacia,
@@ -17,7 +18,13 @@ class OperazioniArmaFisica: public QWidget{
 					*Riforgia;
 	QLabel* label;
 	QGridLayout* winLayout;
+        ArmaFisica* armaIstanza;
+        Caratteristiche* car;
 	public:
-		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr);
+		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
+        signals:
+                void MostraDannoEffettivo(int x);
+        public slots:
+                void CalcolaDannoEffettivo();
 };
 #endif

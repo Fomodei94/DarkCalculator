@@ -1,6 +1,6 @@
 #include "Caratteristiche_gui.h"
 
-Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car) : QWidget(parent)
+Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car) : QWidget(parent), car(car)
 {
     layout = new QGridLayout(this);
     label_Caratt = new QLabel(QString("<h3>Caratteristiche Personaggio %1</h3>").arg(p), this);
@@ -8,10 +8,14 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
     label_Vitalita = new QLabel("Vitalità", this);
     spinBox_Vitalita = new QSpinBox(this);
     spinBox_Vitalita->setRange(5,99);
+    connect(spinBox_Vitalita, SIGNAL(valueChanged(int)), this, SLOT(setVitalita(int)));
+    connect(spinBox_Vitalita, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Energia = new QLabel("Energia",this);
     spinBox_Energia = new QSpinBox(this);
     spinBox_Energia->setRange(5,99);
+    connect(spinBox_Energia, SIGNAL(valueChanged(int)), this, SLOT(setEnergia(int)));
+    connect(spinBox_Energia, SIGNAL(valueChanged(int)), this, SLOT(refreshLivello()));
 
     label_Vigore = new QLabel("Vigore",this);
     spinBox_Vigore = new QSpinBox(this);
@@ -35,6 +39,7 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
 
     label_Livello = new QLabel("<h4>Livello</h4>",this);
     lcdNumber_Livello = new QLCDNumber(3);
+    refreshLivello();
 
     layout->addWidget(label_Caratt,0,0,1,-1);
     layout->addWidget(label_Vitalita,1,0);
@@ -58,3 +63,14 @@ Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche
 
 }
 
+void Caratteristiche_gui::setVitalita(int i){
+    car->SetVitalita(i);
+}
+
+void Caratteristiche_gui::setEnergia(int i){
+    car->SetEnergia(i);
+}
+
+void Caratteristiche_gui::refreshLivello(){
+    lcdNumber_Livello->display(car->Livello());
+}

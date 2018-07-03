@@ -24,7 +24,7 @@ private:
     QSpinBox* forzaRichiesta;
     QLabel* LblIntelligenzaRichiesta;
     QSpinBox* intelligenzaRichiesta;
-    
+
  protected:
 	QGridLayout *winLayout;
 	std::map<std::string, Equipaggiamento*>* equipMap;

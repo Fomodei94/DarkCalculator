@@ -4,6 +4,7 @@
 #include<QMainWindow>
 #include<QWidget>
 #include<QGridLayout>
+#include<QLCDNumber>
 #include"View/Caratteristiche_gui.h"
 #include"View/TabWidget.h"
 #include <map>
@@ -20,9 +21,13 @@ private:
     TabWidget *EquipaggiamentoP1;
     TabWidget *EquipaggiamentoP2;
 	std::map<std::string, Equipaggiamento*> *mappaEquipaggiamenti;
+    QLabel *Risultato;
+    QLabel *lblRisultato;
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+public slots:
+    void MostraRisultatoDannoEffettivo(int x);
 };
 
 #endif // MAINWINDOW_H

@@ -17,6 +17,7 @@ public:
     Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car);
 
 private:
+    Caratteristiche* car;
     QGridLayout *layout;
     QLabel *label_Caratt;
     QFrame *frame_Caratt;
@@ -40,7 +41,9 @@ private:
 signals:
 
 public slots:
-
+    void setVitalita(int i);
+    void setEnergia(int i);
+    void refreshLivello();
 };
 
 #endif // CARATTERISTICHE_GUI_H
