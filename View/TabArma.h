@@ -6,7 +6,7 @@
 #include<QLabel>
 #include<QSpinBox>
 #include<QDoubleSpinBox>
-//#include"../Model/Arma.h"
+#include"../Model/Arma.h"
 
 class TabArma : public QWidget
 {
@@ -14,7 +14,7 @@ class TabArma : public QWidget
 
 private:
     QGridLayout *winLayout;
-    //Arma* arma;
+    Arma* arma;
     QLabel* LblPeso;
     QDoubleSpinBox* peso;
     QLabel* LblUsura;
@@ -27,8 +27,8 @@ private:
     QSpinBox* intelligenzaRichiesta;
 
 public:
-    TabArma(QWidget *parent = nullptr);//, Arma* armaptr=nullptr);
-    //~TabArma();
+    TabArma(QWidget *parent = nullptr, Arma* armaptr=nullptr);
+    ~TabArma() = default;
 };
 
 #endif //  TABARMA_H
