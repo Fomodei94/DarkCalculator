@@ -26,11 +26,11 @@ void TabArmaFisica::FinishInit() {
 	ScalingDestrezza->addItem("B");
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
-	Arma* arma;
+	ArmaFisica* arma;
 	if (playerNumber == 1){
-		arma = dynamic_cast<Arma*>((equipMap->find("ArmaFisicaP1"))->second);
+		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
 	}else{
-		arma = dynamic_cast<Arma*>((equipMap->find("ArmaFisicaP2"))->second);
+		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
 	operazioni = new OperazioniArmaFisica(this, arma);
 	winLayout->addWidget(LblTipoDanno, 3,0);
