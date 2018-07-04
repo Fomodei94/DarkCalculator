@@ -16,6 +16,7 @@ class TabArmamento : public QWidget
 private:
 	Armamento* armamento;
     Caratteristiche* carattP1;
+	Caratteristiche* carattP2;
     //OperazioniArmamento* operazioniArmamento;
     int playerNumber;
     QLabel* LblPeso;
@@ -30,19 +31,19 @@ private:
  protected:
 	QGridLayout *winLayout;
 	std::map<std::string, Equipaggiamento*>* equipMap;
-	void connectSignals();
+	//void connectSignals();
 
 public:
     TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carattP1, Caratteristiche* carattP2);
     TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
-    ~TabArma() = default;
+    ~TabArmamento() = default;
     
 public slots:
-	virtual void setPeso(double d);
-	virtual void setUsura(double d);
-	virtual void setDifesa(double d);
-	virtual void setVigoreRichiesto(int i);
+	//virtual void setPeso(double d);
+	//virtual void setUsura(double d);
+	//virtual void setDifesa(double d);
+	//virtual void setVigoreRichiesto(int i);
 };
 
 #endif //  TABARMA_H

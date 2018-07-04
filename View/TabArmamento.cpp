@@ -13,7 +13,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	vigoreRichiesto = new QSpinBox(this);
 	vigoreRichiesto->setRange(5,99);
 	//operazioniArmamento = new OperazioniArmamento(this, armamento, carattP1);
-	connectSignals();
+	//connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
 	winLayout->addWidget(peso, 0,1);
@@ -27,7 +27,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	FinishInit();
 }
 
-TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber){
+TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber){
 	carattP1=nullptr;
 	carattP2=nullptr;
 	armamento=nullptr;
@@ -41,18 +41,23 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	LblVigoreRichiesto = new QLabel("Vigore Richiesto: ", this);
 	vigoreRichiesto = new QSpinBox(this);
 	vigoreRichiesto->setRange(5,99);
-	operazioniArmamento = new OperazioniArmamento(this, arma, caratt);
-	connectSignals();
+	//operazioniArmamento = new OperazioniArmamento(this, arma, caratt);
+	//connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
 	winLayout->addWidget(peso, 0,1);
 	winLayout->addWidget(LblUsura, 0,2);
 	winLayout->addWidget(usura, 0,3);
-	winLayout->addWidget(LblDannoBase, 1,0);
-	winLayout->addWidget(DannoBase, 1,1);
-	winLayout->addWidget(LblForzaRichiesta, 1,2);
-	winLayout->addWidget(forzaRichiesta, 1, 3);
-	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
-	winLayout->addWidget(intelligenzaRichiesta, 2,1);
+	winLayout->addWidget(LblDifesa, 1,0);
+	winLayout->addWidget(Difesa, 1,1);
+	winLayout->addWidget(LblVigoreRichiesto, 1,2);
+	winLayout->addWidget(vigoreRichiesto, 1, 3);
 	FinishInit();
 }
+
+void TabArmamento::FinishInit(){
+	setLayout(winLayout);
+	//connect(operazioniArmamento, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+	//connect(operazioniArmamento, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+}
+
