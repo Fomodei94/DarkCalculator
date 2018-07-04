@@ -6,6 +6,7 @@
 #include "TabArma.h"
 #include "TabArmaFisica.h"
 #include "TabArmamento.h"
+#include "TabArmatura.h"
 #include <map>
 
 class TabWidget : public QWidget {
@@ -19,6 +20,7 @@ private:
 	TabArma* tabArma;
 	TabArmaFisica* tabArmaFisica;
 	TabArmamento* tabArmamento;
+	TabArmatura* tabArmatura;
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;
   Caratteristiche* carP1;
   Caratteristiche* carP2;

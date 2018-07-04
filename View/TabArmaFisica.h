@@ -16,7 +16,7 @@ class TabArmaFisica: public TabArma{
 		QComboBox *TipoDanno,
 								*ScalingForza,
 								*ScalingDestrezza;
-		OperazioniArmaFisica* operazioni;
+	OperazioniArmaFisica* operazioni;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 		int playerNumber;

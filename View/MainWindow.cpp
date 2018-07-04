@@ -4,6 +4,7 @@
 #include "../Model/ArmaFisica.h"
 #include "../Model/Arma.h"
 #include "../Model/Armamento.h"
+#include "../Model/Armatura.h"
 #include "../Model/Equipaggiamento.h"
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
@@ -21,6 +22,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaP2", new Arma()));
 	mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP1", new Armamento()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP2", new Armamento()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP1", new Armamento()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP2", new Armamento()));
     Caratteristiche *Caratt_P1, *Caratt_P2;
     Caratt_P1 = new Caratteristiche();
     Caratt_P2 = new Caratteristiche();
