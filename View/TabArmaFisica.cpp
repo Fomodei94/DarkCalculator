@@ -26,7 +26,6 @@ void TabArmaFisica::FinishInit() {
 	ScalingDestrezza->addItem("B");
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
-	ArmaFisica* arma;
 	if (playerNumber == 1){
 		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
 	}else{

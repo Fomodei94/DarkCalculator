@@ -1,9 +1,10 @@
 #include "TabArma.h"
 
 TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car): QWidget(parent), equipMap(equipMap), car(car){
+	arma = dynamic_cast<Arma*>((equipMap->find("ArmaP1"))->second);
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
-	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	//connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
 	LblUsura = new QLabel("Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDannoBase = new QLabel("Danno Base:", this);
@@ -12,6 +13,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	forzaRichiesta = new QSpinBox(this);
 	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
 	intelligenzaRichiesta = new QSpinBox(this);
+	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
 	winLayout->addWidget(peso, 0,1);
@@ -32,4 +34,9 @@ void TabArma::FinishInit(){
 
 void TabArma::setPeso(double d){
 	arma->SetPeso(d);
+	//emit nomeSegnale(valore);
+}
+
+void TabArma::connectSignals(){
+	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
 }

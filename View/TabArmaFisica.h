@@ -9,6 +9,7 @@
 class TabArmaFisica: public TabArma{
 	Q_OBJECT
 	private:
+		ArmaFisica* arma;
 		QLabel *LblTipoDanno,
 						*LblScalingForza,
 						*LblScalingDestrezza;
