@@ -1,6 +1,6 @@
 #include "TabArma.h"
 
-TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), car(car){
+TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
 	arma = dynamic_cast<Arma*>((equipMap->find("ArmaP1"))->second);
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
@@ -15,7 +15,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
 	intelligenzaRichiesta = new QSpinBox(this);
 	intelligenzaRichiesta->setRange(5,99);
-	operazioniArma = new OperazioniArma(this, arma, car);
+	operazioniArma = new OperazioniArma(this, arma, carP1);
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
@@ -33,7 +33,8 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 }
 
 TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber){
-	car=nullptr;
+	carP1=nullptr;
+	carP2=nullptr;
 	arma=nullptr;
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
@@ -48,7 +49,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
 	intelligenzaRichiesta = new QSpinBox(this);
 	intelligenzaRichiesta->setRange(5,99);
-	operazioniArma = new OperazioniArma(this, arma, car);
+	operazioniArma = new OperazioniArma(this, arma, carP1);
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);

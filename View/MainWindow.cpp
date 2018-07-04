@@ -23,8 +23,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     Caratt_P2 = new Caratteristiche();
     CaratteristicheP1 = new Caratteristiche_gui(centralWidget, 1, Caratt_P1);
     CaratteristicheP2 = new Caratteristiche_gui(centralWidget, 2, Caratt_P2);
-    EquipaggiamentoP1 = new TabWidget(centralWidget, mappaEquipaggiamenti, 1, Caratt_P1);
-    EquipaggiamentoP2 = new TabWidget(centralWidget, mappaEquipaggiamenti, 2, Caratt_P2);
+    EquipaggiamentoP1 = new TabWidget(centralWidget, mappaEquipaggiamenti, 1, Caratt_P1, Caratt_P2);
+    EquipaggiamentoP2 = new TabWidget(centralWidget, mappaEquipaggiamenti, 2, Caratt_P1, Caratt_P2);
     Risultato = new QLabel("<h1>In Attesa Prima Operazione</h1>", this);
     lblRisultato = new QLabel("<h1>Risultato:</h1>", this);
     connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));

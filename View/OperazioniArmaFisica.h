@@ -18,8 +18,8 @@ class OperazioniArmaFisica: public QWidget{
 					*Riforgia;
 	QLabel* label;
 	QGridLayout* winLayout;
-        ArmaFisica* armaIstanza;
-        Caratteristiche* car;
+  ArmaFisica* armaIstanza;
+  Caratteristiche* car;
 	public:
 		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
   signals:

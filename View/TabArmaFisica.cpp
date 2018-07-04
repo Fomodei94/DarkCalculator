@@ -1,6 +1,6 @@
 #include "TabArmaFisica.h"
 
-TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car): TabArma(parent, equipMap, playerNumber), car(car){
+TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArma(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
 	FinishInit();
 };
 
@@ -31,7 +31,7 @@ void TabArmaFisica::FinishInit() {
 	}else{
 		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
-	operazioni = new OperazioniArmaFisica(this, armaFisica, car);
+	operazioni = new OperazioniArmaFisica(this, armaFisica, carP1);
 	//CONNECT
   connect(operazioni, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
   //LAYOUT
