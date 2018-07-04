@@ -20,7 +20,7 @@ private:
     QLabel* LblUsura;
     QDoubleSpinBox* usura;
     QLabel* LblDannoBase;
-    QSpinBox* DannoBase;
+    QDoubleSpinBox* DannoBase;
     QLabel* LblForzaRichiesta;
     QSpinBox* forzaRichiesta;
     QLabel* LblIntelligenzaRichiesta;
@@ -37,7 +37,11 @@ public:
     ~TabArma() = default;
     
 public slots:
-	void setPeso(double d);
+	virtual void setPeso(double d);
+	virtual void setUsura(double d);
+	virtual void setDannoBase(double d);
+	virtual void setForzaRichiesta(int i);
+	virtual void setIntelligenzaRichiesta(int i);
 };
 
 #endif //  TABARMA_H

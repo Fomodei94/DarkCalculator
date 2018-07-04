@@ -27,12 +27,14 @@ void TabArmaFisica::FinishInit() {
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
 	if (playerNumber == 1){
-		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
+		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
 	}else{
-		arma = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
+		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
-	operazioni = new OperazioniArmaFisica(this, arma, car);
-        connect(operazioni, SIGNAL(MostraDannoEffettivo(int)), this, SIGNAL(MostraDannoEffettivo2(int)));
+	operazioni = new OperazioniArmaFisica(this, armaFisica, car);
+	//CONNECT
+  connect(operazioni, SIGNAL(MostraDannoEffettivo(int)), this, SIGNAL(MostraDannoEffettivo2(int)));
+  //LAYOUT
 	winLayout->addWidget(LblTipoDanno, 3,0);
 	winLayout->addWidget(TipoDanno, 3,1);
 	winLayout->addWidget(LblScalingForza, 4,0);
@@ -41,4 +43,24 @@ void TabArmaFisica::FinishInit() {
 	winLayout->addWidget(ScalingDestrezza, 5,1);
 	winLayout->addWidget(operazioni, 2,2,4,2);
 	setLayout(winLayout);
+}
+//OVERRIDE SLOTS
+void TabArmaFisica::setPeso(double d){
+	armaFisica->SetPeso(d);
+}
+
+void TabArmaFisica::setUsura(double d){
+	armaFisica->SetUsura(d);
+}
+
+void TabArmaFisica::setDannoBase(double d){
+	armaFisica->SetDannoBase(d);
+}
+
+void TabArmaFisica::setForzaRichiesta(int i){
+	armaFisica->SetForzaRichiesta(i);
+}
+
+void TabArmaFisica::setIntelligenzaRichiesta(int i){
+	armaFisica->SetIntelligenzaRichiesta(i);
 }

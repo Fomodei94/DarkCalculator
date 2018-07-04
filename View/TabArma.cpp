@@ -8,11 +8,13 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	LblUsura = new QLabel("Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDannoBase = new QLabel("Danno Base:", this);
-	DannoBase = new QSpinBox(this);
+	DannoBase = new QDoubleSpinBox(this);
 	LblForzaRichiesta = new QLabel("Forza Richiesta: ", this);
 	forzaRichiesta = new QSpinBox(this);
+	forzaRichiesta->setRange(5,99);
 	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
 	intelligenzaRichiesta = new QSpinBox(this);
+	intelligenzaRichiesta->setRange(5,99);
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
@@ -34,9 +36,28 @@ void TabArma::FinishInit(){
 
 void TabArma::setPeso(double d){
 	arma->SetPeso(d);
-	//emit nomeSegnale(valore);
+}
+
+void TabArma::setUsura(double d){
+	arma->SetUsura(d);
+}
+
+void TabArma::setDannoBase(double d){
+	arma->SetDannoBase(d);
+}
+
+void TabArma::setForzaRichiesta(int i){
+	arma->SetForzaRichiesta(i);
+}
+
+void TabArma::setIntelligenzaRichiesta(int i){
+	arma->SetIntelligenzaRichiesta(i);
 }
 
 void TabArma::connectSignals(){
 	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	connect(usura, SIGNAL(valueChanged(double)), this, SLOT(setUsura(double)));
+	connect(DannoBase, SIGNAL(valueChanged(double)), this, SLOT(setDannoBase(double)));
+	connect(forzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setForzaRichiesta(int)));
+	connect(intelligenzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setIntelligenzaRichiesta(int)));
 }

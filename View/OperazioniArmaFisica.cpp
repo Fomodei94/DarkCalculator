@@ -23,6 +23,6 @@ OperazioniArmaFisica::OperazioniArmaFisica(QWidget* parent, ArmaFisica* arma, Ca
 }
 
 void OperazioniArmaFisica::CalcolaDannoEffettivo(){
-        double effettivo = armaIstanza->DannoEffettivo(*car);
-        emit MostraDannoEffettivo(effettivo);
+	double effettivo = armaIstanza->DannoEffettivo(*car);
+  emit MostraDannoEffettivo(effettivo);
 }
