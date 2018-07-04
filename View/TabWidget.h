@@ -10,7 +10,7 @@
 class TabWidget : public QWidget {
     Q_OBJECT
 public:
-    TabWidget(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche *car=nullptr);
+    TabWidget(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche *carP1=nullptr, Caratteristiche *carP2=nullptr);
 
 private:
   QGridLayout *layout;
@@ -18,7 +18,8 @@ private:
 	TabArma* tabArma;
 	TabArmaFisica* tabArmaFisica;
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;
-  Caratteristiche* car;
+  Caratteristiche* carP1;
+  Caratteristiche* carP2;
 signals:
 	void MostraRisultatoNumerico3(double x);
 	void MostraRisultatoBooleano3(bool x);

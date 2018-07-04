@@ -17,10 +17,11 @@ class TabArmaFisica: public TabArma{
 								*ScalingForza,
 								*ScalingDestrezza;
 		OperazioniArmaFisica* operazioni;
-    Caratteristiche* car;
+    Caratteristiche* carP1;
+    Caratteristiche* carP2;
 		int playerNumber;
 	public:
-		TabArmaFisica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* car=nullptr);
+		TabArmaFisica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		virtual void FinishInit() override;
 	signals:
 		void MostraRisultatoNumerico2(double x);

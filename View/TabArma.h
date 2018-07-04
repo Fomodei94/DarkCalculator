@@ -15,7 +15,8 @@ class TabArma : public QWidget
 
 private:
 		Arma* arma;
-    Caratteristiche* car;
+    Caratteristiche* carP1;
+    Caratteristiche* carP2;
     OperazioniArma* operazioniArma;
     int playerNumber;
     QLabel* LblPeso;
@@ -35,7 +36,7 @@ private:
 	void connectSignals();
 
 public:
-    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car);
+    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
     TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
     ~TabArma() = default;

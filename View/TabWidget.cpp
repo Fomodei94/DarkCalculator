@@ -1,11 +1,11 @@
 #include "TabWidget.h"
 
-TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car) : QWidget(parent), car(car)
+TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2) : QWidget(parent), carP1(carP1), carP2(carP2)
 {
     layout = new QGridLayout(this);
     tabwid = new QTabWidget(parent);
-    tabArma = new TabArma(this, equipMap, playerNumber, car);
-    tabArmaFisica = new TabArmaFisica(this, equipMap, playerNumber, car);
+    tabArma = new TabArma(this, equipMap, playerNumber, carP1, carP2);
+    tabArmaFisica = new TabArmaFisica(this, equipMap, playerNumber, carP1, carP2);
     tabwid->addTab(tabArma,QString("Arma"));
     tabwid->addTab(tabArmaFisica,QString("Arma Fisica"));
     layout->addWidget(tabwid,0,0);
