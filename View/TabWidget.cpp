@@ -6,13 +6,16 @@ TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* 
     tabwid = new QTabWidget(parent);
     tabArma = new TabArma(this, equipMap, playerNumber, carP1, carP2);
     tabArmaFisica = new TabArmaFisica(this, equipMap, playerNumber, carP1, carP2);
+    tabArmamento = new TabArmamento(this, equipMap, playerNumber, carP1, carP2);
     tabwid->addTab(tabArma,QString("Arma"));
     tabwid->addTab(tabArmaFisica,QString("Arma Fisica"));
+    tabwid->addTab(tabArmamento, QString("Armamento"));
     layout->addWidget(tabwid,0,0);
     MappaEquipaggiamenti = equipMap;
-    //tabwid->insertTab(0,this,QString("Arma"));
     connect(tabArmaFisica, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
     connect(tabArma, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
     connect(tabArma, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
+    connect(tabArmamento, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
+    
     this->setLayout(layout);
 }

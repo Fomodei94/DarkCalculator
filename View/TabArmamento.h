@@ -7,7 +7,7 @@
 #include<QSpinBox>
 #include<QDoubleSpinBox>
 #include"../Model/Armamento.h"
-//#include "OperazioniArmamento.h"
+#include "OperazioniArmamento.h"
 
 class TabArmamento : public QWidget
 {
@@ -15,9 +15,9 @@ class TabArmamento : public QWidget
 
 private:
 	Armamento* armamento;
-    Caratteristiche* carattP1;
-	Caratteristiche* carattP2;
-    //OperazioniArmamento* operazioniArmamento;
+    Caratteristiche* carP1;
+	Caratteristiche* carP2;
+    OperazioniArmamento* operazioniArmamento;
     int playerNumber;
     QLabel* LblPeso;
     QDoubleSpinBox* peso;
@@ -31,19 +31,23 @@ private:
  protected:
 	QGridLayout *winLayout;
 	std::map<std::string, Equipaggiamento*>* equipMap;
-	//void connectSignals();
+	void connectSignals();
 
 public:
-    TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carattP1, Caratteristiche* carattP2);
+    TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
     TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
     ~TabArmamento() = default;
     
+signals:
+	void MostraRisultatoNumerico2(double x);
+	void MostraRisultatoBooleano2(bool x);
+
 public slots:
-	//virtual void setPeso(double d);
-	//virtual void setUsura(double d);
-	//virtual void setDifesa(double d);
-	//virtual void setVigoreRichiesto(int i);
+	virtual void setPeso(double d);
+	virtual void setUsura(double d);
+	virtual void setDifesa(double d);
+	virtual void setVigoreRichiesto(int i);
 };
 
 #endif //  TABARMA_H

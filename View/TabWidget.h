@@ -3,8 +3,9 @@
 
 #include<QGridLayout>
 #include<QTabWidget>
-#include"TabArma.h"
+#include "TabArma.h"
 #include "TabArmaFisica.h"
+#include "TabArmamento.h"
 #include <map>
 
 class TabWidget : public QWidget {
@@ -17,6 +18,7 @@ private:
   QTabWidget *tabwid;
 	TabArma* tabArma;
 	TabArmaFisica* tabArmaFisica;
+	TabArmamento* tabArmamento;
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;
   Caratteristiche* carP1;
   Caratteristiche* carP2;
