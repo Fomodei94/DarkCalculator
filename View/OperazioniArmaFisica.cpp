@@ -3,7 +3,7 @@
 OperazioniArmaFisica::OperazioniArmaFisica(QWidget* parent, ArmaFisica* arma, Caratteristiche* car): QWidget(parent), armaIstanza(arma), car(car){
 	label = new QLabel("<h4>Operazioni Arma Fisica</h4>", this);
 	DannoEffettivo = new QPushButton("Danno Effettivo", this);
-        connect(DannoEffettivo, SIGNAL(clicked()), this, SLOT(CalcolaDannoEffettivo()));
+  connect(DannoEffettivo, SIGNAL(clicked()), this, SLOT(CalcolaDannoEffettivo()));
 	Efficacia = new QPushButton("Efficacia", this);
 	Raffina = new QPushButton("Raffina", this);
 	Frantuma = new QPushButton("Frantuma", this);
@@ -24,5 +24,5 @@ OperazioniArmaFisica::OperazioniArmaFisica(QWidget* parent, ArmaFisica* arma, Ca
 
 void OperazioniArmaFisica::CalcolaDannoEffettivo(){
 	double effettivo = armaIstanza->DannoEffettivo(*car);
-  emit MostraDannoEffettivo(effettivo);
+  emit MostraRisultatoNumerico(effettivo);
 }

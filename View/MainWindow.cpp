@@ -25,10 +25,9 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     CaratteristicheP2 = new Caratteristiche_gui(centralWidget, 2, Caratt_P2);
     EquipaggiamentoP1 = new TabWidget(centralWidget, mappaEquipaggiamenti, 1, Caratt_P1);
     EquipaggiamentoP2 = new TabWidget(centralWidget, mappaEquipaggiamenti, 2, Caratt_P2);
-    Risultato = new QLabel("<h1>123456789012345</h1>", this);
+    Risultato = new QLabel("<h1>In Attesa Prima Operazione</h1>", this);
     lblRisultato = new QLabel("<h1>Risultato:</h1>", this);
-    connect(EquipaggiamentoP1, SIGNAL(MostraDannoEffettivo3(int)), this, SLOT(MostraRisultatoDannoEffettivo(int)));
-
+    connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
     winLayout->addWidget(CaratteristicheP1,0,0);
     winLayout->addWidget(CaratteristicheP2,0,1);
     winLayout->addWidget(EquipaggiamentoP1,1,0);
@@ -38,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     setLayout(winLayout);
 }
 
-void MainWindow::MostraRisultatoDannoEffettivo(int x){
+void MainWindow::MostraRisultatoNumericoFinale(double x){
     Risultato->setText(QString("<h1>%1<h1>").arg(x));
 }
 

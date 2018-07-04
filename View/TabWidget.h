@@ -20,7 +20,7 @@ private:
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;
   Caratteristiche* car;
 signals:
-	void MostraDannoEffettivo3(int x);
+	void MostraRisultatoNumerico3(double x);
 };
 
 #endif // TABWIDGET_H

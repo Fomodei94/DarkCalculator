@@ -23,7 +23,7 @@ class OperazioniArmaFisica: public QWidget{
 	public:
 		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
   signals:
-		void MostraDannoEffettivo(int x);
+		void MostraRisultatoNumerico(double x);
   public slots:
 		void CalcolaDannoEffettivo();
 };

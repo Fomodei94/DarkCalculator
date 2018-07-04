@@ -11,6 +11,6 @@ TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* 
     layout->addWidget(tabwid,0,0);
     MappaEquipaggiamenti = equipMap;
     //tabwid->insertTab(0,this,QString("Arma"));
-    connect(tabArmaFisica, SIGNAL(MostraDannoEffettivo2(int)), this, SIGNAL(MostraDannoEffettivo3(int)));
+    connect(tabArmaFisica, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
     this->setLayout(layout);
 }

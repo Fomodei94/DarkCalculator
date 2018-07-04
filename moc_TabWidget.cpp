@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_TabWidget_t {
     QByteArrayData data[4];
-    char stringdata0[35];
+    char stringdata0[38];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,12 +32,13 @@ struct qt_meta_stringdata_TabWidget_t {
 static const qt_meta_stringdata_TabWidget_t qt_meta_stringdata_TabWidget = {
     {
 QT_MOC_LITERAL(0, 0, 9), // "TabWidget"
-QT_MOC_LITERAL(1, 10, 21), // "MostraDannoEffettivo3"
-QT_MOC_LITERAL(2, 32, 0), // ""
-QT_MOC_LITERAL(3, 33, 1) // "x"
+QT_MOC_LITERAL(1, 10, 24), // "MostraRisultatoNumerico3"
+QT_MOC_LITERAL(2, 35, 0), // ""
+QT_MOC_LITERAL(3, 36, 1) // "x"
 
     },
-    "TabWidget\0MostraDannoEffettivo3\0\0x"
+    "TabWidget\0MostraRisultatoNumerico3\0\0"
+    "x"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,7 +59,7 @@ static const uint qt_meta_data_TabWidget[] = {
        1,    1,   19,    2, 0x06 /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Double,    3,
 
        0        // eod
 };
@@ -69,14 +70,14 @@ void TabWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         TabWidget *_t = static_cast<TabWidget *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->MostraDannoEffettivo3((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->MostraRisultatoNumerico3((*reinterpret_cast< double(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (TabWidget::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&TabWidget::MostraDannoEffettivo3)) {
+            using _t = void (TabWidget::*)(double );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&TabWidget::MostraRisultatoNumerico3)) {
                 *result = 0;
                 return;
             }
@@ -121,7 +122,7 @@ int TabWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void TabWidget::MostraDannoEffettivo3(int _t1)
+void TabWidget::MostraRisultatoNumerico3(double _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

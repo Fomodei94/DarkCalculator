@@ -32,12 +32,12 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 29), // "MostraRisultatoDannoEffettivo"
+QT_MOC_LITERAL(1, 11, 29), // "MostraRisultatoNumericoFinale"
 QT_MOC_LITERAL(2, 41, 0), // ""
 QT_MOC_LITERAL(3, 42, 1) // "x"
 
     },
-    "MainWindow\0MostraRisultatoDannoEffettivo\0"
+    "MainWindow\0MostraRisultatoNumericoFinale\0"
     "\0x"
 };
 #undef QT_MOC_LITERAL
@@ -59,7 +59,7 @@ static const uint qt_meta_data_MainWindow[] = {
        1,    1,   19,    2, 0x0a /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Double,    3,
 
        0        // eod
 };
@@ -70,7 +70,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->MostraRisultatoDannoEffettivo((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->MostraRisultatoNumericoFinale((*reinterpret_cast< double(*)>(_a[1]))); break;
         default: ;
         }
     }

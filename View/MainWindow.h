@@ -27,7 +27,7 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
 public slots:
-    void MostraRisultatoDannoEffettivo(int x);
+    void MostraRisultatoNumericoFinale(double x);
 };
 
 #endif // MAINWINDOW_H

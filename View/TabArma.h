@@ -7,6 +7,7 @@
 #include<QSpinBox>
 #include<QDoubleSpinBox>
 #include"../Model/Arma.h"
+#include "OperazioniArma.h"
 
 class TabArma : public QWidget
 {
@@ -15,6 +16,8 @@ class TabArma : public QWidget
 private:
 		Arma* arma;
     Caratteristiche* car;
+    OperazioniArma* operazioniArma;
+    int playerNumber;
     QLabel* LblPeso;
     QDoubleSpinBox* peso;
     QLabel* LblUsura;
@@ -32,7 +35,8 @@ private:
 	void connectSignals();
 
 public:
-    TabArma(QWidget *parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* car = nullptr);
+    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* car);
+    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
     ~TabArma() = default;
     
