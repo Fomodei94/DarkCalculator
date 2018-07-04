@@ -48,9 +48,9 @@ void MainWindow::MostraRisultatoNumericoFinale(double x){
 
 void MainWindow::MostraRisultatoBooleanoFinale(bool x){
 	if(x)
-		Risultato->setText("<h1>Arma Utilizzabile</h1>");
+		Risultato->setText("<h1>Equipaggiamento Utilizzabile</h1>");
 	else
-		Risultato->setText("<h1>Arma NON Utilizzabile</h1>");
+		Risultato->setText("<h1>Equipaggiamento NON Utilizzabile</h1>");
 }
 
 MainWindow::~MainWindow()
