@@ -28,6 +28,7 @@ public:
     ~MainWindow();
 public slots:
     void MostraRisultatoNumericoFinale(double x);
+    void MostraRisultatoBooleanoFinale(bool x);
 };
 
 #endif // MAINWINDOW_H

@@ -1,5 +1,6 @@
 #ifndef OPERAZIONI_ARMA
 #define OPERAZIONI_ARMA
+#include<QMessageBox>
 #include <QWidget>
 #include <QPushButton>
 #include <QLabel>
@@ -22,12 +23,15 @@ class OperazioniArma: public QWidget{
   
 	public:
 		OperazioniArma(QWidget* parent = nullptr, Arma* arma = nullptr, Caratteristiche* car=nullptr);
-	/*	
+	
   signals:
-		virtual void MostraDannoEffettivo(double x);
+		void MostraRisultatoNumerico(double x);
+		void MostraRisultatoBooleano(bool x);
 		
   public slots:
-		virtual void CalcolaDannoEffettivo();*/
+		virtual void CalcolaDannoEffettivo();
+		virtual void CalcolaEfficacia();
+		virtual void CalcolaUsabilita();
 };
 #endif
 

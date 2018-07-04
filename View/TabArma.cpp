@@ -66,6 +66,8 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 
 void TabArma::FinishInit(){
 	setLayout(winLayout);
+	connect(operazioniArma, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+	connect(operazioniArma, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
 }
 
 void TabArma::setPeso(double d){

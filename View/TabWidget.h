@@ -21,6 +21,7 @@ private:
   Caratteristiche* car;
 signals:
 	void MostraRisultatoNumerico3(double x);
+	void MostraRisultatoBooleano3(bool x);
 };
 
 #endif // TABWIDGET_H

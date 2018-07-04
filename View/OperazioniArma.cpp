@@ -3,7 +3,6 @@
 OperazioniArma::OperazioniArma(QWidget* parent, Arma* arma, Caratteristiche* car): QWidget(parent), armaIstanza(arma), car(car){
 	label = new QLabel("<h4>Operazioni Arma </h4>", this);
 	DannoEffettivo = new QPushButton("Danno Effettivo", this);
-  //connect(DannoEffettivo, SIGNAL(clicked()), this, SLOT(CalcolaDannoEffettivo()));
 	Efficacia = new QPushButton("Efficacia", this);
 	VerificaUsabilita = new QPushButton("Verifica Usabilità", this);
 	connectSignalsOperazioni();
@@ -15,12 +14,25 @@ OperazioniArma::OperazioniArma(QWidget* parent, Arma* arma, Caratteristiche* car
 	setLayout(winLayout);
 }
 
-/*
+
 void OperazioniArma::CalcolaDannoEffettivo(){
 	double effettivo = armaIstanza->DannoEffettivo(*car);
-  emit MostraDannoEffettivo(effettivo);
+  emit MostraRisultatoNumerico(effettivo);
 }
-*/
 
-void OperazioniArma::connectSignalsOperazioni(){};
+void OperazioniArma::CalcolaEfficacia(){
+	QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza, costruire l'oggetto e clillare operazione: Efficacia con Arma.", QMessageBox::Ok, this);
+	msg->show();
+}
+
+void OperazioniArma::CalcolaUsabilita(){
+	bool usabilita = armaIstanza->VerificaUsabilita(*car);
+  emit MostraRisultatoBooleano(usabilita);
+}
+
+void OperazioniArma::connectSignalsOperazioni(){
+	connect(DannoEffettivo, SIGNAL(clicked()), this, SLOT(CalcolaDannoEffettivo()));
+	connect(Efficacia, SIGNAL(clicked()), this, SLOT(CalcolaEfficacia()));
+	connect(VerificaUsabilita, SIGNAL(clicked()), this, SLOT(CalcolaUsabilita()));
+};
 

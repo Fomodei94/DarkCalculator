@@ -39,6 +39,10 @@ public:
     TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
     ~TabArma() = default;
+
+signals:
+	void MostraRisultatoNumerico2(double x);
+	void MostraRisultatoBooleano2(bool x);
     
 public slots:
 	virtual void setPeso(double d);

@@ -28,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     Risultato = new QLabel("<h1>In Attesa Prima Operazione</h1>", this);
     lblRisultato = new QLabel("<h1>Risultato:</h1>", this);
     connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
+    connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
+    connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoBooleano3(bool)), this, SLOT(MostraRisultatoBooleanoFinale(bool)));
     winLayout->addWidget(CaratteristicheP1,0,0);
     winLayout->addWidget(CaratteristicheP2,0,1);
     winLayout->addWidget(EquipaggiamentoP1,1,0);
@@ -39,6 +41,13 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
 
 void MainWindow::MostraRisultatoNumericoFinale(double x){
     Risultato->setText(QString("<h1>%1<h1>").arg(x));
+}
+
+void MainWindow::MostraRisultatoBooleanoFinale(bool x){
+	if(x)
+		Risultato->setText("<h1>Arma Utilizzabile</h1>");
+	else
+		Risultato->setText("<h1>Arma NON Utilizzabile</h1>");
 }
 
 MainWindow::~MainWindow()
