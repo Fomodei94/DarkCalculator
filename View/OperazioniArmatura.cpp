@@ -14,19 +14,19 @@ OperazioniArmatura::OperazioniArmatura(QWidget* parent, Armatura* armatura, Cara
 }
 
 void OperazioniArmatura::CalcolaUsabilita() {
+	bool usabilita = armaturaIstanza->VerificaUsabilita(*car);
+	emit MostraRisultatoBooleano(usabilita);
+}
+
+void OperazioniArmatura::CalcolaEquilibrio() {
 	try {
-		bool usabilita = armaturaIstanza->VerificaUsabilita(*car);
-		emit MostraRisultatoBooleano(usabilita);
+	double equilibrio = armaturaIstanza->Equilibrio(*car);
+	emit MostraRisultatoNumerico(equilibrio);
 	}
 	catch(const char*& exc){
 		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
 		msg->show();
 	}
-}
-
-void OperazioniArmatura::CalcolaEquilibrio() {
-	double equilibrio = armaturaIstanza->Equilibrio(*car);
-	emit MostraRisultatoNumerico(equilibrio);
 }
 
 void OperazioniArmatura::CalcolaConfrontaDifesa() {

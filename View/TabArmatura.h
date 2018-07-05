@@ -40,6 +40,13 @@ class TabArmatura: public TabArmamento{
 		virtual void setUsura(double d) override;
 		virtual void setDifesa(double d) override;
 		virtual void setVigoreRichiesto(int i) override;
+		void setDifMagia(double d);
+		void setDifOscurita(double d);
+		void setDifFuoco(double d);
+		void setDifElettricita(double d);
+		void setDifTaglio(double d);
+		void setDifContundente(double d);
+		void setDifAffondo(double d);
 };
 #endif
 

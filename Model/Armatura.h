@@ -16,7 +16,7 @@ class Armatura : public Armamento{
 		static double pesoMinimoHyperArmor;
 		
 	public:
-		Armatura(double p=0.0, double u=0.0, double d=0.0, int v=0, double ta=0.0, double im=0.0, double pe=0.0, double fu=0.0, double ma=0.0, double el=0.0, double os=0.0);
+		Armatura(double p=0.0, double u=0.0, double d=0.0, int v=5, double ta=0.0, double im=0.0, double pe=0.0, double fu=0.0, double ma=0.0, double el=0.0, double os=0.0);
 	
 		//GETTER
 		

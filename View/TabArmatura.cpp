@@ -42,7 +42,7 @@ void TabArmatura::FinishInit() {
 	winLayout->addWidget(DifContundente, 3,3);
 	winLayout->addWidget(LblDifAffondo, 4,2);
 	winLayout->addWidget(DifAffondo, 4,3);
-	winLayout->addWidget(operazioniArmatura, 2,2,5,3);
+	winLayout->addWidget(operazioniArmatura, 5,2,5,3);
 	setLayout(winLayout);
 }
 //OVERRIDE SLOTS
@@ -60,4 +60,32 @@ void TabArmatura::setDifesa(double d){
 
 void TabArmatura::setVigoreRichiesto(int i){
 	armatura->SetVigoreRichiesto(i);
+}
+
+void TabArmatura::setDifMagia(double d) {
+	armatura->SetDifesaMagica(d);
+}
+
+void TabArmatura::setDifOscurita(double d) {
+	armatura->SetDifesaOscurita(d);
+}
+
+void TabArmatura::setDifFuoco(double d) {
+	armatura->SetDifesaFuoco(d);
+}
+
+void TabArmatura::setDifElettricita(double d) {
+	armatura->SetDifesaElettricita(d);
+}
+
+void TabArmatura::setDifTaglio(double d) {
+	armatura->SetDifesaTaglio(d);
+}
+
+void TabArmatura::setDifContundente(double d) {
+	armatura->SetDifesaContundente(d);
+}
+
+void TabArmatura::setDifAffondo(double d) {
+	armatura->SetDifesaAffondo(d);
 }
