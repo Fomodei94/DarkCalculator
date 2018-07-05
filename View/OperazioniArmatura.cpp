@@ -1,11 +1,12 @@
 #include "OperazioniArmatura.h"
 
 OperazioniArmatura::OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car): OperazioniArmamento(parent), armaturaIstanza(armatura), car(car){
+	label->setText("<h4>Operazioni Armatura </h4>");
 	Appesantisci = new QPushButton("Appesantisci", this);
 	Alleggerisci = new QPushButton("Alleggerisci", this);
 	CottaDiMaglia = new QPushButton("Cotta di Maglia", this);
 	Sopravvivenza = new QPushButton("Sopravvivenza", this);
-	connectSignalsOperazioni();
+	connectSignalsOperazioniProprie();
 	winLayout->addWidget(Appesantisci,3,0);
 	winLayout->addWidget(Alleggerisci,3,1);
 	winLayout->addWidget(CottaDiMaglia,4,0);
@@ -20,8 +21,8 @@ void OperazioniArmatura::CalcolaUsabilita() {
 
 void OperazioniArmatura::CalcolaEquilibrio() {
 	try {
-	double equilibrio = armaturaIstanza->Equilibrio(*car);
-	emit MostraRisultatoNumerico(equilibrio);
+		double equilibrio = armaturaIstanza->Equilibrio(*car);
+		emit MostraRisultatoNumerico(equilibrio);
 	}
 	catch(const char*& exc){
 		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
@@ -59,7 +60,7 @@ void OperazioniArmatura::CalcolaSopravvivenza() {
 	msg->show();
 }
 
-void OperazioniArmatura::connectSignalsOperazioni(){
+void OperazioniArmatura::connectSignalsOperazioniProprie(){
 	connect(Appesantisci, SIGNAL(clicked()), this, SLOT(CalcolaAppesantisci()));
 	connect(Alleggerisci, SIGNAL(clicked()), this, SLOT(CalcolaAlleggerisci()));
 	connect(CottaDiMaglia, SIGNAL(clicked()), this, SLOT(CalcolaCottaDiMaglia()));

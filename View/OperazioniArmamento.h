@@ -14,13 +14,13 @@ class OperazioniArmamento: public QWidget{
 							 *VerificaUsabilita,
 							 *ConfrontaDifesa,
 							 *Somma;
-		QLabel* label;
 		Armamento* armamentoIstanza;
 		Caratteristiche* car;
 	
 	protected:
 		QGridLayout* winLayout;
-		virtual void connectSignalsOperazioni();
+		void connectSignalsOperazioni();
+		QLabel* label;
   
 	public:
 		OperazioniArmamento(QWidget* parent = nullptr, Armamento* armamento = nullptr, Caratteristiche* car=nullptr);

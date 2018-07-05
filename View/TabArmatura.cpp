@@ -27,6 +27,7 @@ void TabArmatura::FinishInit() {
 	operazioniArmatura = new OperazioniArmatura(this, armatura, carP1);
 	//CONNECT
    connect(operazioniArmatura, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+   connect(operazioniArmatura, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
   //LAYOUT
 	winLayout->addWidget(LblDifMagia, 2,0);
 	winLayout->addWidget(DifMagia, 2,1);
