@@ -80,8 +80,8 @@ double Arma::DannoEffettivo(const Caratteristiche& c) const{
 		return dannoBase - (dannoBase*GetUsura()/200);	
 	else
 	{
-		//cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
-		throw("Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 }
 
@@ -90,18 +90,18 @@ double Arma::Efficacia(const Caratteristiche& c, Armamento* a) const{
 		return DannoEffettivo(c) - (a->GetDifesa()-(a->GetDifesa()*a->GetUsura()/200));
 	else
 	{
-		//cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
-		throw("Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 }
 
 double Arma::ConfrontaDanno(const Caratteristiche& c, Arma* a) const{
 	if(!VerificaUsabilita(c)) //NB POLIMORFO
-		//cerr << "Attenzione: Caratteristiche insufficienti per brandire la prima arma. Operazione non valida." << endl; VERSIONE DA RIGA DI COMANDO
-		throw("Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida");
+		//{cerr << "Attenzione: Caratteristiche insufficienti per brandire la prima arma. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire la prima arma. Operazione non valida");
 	else if(!a->VerificaUsabilita(c))
-		//cerr << "Attenzione: Caratteristiche insufficienti per brandire la seconda arma. Operazione non valida." << endl; VERSIONE DA RIGA DI COMANDO
-		throw("Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida");
+		//{cerr << "Attenzione: Caratteristiche insufficienti per brandire la seconda arma. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire la seconda arma. Operazione non valida");
 	else //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
 	{
 		double x = DannoEffettivo(c) - a->DannoEffettivo(c); //NB POLIMORFO

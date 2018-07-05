@@ -42,7 +42,7 @@ class Armatura : public Armamento{
 		
 		virtual bool operator==(const Equipaggiamento&) const override;
 		virtual bool operator!=(const Equipaggiamento&) const override;
-		virtual void ConfrontaDifesa(const Caratteristiche&, Armamento*) const override;
+		virtual double ConfrontaDifesa(const Caratteristiche&, Armamento*) const override;
 		virtual double Equilibrio(const Caratteristiche&) const override;
 		
 		//FUNZIONALITA AGGIUNTE

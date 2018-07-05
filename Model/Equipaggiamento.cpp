@@ -19,7 +19,7 @@ Equipaggiamento::Equipaggiamento(double p, double u): peso(p), usura(u) {
 //PARTE PROTETTA
 
 double Equipaggiamento::Moltiplicatore(char s) const{
-	double ret=0.5; //Valore di default associato ad 'e'
+	double ret=0.5; //Valore di default associato ad 'E'
 	switch(s)
 	{
 		case 'E' :

@@ -25,6 +25,12 @@ class OperazioniArmatura : public OperazioniArmamento{
   public slots:
 		void CalcolaEquilibrio() override;
 		void CalcolaUsabilita() override;
+		void CalcolaConfrontaDifesa() override;
+		void CalcolaSomma() override;
+		void CalcolaAppesantisci();
+		void CalcolaAlleggerisci();
+		void CalcolaCottaDiMaglia();
+		void CalcolaSopravvivenza();
 };
 #endif
 

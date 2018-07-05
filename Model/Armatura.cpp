@@ -88,11 +88,13 @@ void Armatura::SetDifesaOscurita(double x){
 
 //OVERRIDE
 
-void Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
+double Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 	if(!VerificaUsabilita(c))
-		cerr << "Caratteristiche insuffienti per il primo Armamento" << endl;
+		//cerr << "Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida.");
 	else if(!a->VerificaUsabilita(c))
-		cerr << "Caratteristiche insuffienti per il secondo Armamento" << endl;
+		//{cerr << "Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida.");
 	else //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
 	{
 		Armatura* aux= dynamic_cast<Armatura*>(a);
@@ -100,7 +102,7 @@ void Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 		{
 			double x1= difesaTaglio+difesaAffondo+difesaContundente;
 			double x2= aux->difesaTaglio+aux->difesaAffondo+aux->difesaContundente;
-			/*
+			/* VERSIONE DA RIGA DI COMANDO
 			if(x1>x2)
 				cout<<"La prima Armatura ha maggior predisposizione a difesa Fisica rispetto alla seconda." << endl;
 			else if(x1<x2)
@@ -110,7 +112,7 @@ void Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 			*/
 			double y1= difesaFuoco+difesaMagia+difesaElettricita+difesaOscurita;
 			double y2= aux->difesaFuoco+aux->difesaMagia+aux->difesaElettricita+aux->difesaOscurita;
-			/*
+			/* VERSIONE DA RIGA DI COMANDO
 			if(y1>y2)
 				cout<<"La prima Armatura ha maggior predisposizione a difesa Magica rispetto alla seconda." << endl;
 			else if(y1<y2)
@@ -119,16 +121,19 @@ void Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 				cout<<"Le due Armature hanno pari protezioni aggiuntive di tipo Magico." << endl;
 			*/
 			double z=(GetDifesa()-(GetDifesa()*GetUsura()/200)+x1+y1) - (aux->GetDifesa()-(aux->GetDifesa()*aux->GetUsura()/200)+x2+y2);
+			/*
 			if(z>0)
 				cout<<"La prima Armatura ha una difesa generale superiore di: "<<z<<" rispetto alla seconda." << endl;
 			else if(z<0)
 				cout<<"La seconda Armatura ha una difesa generale superiore di: "<<(-1*z)<<" rispetto alla prima." << endl;
 			else
 				cout<<"Le due armature hanno pari difesa generale." << endl;
+			*/
+			return z;
 		}
 		else
 		{
-			cout<<"Attenzione, L'Equipaggiamento di confronto deve essere un'Armatura e non lo e'. In ogni caso a livello di difesa base e' possibile confrontare come segue: "<<endl;
+			//cout<<"Attenzione, L'Equipaggiamento di confronto deve essere un'Armatura e non lo e'. In ogni caso a livello di difesa base e' possibile confrontare come segue: "<<endl; VERSIONE DA RIGA DI COMANDO
 			Armamento::ConfrontaDifesa(c,a);
 		}
 	}
@@ -144,7 +149,10 @@ bool Armatura::operator!=(const Equipaggiamento& e) const{
 
 double Armatura::Equilibrio(const Caratteristiche& c) const{
 	if(!VerificaUsabilita(c))
-		{cerr << "Caratteristiche insuffienti per equipaggiare l'Armatura" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura.");
+	}
 	double aux= Armamento::Equilibrio(c);
 	if(aux==0)
 		return aux;
@@ -177,9 +185,15 @@ void Armatura::CottaDiMaglia(){
 
 unsigned int Armatura::Sopravvivenza(const Caratteristiche& c1, Arma* a, const Caratteristiche& c2) const{
 	if(!VerificaUsabilita(c1))
-		{cerr << "Caratteristiche insuffienti per equipaggiare l'Armatura. Operazione non valida" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura. Operazione non valida" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura. Operazione non valida");
+	}
 	if(!a->VerificaUsabilita(c2))
-		{cerr << "Attenzione, Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida");
+	}
 	unsigned int ret=0;
 	unsigned int salute= c1.CalcolaSalute();
 	double danno= a->Efficacia(c2, const_cast<Armatura*>(this));
@@ -196,7 +210,7 @@ unsigned int Armatura::Sopravvivenza(const Caratteristiche& c1, Arma* a, const C
 				aux+=danneggiamento;
 			else
 			{
-				cout<<"Attenzione, l'ultimo colpo avrebbe rotto l'armatura!"<<endl;
+				//cout<<"Attenzione, l'ultimo colpo avrebbe rotto l'armatura!"<<endl; VERSIONE DA RIGA DI COMANDO
 				return ret;
 			}
 			danno= temp->Efficacia(c2,const_cast<Armatura*>(this));
@@ -207,18 +221,24 @@ unsigned int Armatura::Sopravvivenza(const Caratteristiche& c1, Arma* a, const C
 
 double Armatura::HyperArmor(const Caratteristiche& c, Arma* a) const{
 	if(!VerificaUsabilita(c))
-		{cerr << "Caratteristiche insuffienti per equipaggiare l'Armatura" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare l'Armatura");
+	}
 	if(!a->VerificaUsabilita(c))
-		{cerr << "Caratteristiche insuffienti per impugnare l'Arma" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per impugnare l'Arma" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per impugnare l'Arma");
+	}
 	ArmaFisica* aux= dynamic_cast<ArmaFisica*>(a);
 	if(!aux)
 	{
-		cout<< "Solo un'ArmaFisica puo' concedere HyperArmor" << endl;
+		//cout<< "Solo un'ArmaFisica puo' concedere HyperArmor" << endl; VERSIONE DA RIGA DI COMANDO
 		return 0;
 	}
 	else if(aux->GetPeso()<pesoMinimoHyperArmor)
 	{
-		cout << "L'arma in questione non e' sufficientemente pesante per garantire HyperArmor" << endl;
+		//cout << "L'arma in questione non e' sufficientemente pesante per garantire HyperArmor" << endl; VERSIONE DA RIGA DI COMANDO
 		return 0;
 	}
 	else //ATTIVAZIONE HYPER ARMOR

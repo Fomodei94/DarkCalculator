@@ -49,7 +49,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
 	intelligenzaRichiesta = new QSpinBox(this);
 	intelligenzaRichiesta->setRange(5,99);
-	operazioniArma = new OperazioniArma(this, arma, carP1);
+	operazioniArma = nullptr;
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
@@ -62,7 +62,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	winLayout->addWidget(forzaRichiesta, 1, 3);
 	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
 	winLayout->addWidget(intelligenzaRichiesta, 2,1);
-	FinishInit();
+	setLayout(winLayout);
 }
 
 void TabArma::FinishInit(){

@@ -62,31 +62,39 @@ double Armamento::operator+(const Armamento& a) const{
 	return difesa + a.difesa;
 }
 
-void Armamento::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
+double Armamento::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 	if(!VerificaUsabilita(c))
-		cerr << "Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida." << endl;
+		//{cerr << "Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida." << endl; return 0;} VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida.");
 	else if(!a->VerificaUsabilita(c))
-		cerr << "Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida." << endl;
+		//{cerr << "Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida.");
 	else //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
 	{
 		double x = (difesa -(difesa*GetUsura()/200)) - (a->difesa - (a->difesa*a->GetUsura()/200));
+		/* VERSIONE DA RIGA DI COMANDO
 		if(x==0)
 			cout << "La difesa e' pari" << endl;
 		else if(x>0)
 			cout<< "Il primo Armamento ha una difesa maggiore di " << x << " unita' rispetto al secondo" << endl;
 		else
 			cout<< "Il secondo Armamento ha una difesa maggiore di " << (-1*x) << " unita' rispetto al primo" << endl;
+		*/
+		return x;
 	}
 }
 
 double Armamento::Equilibrio(const Caratteristiche& c) const{
 	if(!VerificaUsabilita(c))
-		{cerr << "Caratteristiche insuffienti per Equipaggiare l'Armamento in questione." << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per Equipaggiare l'Armamento in questione. Operazione non valida" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per Equipaggiare l'Armamento in questione. Operazione non valida");
+	}
 	else
 	{
 		if(GetPeso()<pesoMinimoEquilibrio) //Equipaggiamento leggero
 		{
-			cout<< "L'Armamento Equipaggiato, visto lo scarso peso viene considerato come 'Leggero' e dunque non garantisce Equilibrio." << endl;
+			//cout<< "L'Armamento Equipaggiato, visto lo scarso peso viene considerato come 'Leggero' e dunque non garantisce Equilibrio." << endl; VERSIONE (Piu dettagliata) DA RIGA DI COMANDO
 			return 0;
 		}
 		else
