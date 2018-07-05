@@ -20,8 +20,15 @@ OperazioniArma::OperazioniArma(QWidget* parent, Arma* arma, Caratteristiche* car
 
 
 void OperazioniArma::CalcolaDannoEffettivo(){
-	double effettivo = armaIstanza->DannoEffettivo(*car);
-  emit MostraRisultatoNumerico(effettivo);
+	try
+	{
+		double effettivo = armaIstanza->DannoEffettivo(*car);
+		emit MostraRisultatoNumerico(effettivo);
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 }
 
 void OperazioniArma::CalcolaEfficacia(){

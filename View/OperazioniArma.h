@@ -1,6 +1,7 @@
 #ifndef OPERAZIONI_ARMA
 #define OPERAZIONI_ARMA
 #include<QMessageBox>
+#include<QString>
 #include <QWidget>
 #include <QPushButton>
 #include <QLabel>
