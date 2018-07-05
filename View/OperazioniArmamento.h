@@ -1,6 +1,6 @@
 #ifndef OPERAZIONI_ARMAMENTO
 #define OPERAZIONI_ARMAMENTO
-#include<QMessageBox>
+#include <QMessageBox>
 #include <QWidget>
 #include <QPushButton>
 #include <QLabel>
