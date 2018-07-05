@@ -18,9 +18,9 @@ class OperazioniArma: public QWidget{
 					*Somma;
 		Arma* armaIstanza;
 		Caratteristiche* car;
-		QLabel* label;
 	
 	protected:
+		QLabel* label;
 		void connectSignalsOperazioni();
 		QGridLayout* winLayout;
 		

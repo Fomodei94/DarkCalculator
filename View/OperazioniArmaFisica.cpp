@@ -1,6 +1,7 @@
 #include "OperazioniArmaFisica.h"
 
 OperazioniArmaFisica::OperazioniArmaFisica(QWidget* parent, ArmaFisica* arma, Caratteristiche* car): OperazioniArma(parent), armaFisicaIstanza(arma), car(car){
+	label->setText("<h4>Operazioni Arma Fisica</h4>");
 	Raffina = new QPushButton("Raffina", this);
 	Frantuma = new QPushButton("Frantuma", this);
 	Cristallizza = new QPushButton("Cristallizza", this);

@@ -35,10 +35,12 @@ void OperazioniArmamento::CalcolaUsabilita(){
 
 void OperazioniArmamento::CalcolaConfrontaDifesa() {
 	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Confronta Difesa con Armamento.");
+	msg->show();
 }
 
 void OperazioniArmamento::CalcolaSomma() {
 	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Somma Difesa con Armamento.");
+	msg->show();
 }
 
 void OperazioniArmamento::connectSignalsOperazioni(){

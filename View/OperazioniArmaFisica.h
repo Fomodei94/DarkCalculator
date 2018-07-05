@@ -14,7 +14,7 @@ class OperazioniArmaFisica: public OperazioniArma{
 							*Frantuma,
 							*Cristallizza,
 							*Riforgia;
-		QLabel* label;
+		//QLabel* label;
 		ArmaFisica* armaFisicaIstanza;
 		Caratteristiche* car;
   protected:
