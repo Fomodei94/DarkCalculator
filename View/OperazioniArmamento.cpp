@@ -17,24 +17,35 @@ OperazioniArmamento::OperazioniArmamento(QWidget* parent, Armamento* armamento, 
 }
 
 void OperazioniArmamento::CalcolaEquilibrio(){
-	double equilibrio = armamentoIstanza->Equilibrio(*car);
-	emit MostraRisultatoNumerico(equilibrio);
-}
-
-void OperazioniArmamento::CalcolaUsabilita(){
-	bool usabilita = armamentoIstanza->VerificaUsabilita(*car);
-	emit MostraRisultatoBooleano(usabilita);
-}
-
-void OperazioniArmamento::CalcolaConfrontaDifesa() {
+	try {
+		double equilibrio = armamentoIstanza->Equilibrio(*car);
+		emit MostraRisultatoNumerico(equilibrio);
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 	
 }
 
+void OperazioniArmamento::CalcolaUsabilita(){
+		bool usabilita = armamentoIstanza->VerificaUsabilita(*car);
+		emit MostraRisultatoBooleano(usabilita);
+}
+
+void OperazioniArmamento::CalcolaConfrontaDifesa() {
+	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Confronta Difesa con Armamento.");
+}
+
+void OperazioniArmamento::CalcolaSomma() {
+	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Somma Difesa con Armamento.");
+}
 
 void OperazioniArmamento::connectSignalsOperazioni(){
 	connect(Equilibrio, SIGNAL(clicked()), this, SLOT(CalcolaEquilibrio()));
 	connect(VerificaUsabilita, SIGNAL(clicked()), this, SLOT(CalcolaUsabilita()));
-	
+	connect(ConfrontaDifesa, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaDifesa()));
+	connect(Somma, SIGNAL(clicked()), this, SLOT(CalcolaSomma()));
 };
 
 

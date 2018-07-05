@@ -41,7 +41,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	LblVigoreRichiesto = new QLabel("Vigore Richiesto: ", this);
 	vigoreRichiesto = new QSpinBox(this);
 	vigoreRichiesto->setRange(5,99);
-	operazioniArmamento = new OperazioniArmamento(this, armamento, carP1);
+	operazioniArmamento = nullptr;
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
@@ -52,7 +52,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	winLayout->addWidget(Difesa, 1,1);
 	winLayout->addWidget(LblVigoreRichiesto, 1,2);
 	winLayout->addWidget(vigoreRichiesto, 1, 3);
-	FinishInit();
+	setLayout(winLayout);
 }
 
 void TabArmamento::FinishInit(){

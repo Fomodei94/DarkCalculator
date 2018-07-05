@@ -15,11 +15,11 @@ class OperazioniArmamento: public QWidget{
 							 *ConfrontaDifesa,
 							 *Somma;
 		QLabel* label;
-		QGridLayout* winLayout;
 		Armamento* armamentoIstanza;
 		Caratteristiche* car;
 	
 	protected:
+		QGridLayout* winLayout;
 		void connectSignalsOperazioni();
   
 	public:

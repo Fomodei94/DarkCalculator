@@ -960,6 +960,7 @@ moc_OperazioniArmatura.cpp: Model/Armatura.h \
 		Model/Equipaggiamento.h \
 		Model/Caratteristiche.h \
 		Model/Arma.h \
+		View/OperazioniArmamento.h \
 		View/OperazioniArmatura.h \
 		moc_predefs.h \
 		/usr/bin/moc
@@ -1176,7 +1177,8 @@ OperazioniArmatura.o: View/OperazioniArmatura.cpp View/OperazioniArmatura.h \
 		Model/Armamento.h \
 		Model/Equipaggiamento.h \
 		Model/Caratteristiche.h \
-		Model/Arma.h
+		Model/Arma.h \
+		View/OperazioniArmamento.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperazioniArmatura.o View/OperazioniArmatura.cpp
 
 TabArma.o: View/TabArma.cpp View/TabArma.h \

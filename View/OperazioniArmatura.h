@@ -5,17 +5,17 @@
 #include <QLabel>
 #include <QGridLayout>
 #include "../Model/Armatura.h"
+#include "OperazioniArmamento.h"
 
-class OperazioniArmatura: public OperazioniArmamento{
+class OperazioniArmatura : public OperazioniArmamento{
         Q_OBJECT
 	private:
 	QPushButton *Appesantisci,
 					*Alleggerisci,
 					*CottaDiMaglia,
-					*Sopravvivenza,
-					*ConfrontaDifesa;
-	
+					*Sopravvivenza;
 	Armatura* armaturaIstanza;
+	QLabel *label;
 	Caratteristiche* car;
 	public:
 		OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car);

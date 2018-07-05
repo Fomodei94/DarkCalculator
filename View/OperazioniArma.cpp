@@ -42,12 +42,12 @@ void OperazioniArma::CalcolaUsabilita(){
 }
 
 void OperazioniArma::CalcolaConfronto(){
-	QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Arma, Arma Fisica oppure Arma Magica a seconda della preferenza. Costruire l'oggetto e clillare operazione: Confronta Danno con Arma.", QMessageBox::Ok, this);
+	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Arma, Arma Fisica oppure Arma Magica a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Confronta Danno con Arma.", QMessageBox::Ok, this);
 	msg->show();
 }
 
 void OperazioniArma::CalcolaSomma(){
-	QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Arma, Arma Fisica oppure Arma Magica a seconda della preferenza, costruire l'oggetto e clillare operazione: Somma con Arma.", QMessageBox::Ok, this);
+	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Arma, Arma Fisica oppure Arma Magica a seconda della preferenza, costruire l'oggetto e clillare operazione: Somma con Arma.", QMessageBox::Ok, this);
 	msg->show();
 }
 
