@@ -57,14 +57,17 @@ double ArmaFisica::DannoEffettivo(const Caratteristiche& c) const{
 	if(VerificaUsabilita(c))
 		return Arma::DannoEffettivo(c) + (Moltiplicatore(scalingForza)*c.GetForza()) + (Moltiplicatore(scalingDestrezza)*c.GetDestrezza());	
 	else
-		{cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
+	}
 }
 
 double ArmaFisica::Efficacia(const Caratteristiche& c, Armamento* a) const{
 	if(!VerificaUsabilita(c))
 	{
-		cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl;
-		return 0;
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 	//ARMA UTILIZZABILE
 	Armatura* aux = dynamic_cast<Armatura*>(a);
@@ -174,7 +177,10 @@ double ArmaFisica::Frantuma(const Caratteristiche& c, Equipaggiamento* e) const{
 	Armamento* aux= dynamic_cast<Armamento*>(e);
 	Arma* temp= dynamic_cast<Arma*>(e);
 	if(!VerificaUsabilita(c))
-		{cerr<<"Attenzione: caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida" << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida.");
+	}
 	if(GetDannoBase()==0)
 		return 0;
 	if(aux)

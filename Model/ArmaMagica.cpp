@@ -105,8 +105,11 @@ bool ArmaMagica::VerificaUsabilita(const Caratteristiche& c) const{
 	double percentuale= fuoco+magico+elettrico+oscuro;
 	if(percentuale!=100)
 	{
+		/* VERSIONE RIGA DI COMANDO
 		cerr << "Attenzione: Le percentuali di danno dell'arma non sono corrette in quanto la somma e' diversa dal 100%" << endl;
 		return false;
+		*/
+		throw("Attenzione: Le percentuali di danno dell'arma non sono corrette in quanto la somma e' diversa dal 100%. Arma NON Utilizzabile.");
 	}
 	return Arma::VerificaUsabilita(c);
 }
@@ -114,8 +117,8 @@ bool ArmaMagica::VerificaUsabilita(const Caratteristiche& c) const{
 double ArmaMagica::DannoEffettivo(const Caratteristiche& c) const{
 	if(!VerificaUsabilita(c))
 	{
-		cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl;
-		return 0;
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 	return Arma::DannoEffettivo(c) + (Moltiplicatore(scalingIntelligenza)*c.GetIntelligenza()*magico/100) + (Moltiplicatore(scalingIntelligenza)*c.GetIntelligenza()*fuoco/100*3/4) + (Moltiplicatore(scalingIntelligenza)*c.GetIntelligenza()*oscuro/100/4) + (Moltiplicatore(scalingFede)*c.GetFede()*elettrico/100) + (Moltiplicatore(scalingFede)*c.GetFede()*oscuro/100*3/4)  + (Moltiplicatore(scalingFede)*c.GetFede()*fuoco/100/4);
 }
@@ -123,8 +126,8 @@ double ArmaMagica::DannoEffettivo(const Caratteristiche& c) const{
 double ArmaMagica::Efficacia(const Caratteristiche& c, Armamento* a) const{
 	if(!VerificaUsabilita(c))
 	{
-		cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl;
-		return 0;
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 	//ARMA UTILIZZABILE
 	Armatura* aux = dynamic_cast<Armatura*>(a);
@@ -224,8 +227,8 @@ void ArmaMagica::Infuoca(){
 double ArmaMagica::ArteMistica(const Caratteristiche& c){
 	if(!VerificaUsabilita(c))
 	{
-		cerr << "Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl;
-		return 0;
+		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Operazione non valida (Danno pari a 0)");
 	}
 	//ARMA UTILIZZABILE
 	double livello = c.Livello();
@@ -234,8 +237,8 @@ double ArmaMagica::ArteMistica(const Caratteristiche& c){
 		SetUsura(GetUsura()+25.0);
 	else
 	{
-		cerr << "Attezione, livello di usura troppo elevato per eseguire l'operazione senza che questa causi la rottura dell'Arma in questione." << endl;
-		return 0;
+		//cerr << "Attezione: Livello di usura troppo elevato per eseguire l'operazione senza che questa causi la rottura dell'Arma in questione. Operazione non valida" << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attezione: Livello di usura troppo elevato per eseguire l'operazione senza che questa causi la rottura dell'Arma in questione. Operazione non valida");
 	}
 	return ret;
 }

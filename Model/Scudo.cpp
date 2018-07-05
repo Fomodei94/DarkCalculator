@@ -72,11 +72,13 @@ void Scudo::SetScalingVigore(char x){
 
 //OVERRIDE
 
-void Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
+double Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 	if(!VerificaUsabilita(c))
-		cerr << "Caratteristiche insuffienti per il primo Armamento" << endl;
+		//cerr << "Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il primo Armamento. Operazione non valida.");
 	else if(!a->VerificaUsabilita(c))
-		cerr << "Caratteristiche insuffienti per il secondo Armamento" << endl;
+		//{cerr << "Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insufficienti per il secondo Armamento. Operazione non valida.");
 	else //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
 	{
 		Scudo* aux= dynamic_cast<Scudo*>(a);
@@ -84,13 +86,14 @@ void Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 		{
 			double x = (GetDifesa() -(GetDifesa()*GetUsura()/200)) - (a->GetDifesa() - (a->GetDifesa()*a->GetUsura()/200));
 			//DIFESA BASE
+			/* VERSIONE DA RIGA DI COMANDO
 			if(x==0)
 				cout << "La difesa di base dei due Scudi e' pari" << endl;
 			else if(x>0)
 				cout<< "Il primo Scudo ha una difesa di base maggiore di " << x << " unita' rispetto al secondo" << endl;
 			else
 				cout<< "Il secondo Scudo ha una difesa di base maggiore di " << (-1*x) << " unita' rispetto al primo" << endl;
-			/*
+			
 			//ASSORBIMENTO FISICO
 			if(assorbimentoFisico > aux->assorbimentoFisico)
 				cout<< "Il primo Scudo possiede un maggior assorbimento fisico rispetto al secondo. E' quindi piu' efficace contro Armi Fisiche." << endl;
@@ -113,10 +116,11 @@ void Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 			else
 				cout<< "I due Scudi hanno pari stabilita'." << endl;
 			*/
+			return x;
 		}
 		else
 		{
-			cout<<"Attenzione, L'Equipaggiamento di confronto deve essere uno Scudo e non lo e'. In ogni caso a livello di difesa base e' possibile confrontare come segue: " << endl;
+			//cout<<"Attenzione, L'Equipaggiamento di confronto deve essere uno Scudo e non lo e'. In ogni caso a livello di difesa base e' possibile confrontare come segue: " << endl; VERSIONE DA RIGA DI COMANDO
 			Armamento::ConfrontaDifesa(c,a);
 		}
 	}
@@ -132,9 +136,12 @@ bool Scudo::operator!=(const Equipaggiamento& e) const{
 
 double Scudo::Equilibrio(const Caratteristiche& c) const{
 	if(!VerificaUsabilita(c))
-		{cerr << "Attenzione, Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida.");
+	}
 	double aux= Armamento::Equilibrio(c);
-	cout<< "Attenzione: Essendo uno scudo questo Armamento garantisce equilibrio solo finche' si puo' mantenere la guardia. Se si desidera capire i limiti di tale guarda si puo' selezionare l'operazione SpezzaGuardia." << endl;
+	//cout<< "Attenzione: Essendo uno scudo questo Armamento garantisce equilibrio solo finche' si puo' mantenere la guardia. Se si desidera capire i limiti di tale guarda si puo' selezionare l'operazione SpezzaGuardia." << endl; VERSIONE DA RIGA DI COMANDO
 	return aux + (Moltiplicatore(scalingVigore)*c.GetVigore());
 }
 
@@ -142,7 +149,10 @@ double Scudo::Equilibrio(const Caratteristiche& c) const{
 
 double Scudo::Parata(const Caratteristiche& c) const{
 	if(!VerificaUsabilita(c))
-		{cerr << "Attenzione, Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida.");
+	}
 	double ret= (Moltiplicatore(scalingVigore)*c.GetVigore()) - GetPeso();
 	if(ret>100)
 		ret=100.0;
@@ -153,9 +163,15 @@ double Scudo::Parata(const Caratteristiche& c) const{
 
 unsigned int Scudo::SpezzaGuardia(const Caratteristiche& c1, Arma* a, const Caratteristiche& c2) const{
 	if(!VerificaUsabilita(c1))
-		{cerr << "Attenzione, Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristiche insuffienti per equipaggiare lo Scudo. Operazione non valida.");
+	}
 	if(!a->VerificaUsabilita(c2))
-		{cerr << "Attenzione, Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida." << endl; return 0;}
+	{
+		//cerr << "Attenzione: Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida." << endl; return 0; VERSIONE DA RIGA DI COMANDO
+		throw("Attenzione: Caratteristice indicate per l'Arma non suffienti per brandirla. Operazione non valida.");
+	}
 	unsigned int ret=0;
 	int stamina= c1.CalcolaStamina();
 	double consumo=0;

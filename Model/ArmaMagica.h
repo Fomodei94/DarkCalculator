@@ -38,7 +38,7 @@ class ArmaMagica : public Arma{
 		//OVERRIDE
 		
 		virtual bool VerificaUsabilita(const Caratteristiche&) const override;
-		virtual double DannoEffettivo(const Caratteristiche&) const;
+		virtual double DannoEffettivo(const Caratteristiche&) const override;
 		virtual double Efficacia(const Caratteristiche&, Armamento*) const override; //NB Ora valuta Scaling ed eventuale tipo di difesa
 		virtual bool operator==(const Equipaggiamento&) const override;
 		virtual bool operator!=(const Equipaggiamento&) const override; 
