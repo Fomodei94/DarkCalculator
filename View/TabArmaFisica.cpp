@@ -34,6 +34,8 @@ void TabArmaFisica::FinishInit() {
 	operazioni = new OperazioniArmaFisica(this, armaFisica, carP1);
 	//CONNECT
   connect(operazioni, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+  connect(operazioni, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+  connectSignalsArmaFisica();
   //LAYOUT
 	winLayout->addWidget(LblTipoDanno, 3,0);
 	winLayout->addWidget(TipoDanno, 3,1);
@@ -63,4 +65,79 @@ void TabArmaFisica::setForzaRichiesta(int i){
 
 void TabArmaFisica::setIntelligenzaRichiesta(int i){
 	armaFisica->SetIntelligenzaRichiesta(i);
+}
+
+void TabArmaFisica::setTipoDanno(int i){
+	char c;
+	switch(i)
+	{
+		case 0 :
+			c='T';
+			break;
+		case 1 :
+			c='A';
+			break;
+		case 2 :
+			c='C';
+			break;
+	}
+	armaFisica->SetTipoDanno(c);
+}
+
+void TabArmaFisica::setScalingForza(int i){
+	char c;
+	switch(i)
+	{
+		case 0 :
+			c='E';
+			break;
+		case 1 :
+			c='D';
+			break;
+		case 2 :
+			c='C';
+			break;
+		case 3 :
+			c='B';
+			break;
+		case 4 :
+			c='A';
+			break;
+		case 5 :
+			c='S';
+			break;
+	}
+	armaFisica->SetScalingForza(c);
+}
+
+void TabArmaFisica::setScalingDestrezza(int i){
+	char c;
+	switch(i)
+	{
+		case 0 :
+			c='E';
+			break;
+		case 1 :
+			c='D';
+			break;
+		case 2 :
+			c='C';
+			break;
+		case 3 :
+			c='B';
+			break;
+		case 4 :
+			c='A';
+			break;
+		case 5 :
+			c='S';
+			break;
+	}
+	armaFisica->SetScalingDestrezza(c);
+}
+
+void TabArmaFisica::connectSignalsArmaFisica(){
+	connect(TipoDanno, SIGNAL(currentIndexChanged(int)), this, SLOT(setTipoDanno(int)));
+	connect(ScalingForza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingForza(int)));
+	connect(ScalingDestrezza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingDestrezza(int)));
 }
