@@ -6,27 +6,25 @@
 #include <QGridLayout>
 #include "../Model/Armatura.h"
 
-class OperazioniArmatura: public QWidget{
+class OperazioniArmatura: public OperazioniArmamento{
         Q_OBJECT
 	private:
-	QPushButton *VerificaUsabilita,
-					*Equilibrio,
-					*Appesantisci,
+	QPushButton *Appesantisci,
 					*Alleggerisci,
 					*CottaDiMaglia,
 					*Sopravvivenza,
 					*ConfrontaDifesa;
-	QLabel* label;
-	QGridLayout* winLayout;
-  Armatura* armaturaIstanza;
-  Caratteristiche* car;
+	
+	Armatura* armaturaIstanza;
+	Caratteristiche* car;
 	public:
 		OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car);
   signals:
 		void MostraRisultatoNumerico(double x);
+		void MostraRisultatoBooleano(double x);
   public slots:
-		void CalcolaEquilibrio();
-		void CalcolaUsabilita();
+		void CalcolaEquilibrio() override;
+		void CalcolaUsabilita() override;
 };
 #endif
 

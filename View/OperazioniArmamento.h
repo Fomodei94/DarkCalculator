@@ -11,7 +11,9 @@ class OperazioniArmamento: public QWidget{
   Q_OBJECT
 	private:
 		QPushButton *Equilibrio,
-							 *VerificaUsabilita;
+							 *VerificaUsabilita,
+							 *ConfrontaDifesa,
+							 *Somma;
 		QLabel* label;
 		QGridLayout* winLayout;
 		Armamento* armamentoIstanza;
@@ -30,5 +32,7 @@ class OperazioniArmamento: public QWidget{
   public slots:
 		virtual void CalcolaEquilibrio();
 		virtual void CalcolaUsabilita();
+		virtual void CalcolaConfrontaDifesa();
+		virtual void CalcolaSomma();
 };
 #endif

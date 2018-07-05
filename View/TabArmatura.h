@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QSpinBox>
 #include <QDoubleSpinBox>
-//#include "OperazioniArmatura.h"
+#include "OperazioniArmatura.h"
 
 class TabArmatura: public TabArmamento{
 	Q_OBJECT
@@ -25,7 +25,7 @@ class TabArmatura: public TabArmamento{
 								*DifTaglio,
 								*DifContundente,
 								*DifAffondo;
-	//OperazioniArmatura* operazioniArmatura;
+	OperazioniArmatura* operazioniArmatura;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 	int playerNumber;
