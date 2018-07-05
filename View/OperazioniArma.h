@@ -12,7 +12,9 @@ class OperazioniArma: public QWidget{
 	private:
 		QPushButton *DannoEffettivo,
 					*Efficacia,
-					*VerificaUsabilita;
+					*VerificaUsabilita,
+					*ConfrontaDanno,
+					*Somma;
 		QLabel* label;
 		QGridLayout* winLayout;
 		Arma* armaIstanza;
@@ -32,6 +34,8 @@ class OperazioniArma: public QWidget{
 		virtual void CalcolaDannoEffettivo();
 		virtual void CalcolaEfficacia();
 		virtual void CalcolaUsabilita();
+		virtual void CalcolaConfronto();
+		virtual void CalcolaSomma();
 };
 #endif
 
