@@ -20,7 +20,7 @@ class OperazioniArmamento: public QWidget{
 	
 	protected:
 		QGridLayout* winLayout;
-		void connectSignalsOperazioni();
+		virtual void connectSignalsOperazioni();
   
 	public:
 		OperazioniArmamento(QWidget* parent = nullptr, Armamento* armamento = nullptr, Caratteristiche* car=nullptr);

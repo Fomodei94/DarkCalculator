@@ -17,9 +17,13 @@ class OperazioniArmatura : public OperazioniArmamento{
 	Armatura* armaturaIstanza;
 	QLabel *label;
 	Caratteristiche* car;
+	
+		
+
 	public:
 		OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car);
-  signals:
+		void connectSignalsOperazioni();
+	signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(double x);
   public slots:

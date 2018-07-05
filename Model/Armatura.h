@@ -48,7 +48,7 @@ class Armatura : public Armamento{
 		//FUNZIONALITA AGGIUNTE
 		
 		void Appesantisci(); //Aumenta peso e difesa da danno contundente, riduce tutte le difese magiche
-		void Allegerisci(); //Diminuisce peso e difesa da danno contundente, aumenta difesa da affondo
+		void Alleggerisci(); //Diminuisce peso e difesa da danno contundente, aumenta difesa da affondo
 		void CottaDiMaglia(); //Aumenta peso e difesa da taglio, riduce difesa da affondo
 		unsigned int Sopravvivenza(const Caratteristiche&, Arma*, const Caratteristiche&) const; //Calcola il numero di colpi che si possono ricevere con tale armatura dall'arma indicata prima di morire o prima che l'armatura si rompa 		
 		double HyperArmor(const Caratteristiche&, Arma*) const; //Ritorna la quantita' di danni sopportabili senza essere interrotti duranti un'attacco caricato dell'arma passata per parametro

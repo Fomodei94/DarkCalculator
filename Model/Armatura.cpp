@@ -171,7 +171,7 @@ void Armatura::Appesantisci(){
 	difesaOscurita-=difesaOscurita/4;
 }
 
-void Armatura::Allegerisci(){
+void Armatura::Alleggerisci(){
 	SetPeso(GetPeso()*3/4); //NB Diminuisce il peso di 1/4
 	difesaContundente-=difesaContundente/3;
 	difesaAffondo+=difesaAffondo/3;
