@@ -15,11 +15,12 @@ TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* 
     layout->addWidget(tabwid,0,0);
     MappaEquipaggiamenti = equipMap;
     connect(tabArmaFisica, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
+    connect(tabArmaFisica, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
     connect(tabArma, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
     connect(tabArma, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
     connect(tabArmamento, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
-	connect(tabArmamento, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
-	connect(tabArmatura, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
+		connect(tabArmamento, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
+		connect(tabArmatura, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
     connect(tabArmatura, SIGNAL(MostraRisultatoNumerico2(double)),this,SIGNAL(MostraRisultatoNumerico3(double)));
     this->setLayout(layout);
 }

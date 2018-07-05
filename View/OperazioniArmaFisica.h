@@ -28,5 +28,13 @@ class OperazioniArmaFisica: public OperazioniArma{
 		void MostraRisultatoBooleano(bool x);
   public slots:
 		void CalcolaDannoEffettivo() override;
+		void CalcolaEfficacia() override;
+		void CalcolaUsabilita() override;
+		void CalcolaConfronto() override;
+		void CalcolaSomma() override;
+		void EseguiRaffina();
+		void EseguiCristallizza();
+		void EseguiRiforgia();
+		void CalcolaFrantuma();
 };
 #endif
