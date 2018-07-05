@@ -1,12 +1,12 @@
 #ifndef TABARMAMENTO_H
 #define TABARMAMENTO_H
 
-#include<QWidget>
-#include<QGridLayout>
-#include<QLabel>
-#include<QSpinBox>
-#include<QDoubleSpinBox>
-#include"../Model/Armamento.h"
+#include <QWidget>
+#include <QGridLayout>
+#include <QLabel>
+#include <QSpinBox>
+#include <QDoubleSpinBox>
+#include "../Model/Armamento.h"
 #include "OperazioniArmamento.h"
 
 class TabArmamento : public QWidget

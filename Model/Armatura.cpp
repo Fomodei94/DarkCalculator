@@ -156,7 +156,7 @@ double Armatura::Equilibrio(const Caratteristiche& c) const{
 	double aux= Armamento::Equilibrio(c);
 	if(aux==0)
 		return aux;
-	double incremento= (difesaContundente+difesaAffondo+difesaTaglio)/((difesaElettricita+difesaFuoco+difesaMagia+difesaOscurita))*4/3;
+	double incremento= (1+difesaContundente+difesaAffondo+difesaTaglio)/((1+difesaElettricita+difesaFuoco+difesaMagia+difesaOscurita))*4/3;
 	return aux + (incremento*5);
 }
 
@@ -171,7 +171,7 @@ void Armatura::Appesantisci(){
 	difesaOscurita-=difesaOscurita/4;
 }
 
-void Armatura::Allegerisci(){
+void Armatura::Alleggerisci(){
 	SetPeso(GetPeso()*3/4); //NB Diminuisce il peso di 1/4
 	difesaContundente-=difesaContundente/3;
 	difesaAffondo+=difesaAffondo/3;

@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QSpinBox>
 #include <QDoubleSpinBox>
-//#include "OperazioniArmatura.h"
+#include "OperazioniArmatura.h"
 
 class TabArmatura: public TabArmamento{
 	Q_OBJECT
@@ -25,20 +25,28 @@ class TabArmatura: public TabArmamento{
 								*DifTaglio,
 								*DifContundente,
 								*DifAffondo;
-	//OperazioniArmatura* operazioniArmatura;
+	OperazioniArmatura* operazioniArmatura;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 	int playerNumber;
 	public:
-		TabArmatura(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
+		TabArmatura(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		virtual void FinishInit() override;
 	signals:
+		void MostraRisultatoBooleano2(bool x);
 		void MostraRisultatoNumerico2(double x);
 	public slots:
 		virtual void setPeso(double d) override;
 		virtual void setUsura(double d) override;
 		virtual void setDifesa(double d) override;
 		virtual void setVigoreRichiesto(int i) override;
+		void setDifMagia(double d);
+		void setDifOscurita(double d);
+		void setDifFuoco(double d);
+		void setDifElettricita(double d);
+		void setDifTaglio(double d);
+		void setDifContundente(double d);
+		void setDifAffondo(double d);
 };
 #endif
 

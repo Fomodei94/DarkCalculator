@@ -1,6 +1,6 @@
 #ifndef OPERAZIONI_ARMAMENTO
 #define OPERAZIONI_ARMAMENTO
-#include<QMessageBox>
+#include <QMessageBox>
 #include <QWidget>
 #include <QPushButton>
 #include <QLabel>
@@ -11,14 +11,16 @@ class OperazioniArmamento: public QWidget{
   Q_OBJECT
 	private:
 		QPushButton *Equilibrio,
-							 *VerificaUsabilita;
+							 *VerificaUsabilita,
+							 *ConfrontaDifesa,
+							 *Somma;
 		QLabel* label;
-		QGridLayout* winLayout;
 		Armamento* armamentoIstanza;
 		Caratteristiche* car;
 	
 	protected:
-		void connectSignalsOperazioni();
+		QGridLayout* winLayout;
+		virtual void connectSignalsOperazioni();
   
 	public:
 		OperazioniArmamento(QWidget* parent = nullptr, Armamento* armamento = nullptr, Caratteristiche* car=nullptr);
@@ -30,5 +32,7 @@ class OperazioniArmamento: public QWidget{
   public slots:
 		virtual void CalcolaEquilibrio();
 		virtual void CalcolaUsabilita();
+		virtual void CalcolaConfrontaDifesa();
+		virtual void CalcolaSomma();
 };
 #endif
