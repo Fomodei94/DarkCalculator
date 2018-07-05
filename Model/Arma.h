@@ -36,7 +36,7 @@ class Arma : public Equipaggiamento{ //CLASSE CONCRETA
 		virtual double DannoEffettivo(const Caratteristiche&) const;
 		double operator+(const Arma&) const;
 		virtual double Efficacia(const Caratteristiche&, Armamento*) const;
-		void ConfrontaDanno(const Caratteristiche&, Arma*) const;
+		double ConfrontaDanno(const Caratteristiche&, Arma*) const;
 };
 
 #endif
