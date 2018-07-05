@@ -5,27 +5,28 @@
 #include <QLabel>
 #include <QGridLayout>
 #include "../Model/ArmaFisica.h"
+#include"OperazioniArma.h"
 
-class OperazioniArmaFisica: public QWidget{
+class OperazioniArmaFisica: public OperazioniArma{
         Q_OBJECT
 	private:
-	QPushButton *DannoEffettivo,
-					*Efficacia,
-					*VerificaUsabilita,
-					*Raffina,
-					*Frantuma,
-					*Cristallizza,
-					*Riforgia;
-	QLabel* label;
-	QGridLayout* winLayout;
-  ArmaFisica* armaIstanza;
-  Caratteristiche* car;
+	QPushButton *Raffina,
+							*Frantuma,
+							*Cristallizza,
+							*Riforgia;
+		QLabel* label;
+		ArmaFisica* armaFisicaIstanza;
+		Caratteristiche* car;
+  protected:
+		void connectSignalsOperazioniProprie();
+		
 	public:
 		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
+  
   signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(bool x);
   public slots:
-		void CalcolaDannoEffettivo();
+		void CalcolaDannoEffettivo() override;
 };
 #endif

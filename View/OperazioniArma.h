@@ -16,16 +16,16 @@ class OperazioniArma: public QWidget{
 					*VerificaUsabilita,
 					*ConfrontaDanno,
 					*Somma;
-		QLabel* label;
-		QGridLayout* winLayout;
 		Arma* armaIstanza;
 		Caratteristiche* car;
+		QLabel* label;
 	
 	protected:
 		void connectSignalsOperazioni();
-  
+		QGridLayout* winLayout;
+		
 	public:
-		OperazioniArma(QWidget* parent = nullptr, Arma* arma = nullptr, Caratteristiche* car=nullptr);
+		OperazioniArma(QWidget* parent = nullptr, Arma* arma = nullptr, Caratteristiche* car = nullptr);
 	
   signals:
 		void MostraRisultatoNumerico(double x);

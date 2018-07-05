@@ -18,7 +18,6 @@ OperazioniArma::OperazioniArma(QWidget* parent, Arma* arma, Caratteristiche* car
 	setLayout(winLayout);
 }
 
-
 void OperazioniArma::CalcolaDannoEffettivo(){
 	try
 	{

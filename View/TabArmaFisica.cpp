@@ -31,10 +31,10 @@ void TabArmaFisica::FinishInit() {
 	}else{
 		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
-	operazioni = new OperazioniArmaFisica(this, armaFisica, carP1);
+	operazioniArmaFisica = new OperazioniArmaFisica(this, armaFisica, carP1);
 	//CONNECT
-  connect(operazioni, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
-  connect(operazioni, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
   connectSignalsArmaFisica();
   //LAYOUT
 	winLayout->addWidget(LblTipoDanno, 3,0);
@@ -43,7 +43,7 @@ void TabArmaFisica::FinishInit() {
 	winLayout->addWidget(ScalingForza, 4,1);
 	winLayout->addWidget(LblScalingDestrezza, 5,0);
 	winLayout->addWidget(ScalingDestrezza, 5,1);
-	winLayout->addWidget(operazioni, 2,2,4,2);
+	winLayout->addWidget(operazioniArmaFisica, 2,2,4,2);
 	setLayout(winLayout);
 }
 //OVERRIDE SLOTS
