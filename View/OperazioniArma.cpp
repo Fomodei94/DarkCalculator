@@ -31,7 +31,7 @@ void OperazioniArma::CalcolaDannoEffettivo(){
 }
 
 void OperazioniArma::CalcolaEfficacia(){
-	QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Efficacia con Arma.", QMessageBox::Ok, this);
+	QMessageBox* msg = new QMessageBox(QMessageBox::Information, "GUIDA PER L'OPERAZIONE", "Spostarsi nella sezione di destra, selezionare tab Armamento, Armatura oppure Scudo a seconda della preferenza. Costruire l'oggetto e cliccare operazione: Efficacia con Arma.", QMessageBox::Ok, this);
 	msg->show();
 }
 

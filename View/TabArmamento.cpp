@@ -1,7 +1,10 @@
 #include "TabArmamento.h"
 
 TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
-	armamento = dynamic_cast<Armamento*>((equipMap->find("ArmamentoP1"))->second);
+	if(playerNumber == 1)
+		armamento = dynamic_cast<Armamento*>((equipMap->find("ArmamentoP1"))->second);
+	else
+		armamento = dynamic_cast<Armamento*>((equipMap->find("ArmamentoP2"))->second);
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
 	//connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
