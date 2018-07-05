@@ -28,7 +28,7 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
 	winLayout->addWidget(forzaRichiesta, 1, 3);
 	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
 	winLayout->addWidget(intelligenzaRichiesta, 2,1);
-	winLayout->addWidget(operazioniArma, 2,2,2,2);
+	winLayout->addWidget(operazioniArma, 2,2,3,2);
 	FinishInit();
 }
 
