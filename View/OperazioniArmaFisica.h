@@ -25,7 +25,7 @@ class OperazioniArmaFisica: public OperazioniArma{
   signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(bool x);
-                void update();
+    void update();
   public slots:
 		void CalcolaDannoEffettivo() override;
 		void CalcolaEfficacia() override;

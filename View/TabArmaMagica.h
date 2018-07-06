@@ -33,7 +33,6 @@ class TabArmaMagica: public TabArma{
 	public:
 		TabArmaMagica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		virtual void FinishInit() override;
-                void update();
 	signals:
 		void MostraRisultatoNumerico2(double x);
 		void MostraRisultatoBooleano2(bool x);
@@ -49,6 +48,7 @@ class TabArmaMagica: public TabArma{
 		void setOscuro(double d);
 		void setScalingFede(int i);
 		void setScalingIntelligenza(int i);
+		void update();
 };
 #endif
 

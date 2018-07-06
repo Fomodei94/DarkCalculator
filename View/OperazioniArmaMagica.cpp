@@ -57,22 +57,22 @@ void OperazioniArmaMagica::CalcolaSomma(){
 
 void OperazioniArmaMagica::EseguiIncanta(){
 	armaMagicaIstanza->Incanta();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaMagica::EseguiInfuoca(){
 	armaMagicaIstanza->Infuoca();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaMagica::EseguiBenedici(){
 	armaMagicaIstanza->Benedici();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaMagica::EseguiMaledici(){
 	armaMagicaIstanza->Maledici();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaMagica::CalcolaArteMistica(){
@@ -80,7 +80,7 @@ void OperazioniArmaMagica::CalcolaArteMistica(){
 	{
 		double ret = armaMagicaIstanza->ArteMistica(*car);
 		emit MostraRisultatoNumerico(ret);
-		//FUNZIONE PER AGGIORNARE GUI
+		emit update();
 	}
 	catch(const char*& exc){
 		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);

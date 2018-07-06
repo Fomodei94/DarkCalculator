@@ -65,7 +65,11 @@ void TabArmaMagica::FinishInit() {
 }
 
 void TabArmaMagica::update(){
-    //Cose qui
+	Fuoco->setValue(armaMagica->GetFuoco());
+	Magico->setValue(armaMagica->GetMagico());
+	Elettrico->setValue(armaMagica->GetElettrico());
+	Oscuro->setValue(armaMagica->GetOscuro());
+	usura->setValue(armaMagica->GetUsura());
 }
 
 //OVERRIDE SLOTS
@@ -164,5 +168,6 @@ void TabArmaMagica::connectSignalsArmaMagica(){
 	connect(Oscuro, SIGNAL(valueChanged(double)), this, SLOT(setOscuro(double)));
 	connect(ScalingIntelligenza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingIntelligenza(int)));
 	connect(ScalingFede, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingFede(int)));
+	connect(operazioniArmaMagica, SIGNAL(update()), this, SLOT(update()));
 }
 

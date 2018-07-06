@@ -92,6 +92,8 @@ void TabArmaFisica::update(){
             break;
     }
     ScalingDestrezza->setCurrentIndex(i);
+    usura->setValue(armaFisica->GetUsura());
+    DannoBase->setValue(armaFisica->GetDannoBase());
 }
 
 //OVERRIDE SLOTS

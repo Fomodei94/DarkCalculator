@@ -48,18 +48,17 @@ void OperazioniArmaFisica::CalcolaSomma(){
 
 void OperazioniArmaFisica::EseguiRaffina(){
 	armaFisicaIstanza->Raffina();
-        emit update();
-	//FUNZIONE PER AGGIORNARE GUI
+  emit update();
 }
 
 void OperazioniArmaFisica::EseguiRiforgia(){
 	armaFisicaIstanza->Riforgia();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaFisica::EseguiCristallizza(){
 	armaFisicaIstanza->Cristallizza();
-	//FUNZIONE PER AGGIORNARE GUI
+	emit update();
 }
 
 void OperazioniArmaFisica::CalcolaFrantuma(){
