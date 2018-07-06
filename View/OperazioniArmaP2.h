@@ -7,6 +7,10 @@
 #include <QLabel>
 #include <QGridLayout>
 #include "../Model/Arma.h"
+#include "../Model/ArmaFisica.h"
+#include "../Model/ArmaMagica.h"
+#include "../Model/Armatura.h"
+#include "../Model/Scudo.h"
 #include <map>
 
 class OperazioniArmaP2: public QWidget{
@@ -25,7 +29,7 @@ class OperazioniArmaP2: public QWidget{
 		std::map<std::string, Equipaggiamento*>* equipMap;
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
-                Arma* par;
+    Arma* arma;
 
 	protected:
 		QLabel* label;
@@ -41,6 +45,15 @@ class OperazioniArmaP2: public QWidget{
 
   public slots:
 		virtual void CalcolaConfrontaConArma();
+		virtual void CalcolaConfrontaConArmaFisica();
+		virtual void CalcolaConfrontaConArmaMagica();
+		virtual void CalcolaSommaConArma();
+		virtual void CalcolaSommaConArmaFisica();
+		virtual void CalcolaSommaConArmaMagica();
+		virtual void CalcolaFrantuma();
+		virtual void CalcolaSopravvivenza();
+		virtual void CalcolaHyperArmor();
+		virtual void CalcolaSpezzaGuardia();
 };
 #endif
 
