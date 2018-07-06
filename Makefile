@@ -12,9 +12,9 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -g -D_REENTRANT -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -g -D_REENTRANT -Wall -W -fPIC $(DEFINES)
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+CFLAGS        = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC $(DEFINES)
+CXXFLAGS      = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 INCPATH       = -I. -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/qt/mkspecs/linux-g++
 QMAKE         = /usr/bin/qmake
 DEL_FILE      = rm -f
@@ -37,7 +37,7 @@ COMPRESS      = gzip -9f
 DISTNAME      = DarkCalculator1.0.0
 DISTDIR = /home/luca/Desktop/DarkCalcGUI/DarkCalculator/.tmp/DarkCalculator1.0.0
 LINK          = g++
-LFLAGS        = 
+LFLAGS        = -Wl,-O1 -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now
 LIBS          = $(SUBLIBS) -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
@@ -67,6 +67,7 @@ SOURCES       = main.cpp \
 		View/OperazioniArmatura.cpp \
 		View/TabArma.cpp \
 		View/TabArmaFisica.cpp \
+		View/TabArmaMagica.cpp \
 		View/TabArmamento.cpp \
 		View/TabArmatura.cpp \
 		View/TabWidget.cpp moc_Caratteristiche_gui.cpp \
@@ -77,6 +78,7 @@ SOURCES       = main.cpp \
 		moc_OperazioniArmatura.cpp \
 		moc_TabArma.cpp \
 		moc_TabArmaFisica.cpp \
+		moc_TabArmaMagica.cpp \
 		moc_TabArmamento.cpp \
 		moc_TabArmatura.cpp \
 		moc_TabWidget.cpp
@@ -97,6 +99,7 @@ OBJECTS       = main.o \
 		OperazioniArmatura.o \
 		TabArma.o \
 		TabArmaFisica.o \
+		TabArmaMagica.o \
 		TabArmamento.o \
 		TabArmatura.o \
 		TabWidget.o \
@@ -108,6 +111,7 @@ OBJECTS       = main.o \
 		moc_OperazioniArmatura.o \
 		moc_TabArma.o \
 		moc_TabArmaFisica.o \
+		moc_TabArmaMagica.o \
 		moc_TabArmamento.o \
 		moc_TabArmatura.o \
 		moc_TabWidget.o
@@ -213,13 +217,13 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
 		/usr/lib/qt/mkspecs/features/resolve_config.prf \
 		/usr/lib/qt/mkspecs/features/default_post.prf \
+		/usr/lib/qt/mkspecs/features/warn_on.prf \
 		/usr/lib/qt/mkspecs/features/qt.prf \
 		/usr/lib/qt/mkspecs/features/resources.prf \
 		/usr/lib/qt/mkspecs/features/moc.prf \
 		/usr/lib/qt/mkspecs/features/unix/opengl.prf \
 		/usr/lib/qt/mkspecs/features/uic.prf \
 		/usr/lib/qt/mkspecs/features/unix/thread.prf \
-		/usr/lib/qt/mkspecs/features/warn_on.prf \
 		/usr/lib/qt/mkspecs/features/qmake_use.prf \
 		/usr/lib/qt/mkspecs/features/file_copies.prf \
 		/usr/lib/qt/mkspecs/features/testcase_targets.prf \
@@ -242,6 +246,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		View/OperazioniArmatura.h \
 		View/TabArma.h \
 		View/TabArmaFisica.h \
+		View/TabArmaMagica.h \
 		View/TabArmamento.h \
 		View/TabArmatura.h \
 		View/TabWidget.h main.cpp \
@@ -261,6 +266,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		View/OperazioniArmatura.cpp \
 		View/TabArma.cpp \
 		View/TabArmaFisica.cpp \
+		View/TabArmaMagica.cpp \
 		View/TabArmamento.cpp \
 		View/TabArmatura.cpp \
 		View/TabWidget.cpp
@@ -377,13 +383,13 @@ Makefile: DarkCalculator.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/q
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
 		/usr/lib/qt/mkspecs/features/resolve_config.prf \
 		/usr/lib/qt/mkspecs/features/default_post.prf \
+		/usr/lib/qt/mkspecs/features/warn_on.prf \
 		/usr/lib/qt/mkspecs/features/qt.prf \
 		/usr/lib/qt/mkspecs/features/resources.prf \
 		/usr/lib/qt/mkspecs/features/moc.prf \
 		/usr/lib/qt/mkspecs/features/unix/opengl.prf \
 		/usr/lib/qt/mkspecs/features/uic.prf \
 		/usr/lib/qt/mkspecs/features/unix/thread.prf \
-		/usr/lib/qt/mkspecs/features/warn_on.prf \
 		/usr/lib/qt/mkspecs/features/qmake_use.prf \
 		/usr/lib/qt/mkspecs/features/file_copies.prf \
 		/usr/lib/qt/mkspecs/features/testcase_targets.prf \
@@ -497,13 +503,13 @@ Makefile: DarkCalculator.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/lib/q
 /usr/lib/qt/mkspecs/features/default_pre.prf:
 /usr/lib/qt/mkspecs/features/resolve_config.prf:
 /usr/lib/qt/mkspecs/features/default_post.prf:
+/usr/lib/qt/mkspecs/features/warn_on.prf:
 /usr/lib/qt/mkspecs/features/qt.prf:
 /usr/lib/qt/mkspecs/features/resources.prf:
 /usr/lib/qt/mkspecs/features/moc.prf:
 /usr/lib/qt/mkspecs/features/unix/opengl.prf:
 /usr/lib/qt/mkspecs/features/uic.prf:
 /usr/lib/qt/mkspecs/features/unix/thread.prf:
-/usr/lib/qt/mkspecs/features/warn_on.prf:
 /usr/lib/qt/mkspecs/features/qmake_use.prf:
 /usr/lib/qt/mkspecs/features/file_copies.prf:
 /usr/lib/qt/mkspecs/features/testcase_targets.prf:
@@ -529,8 +535,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents Model/Arma.h Model/ArmaFisica.h Model/ArmaMagica.h Model/Armamento.h Model/Armatura.h Model/Caratteristiche.h Model/Equipaggiamento.h Model/Scudo.h View/Caratteristiche_gui.h View/MainWindow.h View/OperazioniArma.h View/OperazioniArmaFisica.h View/OperazioniArmamento.h View/OperazioniArmatura.h View/TabArma.h View/TabArmaFisica.h View/TabArmamento.h View/TabArmatura.h View/TabWidget.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp Model/Arma.cpp Model/ArmaFisica.cpp Model/ArmaMagica.cpp Model/Armamento.cpp Model/Armatura.cpp Model/Caratteristiche.cpp Model/Equipaggiamento.cpp Model/Scudo.cpp View/Caratteristiche_gui.cpp View/MainWindow.cpp View/OperazioniArma.cpp View/OperazioniArmaFisica.cpp View/OperazioniArmamento.cpp View/OperazioniArmatura.cpp View/TabArma.cpp View/TabArmaFisica.cpp View/TabArmamento.cpp View/TabArmatura.cpp View/TabWidget.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents Model/Arma.h Model/ArmaFisica.h Model/ArmaMagica.h Model/Armamento.h Model/Armatura.h Model/Caratteristiche.h Model/Equipaggiamento.h Model/Scudo.h View/Caratteristiche_gui.h View/MainWindow.h View/OperazioniArma.h View/OperazioniArmaFisica.h View/OperazioniArmamento.h View/OperazioniArmatura.h View/TabArma.h View/TabArmaFisica.h View/TabArmaMagica.h View/TabArmamento.h View/TabArmatura.h View/TabWidget.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp Model/Arma.cpp Model/ArmaFisica.cpp Model/ArmaMagica.cpp Model/Armamento.cpp Model/Armatura.cpp Model/Caratteristiche.cpp Model/Equipaggiamento.cpp Model/Scudo.cpp View/Caratteristiche_gui.cpp View/MainWindow.cpp View/OperazioniArma.cpp View/OperazioniArmaFisica.cpp View/OperazioniArmamento.cpp View/OperazioniArmatura.cpp View/TabArma.cpp View/TabArmaFisica.cpp View/TabArmaMagica.cpp View/TabArmamento.cpp View/TabArmatura.cpp View/TabWidget.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -560,11 +566,11 @@ compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+	g++ -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmatura.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabWidget.cpp
+compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmatura.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabWidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmatura.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabWidget.cpp
+	-$(DEL_FILE) moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmatura.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabWidget.cpp
 moc_Caratteristiche_gui.cpp: Model/Caratteristiche.h \
 		View/Caratteristiche_gui.h \
 		moc_predefs.h \
@@ -658,6 +664,20 @@ moc_TabArmaFisica.cpp: View/TabArma.h \
 		moc_predefs.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabArmaFisica.h -o moc_TabArmaFisica.cpp
+
+moc_TabArmaMagica.cpp: View/TabArma.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		View/OperazioniArma.h \
+		Model/ArmaMagica.h \
+		Model/Armatura.h \
+		Model/Scudo.h \
+		View/TabArmaMagica.h \
+		moc_predefs.h \
+		/usr/bin/moc
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/TabArmaMagica.h -o moc_TabArmaMagica.cpp
 
 moc_TabArmamento.cpp: Model/Armamento.h \
 		Model/Equipaggiamento.h \
@@ -814,7 +834,8 @@ MainWindow.o: View/MainWindow.cpp View/MainWindow.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
-		View/OperazioniArmatura.h
+		View/OperazioniArmatura.h \
+		Model/ArmaMagica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o View/MainWindow.cpp
 
 OperazioniArma.o: View/OperazioniArma.cpp View/OperazioniArma.h \
@@ -870,6 +891,18 @@ TabArmaFisica.o: View/TabArmaFisica.cpp View/TabArmaFisica.h \
 		Model/Scudo.h \
 		View/OperazioniArmaFisica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabArmaFisica.o View/TabArmaFisica.cpp
+
+TabArmaMagica.o: View/TabArmaMagica.cpp View/TabArmaMagica.h \
+		View/TabArma.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		View/OperazioniArma.h \
+		Model/ArmaMagica.h \
+		Model/Armatura.h \
+		Model/Scudo.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabArmaMagica.o View/TabArmaMagica.cpp
 
 TabArmamento.o: View/TabArmamento.cpp View/TabArmamento.h \
 		Model/Armamento.h \
@@ -930,6 +963,9 @@ moc_TabArma.o: moc_TabArma.cpp
 
 moc_TabArmaFisica.o: moc_TabArmaFisica.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabArmaFisica.o moc_TabArmaFisica.cpp
+
+moc_TabArmaMagica.o: moc_TabArmaMagica.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabArmaMagica.o moc_TabArmaMagica.cpp
 
 moc_TabArmamento.o: moc_TabArmamento.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_TabArmamento.o moc_TabArmamento.cpp

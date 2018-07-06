@@ -5,6 +5,7 @@
 #include<QTabWidget>
 #include "TabArma.h"
 #include "TabArmaFisica.h"
+#include "TabArmaMagica.h"
 #include "TabArmamento.h"
 #include "TabArmatura.h"
 #include <map>
@@ -19,6 +20,7 @@ private:
   QTabWidget *tabwid;
 	TabArma* tabArma;
 	TabArmaFisica* tabArmaFisica;
+	TabArmaMagica* tabArmaMagica;
 	TabArmamento* tabArmamento;
 	TabArmatura* tabArmatura;
 	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;

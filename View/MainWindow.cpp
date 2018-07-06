@@ -3,6 +3,7 @@
 #include<iostream>
 #include "../Model/ArmaFisica.h"
 #include "../Model/Arma.h"
+#include "../Model/ArmaMagica.h"
 #include "../Model/Armamento.h"
 #include "../Model/Armatura.h"
 #include "../Model/Equipaggiamento.h"
@@ -20,7 +21,9 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaFisicaP2", new ArmaFisica()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaP1", new Arma()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaP2", new Arma()));
-	mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP1", new Armamento()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaMagicaP1", new ArmaMagica()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaMagicaP2", new ArmaMagica()));
+		mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP1", new Armamento()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP2", new Armamento()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP1", new Armatura()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP2", new Armatura()));
