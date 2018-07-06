@@ -23,10 +23,12 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaP2", new Arma()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaMagicaP1", new ArmaMagica()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaMagicaP2", new ArmaMagica()));
-		mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP1", new Armamento()));
+	mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP1", new Armamento()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmamentoP2", new Armamento()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP1", new Armatura()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaturaP2", new Armatura()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ScudoP1", new Scudo()));
+    mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ScudoP2", new Scudo()));
     Caratteristiche *Caratt_P1, *Caratt_P2;
     Caratt_P1 = new Caratteristiche();
     Caratt_P2 = new Caratteristiche();

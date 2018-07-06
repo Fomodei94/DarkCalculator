@@ -1,6 +1,6 @@
 #include "TabScudo.h"
 
-TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabScudo(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
+TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArmamento(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
 	FinishInit();
 };
 
@@ -24,9 +24,9 @@ void TabScudo::FinishInit() {
 	}else{
 		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP2"))->second);
 	}
-	operazioniScudo = new OperazioniScudo(this, scudo, carP1);
+	//operazioniScudo = new OperazioniScudo(this, scudo, carP1);
 	//CONNECT
-   connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+   //connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
   //LAYOUT
 	winLayout->addWidget(LblStabilita, 2,0);
 	winLayout->addWidget(Stabilita, 2,1);
@@ -36,7 +36,7 @@ void TabScudo::FinishInit() {
 	winLayout->addWidget(AssorbFisico, 4,1);
 	winLayout->addWidget(LblScalingVigore, 5,0);
 	winLayout->addWidget(ScalingVigore, 5,1);
-	winLayout->addWidget(operazioniScudo, 2,2,4,3);
+	//winLayout->addWidget(operazioniScudo, 2,2,4,3);
 	setLayout(winLayout);
 }
 //OVERRIDE SLOTS
