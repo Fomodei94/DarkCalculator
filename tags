@@ -1,0 +1,1400 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(TARGET)	Makefile	/^$(TARGET):  $(OBJECTS)  $/;"	t
+.qmake.stash	Makefile	/^.qmake.stash:$/;"	t
+/usr/lib/libQt5Core.prl	Makefile	/^\/usr\/lib\/libQt5Core.prl:$/;"	t
+/usr/lib/libQt5Gui.prl	Makefile	/^\/usr\/lib\/libQt5Gui.prl:$/;"	t
+/usr/lib/libQt5Widgets.prl	Makefile	/^\/usr\/lib\/libQt5Widgets.prl:$/;"	t
+/usr/lib/qt/mkspecs/common/gcc-base-unix.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/gcc-base-unix.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/gcc-base.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/gcc-base.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/linux.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/linux.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/sanitize.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/sanitize.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/unix.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/unix.conf:$/;"	t
+/usr/lib/qt/mkspecs/features/default_post.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/default_post.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/default_pre.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/default_pre.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/exceptions.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/exceptions.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/exclusive_builds.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/exclusive_builds.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/file_copies.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/file_copies.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/lex.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/lex.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/moc.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/moc.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qmake_use.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qmake_use.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt_config.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt_config.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt_functions.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt_functions.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/resolve_config.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/resolve_config.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/resources.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/resources.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/spec_post.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/spec_post.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/spec_pre.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/spec_pre.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/testcase_targets.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/testcase_targets.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/toolchain.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/toolchain.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/uic.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/uic.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/unix/opengl.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/unix\/opengl.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/unix/thread.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/unix\/thread.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/warn_on.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/warn_on.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/yacc.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/yacc.prf:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KAuth.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KAuth.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCoreAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KItemModels.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KItemModels.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_accessibility_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_bootstrap_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_concurrent.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_concurrent_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_core.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_core.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_core_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_dbus.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_dbus_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_devicediscovery_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_edid_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_egl_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eglfs_kms_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eglfsdeviceintegration_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eventdispatcher_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_fb_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_fontdatabase_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_glx_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_gui.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_gui.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_gui_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_input_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_kms_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_linuxaccessibility_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_location.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_location.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_location_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_network.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_network.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_network_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_opengl.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_opengl_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_openglextensions.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_openglextensions_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_packetprotocol_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_platformcompositor_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioning.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioning_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioningquick.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioningquick_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_printsupport.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_printsupport_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qml.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qml.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qml_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmldebug_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmldevtools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmltest.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmltest_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quick.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quick.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quick_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickparticles_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickwidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickwidgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sensors.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sensors_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_service_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sql.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sql.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sql_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_svg.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_svg.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_svg_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_testlib.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_testlib_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_theme_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_vulkan_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webchannel.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webchannel_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webengine.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webengine_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecore_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecoreheaders_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginewidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginewidgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webkit.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webkit.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webkitwidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webkitwidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_widgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_widgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_x11extras.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_x11extras_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xcb_qpa_lib_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xml.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xml.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xml_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xmlpatterns.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xmlpatterns_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/qconfig.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/qconfig.pri:$/;"	t
+AR	Makefile	/^AR            = ar cqs$/;"	m
+ARMAFISICA_H	Model/ArmaFisica.h	/^#define ARMAFISICA_H$/;"	d
+ARMAMAGICA_H	Model/ArmaMagica.h	/^#define ARMAMAGICA_H$/;"	d
+ARMAMENTO_H	Model/Armamento.h	/^#define ARMAMENTO_H$/;"	d
+ARMATURA_H	Model/Armatura.h	/^#define ARMATURA_H$/;"	d
+ARMA_H	Model/Arma.h	/^#define ARMA_H$/;"	d
+Alleggerisci	Model/Armatura.cpp	/^void Armatura::Alleggerisci(){$/;"	f	class:Armatura	typeref:typename:void
+Alleggerisci	View/OperazioniArmatura.h	/^					*Alleggerisci,$/;"	m	class:OperazioniArmatura	typeref:typename:QPushButton **
+Appesantisci	Model/Armatura.cpp	/^void Armatura::Appesantisci(){$/;"	f	class:Armatura	typeref:typename:void
+Appesantisci	View/OperazioniArmatura.h	/^	QPushButton *Appesantisci,$/;"	m	class:OperazioniArmatura	typeref:typename:QPushButton *
+Arma	Model/Arma.cpp	/^Arma::Arma(double p, double u, double d, int f, int i): Equipaggiamento(p,u), dannoBase(d), forz/;"	f	class:Arma
+Arma	Model/Arma.h	/^class Arma : public Equipaggiamento{ \/\/CLASSE CONCRETA$/;"	c
+Arma.o	Makefile	/^Arma.o: Model\/Arma.cpp Model\/Arma.h \\$/;"	t
+ArmaFisica	Model/ArmaFisica.cpp	/^ArmaFisica::ArmaFisica(double p, double u, double d, int f, int i, char t, char fo, char dx): Ar/;"	f	class:ArmaFisica
+ArmaFisica	Model/ArmaFisica.h	/^class ArmaFisica : public Arma{$/;"	c
+ArmaFisica.o	Makefile	/^ArmaFisica.o: Model\/ArmaFisica.cpp Model\/ArmaFisica.h \\$/;"	t
+ArmaMagica	Model/ArmaMagica.cpp	/^ArmaMagica::ArmaMagica(double p, double u, double d, int f, int i, double fu, double ma, double /;"	f	class:ArmaMagica
+ArmaMagica	Model/ArmaMagica.h	/^class ArmaMagica : public Arma{$/;"	c
+ArmaMagica.o	Makefile	/^ArmaMagica.o: Model\/ArmaMagica.cpp Model\/ArmaMagica.h \\$/;"	t
+Armamento	Model/Armamento.cpp	/^Armamento::Armamento(double p, double u, double d, int v): Equipaggiamento(p,u), difesa(d), vigo/;"	f	class:Armamento
+Armamento	Model/Armamento.h	/^class Armamento : public Equipaggiamento{ \/\/Classe Concreta$/;"	c
+Armamento.o	Makefile	/^Armamento.o: Model\/Armamento.cpp Model\/Armamento.h \\$/;"	t
+Armatura	Model/Armatura.cpp	/^Armatura::Armatura(double p, double u, double d, int v, double ta, double im, double pe, double /;"	f	class:Armatura
+Armatura	Model/Armatura.h	/^class Armatura : public Armamento{$/;"	c
+Armatura.o	Makefile	/^Armatura.o: Model\/Armatura.cpp Model\/Armatura.h \\$/;"	t
+ArteMistica	Model/ArmaMagica.cpp	/^double ArmaMagica::ArteMistica(const Caratteristiche& c){$/;"	f	class:ArmaMagica	typeref:typename:double
+ArteMistica	View/OperazioniArmaMagica.h	/^							*ArteMistica;$/;"	m	class:OperazioniArmaMagica	typeref:typename:QPushButton *****
+AssorbFisico	View/TabScudo.h	/^									*AssorbFisico;$/;"	m	class:TabScudo	typeref:typename:QDoubleSpinBox **
+AssorbMagico	View/TabScudo.h	/^		QDoubleSpinBox *AssorbMagico,$/;"	m	class:TabScudo	typeref:typename:QDoubleSpinBox *
+Benedici	Model/ArmaMagica.cpp	/^void ArmaMagica::Benedici(){$/;"	f	class:ArmaMagica	typeref:typename:void
+Benedici	View/OperazioniArmaMagica.h	/^							*Benedici,$/;"	m	class:OperazioniArmaMagica	typeref:typename:QPushButton ***
+CARATTERISTICHE_GUI_H	View/Caratteristiche_gui.h	/^#define CARATTERISTICHE_GUI_H$/;"	d
+CARATTERISTICHE_H	Model/Caratteristiche.h	/^#define CARATTERISTICHE_H$/;"	d
+CC	Makefile	/^CC            = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS        = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-p/;"	m
+CHK_DIR_EXISTS	Makefile	/^CHK_DIR_EXISTS= test -d$/;"	m
+COMPRESS	Makefile	/^COMPRESS      = gzip -9f$/;"	m
+COPY	Makefile	/^COPY          = cp -f$/;"	m
+COPY_DIR	Makefile	/^COPY_DIR      = cp -f -R$/;"	m
+COPY_FILE	Makefile	/^COPY_FILE     = cp -f$/;"	m
+CXX	Makefile	/^CXX           = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS      = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-p/;"	m
+CalcolaAlleggerisci	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaAlleggerisci() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaAppesantisci	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaAppesantisci() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaArteMistica	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaArteMistica(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaConfrontaConArma	View/OperazioniArmaP2.cpp	/^void OperazioniArmaP2::CalcolaConfrontaConArma(){$/;"	f	class:OperazioniArmaP2	typeref:typename:void
+CalcolaConfrontaDifesa	View/OperazioniArmamento.cpp	/^void OperazioniArmamento::CalcolaConfrontaDifesa() {$/;"	f	class:OperazioniArmamento	typeref:typename:void
+CalcolaConfrontaDifesa	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaConfrontaDifesa() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaConfrontaDifesa	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaConfrontaDifesa() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+CalcolaConfronto	View/OperazioniArma.cpp	/^void OperazioniArma::CalcolaConfronto(){$/;"	f	class:OperazioniArma	typeref:typename:void
+CalcolaConfronto	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaConfronto(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaConfronto	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaConfronto(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaCottaDiMaglia	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaCottaDiMaglia() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaDannoEffettivo	View/OperazioniArma.cpp	/^void OperazioniArma::CalcolaDannoEffettivo(){$/;"	f	class:OperazioniArma	typeref:typename:void
+CalcolaDannoEffettivo	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaDannoEffettivo(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaDannoEffettivo	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaDannoEffettivo(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaEfficacia	View/OperazioniArma.cpp	/^void OperazioniArma::CalcolaEfficacia(){$/;"	f	class:OperazioniArma	typeref:typename:void
+CalcolaEfficacia	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaEfficacia(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaEfficacia	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaEfficacia(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaEquilibrio	View/OperazioniArmamento.cpp	/^void OperazioniArmamento::CalcolaEquilibrio(){$/;"	f	class:OperazioniArmamento	typeref:typename:void
+CalcolaEquilibrio	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaEquilibrio() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaEquilibrio	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaEquilibrio() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+CalcolaFrantuma	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaFrantuma(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaParata	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaParata() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+CalcolaSalute	Model/Caratteristiche.cpp	/^int Caratteristiche::CalcolaSalute() const{$/;"	f	class:Caratteristiche	typeref:typename:int
+CalcolaSomma	View/OperazioniArma.cpp	/^void OperazioniArma::CalcolaSomma(){$/;"	f	class:OperazioniArma	typeref:typename:void
+CalcolaSomma	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaSomma(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaSomma	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaSomma(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaSomma	View/OperazioniArmamento.cpp	/^void OperazioniArmamento::CalcolaSomma() {$/;"	f	class:OperazioniArmamento	typeref:typename:void
+CalcolaSomma	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaSomma() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaSomma	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaSomma() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+CalcolaSopravvivenza	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaSopravvivenza() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaSpezzaguardia	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaSpezzaguardia() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+CalcolaStamina	Model/Caratteristiche.cpp	/^int Caratteristiche::CalcolaStamina() const{$/;"	f	class:Caratteristiche	typeref:typename:int
+CalcolaUsabilita	View/OperazioniArma.cpp	/^void OperazioniArma::CalcolaUsabilita(){$/;"	f	class:OperazioniArma	typeref:typename:void
+CalcolaUsabilita	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::CalcolaUsabilita(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+CalcolaUsabilita	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::CalcolaUsabilita(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+CalcolaUsabilita	View/OperazioniArmamento.cpp	/^void OperazioniArmamento::CalcolaUsabilita(){$/;"	f	class:OperazioniArmamento	typeref:typename:void
+CalcolaUsabilita	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::CalcolaUsabilita() {$/;"	f	class:OperazioniArmatura	typeref:typename:void
+CalcolaUsabilita	View/OperazioniScudo.cpp	/^void OperazioniScudo::CalcolaUsabilita() {$/;"	f	class:OperazioniScudo	typeref:typename:void
+Caratteristiche	Model/Caratteristiche.cpp	/^Caratteristiche::Caratteristiche(int vit, int en, int vig, int fo, int de, int in, int fe): vita/;"	f	class:Caratteristiche
+Caratteristiche	Model/Caratteristiche.h	/^class Caratteristiche{$/;"	c
+Caratteristiche.o	Makefile	/^Caratteristiche.o: Model\/Caratteristiche.cpp Model\/Caratteristiche.h$/;"	t
+CaratteristicheP1	View/MainWindow.h	/^    Caratteristiche_gui *CaratteristicheP1;$/;"	m	class:MainWindow	typeref:typename:Caratteristiche_gui *
+CaratteristicheP2	View/MainWindow.h	/^    Caratteristiche_gui *CaratteristicheP2;$/;"	m	class:MainWindow	typeref:typename:Caratteristiche_gui *
+Caratteristiche_gui	View/Caratteristiche_gui.cpp	/^Caratteristiche_gui::Caratteristiche_gui(QWidget *parent, int p, Caratteristiche *car) : QWidget/;"	f	class:Caratteristiche_gui
+Caratteristiche_gui	View/Caratteristiche_gui.h	/^class Caratteristiche_gui : public QWidget {$/;"	c
+Caratteristiche_gui.o	Makefile	/^Caratteristiche_gui.o: View\/Caratteristiche_gui.cpp View\/Caratteristiche_gui.h \\$/;"	t
+ConfrontaConArma	View/OperazioniArmaP2.h	/^		QPushButton *ConfrontaConArma,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton *
+ConfrontaConArmaFisica	View/OperazioniArmaP2.h	/^					*ConfrontaConArmaFisica,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton **
+ConfrontaConArmaMagica	View/OperazioniArmaP2.h	/^					*ConfrontaConArmaMagica,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton ***
+ConfrontaDanno	Model/Arma.cpp	/^double Arma::ConfrontaDanno(const Caratteristiche& c, Arma* a) const{$/;"	f	class:Arma	typeref:typename:double
+ConfrontaDanno	View/OperazioniArma.h	/^					*ConfrontaDanno,$/;"	m	class:OperazioniArma	typeref:typename:QPushButton ****
+ConfrontaDifesa	Model/Armamento.cpp	/^double Armamento::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:Armamento	typeref:typename:double
+ConfrontaDifesa	Model/Armatura.cpp	/^double Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:Armatura	typeref:typename:double
+ConfrontaDifesa	Model/Scudo.cpp	/^double Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:Scudo	typeref:typename:double
+ConfrontaDifesa	View/OperazioniArmamento.h	/^							 *ConfrontaDifesa,$/;"	m	class:OperazioniArmamento	typeref:typename:QPushButton ***
+CottaDiMaglia	Model/Armatura.cpp	/^void Armatura::CottaDiMaglia(){$/;"	f	class:Armatura	typeref:typename:void
+CottaDiMaglia	View/OperazioniArmatura.h	/^					*CottaDiMaglia,$/;"	m	class:OperazioniArmatura	typeref:typename:QPushButton ***
+Cristallizza	Model/ArmaFisica.cpp	/^void ArmaFisica::Cristallizza(){$/;"	f	class:ArmaFisica	typeref:typename:void
+Cristallizza	View/OperazioniArmaFisica.h	/^							*Cristallizza,$/;"	m	class:OperazioniArmaFisica	typeref:typename:QPushButton ***
+DEL_DIR	Makefile	/^DEL_DIR       = rmdir$/;"	m
+DEL_FILE	Makefile	/^DEL_FILE      = rm -f$/;"	m
+DESTDIR	Makefile	/^DESTDIR       = $/;"	m
+DIST	Makefile	/^DIST          = \/usr\/lib\/qt\/mkspecs\/features\/spec_pre.prf \\$/;"	m
+DISTDIR	Makefile	/^DISTDIR = \/home\/luca\/Desktop\/DarkCalcGUI\/DarkCalculator\/.tmp\/DarkCalculator1.0.0$/;"	m
+DISTNAME	Makefile	/^DISTNAME      = DarkCalculator1.0.0$/;"	m
+DannoBase	View/TabArma.h	/^        QDoubleSpinBox* DannoBase;$/;"	m	class:TabArma	typeref:typename:QDoubleSpinBox *
+DannoEffettivo	Model/Arma.cpp	/^double Arma::DannoEffettivo(const Caratteristiche& c) const{$/;"	f	class:Arma	typeref:typename:double
+DannoEffettivo	Model/ArmaFisica.cpp	/^double ArmaFisica::DannoEffettivo(const Caratteristiche& c) const{$/;"	f	class:ArmaFisica	typeref:typename:double
+DannoEffettivo	Model/ArmaMagica.cpp	/^double ArmaMagica::DannoEffettivo(const Caratteristiche& c) const{$/;"	f	class:ArmaMagica	typeref:typename:double
+DannoEffettivo	View/OperazioniArma.h	/^		QPushButton *DannoEffettivo,$/;"	m	class:OperazioniArma	typeref:typename:QPushButton *
+DarkCalculator.pro	Makefile	/^DarkCalculator.pro:$/;"	t
+DifAffondo	View/TabArmatura.h	/^								*DifAffondo;$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox *******
+DifContundente	View/TabArmatura.h	/^								*DifContundente,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox ******
+DifElettricita	View/TabArmatura.h	/^								*DifElettricita,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox ****
+DifFuoco	View/TabArmatura.h	/^								*DifFuoco,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox ***
+DifMagia	View/TabArmatura.h	/^		QDoubleSpinBox *DifMagia,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox *
+DifOscurita	View/TabArmatura.h	/^								*DifOscurita,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox **
+DifTaglio	View/TabArmatura.h	/^								*DifTaglio,$/;"	m	class:TabArmatura	typeref:typename:QDoubleSpinBox *****
+Difesa	View/TabArmamento.h	/^    QDoubleSpinBox* Difesa;$/;"	m	class:TabArmamento	typeref:typename:QDoubleSpinBox *
+EQUIPAGGIAMENTO_H	Model/Equipaggiamento.h	/^#define EQUIPAGGIAMENTO_H$/;"	d
+Efficacia	Model/Arma.cpp	/^double Arma::Efficacia(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:Arma	typeref:typename:double
+Efficacia	Model/ArmaFisica.cpp	/^double ArmaFisica::Efficacia(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:ArmaFisica	typeref:typename:double
+Efficacia	Model/ArmaMagica.cpp	/^double ArmaMagica::Efficacia(const Caratteristiche& c, Armamento* a) const{$/;"	f	class:ArmaMagica	typeref:typename:double
+Efficacia	View/OperazioniArma.h	/^					*Efficacia,$/;"	m	class:OperazioniArma	typeref:typename:QPushButton **
+Elettrico	View/TabArmaMagica.h	/^										*Elettrico,$/;"	m	class:TabArmaMagica	typeref:typename:QDoubleSpinBox ***
+Equilibrio	Model/Armamento.cpp	/^double Armamento::Equilibrio(const Caratteristiche& c) const{$/;"	f	class:Armamento	typeref:typename:double
+Equilibrio	Model/Armatura.cpp	/^double Armatura::Equilibrio(const Caratteristiche& c) const{$/;"	f	class:Armatura	typeref:typename:double
+Equilibrio	Model/Scudo.cpp	/^double Scudo::Equilibrio(const Caratteristiche& c) const{$/;"	f	class:Scudo	typeref:typename:double
+Equilibrio	View/OperazioniArmamento.h	/^		QPushButton *Equilibrio,$/;"	m	class:OperazioniArmamento	typeref:typename:QPushButton *
+Equipaggiamento	Model/Equipaggiamento.cpp	/^Equipaggiamento::Equipaggiamento(double p, double u): peso(p), usura(u) {$/;"	f	class:Equipaggiamento
+Equipaggiamento	Model/Equipaggiamento.h	/^class Equipaggiamento{ \/\/CLASSE BASE ASTRATTA$/;"	c
+Equipaggiamento.o	Makefile	/^Equipaggiamento.o: Model\/Equipaggiamento.cpp Model\/Equipaggiamento.h \\$/;"	t
+EquipaggiamentoP1	View/MainWindow.h	/^    TabWidget *EquipaggiamentoP1;$/;"	m	class:MainWindow	typeref:typename:TabWidget *
+EquipaggiamentoP2	View/MainWindow.h	/^    TabWidget *EquipaggiamentoP2;$/;"	m	class:MainWindow	typeref:typename:TabWidget *
+EseguiBenedici	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::EseguiBenedici(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+EseguiCristallizza	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::EseguiCristallizza(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+EseguiIncanta	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::EseguiIncanta(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+EseguiInfuoca	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::EseguiInfuoca(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+EseguiMaledici	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::EseguiMaledici(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+EseguiRaffina	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::EseguiRaffina(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+EseguiRiforgia	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::EseguiRiforgia(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+FORCE	Makefile	/^FORCE:$/;"	t
+FinishInit	View/TabArma.cpp	/^void TabArma::FinishInit(){$/;"	f	class:TabArma	typeref:typename:void
+FinishInit	View/TabArmaFisica.cpp	/^void TabArmaFisica::FinishInit() {$/;"	f	class:TabArmaFisica	typeref:typename:void
+FinishInit	View/TabArmaMagica.cpp	/^void TabArmaMagica::FinishInit() {$/;"	f	class:TabArmaMagica	typeref:typename:void
+FinishInit	View/TabArmamento.cpp	/^void TabArmamento::FinishInit(){$/;"	f	class:TabArmamento	typeref:typename:void
+FinishInit	View/TabArmatura.cpp	/^void TabArmatura::FinishInit() {$/;"	f	class:TabArmatura	typeref:typename:void
+FinishInit	View/TabScudo.cpp	/^void TabScudo::FinishInit() {$/;"	f	class:TabScudo	typeref:typename:void
+Frantuma	Model/ArmaFisica.cpp	/^double ArmaFisica::Frantuma(const Caratteristiche& c, Equipaggiamento* e) const{$/;"	f	class:ArmaFisica	typeref:typename:double
+Frantuma	View/OperazioniArmaFisica.h	/^							*Frantuma,$/;"	m	class:OperazioniArmaFisica	typeref:typename:QPushButton **
+Frantuma	View/OperazioniArmaP2.h	/^					*Frantuma,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton *******
+Fuoco	View/TabArmaMagica.h	/^		QDoubleSpinBox *Fuoco,$/;"	m	class:TabArmaMagica	typeref:typename:QDoubleSpinBox *
+GetAssorbimentoFisico	Model/Scudo.cpp	/^double Scudo::GetAssorbimentoFisico() const {return assorbimentoFisico;}$/;"	f	class:Scudo	typeref:typename:double
+GetAssorbimentoMagico	Model/Scudo.cpp	/^double Scudo::GetAssorbimentoMagico() const {return assorbimentoMagico;}$/;"	f	class:Scudo	typeref:typename:double
+GetDannoBase	Model/Arma.cpp	/^double Arma::GetDannoBase() const {return dannoBase;}$/;"	f	class:Arma	typeref:typename:double
+GetDestrezza	Model/Caratteristiche.cpp	/^int Caratteristiche::GetDestrezza() const{return destrezza;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetDifesa	Model/Armamento.cpp	/^double Armamento::GetDifesa() const {return difesa;}$/;"	f	class:Armamento	typeref:typename:double
+GetDifesaAffondo	Model/Armatura.cpp	/^double Armatura::GetDifesaAffondo() const {return difesaAffondo;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaContundente	Model/Armatura.cpp	/^double Armatura::GetDifesaContundente() const {return difesaContundente;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaElettricita	Model/Armatura.cpp	/^double Armatura::GetDifesaElettricita() const {return difesaElettricita;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaFuoco	Model/Armatura.cpp	/^double Armatura::GetDifesaFuoco() const {return difesaFuoco;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaMagia	Model/Armatura.cpp	/^double Armatura::GetDifesaMagia() const {return difesaMagia;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaOscurita	Model/Armatura.cpp	/^double Armatura::GetDifesaOscurita() const {return difesaOscurita;}$/;"	f	class:Armatura	typeref:typename:double
+GetDifesaTaglio	Model/Armatura.cpp	/^double Armatura::GetDifesaTaglio() const {return difesaTaglio;}$/;"	f	class:Armatura	typeref:typename:double
+GetElettrico	Model/ArmaMagica.cpp	/^double ArmaMagica::GetElettrico() const {return elettrico;}$/;"	f	class:ArmaMagica	typeref:typename:double
+GetEnergia	Model/Caratteristiche.cpp	/^int Caratteristiche::GetEnergia() const{return energia;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetFede	Model/Caratteristiche.cpp	/^int Caratteristiche::GetFede() const{return fede;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetForza	Model/Caratteristiche.cpp	/^int Caratteristiche::GetForza() const{return forza;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetForzaRichiesta	Model/Arma.cpp	/^int Arma::GetForzaRichiesta() const {return forzaRichiesta;}$/;"	f	class:Arma	typeref:typename:int
+GetFuoco	Model/ArmaMagica.cpp	/^double ArmaMagica::GetFuoco() const {return fuoco;}$/;"	f	class:ArmaMagica	typeref:typename:double
+GetIntelligenza	Model/Caratteristiche.cpp	/^int Caratteristiche::GetIntelligenza() const{return intelligenza;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetIntelligenzaRichiesta	Model/Arma.cpp	/^int Arma::GetIntelligenzaRichiesta() const {return intelligenzaRichiesta;}$/;"	f	class:Arma	typeref:typename:int
+GetMagico	Model/ArmaMagica.cpp	/^double ArmaMagica::GetMagico() const {return magico;}$/;"	f	class:ArmaMagica	typeref:typename:double
+GetOscuro	Model/ArmaMagica.cpp	/^double ArmaMagica::GetOscuro() const {return oscuro;}$/;"	f	class:ArmaMagica	typeref:typename:double
+GetPeso	Model/Equipaggiamento.cpp	/^double Equipaggiamento::GetPeso() const {return peso;}$/;"	f	class:Equipaggiamento	typeref:typename:double
+GetScalingDestrezza	Model/ArmaFisica.cpp	/^char ArmaFisica::GetScalingDestrezza() const {return scalingDestrezza;}$/;"	f	class:ArmaFisica	typeref:typename:char
+GetScalingFede	Model/ArmaMagica.cpp	/^char ArmaMagica::GetScalingFede() const {return scalingFede;}$/;"	f	class:ArmaMagica	typeref:typename:char
+GetScalingForza	Model/ArmaFisica.cpp	/^char ArmaFisica::GetScalingForza() const {return scalingForza;}$/;"	f	class:ArmaFisica	typeref:typename:char
+GetScalingIntelligenza	Model/ArmaMagica.cpp	/^char ArmaMagica::GetScalingIntelligenza() const {return scalingIntelligenza;}$/;"	f	class:ArmaMagica	typeref:typename:char
+GetScalingVigore	Model/Scudo.cpp	/^char Scudo::GetScalingVigore() const {return scalingVigore;}$/;"	f	class:Scudo	typeref:typename:char
+GetStabilita	Model/Scudo.cpp	/^int Scudo::GetStabilita() const {return stabilita;}$/;"	f	class:Scudo	typeref:typename:int
+GetTipoDanno	Model/ArmaFisica.cpp	/^char ArmaFisica::GetTipoDanno() const {return tipoDanno;}$/;"	f	class:ArmaFisica	typeref:typename:char
+GetUsura	Model/Equipaggiamento.cpp	/^double Equipaggiamento::GetUsura() const {return usura;}$/;"	f	class:Equipaggiamento	typeref:typename:double
+GetVigore	Model/Caratteristiche.cpp	/^int Caratteristiche::GetVigore() const{return vigore;}$/;"	f	class:Caratteristiche	typeref:typename:int
+GetVigoreRichiesto	Model/Armamento.cpp	/^int Armamento::GetVigoreRichiesto() const {return vigoreRichiesto;}$/;"	f	class:Armamento	typeref:typename:int
+GetVitalita	Model/Caratteristiche.cpp	/^int Caratteristiche::GetVitalita() const{return vitalita;}$/;"	f	class:Caratteristiche	typeref:typename:int
+HyperArmor	Model/Armatura.cpp	/^double Armatura::HyperArmor(const Caratteristiche& c, Arma* a) const{$/;"	f	class:Armatura	typeref:typename:double
+HyperArmor	View/OperazioniArmaP2.h	/^					*HyperArmor,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton *********
+INCPATH	Makefile	/^INCPATH       = -I. -I. -isystem \/usr\/include\/qt -isystem \/usr\/include\/qt\/QtWidgets -isys/;"	m
+INSTALL_DIR	Makefile	/^INSTALL_DIR   = cp -f -R$/;"	m
+INSTALL_FILE	Makefile	/^INSTALL_FILE  = install -m 644 -p$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = install -m 755 -p$/;"	m
+Incanta	Model/ArmaMagica.cpp	/^void ArmaMagica::Incanta(){$/;"	f	class:ArmaMagica	typeref:typename:void
+Incanta	View/OperazioniArmaMagica.h	/^	QPushButton *Incanta,$/;"	m	class:OperazioniArmaMagica	typeref:typename:QPushButton *
+Infuoca	Model/ArmaMagica.cpp	/^void ArmaMagica::Infuoca(){$/;"	f	class:ArmaMagica	typeref:typename:void
+Infuoca	View/OperazioniArmaMagica.h	/^							*Infuoca,$/;"	m	class:OperazioniArmaMagica	typeref:typename:QPushButton **
+LIBS	Makefile	/^LIBS          = $(SUBLIBS) -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread $/;"	m
+LINK	Makefile	/^LINK          = g++$/;"	m
+LblAssorbFisico	View/TabScudo.h	/^						*LblAssorbFisico,$/;"	m	class:TabScudo	typeref:typename:QLabel ***
+LblAssorbMagico	View/TabScudo.h	/^						*LblAssorbMagico,$/;"	m	class:TabScudo	typeref:typename:QLabel **
+LblDannoBase	View/TabArma.h	/^    QLabel* LblDannoBase;$/;"	m	class:TabArma	typeref:typename:QLabel *
+LblDifAffondo	View/TabArmatura.h	/^						*LblDifAffondo;$/;"	m	class:TabArmatura	typeref:typename:QLabel *******
+LblDifContundente	View/TabArmatura.h	/^						*LblDifContundente,$/;"	m	class:TabArmatura	typeref:typename:QLabel ******
+LblDifElettricita	View/TabArmatura.h	/^						*LblDifElettricita,$/;"	m	class:TabArmatura	typeref:typename:QLabel ****
+LblDifFuoco	View/TabArmatura.h	/^						*LblDifFuoco,$/;"	m	class:TabArmatura	typeref:typename:QLabel ***
+LblDifMagia	View/TabArmatura.h	/^		QLabel  *LblDifMagia,$/;"	m	class:TabArmatura	typeref:typename:QLabel *
+LblDifOscurita	View/TabArmatura.h	/^						*LblDifOscurita,$/;"	m	class:TabArmatura	typeref:typename:QLabel **
+LblDifTaglio	View/TabArmatura.h	/^						*LblDifTaglio,$/;"	m	class:TabArmatura	typeref:typename:QLabel *****
+LblDifesa	View/TabArmamento.h	/^    QLabel* LblDifesa;$/;"	m	class:TabArmamento	typeref:typename:QLabel *
+LblElettrico	View/TabArmaMagica.h	/^						*LblElettrico,$/;"	m	class:TabArmaMagica	typeref:typename:QLabel ***
+LblForzaRichiesta	View/TabArma.h	/^    QLabel* LblForzaRichiesta;$/;"	m	class:TabArma	typeref:typename:QLabel *
+LblFuoco	View/TabArmaMagica.h	/^		QLabel *LblFuoco,$/;"	m	class:TabArmaMagica	typeref:typename:QLabel *
+LblIntelligenzaRichiesta	View/TabArma.h	/^    QLabel* LblIntelligenzaRichiesta;$/;"	m	class:TabArma	typeref:typename:QLabel *
+LblMagico	View/TabArmaMagica.h	/^						*LblMagico,$/;"	m	class:TabArmaMagica	typeref:typename:QLabel **
+LblOscuro	View/TabArmaMagica.h	/^						*LblOscuro,$/;"	m	class:TabArmaMagica	typeref:typename:QLabel ****
+LblPeso	View/TabArma.h	/^    QLabel* LblPeso;$/;"	m	class:TabArma	typeref:typename:QLabel *
+LblPeso	View/TabArmamento.h	/^    QLabel* LblPeso;$/;"	m	class:TabArmamento	typeref:typename:QLabel *
+LblScalingDestrezza	View/TabArmaFisica.h	/^						*LblScalingDestrezza;$/;"	m	class:TabArmaFisica	typeref:typename:QLabel ***
+LblScalingFede	View/TabArmaMagica.h	/^						*LblScalingFede;$/;"	m	class:TabArmaMagica	typeref:typename:QLabel ******
+LblScalingForza	View/TabArmaFisica.h	/^						*LblScalingForza,$/;"	m	class:TabArmaFisica	typeref:typename:QLabel **
+LblScalingIntelligenza	View/TabArmaMagica.h	/^						*LblScalingIntelligenza,$/;"	m	class:TabArmaMagica	typeref:typename:QLabel *****
+LblScalingVigore	View/TabScudo.h	/^						*LblScalingVigore;$/;"	m	class:TabScudo	typeref:typename:QLabel ****
+LblStabilita	View/TabScudo.h	/^		QLabel  *LblStabilita,$/;"	m	class:TabScudo	typeref:typename:QLabel *
+LblTipoDanno	View/TabArmaFisica.h	/^		QLabel *LblTipoDanno,$/;"	m	class:TabArmaFisica	typeref:typename:QLabel *
+LblUsura	View/TabArma.h	/^    QLabel* LblUsura;$/;"	m	class:TabArma	typeref:typename:QLabel *
+LblUsura	View/TabArmamento.h	/^    QLabel* LblUsura;$/;"	m	class:TabArmamento	typeref:typename:QLabel *
+LblVigoreRichiesto	View/TabArmamento.h	/^    QLabel* LblVigoreRichiesto;$/;"	m	class:TabArmamento	typeref:typename:QLabel *
+Livello	Model/Caratteristiche.cpp	/^int Caratteristiche::Livello() const {return vitalita+energia+vigore+forza+destrezza+intelligenz/;"	f	class:Caratteristiche	typeref:typename:int
+MAINWINDOW_H	View/MainWindow.h	/^#define MAINWINDOW_H$/;"	d
+MAKEFILE	Makefile	/^MAKEFILE      = Makefile$/;"	m
+MKDIR	Makefile	/^MKDIR         = mkdir -p$/;"	m
+MOVE	Makefile	/^MOVE          = mv -f$/;"	m
+Magico	View/TabArmaMagica.h	/^										*Magico,$/;"	m	class:TabArmaMagica	typeref:typename:QDoubleSpinBox **
+MainWindow	View/MainWindow.cpp	/^MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)$/;"	f	class:MainWindow
+MainWindow	View/MainWindow.h	/^class MainWindow : public QMainWindow$/;"	c
+MainWindow.o	Makefile	/^MainWindow.o: View\/MainWindow.cpp View\/MainWindow.h \\$/;"	t
+Makefile	Makefile	/^Makefile: DarkCalculator.pro \/usr\/lib\/qt\/mkspecs\/linux-g++\/qmake.conf \/usr\/lib\/qt\/mksp/;"	t
+Maledici	Model/ArmaMagica.cpp	/^void ArmaMagica::Maledici(){$/;"	f	class:ArmaMagica	typeref:typename:void
+Maledici	View/OperazioniArmaMagica.h	/^							*Maledici,$/;"	m	class:OperazioniArmaMagica	typeref:typename:QPushButton ****
+MappaEquipaggiamenti	View/TabWidget.h	/^	std::map<std::string, Equipaggiamento*>* MappaEquipaggiamenti;$/;"	m	class:TabWidget	typeref:typename:std::map<std::string,Equipaggiamento * > *
+Moltiplicatore	Model/Equipaggiamento.cpp	/^double Equipaggiamento::Moltiplicatore(char s) const{$/;"	f	class:Equipaggiamento	typeref:typename:double
+MostraRisultatoBooleano	moc_OperazioniArma.cpp	/^void OperazioniArma::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniArma	typeref:typename:void
+MostraRisultatoBooleano	moc_OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+MostraRisultatoBooleano	moc_OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+MostraRisultatoBooleano	moc_OperazioniArmamento.cpp	/^void OperazioniArmamento::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniArmamento	typeref:typename:void
+MostraRisultatoBooleano	moc_OperazioniArmatura.cpp	/^void OperazioniArmatura::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniArmatura	typeref:typename:void
+MostraRisultatoBooleano	moc_OperazioniScudo.cpp	/^void OperazioniScudo::MostraRisultatoBooleano(bool _t1)$/;"	f	class:OperazioniScudo	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabArma.cpp	/^void TabArma::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabArma	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabArmaFisica.cpp	/^void TabArmaFisica::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabArmaFisica	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabArmaMagica.cpp	/^void TabArmaMagica::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabArmaMagica	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabArmamento.cpp	/^void TabArmamento::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabArmamento	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabArmatura.cpp	/^void TabArmatura::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabArmatura	typeref:typename:void
+MostraRisultatoBooleano2	moc_TabScudo.cpp	/^void TabScudo::MostraRisultatoBooleano2(bool _t1)$/;"	f	class:TabScudo	typeref:typename:void
+MostraRisultatoBooleano3	moc_TabWidget.cpp	/^void TabWidget::MostraRisultatoBooleano3(bool _t1)$/;"	f	class:TabWidget	typeref:typename:void
+MostraRisultatoBooleanoFinale	View/MainWindow.cpp	/^void MainWindow::MostraRisultatoBooleanoFinale(bool x){$/;"	f	class:MainWindow	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniArma.cpp	/^void OperazioniArma::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniArma	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniArmamento.cpp	/^void OperazioniArmamento::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniArmamento	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniArmatura.cpp	/^void OperazioniArmatura::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniArmatura	typeref:typename:void
+MostraRisultatoNumerico	moc_OperazioniScudo.cpp	/^void OperazioniScudo::MostraRisultatoNumerico(double _t1)$/;"	f	class:OperazioniScudo	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabArma.cpp	/^void TabArma::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabArma	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabArmaFisica.cpp	/^void TabArmaFisica::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabArmaFisica	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabArmaMagica.cpp	/^void TabArmaMagica::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabArmaMagica	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabArmamento.cpp	/^void TabArmamento::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabArmamento	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabArmatura.cpp	/^void TabArmatura::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabArmatura	typeref:typename:void
+MostraRisultatoNumerico2	moc_TabScudo.cpp	/^void TabScudo::MostraRisultatoNumerico2(double _t1)$/;"	f	class:TabScudo	typeref:typename:void
+MostraRisultatoNumerico3	moc_TabWidget.cpp	/^void TabWidget::MostraRisultatoNumerico3(double _t1)$/;"	f	class:TabWidget	typeref:typename:void
+MostraRisultatoNumericoFinale	View/MainWindow.cpp	/^void MainWindow::MostraRisultatoNumericoFinale(double x){$/;"	f	class:MainWindow	typeref:typename:void
+OBJECTS	Makefile	/^OBJECTS       = main.o \\$/;"	m
+OBJECTS_DIR	Makefile	/^OBJECTS_DIR   = .\/$/;"	m
+OPERAZIONI_ARMA	View/OperazioniArma.h	/^#define OPERAZIONI_ARMA$/;"	d
+OPERAZIONI_ARMAFISICA	View/OperazioniArmaFisica.h	/^#define OPERAZIONI_ARMAFISICA$/;"	d
+OPERAZIONI_ARMAMAGICA	View/OperazioniArmaMagica.h	/^#define OPERAZIONI_ARMAMAGICA$/;"	d
+OPERAZIONI_ARMAMENTO	View/OperazioniArmamento.h	/^#define OPERAZIONI_ARMAMENTO$/;"	d
+OPERAZIONI_ARMAP2	View/OperazioniArmaP2.h	/^#define OPERAZIONI_ARMAP2$/;"	d
+OPERAZIONI_ARMATURA	View/OperazioniArmatura.h	/^#define OPERAZIONI_ARMATURA$/;"	d
+OPERAZIONI_SCUDO	View/OperazioniScudo.h	/^#define OPERAZIONI_SCUDO$/;"	d
+OperazioniArma	View/OperazioniArma.cpp	/^OperazioniArma::OperazioniArma(QWidget* parent, Arma* arma, Caratteristiche* car): QWidget(paren/;"	f	class:OperazioniArma
+OperazioniArma	View/OperazioniArma.h	/^class OperazioniArma: public QWidget{$/;"	c
+OperazioniArma.o	Makefile	/^OperazioniArma.o: View\/OperazioniArma.cpp View\/OperazioniArma.h \\$/;"	t
+OperazioniArmaFisica	View/OperazioniArmaFisica.cpp	/^OperazioniArmaFisica::OperazioniArmaFisica(QWidget* parent, ArmaFisica* arma, Caratteristiche* c/;"	f	class:OperazioniArmaFisica
+OperazioniArmaFisica	View/OperazioniArmaFisica.h	/^class OperazioniArmaFisica: public OperazioniArma{$/;"	c
+OperazioniArmaFisica.o	Makefile	/^OperazioniArmaFisica.o: View\/OperazioniArmaFisica.cpp View\/OperazioniArmaFisica.h \\$/;"	t
+OperazioniArmaMagica	View/OperazioniArmaMagica.cpp	/^OperazioniArmaMagica::OperazioniArmaMagica(QWidget* parent, ArmaMagica* arma, Caratteristiche* c/;"	f	class:OperazioniArmaMagica
+OperazioniArmaMagica	View/OperazioniArmaMagica.h	/^class OperazioniArmaMagica: public OperazioniArma{$/;"	c
+OperazioniArmaMagica.o	Makefile	/^OperazioniArmaMagica.o: View\/OperazioniArmaMagica.cpp View\/OperazioniArmaMagica.h \\$/;"	t
+OperazioniArmaP2	View/OperazioniArmaP2.cpp	/^OperazioniArmaP2::OperazioniArmaP2(QWidget* parent, std::map<std::string, Equipaggiamento*>* equ/;"	f	class:OperazioniArmaP2
+OperazioniArmaP2	View/OperazioniArmaP2.h	/^class OperazioniArmaP2: public QWidget{$/;"	c
+OperazioniArmamento	View/OperazioniArmamento.cpp	/^OperazioniArmamento::OperazioniArmamento(QWidget* parent, Armamento* armamento, Caratteristiche*/;"	f	class:OperazioniArmamento
+OperazioniArmamento	View/OperazioniArmamento.h	/^class OperazioniArmamento: public QWidget{$/;"	c
+OperazioniArmamento.o	Makefile	/^OperazioniArmamento.o: View\/OperazioniArmamento.cpp View\/OperazioniArmamento.h \\$/;"	t
+OperazioniArmatura	View/OperazioniArmatura.cpp	/^OperazioniArmatura::OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car/;"	f	class:OperazioniArmatura
+OperazioniArmatura	View/OperazioniArmatura.h	/^class OperazioniArmatura : public OperazioniArmamento{$/;"	c
+OperazioniArmatura.o	Makefile	/^OperazioniArmatura.o: View\/OperazioniArmatura.cpp View\/OperazioniArmatura.h \\$/;"	t
+OperazioniScudo	View/OperazioniScudo.cpp	/^OperazioniScudo::OperazioniScudo(QWidget* parent, Scudo* scudo, Caratteristiche* car): Operazion/;"	f	class:OperazioniScudo
+OperazioniScudo	View/OperazioniScudo.h	/^class OperazioniScudo : public OperazioniArmamento{$/;"	c
+OperazioniScudo.o	Makefile	/^OperazioniScudo.o: View\/OperazioniScudo.cpp View\/OperazioniScudo.h \\$/;"	t
+Oscuro	View/TabArmaMagica.h	/^										*Oscuro;$/;"	m	class:TabArmaMagica	typeref:typename:QDoubleSpinBox ****
+Parata	Model/Scudo.cpp	/^double Scudo::Parata(const Caratteristiche& c) const{$/;"	f	class:Scudo	typeref:typename:double
+Parata	View/OperazioniScudo.h	/^					*Parata;$/;"	m	class:OperazioniScudo	typeref:typename:QPushButton **
+QINSTALL	Makefile	/^QINSTALL      = \/usr\/bin\/qmake -install qinstall$/;"	m
+QINSTALL_PROGRAM	Makefile	/^QINSTALL_PROGRAM = \/usr\/bin\/qmake -install qinstall -exe$/;"	m
+QT_MOC_LITERAL	moc_Caratteristiche_gui.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_MainWindow.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniArma.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniArmaFisica.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniArmaMagica.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniArmamento.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniArmatura.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_OperazioniScudo.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabArma.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabArmaFisica.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabArmaMagica.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabArmamento.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabArmatura.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabScudo.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+QT_MOC_LITERAL	moc_TabWidget.cpp	/^#define QT_MOC_LITERAL(/;"	d	file:
+RANLIB	Makefile	/^RANLIB        = $/;"	m
+Raffina	Model/ArmaFisica.cpp	/^void ArmaFisica::Raffina(){$/;"	f	class:ArmaFisica	typeref:typename:void
+Raffina	View/OperazioniArmaFisica.h	/^	QPushButton *Raffina,$/;"	m	class:OperazioniArmaFisica	typeref:typename:QPushButton *
+Riforgia	Model/ArmaFisica.cpp	/^void ArmaFisica::Riforgia(){$/;"	f	class:ArmaFisica	typeref:typename:void
+Riforgia	View/OperazioniArmaFisica.h	/^							*Riforgia;$/;"	m	class:OperazioniArmaFisica	typeref:typename:QPushButton ****
+Risultato	View/MainWindow.h	/^    QLabel *Risultato;$/;"	m	class:MainWindow	typeref:typename:QLabel *
+SCUDO_H	Model/Scudo.h	/^#define SCUDO_H$/;"	d
+SED	Makefile	/^SED           = sed$/;"	m
+SOURCES	Makefile	/^SOURCES       = main.cpp \\$/;"	m
+STRIP	Makefile	/^STRIP         = strip$/;"	m
+SYMLINK	Makefile	/^SYMLINK       = ln -f -s$/;"	m
+ScalingDestrezza	View/TabArmaFisica.h	/^								*ScalingDestrezza;$/;"	m	class:TabArmaFisica	typeref:typename:QComboBox ***
+ScalingFede	View/TabArmaMagica.h	/^							*ScalingFede;$/;"	m	class:TabArmaMagica	typeref:typename:QComboBox **
+ScalingForza	View/TabArmaFisica.h	/^								*ScalingForza,$/;"	m	class:TabArmaFisica	typeref:typename:QComboBox **
+ScalingIntelligenza	View/TabArmaMagica.h	/^		QComboBox *ScalingIntelligenza,$/;"	m	class:TabArmaMagica	typeref:typename:QComboBox *
+ScalingVigore	View/TabScudo.h	/^		QComboBox *ScalingVigore;$/;"	m	class:TabScudo	typeref:typename:QComboBox *
+Scudo	Model/Scudo.cpp	/^Scudo::Scudo(double p, double u, double d, int v, double am, double af, int st, char sv): Armame/;"	f	class:Scudo
+Scudo	Model/Scudo.h	/^class Scudo : public Armamento{$/;"	c
+Scudo.o	Makefile	/^Scudo.o: Model\/Scudo.cpp Model\/Scudo.h \\$/;"	t
+SetAssorbimentoFisico	Model/Scudo.cpp	/^void Scudo::SetAssorbimentoFisico(double x){$/;"	f	class:Scudo	typeref:typename:void
+SetAssorbimentoMagico	Model/Scudo.cpp	/^void Scudo::SetAssorbimentoMagico(double x){$/;"	f	class:Scudo	typeref:typename:void
+SetDannoBase	Model/Arma.cpp	/^void Arma::SetDannoBase(double x){$/;"	f	class:Arma	typeref:typename:void
+SetDestrezza	Model/Caratteristiche.cpp	/^void Caratteristiche::SetDestrezza(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetDifesa	Model/Armamento.cpp	/^void Armamento::SetDifesa(double x){$/;"	f	class:Armamento	typeref:typename:void
+SetDifesaAffondo	Model/Armatura.cpp	/^void Armatura::SetDifesaAffondo(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaContundente	Model/Armatura.cpp	/^void Armatura::SetDifesaContundente(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaElettricita	Model/Armatura.cpp	/^void Armatura::SetDifesaElettricita(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaFuoco	Model/Armatura.cpp	/^void Armatura::SetDifesaFuoco(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaMagica	Model/Armatura.cpp	/^void Armatura::SetDifesaMagica(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaOscurita	Model/Armatura.cpp	/^void Armatura::SetDifesaOscurita(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetDifesaTaglio	Model/Armatura.cpp	/^void Armatura::SetDifesaTaglio(double x){$/;"	f	class:Armatura	typeref:typename:void
+SetElettrico	Model/ArmaMagica.cpp	/^void ArmaMagica::SetElettrico(double x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetEnergia	Model/Caratteristiche.cpp	/^void Caratteristiche::SetEnergia(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetFede	Model/Caratteristiche.cpp	/^void Caratteristiche::SetFede(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetForza	Model/Caratteristiche.cpp	/^void Caratteristiche::SetForza(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetForzaRichiesta	Model/Arma.cpp	/^void Arma::SetForzaRichiesta(int x){$/;"	f	class:Arma	typeref:typename:void
+SetFuoco	Model/ArmaMagica.cpp	/^void ArmaMagica::SetFuoco(double x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetIntelligenza	Model/Caratteristiche.cpp	/^void Caratteristiche::SetIntelligenza(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetIntelligenzaRichiesta	Model/Arma.cpp	/^void Arma::SetIntelligenzaRichiesta(int x){$/;"	f	class:Arma	typeref:typename:void
+SetMagico	Model/ArmaMagica.cpp	/^void ArmaMagica::SetMagico(double x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetOscuro	Model/ArmaMagica.cpp	/^void ArmaMagica::SetOscuro(double x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetPeso	Model/Equipaggiamento.cpp	/^void Equipaggiamento::SetPeso(double x){$/;"	f	class:Equipaggiamento	typeref:typename:void
+SetScalingDestrezza	Model/ArmaFisica.cpp	/^void ArmaFisica::SetScalingDestrezza(char x){$/;"	f	class:ArmaFisica	typeref:typename:void
+SetScalingFede	Model/ArmaMagica.cpp	/^void ArmaMagica::SetScalingFede(char x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetScalingForza	Model/ArmaFisica.cpp	/^void ArmaFisica::SetScalingForza(char x){$/;"	f	class:ArmaFisica	typeref:typename:void
+SetScalingIntelligenza	Model/ArmaMagica.cpp	/^void ArmaMagica::SetScalingIntelligenza(char x){$/;"	f	class:ArmaMagica	typeref:typename:void
+SetScalingVigore	Model/Scudo.cpp	/^void Scudo::SetScalingVigore(char x){$/;"	f	class:Scudo	typeref:typename:void
+SetStabilita	Model/Scudo.cpp	/^void Scudo::SetStabilita(int x){$/;"	f	class:Scudo	typeref:typename:void
+SetTipoDanno	Model/ArmaFisica.cpp	/^void ArmaFisica::SetTipoDanno(char x){$/;"	f	class:ArmaFisica	typeref:typename:void
+SetUsura	Model/Equipaggiamento.cpp	/^void Equipaggiamento::SetUsura(double x){$/;"	f	class:Equipaggiamento	typeref:typename:void
+SetVigore	Model/Caratteristiche.cpp	/^void Caratteristiche::SetVigore(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+SetVigoreRichiesto	Model/Armamento.cpp	/^void Armamento::SetVigoreRichiesto(int x){$/;"	f	class:Armamento	typeref:typename:void
+SetVitalita	Model/Caratteristiche.cpp	/^void Caratteristiche::SetVitalita(int x){$/;"	f	class:Caratteristiche	typeref:typename:void
+Somma	View/OperazioniArma.h	/^					*Somma;$/;"	m	class:OperazioniArma	typeref:typename:QPushButton *****
+Somma	View/OperazioniArmamento.h	/^							 *Somma;$/;"	m	class:OperazioniArmamento	typeref:typename:QPushButton ****
+SommaConArma	View/OperazioniArmaP2.h	/^					*SommaConArma,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton ****
+SommaConArmaFisica	View/OperazioniArmaP2.h	/^					*SommaConArmaFisica,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton *****
+SommaConArmaMagica	View/OperazioniArmaP2.h	/^					*SommaConArmaMagica,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton ******
+Sopravvivenza	Model/Armatura.cpp	/^unsigned int Armatura::Sopravvivenza(const Caratteristiche& c1, Arma* a, const Caratteristiche& /;"	f	class:Armatura	typeref:typename:unsigned int
+Sopravvivenza	View/OperazioniArmaP2.h	/^					*Sopravvivenza,$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton ********
+Sopravvivenza	View/OperazioniArmatura.h	/^					*Sopravvivenza;$/;"	m	class:OperazioniArmatura	typeref:typename:QPushButton ****
+SpezzaGuardia	Model/Scudo.cpp	/^unsigned int Scudo::SpezzaGuardia(const Caratteristiche& c1, Arma* a, const Caratteristiche& c2)/;"	f	class:Scudo	typeref:typename:unsigned int
+SpezzaGuardia	View/OperazioniArmaP2.h	/^					*SpezzaGuardia;$/;"	m	class:OperazioniArmaP2	typeref:typename:QPushButton **********
+Spezzaguardia	View/OperazioniScudo.h	/^	QPushButton *Spezzaguardia,$/;"	m	class:OperazioniScudo	typeref:typename:QPushButton *
+Stabilita	View/TabScudo.h	/^		QSpinBox * Stabilita;$/;"	m	class:TabScudo	typeref:typename:QSpinBox *
+TABARMAFISICA_H	View/TabArmaFisica.h	/^#define TABARMAFISICA_H$/;"	d
+TABARMAMAGICA_H	View/TabArmaMagica.h	/^#define TABARMAMAGICA_H$/;"	d
+TABARMAMENTO_H	View/TabArmamento.h	/^#define TABARMAMENTO_H$/;"	d
+TABARMATURA_H	View/TabArmatura.h	/^#define TABARMATURA_H$/;"	d
+TABARMA_H	View/TabArma.h	/^#define TABARMA_H$/;"	d
+TABSCUDO_H	View/TabScudo.h	/^#define TABSCUDO_H$/;"	d
+TABWIDGET_H	View/TabWidget.h	/^#define TABWIDGET_H$/;"	d
+TAR	Makefile	/^TAR           = tar -cf$/;"	m
+TARGET	Makefile	/^TARGET        = DarkCalculator$/;"	m
+TabArma	View/TabArma.cpp	/^TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerN/;"	f	class:TabArma
+TabArma	View/TabArma.h	/^class TabArma : public QWidget$/;"	c
+TabArma.o	Makefile	/^TabArma.o: View\/TabArma.cpp View\/TabArma.h \\$/;"	t
+TabArmaFisica	View/TabArmaFisica.cpp	/^TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap/;"	f	class:TabArmaFisica
+TabArmaFisica	View/TabArmaFisica.h	/^class TabArmaFisica: public TabArma{$/;"	c
+TabArmaFisica.o	Makefile	/^TabArmaFisica.o: View\/TabArmaFisica.cpp View\/TabArmaFisica.h \\$/;"	t
+TabArmaMagica	View/TabArmaMagica.cpp	/^TabArmaMagica::TabArmaMagica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap/;"	f	class:TabArmaMagica
+TabArmaMagica	View/TabArmaMagica.h	/^class TabArmaMagica: public TabArma{$/;"	c
+TabArmaMagica.o	Makefile	/^TabArmaMagica.o: View\/TabArmaMagica.cpp View\/TabArmaMagica.h \\$/;"	t
+TabArmamento	View/TabArmamento.cpp	/^TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, i/;"	f	class:TabArmamento
+TabArmamento	View/TabArmamento.h	/^class TabArmamento : public QWidget$/;"	c
+TabArmamento.o	Makefile	/^TabArmamento.o: View\/TabArmamento.cpp View\/TabArmamento.h \\$/;"	t
+TabArmatura	View/TabArmatura.cpp	/^TabArmatura::TabArmatura(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, in/;"	f	class:TabArmatura
+TabArmatura	View/TabArmatura.h	/^class TabArmatura: public TabArmamento{$/;"	c
+TabArmatura.o	Makefile	/^TabArmatura.o: View\/TabArmatura.cpp View\/TabArmatura.h \\$/;"	t
+TabScudo	View/TabScudo.cpp	/^TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int play/;"	f	class:TabScudo
+TabScudo	View/TabScudo.h	/^class TabScudo: public TabArmamento{$/;"	c
+TabScudo.o	Makefile	/^TabScudo.o: View\/TabScudo.cpp View\/TabScudo.h \\$/;"	t
+TabWidget	View/TabWidget.cpp	/^TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* equipMap, int pl/;"	f	class:TabWidget
+TabWidget	View/TabWidget.h	/^class TabWidget : public QWidget {$/;"	c
+TabWidget.o	Makefile	/^TabWidget.o: View\/TabWidget.cpp View\/TabWidget.h \\$/;"	t
+TipoDanno	View/TabArmaFisica.h	/^		QComboBox *TipoDanno,$/;"	m	class:TabArmaFisica	typeref:typename:QComboBox *
+VerificaUsabilita	Model/Arma.cpp	/^bool Arma::VerificaUsabilita(const Caratteristiche& c) const{ \/\/IMPLEMENTAZIONE METODO VIRTUAL/;"	f	class:Arma	typeref:typename:bool
+VerificaUsabilita	Model/ArmaMagica.cpp	/^bool ArmaMagica::VerificaUsabilita(const Caratteristiche& c) const{$/;"	f	class:ArmaMagica	typeref:typename:bool
+VerificaUsabilita	Model/Armamento.cpp	/^bool Armamento::VerificaUsabilita(const Caratteristiche& c) const{ \/\/IMPLEMENTAZIONE METODO VI/;"	f	class:Armamento	typeref:typename:bool
+VerificaUsabilita	View/OperazioniArma.h	/^					*VerificaUsabilita,$/;"	m	class:OperazioniArma	typeref:typename:QPushButton ***
+VerificaUsabilita	View/OperazioniArmamento.h	/^							 *VerificaUsabilita,$/;"	m	class:OperazioniArmamento	typeref:typename:QPushButton **
+_GNU_SOURCE	moc_predefs.h	/^#define _GNU_SOURCE /;"	d
+_LP64	moc_predefs.h	/^#define _LP64 /;"	d
+_STDC_PREDEF_H	moc_predefs.h	/^#define _STDC_PREDEF_H /;"	d
+__ATOMIC_ACQUIRE	moc_predefs.h	/^#define __ATOMIC_ACQUIRE /;"	d
+__ATOMIC_ACQ_REL	moc_predefs.h	/^#define __ATOMIC_ACQ_REL /;"	d
+__ATOMIC_CONSUME	moc_predefs.h	/^#define __ATOMIC_CONSUME /;"	d
+__ATOMIC_HLE_ACQUIRE	moc_predefs.h	/^#define __ATOMIC_HLE_ACQUIRE /;"	d
+__ATOMIC_HLE_RELEASE	moc_predefs.h	/^#define __ATOMIC_HLE_RELEASE /;"	d
+__ATOMIC_RELAXED	moc_predefs.h	/^#define __ATOMIC_RELAXED /;"	d
+__ATOMIC_RELEASE	moc_predefs.h	/^#define __ATOMIC_RELEASE /;"	d
+__ATOMIC_SEQ_CST	moc_predefs.h	/^#define __ATOMIC_SEQ_CST /;"	d
+__BIGGEST_ALIGNMENT__	moc_predefs.h	/^#define __BIGGEST_ALIGNMENT__ /;"	d
+__BYTE_ORDER__	moc_predefs.h	/^#define __BYTE_ORDER__ /;"	d
+__CHAR16_TYPE__	moc_predefs.h	/^#define __CHAR16_TYPE__ /;"	d
+__CHAR32_TYPE__	moc_predefs.h	/^#define __CHAR32_TYPE__ /;"	d
+__CHAR_BIT__	moc_predefs.h	/^#define __CHAR_BIT__ /;"	d
+__DBL_DECIMAL_DIG__	moc_predefs.h	/^#define __DBL_DECIMAL_DIG__ /;"	d
+__DBL_DENORM_MIN__	moc_predefs.h	/^#define __DBL_DENORM_MIN__ /;"	d
+__DBL_DIG__	moc_predefs.h	/^#define __DBL_DIG__ /;"	d
+__DBL_EPSILON__	moc_predefs.h	/^#define __DBL_EPSILON__ /;"	d
+__DBL_HAS_DENORM__	moc_predefs.h	/^#define __DBL_HAS_DENORM__ /;"	d
+__DBL_HAS_INFINITY__	moc_predefs.h	/^#define __DBL_HAS_INFINITY__ /;"	d
+__DBL_HAS_QUIET_NAN__	moc_predefs.h	/^#define __DBL_HAS_QUIET_NAN__ /;"	d
+__DBL_MANT_DIG__	moc_predefs.h	/^#define __DBL_MANT_DIG__ /;"	d
+__DBL_MAX_10_EXP__	moc_predefs.h	/^#define __DBL_MAX_10_EXP__ /;"	d
+__DBL_MAX_EXP__	moc_predefs.h	/^#define __DBL_MAX_EXP__ /;"	d
+__DBL_MAX__	moc_predefs.h	/^#define __DBL_MAX__ /;"	d
+__DBL_MIN_10_EXP__	moc_predefs.h	/^#define __DBL_MIN_10_EXP__ /;"	d
+__DBL_MIN_EXP__	moc_predefs.h	/^#define __DBL_MIN_EXP__ /;"	d
+__DBL_MIN__	moc_predefs.h	/^#define __DBL_MIN__ /;"	d
+__DEC128_EPSILON__	moc_predefs.h	/^#define __DEC128_EPSILON__ /;"	d
+__DEC128_MANT_DIG__	moc_predefs.h	/^#define __DEC128_MANT_DIG__ /;"	d
+__DEC128_MAX_EXP__	moc_predefs.h	/^#define __DEC128_MAX_EXP__ /;"	d
+__DEC128_MAX__	moc_predefs.h	/^#define __DEC128_MAX__ /;"	d
+__DEC128_MIN_EXP__	moc_predefs.h	/^#define __DEC128_MIN_EXP__ /;"	d
+__DEC128_MIN__	moc_predefs.h	/^#define __DEC128_MIN__ /;"	d
+__DEC128_SUBNORMAL_MIN__	moc_predefs.h	/^#define __DEC128_SUBNORMAL_MIN__ /;"	d
+__DEC32_EPSILON__	moc_predefs.h	/^#define __DEC32_EPSILON__ /;"	d
+__DEC32_MANT_DIG__	moc_predefs.h	/^#define __DEC32_MANT_DIG__ /;"	d
+__DEC32_MAX_EXP__	moc_predefs.h	/^#define __DEC32_MAX_EXP__ /;"	d
+__DEC32_MAX__	moc_predefs.h	/^#define __DEC32_MAX__ /;"	d
+__DEC32_MIN_EXP__	moc_predefs.h	/^#define __DEC32_MIN_EXP__ /;"	d
+__DEC32_MIN__	moc_predefs.h	/^#define __DEC32_MIN__ /;"	d
+__DEC32_SUBNORMAL_MIN__	moc_predefs.h	/^#define __DEC32_SUBNORMAL_MIN__ /;"	d
+__DEC64_EPSILON__	moc_predefs.h	/^#define __DEC64_EPSILON__ /;"	d
+__DEC64_MANT_DIG__	moc_predefs.h	/^#define __DEC64_MANT_DIG__ /;"	d
+__DEC64_MAX_EXP__	moc_predefs.h	/^#define __DEC64_MAX_EXP__ /;"	d
+__DEC64_MAX__	moc_predefs.h	/^#define __DEC64_MAX__ /;"	d
+__DEC64_MIN_EXP__	moc_predefs.h	/^#define __DEC64_MIN_EXP__ /;"	d
+__DEC64_MIN__	moc_predefs.h	/^#define __DEC64_MIN__ /;"	d
+__DEC64_SUBNORMAL_MIN__	moc_predefs.h	/^#define __DEC64_SUBNORMAL_MIN__ /;"	d
+__DECIMAL_BID_FORMAT__	moc_predefs.h	/^#define __DECIMAL_BID_FORMAT__ /;"	d
+__DECIMAL_DIG__	moc_predefs.h	/^#define __DECIMAL_DIG__ /;"	d
+__DEC_EVAL_METHOD__	moc_predefs.h	/^#define __DEC_EVAL_METHOD__ /;"	d
+__DEPRECATED	moc_predefs.h	/^#define __DEPRECATED /;"	d
+__ELF__	moc_predefs.h	/^#define __ELF__ /;"	d
+__EXCEPTIONS	moc_predefs.h	/^#define __EXCEPTIONS /;"	d
+__FINITE_MATH_ONLY__	moc_predefs.h	/^#define __FINITE_MATH_ONLY__ /;"	d
+__FLOAT_WORD_ORDER__	moc_predefs.h	/^#define __FLOAT_WORD_ORDER__ /;"	d
+__FLT128_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT128_DECIMAL_DIG__ /;"	d
+__FLT128_DENORM_MIN__	moc_predefs.h	/^#define __FLT128_DENORM_MIN__ /;"	d
+__FLT128_DIG__	moc_predefs.h	/^#define __FLT128_DIG__ /;"	d
+__FLT128_EPSILON__	moc_predefs.h	/^#define __FLT128_EPSILON__ /;"	d
+__FLT128_HAS_DENORM__	moc_predefs.h	/^#define __FLT128_HAS_DENORM__ /;"	d
+__FLT128_HAS_INFINITY__	moc_predefs.h	/^#define __FLT128_HAS_INFINITY__ /;"	d
+__FLT128_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT128_HAS_QUIET_NAN__ /;"	d
+__FLT128_MANT_DIG__	moc_predefs.h	/^#define __FLT128_MANT_DIG__ /;"	d
+__FLT128_MAX_10_EXP__	moc_predefs.h	/^#define __FLT128_MAX_10_EXP__ /;"	d
+__FLT128_MAX_EXP__	moc_predefs.h	/^#define __FLT128_MAX_EXP__ /;"	d
+__FLT128_MAX__	moc_predefs.h	/^#define __FLT128_MAX__ /;"	d
+__FLT128_MIN_10_EXP__	moc_predefs.h	/^#define __FLT128_MIN_10_EXP__ /;"	d
+__FLT128_MIN_EXP__	moc_predefs.h	/^#define __FLT128_MIN_EXP__ /;"	d
+__FLT128_MIN__	moc_predefs.h	/^#define __FLT128_MIN__ /;"	d
+__FLT32X_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT32X_DECIMAL_DIG__ /;"	d
+__FLT32X_DENORM_MIN__	moc_predefs.h	/^#define __FLT32X_DENORM_MIN__ /;"	d
+__FLT32X_DIG__	moc_predefs.h	/^#define __FLT32X_DIG__ /;"	d
+__FLT32X_EPSILON__	moc_predefs.h	/^#define __FLT32X_EPSILON__ /;"	d
+__FLT32X_HAS_DENORM__	moc_predefs.h	/^#define __FLT32X_HAS_DENORM__ /;"	d
+__FLT32X_HAS_INFINITY__	moc_predefs.h	/^#define __FLT32X_HAS_INFINITY__ /;"	d
+__FLT32X_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT32X_HAS_QUIET_NAN__ /;"	d
+__FLT32X_MANT_DIG__	moc_predefs.h	/^#define __FLT32X_MANT_DIG__ /;"	d
+__FLT32X_MAX_10_EXP__	moc_predefs.h	/^#define __FLT32X_MAX_10_EXP__ /;"	d
+__FLT32X_MAX_EXP__	moc_predefs.h	/^#define __FLT32X_MAX_EXP__ /;"	d
+__FLT32X_MAX__	moc_predefs.h	/^#define __FLT32X_MAX__ /;"	d
+__FLT32X_MIN_10_EXP__	moc_predefs.h	/^#define __FLT32X_MIN_10_EXP__ /;"	d
+__FLT32X_MIN_EXP__	moc_predefs.h	/^#define __FLT32X_MIN_EXP__ /;"	d
+__FLT32X_MIN__	moc_predefs.h	/^#define __FLT32X_MIN__ /;"	d
+__FLT32_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT32_DECIMAL_DIG__ /;"	d
+__FLT32_DENORM_MIN__	moc_predefs.h	/^#define __FLT32_DENORM_MIN__ /;"	d
+__FLT32_DIG__	moc_predefs.h	/^#define __FLT32_DIG__ /;"	d
+__FLT32_EPSILON__	moc_predefs.h	/^#define __FLT32_EPSILON__ /;"	d
+__FLT32_HAS_DENORM__	moc_predefs.h	/^#define __FLT32_HAS_DENORM__ /;"	d
+__FLT32_HAS_INFINITY__	moc_predefs.h	/^#define __FLT32_HAS_INFINITY__ /;"	d
+__FLT32_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT32_HAS_QUIET_NAN__ /;"	d
+__FLT32_MANT_DIG__	moc_predefs.h	/^#define __FLT32_MANT_DIG__ /;"	d
+__FLT32_MAX_10_EXP__	moc_predefs.h	/^#define __FLT32_MAX_10_EXP__ /;"	d
+__FLT32_MAX_EXP__	moc_predefs.h	/^#define __FLT32_MAX_EXP__ /;"	d
+__FLT32_MAX__	moc_predefs.h	/^#define __FLT32_MAX__ /;"	d
+__FLT32_MIN_10_EXP__	moc_predefs.h	/^#define __FLT32_MIN_10_EXP__ /;"	d
+__FLT32_MIN_EXP__	moc_predefs.h	/^#define __FLT32_MIN_EXP__ /;"	d
+__FLT32_MIN__	moc_predefs.h	/^#define __FLT32_MIN__ /;"	d
+__FLT64X_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT64X_DECIMAL_DIG__ /;"	d
+__FLT64X_DENORM_MIN__	moc_predefs.h	/^#define __FLT64X_DENORM_MIN__ /;"	d
+__FLT64X_DIG__	moc_predefs.h	/^#define __FLT64X_DIG__ /;"	d
+__FLT64X_EPSILON__	moc_predefs.h	/^#define __FLT64X_EPSILON__ /;"	d
+__FLT64X_HAS_DENORM__	moc_predefs.h	/^#define __FLT64X_HAS_DENORM__ /;"	d
+__FLT64X_HAS_INFINITY__	moc_predefs.h	/^#define __FLT64X_HAS_INFINITY__ /;"	d
+__FLT64X_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT64X_HAS_QUIET_NAN__ /;"	d
+__FLT64X_MANT_DIG__	moc_predefs.h	/^#define __FLT64X_MANT_DIG__ /;"	d
+__FLT64X_MAX_10_EXP__	moc_predefs.h	/^#define __FLT64X_MAX_10_EXP__ /;"	d
+__FLT64X_MAX_EXP__	moc_predefs.h	/^#define __FLT64X_MAX_EXP__ /;"	d
+__FLT64X_MAX__	moc_predefs.h	/^#define __FLT64X_MAX__ /;"	d
+__FLT64X_MIN_10_EXP__	moc_predefs.h	/^#define __FLT64X_MIN_10_EXP__ /;"	d
+__FLT64X_MIN_EXP__	moc_predefs.h	/^#define __FLT64X_MIN_EXP__ /;"	d
+__FLT64X_MIN__	moc_predefs.h	/^#define __FLT64X_MIN__ /;"	d
+__FLT64_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT64_DECIMAL_DIG__ /;"	d
+__FLT64_DENORM_MIN__	moc_predefs.h	/^#define __FLT64_DENORM_MIN__ /;"	d
+__FLT64_DIG__	moc_predefs.h	/^#define __FLT64_DIG__ /;"	d
+__FLT64_EPSILON__	moc_predefs.h	/^#define __FLT64_EPSILON__ /;"	d
+__FLT64_HAS_DENORM__	moc_predefs.h	/^#define __FLT64_HAS_DENORM__ /;"	d
+__FLT64_HAS_INFINITY__	moc_predefs.h	/^#define __FLT64_HAS_INFINITY__ /;"	d
+__FLT64_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT64_HAS_QUIET_NAN__ /;"	d
+__FLT64_MANT_DIG__	moc_predefs.h	/^#define __FLT64_MANT_DIG__ /;"	d
+__FLT64_MAX_10_EXP__	moc_predefs.h	/^#define __FLT64_MAX_10_EXP__ /;"	d
+__FLT64_MAX_EXP__	moc_predefs.h	/^#define __FLT64_MAX_EXP__ /;"	d
+__FLT64_MAX__	moc_predefs.h	/^#define __FLT64_MAX__ /;"	d
+__FLT64_MIN_10_EXP__	moc_predefs.h	/^#define __FLT64_MIN_10_EXP__ /;"	d
+__FLT64_MIN_EXP__	moc_predefs.h	/^#define __FLT64_MIN_EXP__ /;"	d
+__FLT64_MIN__	moc_predefs.h	/^#define __FLT64_MIN__ /;"	d
+__FLT_DECIMAL_DIG__	moc_predefs.h	/^#define __FLT_DECIMAL_DIG__ /;"	d
+__FLT_DENORM_MIN__	moc_predefs.h	/^#define __FLT_DENORM_MIN__ /;"	d
+__FLT_DIG__	moc_predefs.h	/^#define __FLT_DIG__ /;"	d
+__FLT_EPSILON__	moc_predefs.h	/^#define __FLT_EPSILON__ /;"	d
+__FLT_EVAL_METHOD_TS_18661_3__	moc_predefs.h	/^#define __FLT_EVAL_METHOD_TS_18661_3__ /;"	d
+__FLT_EVAL_METHOD__	moc_predefs.h	/^#define __FLT_EVAL_METHOD__ /;"	d
+__FLT_HAS_DENORM__	moc_predefs.h	/^#define __FLT_HAS_DENORM__ /;"	d
+__FLT_HAS_INFINITY__	moc_predefs.h	/^#define __FLT_HAS_INFINITY__ /;"	d
+__FLT_HAS_QUIET_NAN__	moc_predefs.h	/^#define __FLT_HAS_QUIET_NAN__ /;"	d
+__FLT_MANT_DIG__	moc_predefs.h	/^#define __FLT_MANT_DIG__ /;"	d
+__FLT_MAX_10_EXP__	moc_predefs.h	/^#define __FLT_MAX_10_EXP__ /;"	d
+__FLT_MAX_EXP__	moc_predefs.h	/^#define __FLT_MAX_EXP__ /;"	d
+__FLT_MAX__	moc_predefs.h	/^#define __FLT_MAX__ /;"	d
+__FLT_MIN_10_EXP__	moc_predefs.h	/^#define __FLT_MIN_10_EXP__ /;"	d
+__FLT_MIN_EXP__	moc_predefs.h	/^#define __FLT_MIN_EXP__ /;"	d
+__FLT_MIN__	moc_predefs.h	/^#define __FLT_MIN__ /;"	d
+__FLT_RADIX__	moc_predefs.h	/^#define __FLT_RADIX__ /;"	d
+__FXSR__	moc_predefs.h	/^#define __FXSR__ /;"	d
+__GCC_ASM_FLAG_OUTPUTS__	moc_predefs.h	/^#define __GCC_ASM_FLAG_OUTPUTS__ /;"	d
+__GCC_ATOMIC_BOOL_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_BOOL_LOCK_FREE /;"	d
+__GCC_ATOMIC_CHAR16_T_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE /;"	d
+__GCC_ATOMIC_CHAR32_T_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE /;"	d
+__GCC_ATOMIC_CHAR_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_CHAR_LOCK_FREE /;"	d
+__GCC_ATOMIC_INT_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_INT_LOCK_FREE /;"	d
+__GCC_ATOMIC_LLONG_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_LLONG_LOCK_FREE /;"	d
+__GCC_ATOMIC_LONG_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_LONG_LOCK_FREE /;"	d
+__GCC_ATOMIC_POINTER_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_POINTER_LOCK_FREE /;"	d
+__GCC_ATOMIC_SHORT_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_SHORT_LOCK_FREE /;"	d
+__GCC_ATOMIC_TEST_AND_SET_TRUEVAL	moc_predefs.h	/^#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL /;"	d
+__GCC_ATOMIC_WCHAR_T_LOCK_FREE	moc_predefs.h	/^#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE /;"	d
+__GCC_HAVE_DWARF2_CFI_ASM	moc_predefs.h	/^#define __GCC_HAVE_DWARF2_CFI_ASM /;"	d
+__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1	moc_predefs.h	/^#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 /;"	d
+__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2	moc_predefs.h	/^#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 /;"	d
+__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4	moc_predefs.h	/^#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 /;"	d
+__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8	moc_predefs.h	/^#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 /;"	d
+__GCC_IEC_559	moc_predefs.h	/^#define __GCC_IEC_559 /;"	d
+__GCC_IEC_559_COMPLEX	moc_predefs.h	/^#define __GCC_IEC_559_COMPLEX /;"	d
+__GLIBCXX_BITSIZE_INT_N_0	moc_predefs.h	/^#define __GLIBCXX_BITSIZE_INT_N_0 /;"	d
+__GLIBCXX_TYPE_INT_N_0	moc_predefs.h	/^#define __GLIBCXX_TYPE_INT_N_0 /;"	d
+__GNUC_MINOR__	moc_predefs.h	/^#define __GNUC_MINOR__ /;"	d
+__GNUC_PATCHLEVEL__	moc_predefs.h	/^#define __GNUC_PATCHLEVEL__ /;"	d
+__GNUC_STDC_INLINE__	moc_predefs.h	/^#define __GNUC_STDC_INLINE__ /;"	d
+__GNUC__	moc_predefs.h	/^#define __GNUC__ /;"	d
+__GNUG__	moc_predefs.h	/^#define __GNUG__ /;"	d
+__GXX_ABI_VERSION	moc_predefs.h	/^#define __GXX_ABI_VERSION /;"	d
+__GXX_EXPERIMENTAL_CXX0X__	moc_predefs.h	/^#define __GXX_EXPERIMENTAL_CXX0X__ /;"	d
+__GXX_RTTI	moc_predefs.h	/^#define __GXX_RTTI /;"	d
+__GXX_WEAK__	moc_predefs.h	/^#define __GXX_WEAK__ /;"	d
+__INT16_C	moc_predefs.h	/^#define __INT16_C(/;"	d
+__INT16_MAX__	moc_predefs.h	/^#define __INT16_MAX__ /;"	d
+__INT16_TYPE__	moc_predefs.h	/^#define __INT16_TYPE__ /;"	d
+__INT32_C	moc_predefs.h	/^#define __INT32_C(/;"	d
+__INT32_MAX__	moc_predefs.h	/^#define __INT32_MAX__ /;"	d
+__INT32_TYPE__	moc_predefs.h	/^#define __INT32_TYPE__ /;"	d
+__INT64_C	moc_predefs.h	/^#define __INT64_C(/;"	d
+__INT64_MAX__	moc_predefs.h	/^#define __INT64_MAX__ /;"	d
+__INT64_TYPE__	moc_predefs.h	/^#define __INT64_TYPE__ /;"	d
+__INT8_C	moc_predefs.h	/^#define __INT8_C(/;"	d
+__INT8_MAX__	moc_predefs.h	/^#define __INT8_MAX__ /;"	d
+__INT8_TYPE__	moc_predefs.h	/^#define __INT8_TYPE__ /;"	d
+__INTMAX_C	moc_predefs.h	/^#define __INTMAX_C(/;"	d
+__INTMAX_MAX__	moc_predefs.h	/^#define __INTMAX_MAX__ /;"	d
+__INTMAX_TYPE__	moc_predefs.h	/^#define __INTMAX_TYPE__ /;"	d
+__INTMAX_WIDTH__	moc_predefs.h	/^#define __INTMAX_WIDTH__ /;"	d
+__INTPTR_MAX__	moc_predefs.h	/^#define __INTPTR_MAX__ /;"	d
+__INTPTR_TYPE__	moc_predefs.h	/^#define __INTPTR_TYPE__ /;"	d
+__INTPTR_WIDTH__	moc_predefs.h	/^#define __INTPTR_WIDTH__ /;"	d
+__INT_FAST16_MAX__	moc_predefs.h	/^#define __INT_FAST16_MAX__ /;"	d
+__INT_FAST16_TYPE__	moc_predefs.h	/^#define __INT_FAST16_TYPE__ /;"	d
+__INT_FAST16_WIDTH__	moc_predefs.h	/^#define __INT_FAST16_WIDTH__ /;"	d
+__INT_FAST32_MAX__	moc_predefs.h	/^#define __INT_FAST32_MAX__ /;"	d
+__INT_FAST32_TYPE__	moc_predefs.h	/^#define __INT_FAST32_TYPE__ /;"	d
+__INT_FAST32_WIDTH__	moc_predefs.h	/^#define __INT_FAST32_WIDTH__ /;"	d
+__INT_FAST64_MAX__	moc_predefs.h	/^#define __INT_FAST64_MAX__ /;"	d
+__INT_FAST64_TYPE__	moc_predefs.h	/^#define __INT_FAST64_TYPE__ /;"	d
+__INT_FAST64_WIDTH__	moc_predefs.h	/^#define __INT_FAST64_WIDTH__ /;"	d
+__INT_FAST8_MAX__	moc_predefs.h	/^#define __INT_FAST8_MAX__ /;"	d
+__INT_FAST8_TYPE__	moc_predefs.h	/^#define __INT_FAST8_TYPE__ /;"	d
+__INT_FAST8_WIDTH__	moc_predefs.h	/^#define __INT_FAST8_WIDTH__ /;"	d
+__INT_LEAST16_MAX__	moc_predefs.h	/^#define __INT_LEAST16_MAX__ /;"	d
+__INT_LEAST16_TYPE__	moc_predefs.h	/^#define __INT_LEAST16_TYPE__ /;"	d
+__INT_LEAST16_WIDTH__	moc_predefs.h	/^#define __INT_LEAST16_WIDTH__ /;"	d
+__INT_LEAST32_MAX__	moc_predefs.h	/^#define __INT_LEAST32_MAX__ /;"	d
+__INT_LEAST32_TYPE__	moc_predefs.h	/^#define __INT_LEAST32_TYPE__ /;"	d
+__INT_LEAST32_WIDTH__	moc_predefs.h	/^#define __INT_LEAST32_WIDTH__ /;"	d
+__INT_LEAST64_MAX__	moc_predefs.h	/^#define __INT_LEAST64_MAX__ /;"	d
+__INT_LEAST64_TYPE__	moc_predefs.h	/^#define __INT_LEAST64_TYPE__ /;"	d
+__INT_LEAST64_WIDTH__	moc_predefs.h	/^#define __INT_LEAST64_WIDTH__ /;"	d
+__INT_LEAST8_MAX__	moc_predefs.h	/^#define __INT_LEAST8_MAX__ /;"	d
+__INT_LEAST8_TYPE__	moc_predefs.h	/^#define __INT_LEAST8_TYPE__ /;"	d
+__INT_LEAST8_WIDTH__	moc_predefs.h	/^#define __INT_LEAST8_WIDTH__ /;"	d
+__INT_MAX__	moc_predefs.h	/^#define __INT_MAX__ /;"	d
+__INT_WIDTH__	moc_predefs.h	/^#define __INT_WIDTH__ /;"	d
+__LDBL_DECIMAL_DIG__	moc_predefs.h	/^#define __LDBL_DECIMAL_DIG__ /;"	d
+__LDBL_DENORM_MIN__	moc_predefs.h	/^#define __LDBL_DENORM_MIN__ /;"	d
+__LDBL_DIG__	moc_predefs.h	/^#define __LDBL_DIG__ /;"	d
+__LDBL_EPSILON__	moc_predefs.h	/^#define __LDBL_EPSILON__ /;"	d
+__LDBL_HAS_DENORM__	moc_predefs.h	/^#define __LDBL_HAS_DENORM__ /;"	d
+__LDBL_HAS_INFINITY__	moc_predefs.h	/^#define __LDBL_HAS_INFINITY__ /;"	d
+__LDBL_HAS_QUIET_NAN__	moc_predefs.h	/^#define __LDBL_HAS_QUIET_NAN__ /;"	d
+__LDBL_MANT_DIG__	moc_predefs.h	/^#define __LDBL_MANT_DIG__ /;"	d
+__LDBL_MAX_10_EXP__	moc_predefs.h	/^#define __LDBL_MAX_10_EXP__ /;"	d
+__LDBL_MAX_EXP__	moc_predefs.h	/^#define __LDBL_MAX_EXP__ /;"	d
+__LDBL_MAX__	moc_predefs.h	/^#define __LDBL_MAX__ /;"	d
+__LDBL_MIN_10_EXP__	moc_predefs.h	/^#define __LDBL_MIN_10_EXP__ /;"	d
+__LDBL_MIN_EXP__	moc_predefs.h	/^#define __LDBL_MIN_EXP__ /;"	d
+__LDBL_MIN__	moc_predefs.h	/^#define __LDBL_MIN__ /;"	d
+__LONG_LONG_MAX__	moc_predefs.h	/^#define __LONG_LONG_MAX__ /;"	d
+__LONG_LONG_WIDTH__	moc_predefs.h	/^#define __LONG_LONG_WIDTH__ /;"	d
+__LONG_MAX__	moc_predefs.h	/^#define __LONG_MAX__ /;"	d
+__LONG_WIDTH__	moc_predefs.h	/^#define __LONG_WIDTH__ /;"	d
+__LP64__	moc_predefs.h	/^#define __LP64__ /;"	d
+__MMX__	moc_predefs.h	/^#define __MMX__ /;"	d
+__OPTIMIZE__	moc_predefs.h	/^#define __OPTIMIZE__ /;"	d
+__ORDER_BIG_ENDIAN__	moc_predefs.h	/^#define __ORDER_BIG_ENDIAN__ /;"	d
+__ORDER_LITTLE_ENDIAN__	moc_predefs.h	/^#define __ORDER_LITTLE_ENDIAN__ /;"	d
+__ORDER_PDP_ENDIAN__	moc_predefs.h	/^#define __ORDER_PDP_ENDIAN__ /;"	d
+__PIC__	moc_predefs.h	/^#define __PIC__ /;"	d
+__PIE__	moc_predefs.h	/^#define __PIE__ /;"	d
+__PRAGMA_REDEFINE_EXTNAME	moc_predefs.h	/^#define __PRAGMA_REDEFINE_EXTNAME /;"	d
+__PTRDIFF_MAX__	moc_predefs.h	/^#define __PTRDIFF_MAX__ /;"	d
+__PTRDIFF_TYPE__	moc_predefs.h	/^#define __PTRDIFF_TYPE__ /;"	d
+__PTRDIFF_WIDTH__	moc_predefs.h	/^#define __PTRDIFF_WIDTH__ /;"	d
+__REGISTER_PREFIX__	moc_predefs.h	/^#define __REGISTER_PREFIX__ /;"	d
+__SCHAR_MAX__	moc_predefs.h	/^#define __SCHAR_MAX__ /;"	d
+__SCHAR_WIDTH__	moc_predefs.h	/^#define __SCHAR_WIDTH__ /;"	d
+__SEG_FS	moc_predefs.h	/^#define __SEG_FS /;"	d
+__SEG_GS	moc_predefs.h	/^#define __SEG_GS /;"	d
+__SHRT_MAX__	moc_predefs.h	/^#define __SHRT_MAX__ /;"	d
+__SHRT_WIDTH__	moc_predefs.h	/^#define __SHRT_WIDTH__ /;"	d
+__SIG_ATOMIC_MAX__	moc_predefs.h	/^#define __SIG_ATOMIC_MAX__ /;"	d
+__SIG_ATOMIC_MIN__	moc_predefs.h	/^#define __SIG_ATOMIC_MIN__ /;"	d
+__SIG_ATOMIC_TYPE__	moc_predefs.h	/^#define __SIG_ATOMIC_TYPE__ /;"	d
+__SIG_ATOMIC_WIDTH__	moc_predefs.h	/^#define __SIG_ATOMIC_WIDTH__ /;"	d
+__SIZEOF_DOUBLE__	moc_predefs.h	/^#define __SIZEOF_DOUBLE__ /;"	d
+__SIZEOF_FLOAT128__	moc_predefs.h	/^#define __SIZEOF_FLOAT128__ /;"	d
+__SIZEOF_FLOAT80__	moc_predefs.h	/^#define __SIZEOF_FLOAT80__ /;"	d
+__SIZEOF_FLOAT__	moc_predefs.h	/^#define __SIZEOF_FLOAT__ /;"	d
+__SIZEOF_INT128__	moc_predefs.h	/^#define __SIZEOF_INT128__ /;"	d
+__SIZEOF_INT__	moc_predefs.h	/^#define __SIZEOF_INT__ /;"	d
+__SIZEOF_LONG_DOUBLE__	moc_predefs.h	/^#define __SIZEOF_LONG_DOUBLE__ /;"	d
+__SIZEOF_LONG_LONG__	moc_predefs.h	/^#define __SIZEOF_LONG_LONG__ /;"	d
+__SIZEOF_LONG__	moc_predefs.h	/^#define __SIZEOF_LONG__ /;"	d
+__SIZEOF_POINTER__	moc_predefs.h	/^#define __SIZEOF_POINTER__ /;"	d
+__SIZEOF_PTRDIFF_T__	moc_predefs.h	/^#define __SIZEOF_PTRDIFF_T__ /;"	d
+__SIZEOF_SHORT__	moc_predefs.h	/^#define __SIZEOF_SHORT__ /;"	d
+__SIZEOF_SIZE_T__	moc_predefs.h	/^#define __SIZEOF_SIZE_T__ /;"	d
+__SIZEOF_WCHAR_T__	moc_predefs.h	/^#define __SIZEOF_WCHAR_T__ /;"	d
+__SIZEOF_WINT_T__	moc_predefs.h	/^#define __SIZEOF_WINT_T__ /;"	d
+__SIZE_MAX__	moc_predefs.h	/^#define __SIZE_MAX__ /;"	d
+__SIZE_TYPE__	moc_predefs.h	/^#define __SIZE_TYPE__ /;"	d
+__SIZE_WIDTH__	moc_predefs.h	/^#define __SIZE_WIDTH__ /;"	d
+__SSE2_MATH__	moc_predefs.h	/^#define __SSE2_MATH__ /;"	d
+__SSE2__	moc_predefs.h	/^#define __SSE2__ /;"	d
+__SSE_MATH__	moc_predefs.h	/^#define __SSE_MATH__ /;"	d
+__SSE__	moc_predefs.h	/^#define __SSE__ /;"	d
+__SSP_STRONG__	moc_predefs.h	/^#define __SSP_STRONG__ /;"	d
+__STDC_HOSTED__	moc_predefs.h	/^#define __STDC_HOSTED__ /;"	d
+__STDC_IEC_559_COMPLEX__	moc_predefs.h	/^#define __STDC_IEC_559_COMPLEX__ /;"	d
+__STDC_IEC_559__	moc_predefs.h	/^#define __STDC_IEC_559__ /;"	d
+__STDC_ISO_10646__	moc_predefs.h	/^#define __STDC_ISO_10646__ /;"	d
+__STDC_NO_THREADS__	moc_predefs.h	/^#define __STDC_NO_THREADS__ /;"	d
+__STDC_UTF_16__	moc_predefs.h	/^#define __STDC_UTF_16__ /;"	d
+__STDC_UTF_32__	moc_predefs.h	/^#define __STDC_UTF_32__ /;"	d
+__STDC__	moc_predefs.h	/^#define __STDC__ /;"	d
+__UINT16_C	moc_predefs.h	/^#define __UINT16_C(/;"	d
+__UINT16_MAX__	moc_predefs.h	/^#define __UINT16_MAX__ /;"	d
+__UINT16_TYPE__	moc_predefs.h	/^#define __UINT16_TYPE__ /;"	d
+__UINT32_C	moc_predefs.h	/^#define __UINT32_C(/;"	d
+__UINT32_MAX__	moc_predefs.h	/^#define __UINT32_MAX__ /;"	d
+__UINT32_TYPE__	moc_predefs.h	/^#define __UINT32_TYPE__ /;"	d
+__UINT64_C	moc_predefs.h	/^#define __UINT64_C(/;"	d
+__UINT64_MAX__	moc_predefs.h	/^#define __UINT64_MAX__ /;"	d
+__UINT64_TYPE__	moc_predefs.h	/^#define __UINT64_TYPE__ /;"	d
+__UINT8_C	moc_predefs.h	/^#define __UINT8_C(/;"	d
+__UINT8_MAX__	moc_predefs.h	/^#define __UINT8_MAX__ /;"	d
+__UINT8_TYPE__	moc_predefs.h	/^#define __UINT8_TYPE__ /;"	d
+__UINTMAX_C	moc_predefs.h	/^#define __UINTMAX_C(/;"	d
+__UINTMAX_MAX__	moc_predefs.h	/^#define __UINTMAX_MAX__ /;"	d
+__UINTMAX_TYPE__	moc_predefs.h	/^#define __UINTMAX_TYPE__ /;"	d
+__UINTPTR_MAX__	moc_predefs.h	/^#define __UINTPTR_MAX__ /;"	d
+__UINTPTR_TYPE__	moc_predefs.h	/^#define __UINTPTR_TYPE__ /;"	d
+__UINT_FAST16_MAX__	moc_predefs.h	/^#define __UINT_FAST16_MAX__ /;"	d
+__UINT_FAST16_TYPE__	moc_predefs.h	/^#define __UINT_FAST16_TYPE__ /;"	d
+__UINT_FAST32_MAX__	moc_predefs.h	/^#define __UINT_FAST32_MAX__ /;"	d
+__UINT_FAST32_TYPE__	moc_predefs.h	/^#define __UINT_FAST32_TYPE__ /;"	d
+__UINT_FAST64_MAX__	moc_predefs.h	/^#define __UINT_FAST64_MAX__ /;"	d
+__UINT_FAST64_TYPE__	moc_predefs.h	/^#define __UINT_FAST64_TYPE__ /;"	d
+__UINT_FAST8_MAX__	moc_predefs.h	/^#define __UINT_FAST8_MAX__ /;"	d
+__UINT_FAST8_TYPE__	moc_predefs.h	/^#define __UINT_FAST8_TYPE__ /;"	d
+__UINT_LEAST16_MAX__	moc_predefs.h	/^#define __UINT_LEAST16_MAX__ /;"	d
+__UINT_LEAST16_TYPE__	moc_predefs.h	/^#define __UINT_LEAST16_TYPE__ /;"	d
+__UINT_LEAST32_MAX__	moc_predefs.h	/^#define __UINT_LEAST32_MAX__ /;"	d
+__UINT_LEAST32_TYPE__	moc_predefs.h	/^#define __UINT_LEAST32_TYPE__ /;"	d
+__UINT_LEAST64_MAX__	moc_predefs.h	/^#define __UINT_LEAST64_MAX__ /;"	d
+__UINT_LEAST64_TYPE__	moc_predefs.h	/^#define __UINT_LEAST64_TYPE__ /;"	d
+__UINT_LEAST8_MAX__	moc_predefs.h	/^#define __UINT_LEAST8_MAX__ /;"	d
+__UINT_LEAST8_TYPE__	moc_predefs.h	/^#define __UINT_LEAST8_TYPE__ /;"	d
+__USER_LABEL_PREFIX__	moc_predefs.h	/^#define __USER_LABEL_PREFIX__ /;"	d
+__VERSION__	moc_predefs.h	/^#define __VERSION__ /;"	d
+__WCHAR_MAX__	moc_predefs.h	/^#define __WCHAR_MAX__ /;"	d
+__WCHAR_MIN__	moc_predefs.h	/^#define __WCHAR_MIN__ /;"	d
+__WCHAR_TYPE__	moc_predefs.h	/^#define __WCHAR_TYPE__ /;"	d
+__WCHAR_WIDTH__	moc_predefs.h	/^#define __WCHAR_WIDTH__ /;"	d
+__WINT_MAX__	moc_predefs.h	/^#define __WINT_MAX__ /;"	d
+__WINT_MIN__	moc_predefs.h	/^#define __WINT_MIN__ /;"	d
+__WINT_TYPE__	moc_predefs.h	/^#define __WINT_TYPE__ /;"	d
+__WINT_WIDTH__	moc_predefs.h	/^#define __WINT_WIDTH__ /;"	d
+__amd64	moc_predefs.h	/^#define __amd64 /;"	d
+__amd64__	moc_predefs.h	/^#define __amd64__ /;"	d
+__code_model_small__	moc_predefs.h	/^#define __code_model_small__ /;"	d
+__cplusplus	moc_predefs.h	/^#define __cplusplus /;"	d
+__cpp_aggregate_nsdmi	moc_predefs.h	/^#define __cpp_aggregate_nsdmi /;"	d
+__cpp_alias_templates	moc_predefs.h	/^#define __cpp_alias_templates /;"	d
+__cpp_attributes	moc_predefs.h	/^#define __cpp_attributes /;"	d
+__cpp_binary_literals	moc_predefs.h	/^#define __cpp_binary_literals /;"	d
+__cpp_constexpr	moc_predefs.h	/^#define __cpp_constexpr /;"	d
+__cpp_decltype	moc_predefs.h	/^#define __cpp_decltype /;"	d
+__cpp_decltype_auto	moc_predefs.h	/^#define __cpp_decltype_auto /;"	d
+__cpp_delegating_constructors	moc_predefs.h	/^#define __cpp_delegating_constructors /;"	d
+__cpp_digit_separators	moc_predefs.h	/^#define __cpp_digit_separators /;"	d
+__cpp_exceptions	moc_predefs.h	/^#define __cpp_exceptions /;"	d
+__cpp_generic_lambdas	moc_predefs.h	/^#define __cpp_generic_lambdas /;"	d
+__cpp_hex_float	moc_predefs.h	/^#define __cpp_hex_float /;"	d
+__cpp_inheriting_constructors	moc_predefs.h	/^#define __cpp_inheriting_constructors /;"	d
+__cpp_init_captures	moc_predefs.h	/^#define __cpp_init_captures /;"	d
+__cpp_initializer_lists	moc_predefs.h	/^#define __cpp_initializer_lists /;"	d
+__cpp_lambdas	moc_predefs.h	/^#define __cpp_lambdas /;"	d
+__cpp_nsdmi	moc_predefs.h	/^#define __cpp_nsdmi /;"	d
+__cpp_range_based_for	moc_predefs.h	/^#define __cpp_range_based_for /;"	d
+__cpp_raw_strings	moc_predefs.h	/^#define __cpp_raw_strings /;"	d
+__cpp_ref_qualifiers	moc_predefs.h	/^#define __cpp_ref_qualifiers /;"	d
+__cpp_return_type_deduction	moc_predefs.h	/^#define __cpp_return_type_deduction /;"	d
+__cpp_rtti	moc_predefs.h	/^#define __cpp_rtti /;"	d
+__cpp_runtime_arrays	moc_predefs.h	/^#define __cpp_runtime_arrays /;"	d
+__cpp_rvalue_reference	moc_predefs.h	/^#define __cpp_rvalue_reference /;"	d
+__cpp_rvalue_references	moc_predefs.h	/^#define __cpp_rvalue_references /;"	d
+__cpp_sized_deallocation	moc_predefs.h	/^#define __cpp_sized_deallocation /;"	d
+__cpp_static_assert	moc_predefs.h	/^#define __cpp_static_assert /;"	d
+__cpp_threadsafe_static_init	moc_predefs.h	/^#define __cpp_threadsafe_static_init /;"	d
+__cpp_unicode_characters	moc_predefs.h	/^#define __cpp_unicode_characters /;"	d
+__cpp_unicode_literals	moc_predefs.h	/^#define __cpp_unicode_literals /;"	d
+__cpp_user_defined_literals	moc_predefs.h	/^#define __cpp_user_defined_literals /;"	d
+__cpp_variable_templates	moc_predefs.h	/^#define __cpp_variable_templates /;"	d
+__cpp_variadic_templates	moc_predefs.h	/^#define __cpp_variadic_templates /;"	d
+__gnu_linux__	moc_predefs.h	/^#define __gnu_linux__ /;"	d
+__has_include	moc_predefs.h	/^#define __has_include(/;"	d
+__has_include_next	moc_predefs.h	/^#define __has_include_next(/;"	d
+__k8	moc_predefs.h	/^#define __k8 /;"	d
+__k8__	moc_predefs.h	/^#define __k8__ /;"	d
+__linux	moc_predefs.h	/^#define __linux /;"	d
+__linux__	moc_predefs.h	/^#define __linux__ /;"	d
+__pic__	moc_predefs.h	/^#define __pic__ /;"	d
+__pie__	moc_predefs.h	/^#define __pie__ /;"	d
+__unix	moc_predefs.h	/^#define __unix /;"	d
+__unix__	moc_predefs.h	/^#define __unix__ /;"	d
+__x86_64	moc_predefs.h	/^#define __x86_64 /;"	d
+__x86_64__	moc_predefs.h	/^#define __x86_64__ /;"	d
+_t	moc_OperazioniArma.cpp	/^            using _t = void (OperazioniArma::*)(bool );$/;"	t	function:OperazioniArma::qt_static_metacall	file:
+_t	moc_OperazioniArma.cpp	/^            using _t = void (OperazioniArma::*)(double );$/;"	t	function:OperazioniArma::qt_static_metacall	file:
+_t	moc_OperazioniArmaFisica.cpp	/^            using _t = void (OperazioniArmaFisica::*)();$/;"	t	function:OperazioniArmaFisica::qt_static_metacall	file:
+_t	moc_OperazioniArmaFisica.cpp	/^            using _t = void (OperazioniArmaFisica::*)(bool );$/;"	t	function:OperazioniArmaFisica::qt_static_metacall	file:
+_t	moc_OperazioniArmaFisica.cpp	/^            using _t = void (OperazioniArmaFisica::*)(double );$/;"	t	function:OperazioniArmaFisica::qt_static_metacall	file:
+_t	moc_OperazioniArmaMagica.cpp	/^            using _t = void (OperazioniArmaMagica::*)(bool );$/;"	t	function:OperazioniArmaMagica::qt_static_metacall	file:
+_t	moc_OperazioniArmaMagica.cpp	/^            using _t = void (OperazioniArmaMagica::*)(double );$/;"	t	function:OperazioniArmaMagica::qt_static_metacall	file:
+_t	moc_OperazioniArmamento.cpp	/^            using _t = void (OperazioniArmamento::*)(bool );$/;"	t	function:OperazioniArmamento::qt_static_metacall	file:
+_t	moc_OperazioniArmamento.cpp	/^            using _t = void (OperazioniArmamento::*)(double );$/;"	t	function:OperazioniArmamento::qt_static_metacall	file:
+_t	moc_OperazioniArmatura.cpp	/^            using _t = void (OperazioniArmatura::*)(bool );$/;"	t	function:OperazioniArmatura::qt_static_metacall	file:
+_t	moc_OperazioniArmatura.cpp	/^            using _t = void (OperazioniArmatura::*)(double );$/;"	t	function:OperazioniArmatura::qt_static_metacall	file:
+_t	moc_OperazioniScudo.cpp	/^            using _t = void (OperazioniScudo::*)(bool );$/;"	t	function:OperazioniScudo::qt_static_metacall	file:
+_t	moc_OperazioniScudo.cpp	/^            using _t = void (OperazioniScudo::*)(double );$/;"	t	function:OperazioniScudo::qt_static_metacall	file:
+_t	moc_TabArma.cpp	/^            using _t = void (TabArma::*)(bool );$/;"	t	function:TabArma::qt_static_metacall	file:
+_t	moc_TabArma.cpp	/^            using _t = void (TabArma::*)(double );$/;"	t	function:TabArma::qt_static_metacall	file:
+_t	moc_TabArmaFisica.cpp	/^            using _t = void (TabArmaFisica::*)(bool );$/;"	t	function:TabArmaFisica::qt_static_metacall	file:
+_t	moc_TabArmaFisica.cpp	/^            using _t = void (TabArmaFisica::*)(double );$/;"	t	function:TabArmaFisica::qt_static_metacall	file:
+_t	moc_TabArmaMagica.cpp	/^            using _t = void (TabArmaMagica::*)(bool );$/;"	t	function:TabArmaMagica::qt_static_metacall	file:
+_t	moc_TabArmaMagica.cpp	/^            using _t = void (TabArmaMagica::*)(double );$/;"	t	function:TabArmaMagica::qt_static_metacall	file:
+_t	moc_TabArmamento.cpp	/^            using _t = void (TabArmamento::*)(bool );$/;"	t	function:TabArmamento::qt_static_metacall	file:
+_t	moc_TabArmamento.cpp	/^            using _t = void (TabArmamento::*)(double );$/;"	t	function:TabArmamento::qt_static_metacall	file:
+_t	moc_TabArmatura.cpp	/^            using _t = void (TabArmatura::*)(bool );$/;"	t	function:TabArmatura::qt_static_metacall	file:
+_t	moc_TabArmatura.cpp	/^            using _t = void (TabArmatura::*)(double );$/;"	t	function:TabArmatura::qt_static_metacall	file:
+_t	moc_TabScudo.cpp	/^            using _t = void (TabScudo::*)(bool );$/;"	t	function:TabScudo::qt_static_metacall	file:
+_t	moc_TabScudo.cpp	/^            using _t = void (TabScudo::*)(double );$/;"	t	function:TabScudo::qt_static_metacall	file:
+_t	moc_TabWidget.cpp	/^            using _t = void (TabWidget::*)(bool );$/;"	t	function:TabWidget::qt_static_metacall	file:
+_t	moc_TabWidget.cpp	/^            using _t = void (TabWidget::*)(double );$/;"	t	function:TabWidget::qt_static_metacall	file:
+all	Makefile	/^all: Makefile $(TARGET)$/;"	t
+arma	View/TabArma.h	/^		Arma* arma;$/;"	m	class:TabArma	typeref:typename:Arma *
+armaFisica	View/TabArmaFisica.h	/^		ArmaFisica* armaFisica;$/;"	m	class:TabArmaFisica	typeref:typename:ArmaFisica *
+armaFisicaIstanza	View/OperazioniArmaFisica.h	/^		ArmaFisica* armaFisicaIstanza;$/;"	m	class:OperazioniArmaFisica	typeref:typename:ArmaFisica *
+armaIstanza	View/OperazioniArma.h	/^		Arma* armaIstanza;$/;"	m	class:OperazioniArma	typeref:typename:Arma *
+armaMagica	View/TabArmaMagica.h	/^		ArmaMagica* armaMagica;$/;"	m	class:TabArmaMagica	typeref:typename:ArmaMagica *
+armaMagicaIstanza	View/OperazioniArmaMagica.h	/^		ArmaMagica* armaMagicaIstanza;$/;"	m	class:OperazioniArmaMagica	typeref:typename:ArmaMagica *
+armamento	View/TabArmamento.h	/^	Armamento* armamento;$/;"	m	class:TabArmamento	typeref:typename:Armamento *
+armamentoIstanza	View/OperazioniArmamento.h	/^		Armamento* armamentoIstanza;$/;"	m	class:OperazioniArmamento	typeref:typename:Armamento *
+armatura	View/TabArmatura.h	/^		Armatura* armatura;$/;"	m	class:TabArmatura	typeref:typename:Armatura *
+armaturaIstanza	View/OperazioniArmatura.h	/^	Armatura* armaturaIstanza;$/;"	m	class:OperazioniArmatura	typeref:typename:Armatura *
+assorbimentoFisico	Model/Scudo.h	/^		double assorbimentoFisico;$/;"	m	class:Scudo	typeref:typename:double
+assorbimentoMagico	Model/Scudo.h	/^		double assorbimentoMagico; \/\/Assorbimento in percentuale del danno$/;"	m	class:Scudo	typeref:typename:double
+benchmark	Makefile	/^benchmark: first$/;"	t
+car	View/Caratteristiche_gui.h	/^    Caratteristiche* car;$/;"	m	class:Caratteristiche_gui	typeref:typename:Caratteristiche *
+car	View/OperazioniArma.h	/^		Caratteristiche* car;$/;"	m	class:OperazioniArma	typeref:typename:Caratteristiche *
+car	View/OperazioniArmaFisica.h	/^		Caratteristiche* car;$/;"	m	class:OperazioniArmaFisica	typeref:typename:Caratteristiche *
+car	View/OperazioniArmaMagica.h	/^		Caratteristiche* car;$/;"	m	class:OperazioniArmaMagica	typeref:typename:Caratteristiche *
+car	View/OperazioniArmamento.h	/^		Caratteristiche* car;$/;"	m	class:OperazioniArmamento	typeref:typename:Caratteristiche *
+car	View/OperazioniArmatura.h	/^	Caratteristiche* car;$/;"	m	class:OperazioniArmatura	typeref:typename:Caratteristiche *
+car	View/OperazioniScudo.h	/^	Caratteristiche* car;$/;"	m	class:OperazioniScudo	typeref:typename:Caratteristiche *
+carP1	View/OperazioniArmaP2.h	/^		Caratteristiche* carP1;$/;"	m	class:OperazioniArmaP2	typeref:typename:Caratteristiche *
+carP1	View/TabArma.h	/^    Caratteristiche* carP1;$/;"	m	class:TabArma	typeref:typename:Caratteristiche *
+carP1	View/TabArmaFisica.h	/^    Caratteristiche* carP1;$/;"	m	class:TabArmaFisica	typeref:typename:Caratteristiche *
+carP1	View/TabArmaMagica.h	/^    Caratteristiche* carP1;$/;"	m	class:TabArmaMagica	typeref:typename:Caratteristiche *
+carP1	View/TabArmamento.h	/^    Caratteristiche* carP1;$/;"	m	class:TabArmamento	typeref:typename:Caratteristiche *
+carP1	View/TabArmatura.h	/^    Caratteristiche* carP1;$/;"	m	class:TabArmatura	typeref:typename:Caratteristiche *
+carP1	View/TabScudo.h	/^    Caratteristiche* carP1;$/;"	m	class:TabScudo	typeref:typename:Caratteristiche *
+carP1	View/TabWidget.h	/^  Caratteristiche* carP1;$/;"	m	class:TabWidget	typeref:typename:Caratteristiche *
+carP2	View/OperazioniArmaP2.h	/^		Caratteristiche* carP2;$/;"	m	class:OperazioniArmaP2	typeref:typename:Caratteristiche *
+carP2	View/TabArma.h	/^    Caratteristiche* carP2;$/;"	m	class:TabArma	typeref:typename:Caratteristiche *
+carP2	View/TabArmaFisica.h	/^    Caratteristiche* carP2;$/;"	m	class:TabArmaFisica	typeref:typename:Caratteristiche *
+carP2	View/TabArmaMagica.h	/^    Caratteristiche* carP2;$/;"	m	class:TabArmaMagica	typeref:typename:Caratteristiche *
+carP2	View/TabArmamento.h	/^	Caratteristiche* carP2;$/;"	m	class:TabArmamento	typeref:typename:Caratteristiche *
+carP2	View/TabArmatura.h	/^    Caratteristiche* carP2;$/;"	m	class:TabArmatura	typeref:typename:Caratteristiche *
+carP2	View/TabScudo.h	/^    Caratteristiche* carP2;$/;"	m	class:TabScudo	typeref:typename:Caratteristiche *
+carP2	View/TabWidget.h	/^  Caratteristiche* carP2;$/;"	m	class:TabWidget	typeref:typename:Caratteristiche *
+centralWidget	View/MainWindow.h	/^    QWidget *centralWidget;$/;"	m	class:MainWindow	typeref:typename:QWidget *
+check	Makefile	/^check: first$/;"	t
+clean	Makefile	/^clean: compiler_clean $/;"	t
+compiler_clean	Makefile	/^compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean $/;"	t
+compiler_lex_clean	Makefile	/^compiler_lex_clean:$/;"	t
+compiler_lex_make_all	Makefile	/^compiler_lex_make_all:$/;"	t
+compiler_moc_header_clean	Makefile	/^compiler_moc_header_clean:$/;"	t
+compiler_moc_header_make_all	Makefile	/^compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma./;"	t
+compiler_moc_objc_header_clean	Makefile	/^compiler_moc_objc_header_clean:$/;"	t
+compiler_moc_objc_header_make_all	Makefile	/^compiler_moc_objc_header_make_all:$/;"	t
+compiler_moc_predefs_clean	Makefile	/^compiler_moc_predefs_clean:$/;"	t
+compiler_moc_predefs_make_all	Makefile	/^compiler_moc_predefs_make_all: moc_predefs.h$/;"	t
+compiler_moc_source_clean	Makefile	/^compiler_moc_source_clean:$/;"	t
+compiler_moc_source_make_all	Makefile	/^compiler_moc_source_make_all:$/;"	t
+compiler_rcc_clean	Makefile	/^compiler_rcc_clean:$/;"	t
+compiler_rcc_make_all	Makefile	/^compiler_rcc_make_all:$/;"	t
+compiler_uic_clean	Makefile	/^compiler_uic_clean:$/;"	t
+compiler_uic_make_all	Makefile	/^compiler_uic_make_all:$/;"	t
+compiler_yacc_decl_clean	Makefile	/^compiler_yacc_decl_clean:$/;"	t
+compiler_yacc_decl_make_all	Makefile	/^compiler_yacc_decl_make_all:$/;"	t
+compiler_yacc_impl_clean	Makefile	/^compiler_yacc_impl_clean:$/;"	t
+compiler_yacc_impl_make_all	Makefile	/^compiler_yacc_impl_make_all:$/;"	t
+connectSignals	View/TabArma.cpp	/^void TabArma::connectSignals(){$/;"	f	class:TabArma	typeref:typename:void
+connectSignals	View/TabArmamento.cpp	/^void TabArmamento::connectSignals(){$/;"	f	class:TabArmamento	typeref:typename:void
+connectSignalsArmaFisica	View/TabArmaFisica.cpp	/^void TabArmaFisica::connectSignalsArmaFisica(){$/;"	f	class:TabArmaFisica	typeref:typename:void
+connectSignalsArmaMagica	View/TabArmaMagica.cpp	/^void TabArmaMagica::connectSignalsArmaMagica(){$/;"	f	class:TabArmaMagica	typeref:typename:void
+connectSignalsArmatura	View/TabArmatura.cpp	/^void TabArmatura::connectSignalsArmatura() {$/;"	f	class:TabArmatura	typeref:typename:void
+connectSignalsOperazioni	View/OperazioniArma.cpp	/^void OperazioniArma::connectSignalsOperazioni(){$/;"	f	class:OperazioniArma	typeref:typename:void
+connectSignalsOperazioni	View/OperazioniArmaP2.cpp	/^void OperazioniArmaP2::connectSignalsOperazioni(){$/;"	f	class:OperazioniArmaP2	typeref:typename:void
+connectSignalsOperazioni	View/OperazioniArmamento.cpp	/^void OperazioniArmamento::connectSignalsOperazioni(){$/;"	f	class:OperazioniArmamento	typeref:typename:void
+connectSignalsOperazioniArmatura	View/OperazioniArmatura.cpp	/^void OperazioniArmatura::connectSignalsOperazioniArmatura(){$/;"	f	class:OperazioniArmatura	typeref:typename:void
+connectSignalsOperazioniProprie	View/OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::connectSignalsOperazioniProprie(){$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+connectSignalsOperazioniProprie	View/OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::connectSignalsOperazioniProprie(){$/;"	f	class:OperazioniArmaMagica	typeref:typename:void
+connectSignalsOperazioniScudo	View/OperazioniScudo.cpp	/^void OperazioniScudo::connectSignalsOperazioniScudo(){$/;"	f	class:OperazioniScudo	typeref:typename:void
+connectSignalsScudo	View/TabScudo.cpp	/^void TabScudo::connectSignalsScudo() {$/;"	f	class:TabScudo	typeref:typename:void
+dannoBase	Model/Arma.h	/^		double dannoBase;$/;"	m	class:Arma	typeref:typename:double
+data	moc_Caratteristiche_gui.cpp	/^    QByteArrayData data[11];$/;"	m	struct:qt_meta_stringdata_Caratteristiche_gui_t	typeref:typename:QByteArrayData[11]	file:
+data	moc_MainWindow.cpp	/^    QByteArrayData data[5];$/;"	m	struct:qt_meta_stringdata_MainWindow_t	typeref:typename:QByteArrayData[5]	file:
+data	moc_OperazioniArma.cpp	/^    QByteArrayData data[10];$/;"	m	struct:qt_meta_stringdata_OperazioniArma_t	typeref:typename:QByteArrayData[10]	file:
+data	moc_OperazioniArmaFisica.cpp	/^    QByteArrayData data[15];$/;"	m	struct:qt_meta_stringdata_OperazioniArmaFisica_t	typeref:typename:QByteArrayData[15]	file:
+data	moc_OperazioniArmaMagica.cpp	/^    QByteArrayData data[15];$/;"	m	struct:qt_meta_stringdata_OperazioniArmaMagica_t	typeref:typename:QByteArrayData[15]	file:
+data	moc_OperazioniArmamento.cpp	/^    QByteArrayData data[9];$/;"	m	struct:qt_meta_stringdata_OperazioniArmamento_t	typeref:typename:QByteArrayData[9]	file:
+data	moc_OperazioniArmatura.cpp	/^    QByteArrayData data[13];$/;"	m	struct:qt_meta_stringdata_OperazioniArmatura_t	typeref:typename:QByteArrayData[13]	file:
+data	moc_OperazioniScudo.cpp	/^    QByteArrayData data[11];$/;"	m	struct:qt_meta_stringdata_OperazioniScudo_t	typeref:typename:QByteArrayData[11]	file:
+data	moc_TabArma.cpp	/^    QByteArrayData data[12];$/;"	m	struct:qt_meta_stringdata_TabArma_t	typeref:typename:QByteArrayData[12]	file:
+data	moc_TabArmaFisica.cpp	/^    QByteArrayData data[16];$/;"	m	struct:qt_meta_stringdata_TabArmaFisica_t	typeref:typename:QByteArrayData[16]	file:
+data	moc_TabArmaMagica.cpp	/^    QByteArrayData data[18];$/;"	m	struct:qt_meta_stringdata_TabArmaMagica_t	typeref:typename:QByteArrayData[18]	file:
+data	moc_TabArmamento.cpp	/^    QByteArrayData data[11];$/;"	m	struct:qt_meta_stringdata_TabArmamento_t	typeref:typename:QByteArrayData[11]	file:
+data	moc_TabArmatura.cpp	/^    QByteArrayData data[18];$/;"	m	struct:qt_meta_stringdata_TabArmatura_t	typeref:typename:QByteArrayData[18]	file:
+data	moc_TabScudo.cpp	/^    QByteArrayData data[15];$/;"	m	struct:qt_meta_stringdata_TabScudo_t	typeref:typename:QByteArrayData[15]	file:
+data	moc_TabWidget.cpp	/^    QByteArrayData data[5];$/;"	m	struct:qt_meta_stringdata_TabWidget_t	typeref:typename:QByteArrayData[5]	file:
+destrezza	Model/Caratteristiche.h	/^		int destrezza; \/\/Danni Armi fisiche$/;"	m	class:Caratteristiche	typeref:typename:int
+difesa	Model/Armamento.h	/^		double difesa;$/;"	m	class:Armamento	typeref:typename:double
+difesaAffondo	Model/Armatura.h	/^		double difesaAffondo;$/;"	m	class:Armatura	typeref:typename:double
+difesaContundente	Model/Armatura.h	/^		double difesaContundente;$/;"	m	class:Armatura	typeref:typename:double
+difesaElettricita	Model/Armatura.h	/^		double difesaElettricita;$/;"	m	class:Armatura	typeref:typename:double
+difesaFuoco	Model/Armatura.h	/^		double difesaFuoco;$/;"	m	class:Armatura	typeref:typename:double
+difesaMagia	Model/Armatura.h	/^		double difesaMagia;$/;"	m	class:Armatura	typeref:typename:double
+difesaOscurita	Model/Armatura.h	/^		double difesaOscurita;$/;"	m	class:Armatura	typeref:typename:double
+difesaTaglio	Model/Armatura.h	/^		double difesaTaglio; \/\/bonus alla difesa extra (flat), a seconda del danno subito$/;"	m	class:Armatura	typeref:typename:double
+dist	Makefile	/^dist: distdir FORCE$/;"	t
+distclean	Makefile	/^distclean: clean $/;"	t
+distdir	Makefile	/^distdir: FORCE$/;"	t
+elettrico	Model/ArmaMagica.h	/^		double elettrico;$/;"	m	class:ArmaMagica	typeref:typename:double
+energia	Model/Caratteristiche.h	/^		int energia; \/\/Stamina$/;"	m	class:Caratteristiche	typeref:typename:int
+equipMap	View/OperazioniArmaP2.h	/^		std::map<std::string, Equipaggiamento*>* equipMap;$/;"	m	class:OperazioniArmaP2	typeref:typename:std::map<std::string,Equipaggiamento * > *
+equipMap	View/TabArma.h	/^	std::map<std::string, Equipaggiamento*>* equipMap;$/;"	m	class:TabArma	typeref:typename:std::map<std::string,Equipaggiamento * > *
+equipMap	View/TabArmamento.h	/^	std::map<std::string, Equipaggiamento*>* equipMap;$/;"	m	class:TabArmamento	typeref:typename:std::map<std::string,Equipaggiamento * > *
+fede	Model/Caratteristiche.h	/^		int fede; \/\/Danni armi Magiche elettricita 100%, orscurita 75%, fuoco 25%$/;"	m	class:Caratteristiche	typeref:typename:int
+first	Makefile	/^first: all$/;"	t
+forza	Model/Caratteristiche.h	/^		int forza; \/\/Danni Armi fisiche$/;"	m	class:Caratteristiche	typeref:typename:int
+forzaRichiesta	Model/Arma.h	/^		int forzaRichiesta;$/;"	m	class:Arma	typeref:typename:int
+forzaRichiesta	View/TabArma.h	/^    QSpinBox* forzaRichiesta;$/;"	m	class:TabArma	typeref:typename:QSpinBox *
+frame_Caratt	View/Caratteristiche_gui.h	/^    QFrame *frame_Caratt;$/;"	m	class:Caratteristiche_gui	typeref:typename:QFrame *
+fuoco	Model/ArmaMagica.h	/^		double fuoco; \/\/Percentuale di danno da fuoco$/;"	m	class:ArmaMagica	typeref:typename:double
+install	Makefile	/^install:  FORCE$/;"	t
+intelligenza	Model/Caratteristiche.h	/^		int intelligenza; \/\/Danni Armi Magiche magia 100%, fuoco 75%, oscurita 25%$/;"	m	class:Caratteristiche	typeref:typename:int
+intelligenzaRichiesta	Model/Arma.h	/^		int intelligenzaRichiesta;$/;"	m	class:Arma	typeref:typename:int
+intelligenzaRichiesta	View/TabArma.h	/^    QSpinBox* intelligenzaRichiesta;$/;"	m	class:TabArma	typeref:typename:QSpinBox *
+label	View/OperazioniArma.h	/^		QLabel* label;$/;"	m	class:OperazioniArma	typeref:typename:QLabel *
+label	View/OperazioniArmaP2.h	/^		QLabel* label;$/;"	m	class:OperazioniArmaP2	typeref:typename:QLabel *
+label	View/OperazioniArmamento.h	/^		QLabel* label;$/;"	m	class:OperazioniArmamento	typeref:typename:QLabel *
+label_Caratt	View/Caratteristiche_gui.h	/^    QLabel *label_Caratt;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Destrezza	View/Caratteristiche_gui.h	/^    QLabel *label_Destrezza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Energia	View/Caratteristiche_gui.h	/^    QLabel *label_Energia;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Fede	View/Caratteristiche_gui.h	/^    QLabel *label_Fede;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Forza	View/Caratteristiche_gui.h	/^    QLabel *label_Forza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Intelligenza	View/Caratteristiche_gui.h	/^    QLabel *label_Intelligenza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Livello	View/Caratteristiche_gui.h	/^    QLabel *label_Livello;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Vigore	View/Caratteristiche_gui.h	/^    QLabel *label_Vigore;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+label_Vitalita	View/Caratteristiche_gui.h	/^    QLabel *label_Vitalita;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLabel *
+layout	View/Caratteristiche_gui.h	/^    QGridLayout *layout;$/;"	m	class:Caratteristiche_gui	typeref:typename:QGridLayout *
+layout	View/TabWidget.h	/^  QGridLayout *layout;$/;"	m	class:TabWidget	typeref:typename:QGridLayout *
+lblRisultato	View/MainWindow.h	/^    QLabel *lblRisultato;$/;"	m	class:MainWindow	typeref:typename:QLabel *
+lcdNumber_Livello	View/Caratteristiche_gui.h	/^    QLCDNumber *lcdNumber_Livello;$/;"	m	class:Caratteristiche_gui	typeref:typename:QLCDNumber *
+linux	moc_predefs.h	/^#define linux /;"	d
+magico	Model/ArmaMagica.h	/^		double magico;$/;"	m	class:ArmaMagica	typeref:typename:double
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main.o	Makefile	/^main.o: main.cpp View\/MainWindow.h \\$/;"	t
+mappaEquipaggiamenti	View/MainWindow.h	/^	std::map<std::string, Equipaggiamento*> *mappaEquipaggiamenti;$/;"	m	class:MainWindow	typeref:typename:std::map<std::string,Equipaggiamento * > *
+metaObject	moc_Caratteristiche_gui.cpp	/^const QMetaObject *Caratteristiche_gui::metaObject() const$/;"	f	class:Caratteristiche_gui	typeref:typename:const QMetaObject *
+metaObject	moc_MainWindow.cpp	/^const QMetaObject *MainWindow::metaObject() const$/;"	f	class:MainWindow	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniArma.cpp	/^const QMetaObject *OperazioniArma::metaObject() const$/;"	f	class:OperazioniArma	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniArmaFisica.cpp	/^const QMetaObject *OperazioniArmaFisica::metaObject() const$/;"	f	class:OperazioniArmaFisica	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniArmaMagica.cpp	/^const QMetaObject *OperazioniArmaMagica::metaObject() const$/;"	f	class:OperazioniArmaMagica	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniArmamento.cpp	/^const QMetaObject *OperazioniArmamento::metaObject() const$/;"	f	class:OperazioniArmamento	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniArmatura.cpp	/^const QMetaObject *OperazioniArmatura::metaObject() const$/;"	f	class:OperazioniArmatura	typeref:typename:const QMetaObject *
+metaObject	moc_OperazioniScudo.cpp	/^const QMetaObject *OperazioniScudo::metaObject() const$/;"	f	class:OperazioniScudo	typeref:typename:const QMetaObject *
+metaObject	moc_TabArma.cpp	/^const QMetaObject *TabArma::metaObject() const$/;"	f	class:TabArma	typeref:typename:const QMetaObject *
+metaObject	moc_TabArmaFisica.cpp	/^const QMetaObject *TabArmaFisica::metaObject() const$/;"	f	class:TabArmaFisica	typeref:typename:const QMetaObject *
+metaObject	moc_TabArmaMagica.cpp	/^const QMetaObject *TabArmaMagica::metaObject() const$/;"	f	class:TabArmaMagica	typeref:typename:const QMetaObject *
+metaObject	moc_TabArmamento.cpp	/^const QMetaObject *TabArmamento::metaObject() const$/;"	f	class:TabArmamento	typeref:typename:const QMetaObject *
+metaObject	moc_TabArmatura.cpp	/^const QMetaObject *TabArmatura::metaObject() const$/;"	f	class:TabArmatura	typeref:typename:const QMetaObject *
+metaObject	moc_TabScudo.cpp	/^const QMetaObject *TabScudo::metaObject() const$/;"	f	class:TabScudo	typeref:typename:const QMetaObject *
+metaObject	moc_TabWidget.cpp	/^const QMetaObject *TabWidget::metaObject() const$/;"	f	class:TabWidget	typeref:typename:const QMetaObject *
+moc_Caratteristiche_gui.cpp	Makefile	/^moc_Caratteristiche_gui.cpp: Model\/Caratteristiche.h \\$/;"	t
+moc_Caratteristiche_gui.o	Makefile	/^moc_Caratteristiche_gui.o: moc_Caratteristiche_gui.cpp $/;"	t
+moc_MainWindow.cpp	Makefile	/^moc_MainWindow.cpp: View\/Caratteristiche_gui.h \\$/;"	t
+moc_MainWindow.o	Makefile	/^moc_MainWindow.o: moc_MainWindow.cpp $/;"	t
+moc_OperazioniArma.cpp	Makefile	/^moc_OperazioniArma.cpp: Model\/Arma.h \\$/;"	t
+moc_OperazioniArma.o	Makefile	/^moc_OperazioniArma.o: moc_OperazioniArma.cpp $/;"	t
+moc_OperazioniArmaFisica.cpp	Makefile	/^moc_OperazioniArmaFisica.cpp: Model\/ArmaFisica.h \\$/;"	t
+moc_OperazioniArmaFisica.o	Makefile	/^moc_OperazioniArmaFisica.o: moc_OperazioniArmaFisica.cpp $/;"	t
+moc_OperazioniArmaMagica.cpp	Makefile	/^moc_OperazioniArmaMagica.cpp: Model\/ArmaMagica.h \\$/;"	t
+moc_OperazioniArmaMagica.o	Makefile	/^moc_OperazioniArmaMagica.o: moc_OperazioniArmaMagica.cpp $/;"	t
+moc_OperazioniArmamento.cpp	Makefile	/^moc_OperazioniArmamento.cpp: Model\/Armamento.h \\$/;"	t
+moc_OperazioniArmamento.o	Makefile	/^moc_OperazioniArmamento.o: moc_OperazioniArmamento.cpp $/;"	t
+moc_OperazioniArmatura.cpp	Makefile	/^moc_OperazioniArmatura.cpp: Model\/Armatura.h \\$/;"	t
+moc_OperazioniArmatura.o	Makefile	/^moc_OperazioniArmatura.o: moc_OperazioniArmatura.cpp $/;"	t
+moc_OperazioniScudo.cpp	Makefile	/^moc_OperazioniScudo.cpp: Model\/Scudo.h \\$/;"	t
+moc_OperazioniScudo.o	Makefile	/^moc_OperazioniScudo.o: moc_OperazioniScudo.cpp $/;"	t
+moc_TabArma.cpp	Makefile	/^moc_TabArma.cpp: Model\/Arma.h \\$/;"	t
+moc_TabArma.o	Makefile	/^moc_TabArma.o: moc_TabArma.cpp $/;"	t
+moc_TabArmaFisica.cpp	Makefile	/^moc_TabArmaFisica.cpp: View\/TabArma.h \\$/;"	t
+moc_TabArmaFisica.o	Makefile	/^moc_TabArmaFisica.o: moc_TabArmaFisica.cpp $/;"	t
+moc_TabArmaMagica.cpp	Makefile	/^moc_TabArmaMagica.cpp: View\/TabArma.h \\$/;"	t
+moc_TabArmaMagica.o	Makefile	/^moc_TabArmaMagica.o: moc_TabArmaMagica.cpp $/;"	t
+moc_TabArmamento.cpp	Makefile	/^moc_TabArmamento.cpp: Model\/Armamento.h \\$/;"	t
+moc_TabArmamento.o	Makefile	/^moc_TabArmamento.o: moc_TabArmamento.cpp $/;"	t
+moc_TabArmatura.cpp	Makefile	/^moc_TabArmatura.cpp: View\/TabArmamento.h \\$/;"	t
+moc_TabArmatura.o	Makefile	/^moc_TabArmatura.o: moc_TabArmatura.cpp $/;"	t
+moc_TabScudo.cpp	Makefile	/^moc_TabScudo.cpp: View\/TabArmamento.h \\$/;"	t
+moc_TabScudo.o	Makefile	/^moc_TabScudo.o: moc_TabScudo.cpp $/;"	t
+moc_TabWidget.cpp	Makefile	/^moc_TabWidget.cpp: View\/TabArma.h \\$/;"	t
+moc_TabWidget.o	Makefile	/^moc_TabWidget.o: moc_TabWidget.cpp $/;"	t
+moc_predefs.h	Makefile	/^moc_predefs.h: \/usr\/lib\/qt\/mkspecs\/features\/data\/dummy.cpp$/;"	t
+mocables	Makefile	/^mocables: compiler_moc_header_make_all compiler_moc_objc_header_make_all compiler_moc_source_mak/;"	t
+mocclean	Makefile	/^mocclean: compiler_moc_header_clean compiler_moc_objc_header_clean compiler_moc_source_clean$/;"	t
+operator !=	Model/Arma.cpp	/^bool Arma::operator!=(const Equipaggiamento& e) const{ \/\/OVERRIDE$/;"	f	class:Arma	typeref:typename:bool
+operator !=	Model/ArmaFisica.cpp	/^bool ArmaFisica::operator!=(const Equipaggiamento& e) const{$/;"	f	class:ArmaFisica	typeref:typename:bool
+operator !=	Model/ArmaMagica.cpp	/^bool ArmaMagica::operator!=(const Equipaggiamento& e) const{$/;"	f	class:ArmaMagica	typeref:typename:bool
+operator !=	Model/Armamento.cpp	/^bool Armamento::operator!=(const Equipaggiamento& e) const{ \/\/OVERRIDE$/;"	f	class:Armamento	typeref:typename:bool
+operator !=	Model/Armatura.cpp	/^bool Armatura::operator!=(const Equipaggiamento& e) const{$/;"	f	class:Armatura	typeref:typename:bool
+operator !=	Model/Equipaggiamento.cpp	/^bool Equipaggiamento::operator!=(const Equipaggiamento& e) const{$/;"	f	class:Equipaggiamento	typeref:typename:bool
+operator !=	Model/Scudo.cpp	/^bool Scudo::operator!=(const Equipaggiamento& e) const{$/;"	f	class:Scudo	typeref:typename:bool
+operator +	Model/Arma.cpp	/^double Arma::operator+(const Arma& a) const{ \/\/METODO PROPRIO$/;"	f	class:Arma	typeref:typename:double
+operator +	Model/Armamento.cpp	/^double Armamento::operator+(const Armamento& a) const{$/;"	f	class:Armamento	typeref:typename:double
+operator ==	Model/Arma.cpp	/^bool Arma::operator==(const Equipaggiamento& e) const{ \/\/OVERRIDE$/;"	f	class:Arma	typeref:typename:bool
+operator ==	Model/ArmaFisica.cpp	/^bool ArmaFisica::operator==(const Equipaggiamento& e) const{$/;"	f	class:ArmaFisica	typeref:typename:bool
+operator ==	Model/ArmaMagica.cpp	/^bool ArmaMagica::operator==(const Equipaggiamento& e) const{$/;"	f	class:ArmaMagica	typeref:typename:bool
+operator ==	Model/Armamento.cpp	/^bool Armamento::operator==(const Equipaggiamento& e) const{ \/\/OVERRIDE$/;"	f	class:Armamento	typeref:typename:bool
+operator ==	Model/Armatura.cpp	/^bool Armatura::operator==(const Equipaggiamento& e) const{$/;"	f	class:Armatura	typeref:typename:bool
+operator ==	Model/Equipaggiamento.cpp	/^bool Equipaggiamento::operator==(const Equipaggiamento& e) const{$/;"	f	class:Equipaggiamento	typeref:typename:bool
+operator ==	Model/Scudo.cpp	/^bool Scudo::operator==(const Equipaggiamento& e) const{$/;"	f	class:Scudo	typeref:typename:bool
+operazioniArma	View/TabArma.h	/^    QWidget* operazioniArma;$/;"	m	class:TabArma	typeref:typename:QWidget *
+operazioniArmaFisica	View/TabArmaFisica.h	/^		OperazioniArmaFisica* operazioniArmaFisica;$/;"	m	class:TabArmaFisica	typeref:typename:OperazioniArmaFisica *
+operazioniArmaMagica	View/TabArmaMagica.h	/^		OperazioniArmaMagica* operazioniArmaMagica;$/;"	m	class:TabArmaMagica	typeref:typename:OperazioniArmaMagica *
+operazioniArmamento	View/TabArmamento.h	/^    OperazioniArmamento* operazioniArmamento;$/;"	m	class:TabArmamento	typeref:typename:OperazioniArmamento *
+operazioniArmatura	View/TabArmatura.h	/^	OperazioniArmatura* operazioniArmatura;$/;"	m	class:TabArmatura	typeref:typename:OperazioniArmatura *
+operazioniScudo	View/TabScudo.h	/^	OperazioniScudo* operazioniScudo;$/;"	m	class:TabScudo	typeref:typename:OperazioniScudo *
+oscuro	Model/ArmaMagica.h	/^		double oscuro;$/;"	m	class:ArmaMagica	typeref:typename:double
+par	View/OperazioniArmaP2.h	/^                Arma* par;$/;"	m	class:OperazioniArmaP2	typeref:typename:Arma *
+peso	Model/Equipaggiamento.h	/^                double peso;$/;"	m	class:Equipaggiamento	typeref:typename:double
+peso	View/TabArma.h	/^        QDoubleSpinBox* peso;$/;"	m	class:TabArma	typeref:typename:QDoubleSpinBox *
+peso	View/TabArmamento.h	/^    QDoubleSpinBox* peso;$/;"	m	class:TabArmamento	typeref:typename:QDoubleSpinBox *
+pesoMinimoEquilibrio	Model/Armamento.cpp	/^double Armamento::pesoMinimoEquilibrio = 5;$/;"	m	class:Armamento	typeref:typename:double
+pesoMinimoEquilibrio	Model/Armamento.h	/^		static double pesoMinimoEquilibrio;$/;"	m	class:Armamento	typeref:typename:double
+pesoMinimoHyperArmor	Model/Armatura.cpp	/^double Armatura::pesoMinimoHyperArmor = 15;$/;"	m	class:Armatura	typeref:typename:double
+pesoMinimoHyperArmor	Model/Armatura.h	/^		static double pesoMinimoHyperArmor;$/;"	m	class:Armatura	typeref:typename:double
+playerNumber	View/TabArma.h	/^    int playerNumber;$/;"	m	class:TabArma	typeref:typename:int
+playerNumber	View/TabArmaFisica.h	/^		int playerNumber;$/;"	m	class:TabArmaFisica	typeref:typename:int
+playerNumber	View/TabArmaMagica.h	/^		int playerNumber;$/;"	m	class:TabArmaMagica	typeref:typename:int
+playerNumber	View/TabArmamento.h	/^    int playerNumber;$/;"	m	class:TabArmamento	typeref:typename:int
+playerNumber	View/TabArmatura.h	/^	int playerNumber;$/;"	m	class:TabArmatura	typeref:typename:int
+playerNumber	View/TabScudo.h	/^	int playerNumber;$/;"	m	class:TabScudo	typeref:typename:int
+qmake	Makefile	/^qmake: FORCE$/;"	t
+qmake_all	Makefile	/^qmake_all: FORCE$/;"	t
+qt_meta_data_Caratteristiche_gui	moc_Caratteristiche_gui.cpp	/^static const uint qt_meta_data_Caratteristiche_gui[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_MainWindow	moc_MainWindow.cpp	/^static const uint qt_meta_data_MainWindow[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniArma	moc_OperazioniArma.cpp	/^static const uint qt_meta_data_OperazioniArma[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniArmaFisica	moc_OperazioniArmaFisica.cpp	/^static const uint qt_meta_data_OperazioniArmaFisica[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniArmaMagica	moc_OperazioniArmaMagica.cpp	/^static const uint qt_meta_data_OperazioniArmaMagica[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniArmamento	moc_OperazioniArmamento.cpp	/^static const uint qt_meta_data_OperazioniArmamento[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniArmatura	moc_OperazioniArmatura.cpp	/^static const uint qt_meta_data_OperazioniArmatura[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_OperazioniScudo	moc_OperazioniScudo.cpp	/^static const uint qt_meta_data_OperazioniScudo[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabArma	moc_TabArma.cpp	/^static const uint qt_meta_data_TabArma[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabArmaFisica	moc_TabArmaFisica.cpp	/^static const uint qt_meta_data_TabArmaFisica[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabArmaMagica	moc_TabArmaMagica.cpp	/^static const uint qt_meta_data_TabArmaMagica[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabArmamento	moc_TabArmamento.cpp	/^static const uint qt_meta_data_TabArmamento[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabArmatura	moc_TabArmatura.cpp	/^static const uint qt_meta_data_TabArmatura[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabScudo	moc_TabScudo.cpp	/^static const uint qt_meta_data_TabScudo[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_data_TabWidget	moc_TabWidget.cpp	/^static const uint qt_meta_data_TabWidget[] = {$/;"	v	typeref:typename:const uint[]	file:
+qt_meta_stringdata_Caratteristiche_gui	moc_Caratteristiche_gui.cpp	/^static const qt_meta_stringdata_Caratteristiche_gui_t qt_meta_stringdata_Caratteristiche_gui = {$/;"	v	typeref:typename:const qt_meta_stringdata_Caratteristiche_gui_t	file:
+qt_meta_stringdata_Caratteristiche_gui_t	moc_Caratteristiche_gui.cpp	/^struct qt_meta_stringdata_Caratteristiche_gui_t {$/;"	s	file:
+qt_meta_stringdata_MainWindow	moc_MainWindow.cpp	/^static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {$/;"	v	typeref:typename:const qt_meta_stringdata_MainWindow_t	file:
+qt_meta_stringdata_MainWindow_t	moc_MainWindow.cpp	/^struct qt_meta_stringdata_MainWindow_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniArma	moc_OperazioniArma.cpp	/^static const qt_meta_stringdata_OperazioniArma_t qt_meta_stringdata_OperazioniArma = {$/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniArma_t	file:
+qt_meta_stringdata_OperazioniArmaFisica	moc_OperazioniArmaFisica.cpp	/^static const qt_meta_stringdata_OperazioniArmaFisica_t qt_meta_stringdata_OperazioniArmaFisica =/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniArmaFisica_t	file:
+qt_meta_stringdata_OperazioniArmaFisica_t	moc_OperazioniArmaFisica.cpp	/^struct qt_meta_stringdata_OperazioniArmaFisica_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniArmaMagica	moc_OperazioniArmaMagica.cpp	/^static const qt_meta_stringdata_OperazioniArmaMagica_t qt_meta_stringdata_OperazioniArmaMagica =/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniArmaMagica_t	file:
+qt_meta_stringdata_OperazioniArmaMagica_t	moc_OperazioniArmaMagica.cpp	/^struct qt_meta_stringdata_OperazioniArmaMagica_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniArma_t	moc_OperazioniArma.cpp	/^struct qt_meta_stringdata_OperazioniArma_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniArmamento	moc_OperazioniArmamento.cpp	/^static const qt_meta_stringdata_OperazioniArmamento_t qt_meta_stringdata_OperazioniArmamento = {$/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniArmamento_t	file:
+qt_meta_stringdata_OperazioniArmamento_t	moc_OperazioniArmamento.cpp	/^struct qt_meta_stringdata_OperazioniArmamento_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniArmatura	moc_OperazioniArmatura.cpp	/^static const qt_meta_stringdata_OperazioniArmatura_t qt_meta_stringdata_OperazioniArmatura = {$/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniArmatura_t	file:
+qt_meta_stringdata_OperazioniArmatura_t	moc_OperazioniArmatura.cpp	/^struct qt_meta_stringdata_OperazioniArmatura_t {$/;"	s	file:
+qt_meta_stringdata_OperazioniScudo	moc_OperazioniScudo.cpp	/^static const qt_meta_stringdata_OperazioniScudo_t qt_meta_stringdata_OperazioniScudo = {$/;"	v	typeref:typename:const qt_meta_stringdata_OperazioniScudo_t	file:
+qt_meta_stringdata_OperazioniScudo_t	moc_OperazioniScudo.cpp	/^struct qt_meta_stringdata_OperazioniScudo_t {$/;"	s	file:
+qt_meta_stringdata_TabArma	moc_TabArma.cpp	/^static const qt_meta_stringdata_TabArma_t qt_meta_stringdata_TabArma = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabArma_t	file:
+qt_meta_stringdata_TabArmaFisica	moc_TabArmaFisica.cpp	/^static const qt_meta_stringdata_TabArmaFisica_t qt_meta_stringdata_TabArmaFisica = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabArmaFisica_t	file:
+qt_meta_stringdata_TabArmaFisica_t	moc_TabArmaFisica.cpp	/^struct qt_meta_stringdata_TabArmaFisica_t {$/;"	s	file:
+qt_meta_stringdata_TabArmaMagica	moc_TabArmaMagica.cpp	/^static const qt_meta_stringdata_TabArmaMagica_t qt_meta_stringdata_TabArmaMagica = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabArmaMagica_t	file:
+qt_meta_stringdata_TabArmaMagica_t	moc_TabArmaMagica.cpp	/^struct qt_meta_stringdata_TabArmaMagica_t {$/;"	s	file:
+qt_meta_stringdata_TabArma_t	moc_TabArma.cpp	/^struct qt_meta_stringdata_TabArma_t {$/;"	s	file:
+qt_meta_stringdata_TabArmamento	moc_TabArmamento.cpp	/^static const qt_meta_stringdata_TabArmamento_t qt_meta_stringdata_TabArmamento = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabArmamento_t	file:
+qt_meta_stringdata_TabArmamento_t	moc_TabArmamento.cpp	/^struct qt_meta_stringdata_TabArmamento_t {$/;"	s	file:
+qt_meta_stringdata_TabArmatura	moc_TabArmatura.cpp	/^static const qt_meta_stringdata_TabArmatura_t qt_meta_stringdata_TabArmatura = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabArmatura_t	file:
+qt_meta_stringdata_TabArmatura_t	moc_TabArmatura.cpp	/^struct qt_meta_stringdata_TabArmatura_t {$/;"	s	file:
+qt_meta_stringdata_TabScudo	moc_TabScudo.cpp	/^static const qt_meta_stringdata_TabScudo_t qt_meta_stringdata_TabScudo = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabScudo_t	file:
+qt_meta_stringdata_TabScudo_t	moc_TabScudo.cpp	/^struct qt_meta_stringdata_TabScudo_t {$/;"	s	file:
+qt_meta_stringdata_TabWidget	moc_TabWidget.cpp	/^static const qt_meta_stringdata_TabWidget_t qt_meta_stringdata_TabWidget = {$/;"	v	typeref:typename:const qt_meta_stringdata_TabWidget_t	file:
+qt_meta_stringdata_TabWidget_t	moc_TabWidget.cpp	/^struct qt_meta_stringdata_TabWidget_t {$/;"	s	file:
+qt_metacall	moc_Caratteristiche_gui.cpp	/^int Caratteristiche_gui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:Caratteristiche_gui	typeref:typename:int
+qt_metacall	moc_MainWindow.cpp	/^int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:MainWindow	typeref:typename:int
+qt_metacall	moc_OperazioniArma.cpp	/^int OperazioniArma::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArma	typeref:typename:int
+qt_metacall	moc_OperazioniArmaFisica.cpp	/^int OperazioniArmaFisica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArmaFisica	typeref:typename:int
+qt_metacall	moc_OperazioniArmaMagica.cpp	/^int OperazioniArmaMagica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArmaMagica	typeref:typename:int
+qt_metacall	moc_OperazioniArmamento.cpp	/^int OperazioniArmamento::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArmamento	typeref:typename:int
+qt_metacall	moc_OperazioniArmatura.cpp	/^int OperazioniArmatura::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArmatura	typeref:typename:int
+qt_metacall	moc_OperazioniScudo.cpp	/^int OperazioniScudo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniScudo	typeref:typename:int
+qt_metacall	moc_TabArma.cpp	/^int TabArma::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArma	typeref:typename:int
+qt_metacall	moc_TabArmaFisica.cpp	/^int TabArmaFisica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmaFisica	typeref:typename:int
+qt_metacall	moc_TabArmaMagica.cpp	/^int TabArmaMagica::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmaMagica	typeref:typename:int
+qt_metacall	moc_TabArmamento.cpp	/^int TabArmamento::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmamento	typeref:typename:int
+qt_metacall	moc_TabArmatura.cpp	/^int TabArmatura::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmatura	typeref:typename:int
+qt_metacall	moc_TabScudo.cpp	/^int TabScudo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabScudo	typeref:typename:int
+qt_metacall	moc_TabWidget.cpp	/^int TabWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabWidget	typeref:typename:int
+qt_metacast	moc_Caratteristiche_gui.cpp	/^void *Caratteristiche_gui::qt_metacast(const char *_clname)$/;"	f	class:Caratteristiche_gui	typeref:typename:void *
+qt_metacast	moc_MainWindow.cpp	/^void *MainWindow::qt_metacast(const char *_clname)$/;"	f	class:MainWindow	typeref:typename:void *
+qt_metacast	moc_OperazioniArma.cpp	/^void *OperazioniArma::qt_metacast(const char *_clname)$/;"	f	class:OperazioniArma	typeref:typename:void *
+qt_metacast	moc_OperazioniArmaFisica.cpp	/^void *OperazioniArmaFisica::qt_metacast(const char *_clname)$/;"	f	class:OperazioniArmaFisica	typeref:typename:void *
+qt_metacast	moc_OperazioniArmaMagica.cpp	/^void *OperazioniArmaMagica::qt_metacast(const char *_clname)$/;"	f	class:OperazioniArmaMagica	typeref:typename:void *
+qt_metacast	moc_OperazioniArmamento.cpp	/^void *OperazioniArmamento::qt_metacast(const char *_clname)$/;"	f	class:OperazioniArmamento	typeref:typename:void *
+qt_metacast	moc_OperazioniArmatura.cpp	/^void *OperazioniArmatura::qt_metacast(const char *_clname)$/;"	f	class:OperazioniArmatura	typeref:typename:void *
+qt_metacast	moc_OperazioniScudo.cpp	/^void *OperazioniScudo::qt_metacast(const char *_clname)$/;"	f	class:OperazioniScudo	typeref:typename:void *
+qt_metacast	moc_TabArma.cpp	/^void *TabArma::qt_metacast(const char *_clname)$/;"	f	class:TabArma	typeref:typename:void *
+qt_metacast	moc_TabArmaFisica.cpp	/^void *TabArmaFisica::qt_metacast(const char *_clname)$/;"	f	class:TabArmaFisica	typeref:typename:void *
+qt_metacast	moc_TabArmaMagica.cpp	/^void *TabArmaMagica::qt_metacast(const char *_clname)$/;"	f	class:TabArmaMagica	typeref:typename:void *
+qt_metacast	moc_TabArmamento.cpp	/^void *TabArmamento::qt_metacast(const char *_clname)$/;"	f	class:TabArmamento	typeref:typename:void *
+qt_metacast	moc_TabArmatura.cpp	/^void *TabArmatura::qt_metacast(const char *_clname)$/;"	f	class:TabArmatura	typeref:typename:void *
+qt_metacast	moc_TabScudo.cpp	/^void *TabScudo::qt_metacast(const char *_clname)$/;"	f	class:TabScudo	typeref:typename:void *
+qt_metacast	moc_TabWidget.cpp	/^void *TabWidget::qt_metacast(const char *_clname)$/;"	f	class:TabWidget	typeref:typename:void *
+qt_static_metacall	moc_Caratteristiche_gui.cpp	/^void Caratteristiche_gui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **/;"	f	class:Caratteristiche_gui	typeref:typename:void
+qt_static_metacall	moc_MainWindow.cpp	/^void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:MainWindow	typeref:typename:void
+qt_static_metacall	moc_OperazioniArma.cpp	/^void OperazioniArma::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniArma	typeref:typename:void
+qt_static_metacall	moc_OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void */;"	f	class:OperazioniArmaFisica	typeref:typename:void
+qt_static_metacall	moc_OperazioniArmaMagica.cpp	/^void OperazioniArmaMagica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void */;"	f	class:OperazioniArmaMagica	typeref:typename:void
+qt_static_metacall	moc_OperazioniArmamento.cpp	/^void OperazioniArmamento::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **/;"	f	class:OperazioniArmamento	typeref:typename:void
+qt_static_metacall	moc_OperazioniArmatura.cpp	/^void OperazioniArmatura::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_/;"	f	class:OperazioniArmatura	typeref:typename:void
+qt_static_metacall	moc_OperazioniScudo.cpp	/^void OperazioniScudo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:OperazioniScudo	typeref:typename:void
+qt_static_metacall	moc_TabArma.cpp	/^void TabArma::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArma	typeref:typename:void
+qt_static_metacall	moc_TabArmaFisica.cpp	/^void TabArmaFisica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmaFisica	typeref:typename:void
+qt_static_metacall	moc_TabArmaMagica.cpp	/^void TabArmaMagica::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmaMagica	typeref:typename:void
+qt_static_metacall	moc_TabArmamento.cpp	/^void TabArmamento::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmamento	typeref:typename:void
+qt_static_metacall	moc_TabArmatura.cpp	/^void TabArmatura::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabArmatura	typeref:typename:void
+qt_static_metacall	moc_TabScudo.cpp	/^void TabScudo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabScudo	typeref:typename:void
+qt_static_metacall	moc_TabWidget.cpp	/^void TabWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:TabWidget	typeref:typename:void
+refreshLivello	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::refreshLivello(){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+scalingDestrezza	Model/ArmaFisica.h	/^		char scalingDestrezza; \/\/Valori compresi tra E-S$/;"	m	class:ArmaFisica	typeref:typename:char
+scalingFede	Model/ArmaMagica.h	/^		char scalingFede;$/;"	m	class:ArmaMagica	typeref:typename:char
+scalingForza	Model/ArmaFisica.h	/^		char scalingForza; \/\/Valori compresi tra E-S$/;"	m	class:ArmaFisica	typeref:typename:char
+scalingIntelligenza	Model/ArmaMagica.h	/^		char scalingIntelligenza;$/;"	m	class:ArmaMagica	typeref:typename:char
+scalingVigore	Model/Scudo.h	/^		char scalingVigore;$/;"	m	class:Scudo	typeref:typename:char
+scudo	View/TabScudo.h	/^		Scudo* scudo;$/;"	m	class:TabScudo	typeref:typename:Scudo *
+scudoIstanza	View/OperazioniScudo.h	/^	Scudo* scudoIstanza;$/;"	m	class:OperazioniScudo	typeref:typename:Scudo *
+setAssorbFisico	View/TabScudo.cpp	/^void TabScudo::setAssorbFisico(double d) {$/;"	f	class:TabScudo	typeref:typename:void
+setAssorbMagico	View/TabScudo.cpp	/^void TabScudo::setAssorbMagico(double d) {$/;"	f	class:TabScudo	typeref:typename:void
+setDannoBase	View/TabArma.cpp	/^void TabArma::setDannoBase(double d){$/;"	f	class:TabArma	typeref:typename:void
+setDannoBase	View/TabArmaFisica.cpp	/^void TabArmaFisica::setDannoBase(double d){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setDannoBase	View/TabArmaMagica.cpp	/^void TabArmaMagica::setDannoBase(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setDestrezza	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setDestrezza(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setDifAffondo	View/TabArmatura.cpp	/^void TabArmatura::setDifAffondo(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifContundente	View/TabArmatura.cpp	/^void TabArmatura::setDifContundente(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifElettricita	View/TabArmatura.cpp	/^void TabArmatura::setDifElettricita(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifFuoco	View/TabArmatura.cpp	/^void TabArmatura::setDifFuoco(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifMagia	View/TabArmatura.cpp	/^void TabArmatura::setDifMagia(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifOscurita	View/TabArmatura.cpp	/^void TabArmatura::setDifOscurita(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifTaglio	View/TabArmatura.cpp	/^void TabArmatura::setDifTaglio(double d) {$/;"	f	class:TabArmatura	typeref:typename:void
+setDifesa	View/TabArmamento.cpp	/^void TabArmamento::setDifesa(double d){$/;"	f	class:TabArmamento	typeref:typename:void
+setDifesa	View/TabArmatura.cpp	/^void TabArmatura::setDifesa(double d){$/;"	f	class:TabArmatura	typeref:typename:void
+setDifesa	View/TabScudo.cpp	/^void TabScudo::setDifesa(double d){$/;"	f	class:TabScudo	typeref:typename:void
+setElettrico	View/TabArmaMagica.cpp	/^void TabArmaMagica::setElettrico(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setEnergia	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setEnergia(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setFede	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setFede(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setForza	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setForza(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setForzaRichiesta	View/TabArma.cpp	/^void TabArma::setForzaRichiesta(int i){$/;"	f	class:TabArma	typeref:typename:void
+setForzaRichiesta	View/TabArmaFisica.cpp	/^void TabArmaFisica::setForzaRichiesta(int i){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setForzaRichiesta	View/TabArmaMagica.cpp	/^void TabArmaMagica::setForzaRichiesta(int i){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setFuoco	View/TabArmaMagica.cpp	/^void TabArmaMagica::setFuoco(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setIntelligenza	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setIntelligenza(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setIntelligenzaRichiesta	View/TabArma.cpp	/^void TabArma::setIntelligenzaRichiesta(int i){$/;"	f	class:TabArma	typeref:typename:void
+setIntelligenzaRichiesta	View/TabArmaFisica.cpp	/^void TabArmaFisica::setIntelligenzaRichiesta(int i){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setIntelligenzaRichiesta	View/TabArmaMagica.cpp	/^void TabArmaMagica::setIntelligenzaRichiesta(int i){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setMagico	View/TabArmaMagica.cpp	/^void TabArmaMagica::setMagico(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setOscuro	View/TabArmaMagica.cpp	/^void TabArmaMagica::setOscuro(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setPeso	View/TabArma.cpp	/^void TabArma::setPeso(double d){$/;"	f	class:TabArma	typeref:typename:void
+setPeso	View/TabArmaFisica.cpp	/^void TabArmaFisica::setPeso(double d){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setPeso	View/TabArmaMagica.cpp	/^void TabArmaMagica::setPeso(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setPeso	View/TabArmamento.cpp	/^void TabArmamento::setPeso(double d){$/;"	f	class:TabArmamento	typeref:typename:void
+setPeso	View/TabArmatura.cpp	/^void TabArmatura::setPeso(double d){$/;"	f	class:TabArmatura	typeref:typename:void
+setPeso	View/TabScudo.cpp	/^void TabScudo::setPeso(double d){$/;"	f	class:TabScudo	typeref:typename:void
+setScalingDestrezza	View/TabArmaFisica.cpp	/^void TabArmaFisica::setScalingDestrezza(int i){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setScalingFede	View/TabArmaMagica.cpp	/^void TabArmaMagica::setScalingFede(int i){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setScalingForza	View/TabArmaFisica.cpp	/^void TabArmaFisica::setScalingForza(int i){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setScalingIntelligenza	View/TabArmaMagica.cpp	/^void TabArmaMagica::setScalingIntelligenza(int i){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setScalingVigore	View/TabScudo.cpp	/^void  TabScudo::setScalingVigore(int i) {$/;"	f	class:TabScudo	typeref:typename:void
+setStabilita	View/TabScudo.cpp	/^void TabScudo::setStabilita(int i) {$/;"	f	class:TabScudo	typeref:typename:void
+setTipoDanno	View/TabArmaFisica.cpp	/^void TabArmaFisica::setTipoDanno(int i){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setUsura	View/TabArma.cpp	/^void TabArma::setUsura(double d){$/;"	f	class:TabArma	typeref:typename:void
+setUsura	View/TabArmaFisica.cpp	/^void TabArmaFisica::setUsura(double d){$/;"	f	class:TabArmaFisica	typeref:typename:void
+setUsura	View/TabArmaMagica.cpp	/^void TabArmaMagica::setUsura(double d){$/;"	f	class:TabArmaMagica	typeref:typename:void
+setUsura	View/TabArmamento.cpp	/^void TabArmamento::setUsura(double d){$/;"	f	class:TabArmamento	typeref:typename:void
+setUsura	View/TabArmatura.cpp	/^void TabArmatura::setUsura(double d){$/;"	f	class:TabArmatura	typeref:typename:void
+setUsura	View/TabScudo.cpp	/^void TabScudo::setUsura(double d){$/;"	f	class:TabScudo	typeref:typename:void
+setVigore	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setVigore(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+setVigoreRichiesto	View/TabArmamento.cpp	/^void TabArmamento::setVigoreRichiesto(int i){$/;"	f	class:TabArmamento	typeref:typename:void
+setVigoreRichiesto	View/TabArmatura.cpp	/^void TabArmatura::setVigoreRichiesto(int i){$/;"	f	class:TabArmatura	typeref:typename:void
+setVigoreRichiesto	View/TabScudo.cpp	/^void TabScudo::setVigoreRichiesto(int i){$/;"	f	class:TabScudo	typeref:typename:void
+setVitalita	View/Caratteristiche_gui.cpp	/^void Caratteristiche_gui::setVitalita(int i){$/;"	f	class:Caratteristiche_gui	typeref:typename:void
+spinBox_Destrezza	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Destrezza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Energia	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Energia;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Fede	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Fede;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Forza	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Forza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Intelligenza	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Intelligenza;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Vigore	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Vigore;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+spinBox_Vitalita	View/Caratteristiche_gui.h	/^    QSpinBox *spinBox_Vitalita;$/;"	m	class:Caratteristiche_gui	typeref:typename:QSpinBox *
+stabilita	Model/Scudo.h	/^		int stabilita;$/;"	m	class:Scudo	typeref:typename:int
+staticMetaObject	moc_Caratteristiche_gui.cpp	/^QT_INIT_METAOBJECT const QMetaObject Caratteristiche_gui::staticMetaObject = {$/;"	m	class:Caratteristiche_gui	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_MainWindow.cpp	/^QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = {$/;"	m	class:MainWindow	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniArma.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniArma::staticMetaObject = {$/;"	m	class:OperazioniArma	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniArmaFisica.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniArmaFisica::staticMetaObject = {$/;"	m	class:OperazioniArmaFisica	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniArmaMagica.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniArmaMagica::staticMetaObject = {$/;"	m	class:OperazioniArmaMagica	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniArmamento.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniArmamento::staticMetaObject = {$/;"	m	class:OperazioniArmamento	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniArmatura.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniArmatura::staticMetaObject = {$/;"	m	class:OperazioniArmatura	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_OperazioniScudo.cpp	/^QT_INIT_METAOBJECT const QMetaObject OperazioniScudo::staticMetaObject = {$/;"	m	class:OperazioniScudo	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabArma.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabArma::staticMetaObject = {$/;"	m	class:TabArma	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabArmaFisica.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabArmaFisica::staticMetaObject = {$/;"	m	class:TabArmaFisica	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabArmaMagica.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabArmaMagica::staticMetaObject = {$/;"	m	class:TabArmaMagica	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabArmamento.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabArmamento::staticMetaObject = {$/;"	m	class:TabArmamento	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabArmatura.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabArmatura::staticMetaObject = {$/;"	m	class:TabArmatura	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabScudo.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabScudo::staticMetaObject = {$/;"	m	class:TabScudo	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+staticMetaObject	moc_TabWidget.cpp	/^QT_INIT_METAOBJECT const QMetaObject TabWidget::staticMetaObject = {$/;"	m	class:TabWidget	typeref:typename:QT_INIT_METAOBJECT const QMetaObject
+stringdata0	moc_Caratteristiche_gui.cpp	/^    char stringdata0[117];$/;"	m	struct:qt_meta_stringdata_Caratteristiche_gui_t	typeref:typename:char[117]	file:
+stringdata0	moc_MainWindow.cpp	/^    char stringdata0[74];$/;"	m	struct:qt_meta_stringdata_MainWindow_t	typeref:typename:char[74]	file:
+stringdata0	moc_OperazioniArma.cpp	/^    char stringdata0[152];$/;"	m	struct:qt_meta_stringdata_OperazioniArma_t	typeref:typename:char[152]	file:
+stringdata0	moc_OperazioniArmaFisica.cpp	/^    char stringdata0[229];$/;"	m	struct:qt_meta_stringdata_OperazioniArmaFisica_t	typeref:typename:char[229]	file:
+stringdata0	moc_OperazioniArmaMagica.cpp	/^    char stringdata0[235];$/;"	m	struct:qt_meta_stringdata_OperazioniArmaMagica_t	typeref:typename:char[235]	file:
+stringdata0	moc_OperazioniArmamento.cpp	/^    char stringdata0[142];$/;"	m	struct:qt_meta_stringdata_OperazioniArmamento_t	typeref:typename:char[142]	file:
+stringdata0	moc_OperazioniArmatura.cpp	/^    char stringdata0[223];$/;"	m	struct:qt_meta_stringdata_OperazioniArmatura_t	typeref:typename:char[223]	file:
+stringdata0	moc_OperazioniScudo.cpp	/^    char stringdata0[173];$/;"	m	struct:qt_meta_stringdata_OperazioniScudo_t	typeref:typename:char[173]	file:
+stringdata0	moc_TabArma.cpp	/^    char stringdata0[138];$/;"	m	struct:qt_meta_stringdata_TabArma_t	typeref:typename:char[138]	file:
+stringdata0	moc_TabArmaFisica.cpp	/^    char stringdata0[200];$/;"	m	struct:qt_meta_stringdata_TabArmaFisica_t	typeref:typename:char[200]	file:
+stringdata0	moc_TabArmaMagica.cpp	/^    char stringdata0[224];$/;"	m	struct:qt_meta_stringdata_TabArmaMagica_t	typeref:typename:char[224]	file:
+stringdata0	moc_TabArmamento.cpp	/^    char stringdata0[116];$/;"	m	struct:qt_meta_stringdata_TabArmamento_t	typeref:typename:char[116]	file:
+stringdata0	moc_TabArmatura.cpp	/^    char stringdata0[217];$/;"	m	struct:qt_meta_stringdata_TabArmatura_t	typeref:typename:char[217]	file:
+stringdata0	moc_TabScudo.cpp	/^    char stringdata0[174];$/;"	m	struct:qt_meta_stringdata_TabScudo_t	typeref:typename:char[174]	file:
+stringdata0	moc_TabWidget.cpp	/^    char stringdata0[63];$/;"	m	struct:qt_meta_stringdata_TabWidget_t	typeref:typename:char[63]	file:
+tabArma	View/TabWidget.h	/^	TabArma* tabArma;$/;"	m	class:TabWidget	typeref:typename:TabArma *
+tabArmaFisica	View/TabWidget.h	/^	TabArmaFisica* tabArmaFisica;$/;"	m	class:TabWidget	typeref:typename:TabArmaFisica *
+tabArmaMagica	View/TabWidget.h	/^	TabArmaMagica* tabArmaMagica;$/;"	m	class:TabWidget	typeref:typename:TabArmaMagica *
+tabArmamento	View/TabWidget.h	/^	TabArmamento* tabArmamento;$/;"	m	class:TabWidget	typeref:typename:TabArmamento *
+tabArmatura	View/TabWidget.h	/^	TabArmatura* tabArmatura;$/;"	m	class:TabWidget	typeref:typename:TabArmatura *
+tabScudo	View/TabWidget.h	/^	TabScudo* tabScudo;$/;"	m	class:TabWidget	typeref:typename:TabScudo *
+tabwid	View/TabWidget.h	/^  QTabWidget *tabwid;$/;"	m	class:TabWidget	typeref:typename:QTabWidget *
+tipoDanno	Model/ArmaFisica.h	/^		char tipoDanno;$/;"	m	class:ArmaFisica	typeref:typename:char
+uninstall	Makefile	/^uninstall:  FORCE$/;"	t
+unix	moc_predefs.h	/^#define unix /;"	d
+update	View/TabArmaFisica.cpp	/^void TabArmaFisica::update(){$/;"	f	class:TabArmaFisica	typeref:typename:void
+update	View/TabArmaMagica.cpp	/^void TabArmaMagica::update(){$/;"	f	class:TabArmaMagica	typeref:typename:void
+update	View/TabArmatura.cpp	/^void TabArmatura::update(){$/;"	f	class:TabArmatura	typeref:typename:void
+update	moc_OperazioniArmaFisica.cpp	/^void OperazioniArmaFisica::update()$/;"	f	class:OperazioniArmaFisica	typeref:typename:void
+usura	Model/Equipaggiamento.h	/^                double usura;$/;"	m	class:Equipaggiamento	typeref:typename:double
+usura	View/TabArma.h	/^        QDoubleSpinBox* usura;$/;"	m	class:TabArma	typeref:typename:QDoubleSpinBox *
+usura	View/TabArmamento.h	/^    QDoubleSpinBox* usura;$/;"	m	class:TabArmamento	typeref:typename:QDoubleSpinBox *
+vigore	Model/Caratteristiche.h	/^		int vigore; \/\/Peso trasportabile, effeciacia uso scudo$/;"	m	class:Caratteristiche	typeref:typename:int
+vigoreRichiesto	Model/Armamento.h	/^		int vigoreRichiesto;$/;"	m	class:Armamento	typeref:typename:int
+vigoreRichiesto	View/TabArmamento.h	/^    QSpinBox* vigoreRichiesto;$/;"	m	class:TabArmamento	typeref:typename:QSpinBox *
+vitalita	Model/Caratteristiche.h	/^		int vitalita; \/\/HP$/;"	m	class:Caratteristiche	typeref:typename:int
+winLayout	View/MainWindow.h	/^    QGridLayout *winLayout;$/;"	m	class:MainWindow	typeref:typename:QGridLayout *
+winLayout	View/OperazioniArma.h	/^		QGridLayout* winLayout;$/;"	m	class:OperazioniArma	typeref:typename:QGridLayout *
+winLayout	View/OperazioniArmaP2.h	/^		QGridLayout* winLayout;$/;"	m	class:OperazioniArmaP2	typeref:typename:QGridLayout *
+winLayout	View/OperazioniArmamento.h	/^		QGridLayout* winLayout;$/;"	m	class:OperazioniArmamento	typeref:typename:QGridLayout *
+winLayout	View/TabArma.h	/^	QGridLayout *winLayout;$/;"	m	class:TabArma	typeref:typename:QGridLayout *
+winLayout	View/TabArmamento.h	/^	QGridLayout *winLayout;$/;"	m	class:TabArmamento	typeref:typename:QGridLayout *
+~MainWindow	View/MainWindow.cpp	/^MainWindow::~MainWindow()$/;"	f	class:MainWindow

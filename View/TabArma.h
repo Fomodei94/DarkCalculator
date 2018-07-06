@@ -8,6 +8,7 @@
 #include<QDoubleSpinBox>
 #include"../Model/Arma.h"
 #include "OperazioniArma.h"
+#include "OperazioniArmaP2.h"
 
 class TabArma : public QWidget
 {

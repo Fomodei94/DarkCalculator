@@ -41,6 +41,9 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
     connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
     connect(EquipaggiamentoP1, SIGNAL(MostraRisultatoBooleano3(bool)), this, SLOT(MostraRisultatoBooleanoFinale(bool)));
+    connect(EquipaggiamentoP2, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
+    connect(EquipaggiamentoP2, SIGNAL(MostraRisultatoNumerico3(double)), this, SLOT(MostraRisultatoNumericoFinale(double)));
+    connect(EquipaggiamentoP2, SIGNAL(MostraRisultatoBooleano3(bool)), this, SLOT(MostraRisultatoBooleanoFinale(bool)));
     winLayout->addWidget(CaratteristicheP1,0,0);
     winLayout->addWidget(CaratteristicheP2,0,1);
     winLayout->addWidget(EquipaggiamentoP1,1,0);

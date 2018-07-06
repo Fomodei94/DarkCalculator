@@ -1,6 +1,8 @@
 #include "OperazioniArmaP2.h"
 
-OperazioniArmaP2::OperazioniArmaP2(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, Caratteristiche* car): QWidget(parent), equipMap(equipMap), car(car){
+OperazioniArmaP2::OperazioniArmaP2(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), carP1(carP1), carP2(carP2){
+
+        par = dynamic_cast<Arma*>( equipMap->find("ArmaP2")->second );
 	label = new QLabel("<h4>Operazioni Arma P2</h4>", this);
 	ConfrontaConArma = new QPushButton("Confronta con Arma", this);
 	ConfrontaConArmaFisica = new QPushButton("Confronta con Arma Fisica", this);
@@ -28,3 +30,18 @@ OperazioniArmaP2::OperazioniArmaP2(QWidget* parent, std::map<std::string, Equipa
 	setLayout(winLayout);
 }
 
+void OperazioniArmaP2::CalcolaConfrontaConArma(){
+    Arma* inv = dynamic_cast<Arma*>(equipMap->find("ArmaP1")->second);
+    try {
+        double risultato = inv->ConfrontaDanno(*carP1, par);
+        emit MostraRisultatoNumerico(risultato);
+    }catch(const char*& exc) {
+        QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+        msg->show();
+
+    }
+}
+
+void OperazioniArmaP2::connectSignalsOperazioni(){
+    connect(ConfrontaConArma, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArma()));
+}
