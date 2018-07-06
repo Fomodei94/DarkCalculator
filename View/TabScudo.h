@@ -6,7 +6,7 @@
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include <QComboBox>
-//#include "OperazioniScudo.h"
+#include "OperazioniScudo.h"
 
 class TabScudo: public TabArmamento{
 	Q_OBJECT
@@ -20,10 +20,14 @@ class TabScudo: public TabArmamento{
 									*AssorbFisico;
 		QSpinBox * Stabilita;
 		QComboBox *ScalingVigore;
-	//OperazioniScudo* operazioniScudo;
+	OperazioniScudo* operazioniScudo;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 	int playerNumber;
+
+	protected:
+		void connectSignalsScudo();
+
 	public:
 		TabScudo(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
 		void FinishInit() override;
@@ -35,6 +39,10 @@ class TabScudo: public TabArmamento{
 		void setUsura(double d) override;
 		void setDifesa(double d) override;
 		void setVigoreRichiesto(int i) override;
+		void setStabilita(int i);
+		void setAssorbMagico(double d);
+		void setAssorbFisico(double d);
+		void setScalingVigore(int i);
 };
 #endif
 

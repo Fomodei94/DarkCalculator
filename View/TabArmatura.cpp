@@ -24,11 +24,15 @@ void TabArmatura::FinishInit() {
 	}else{
 		armatura = dynamic_cast<Armatura*>((equipMap->find("ArmaturaP2"))->second);
 	}
+	
 	operazioniArmatura = new OperazioniArmatura(this, armatura, carP1);
+	
 	//CONNECT
-   connect(operazioniArmatura, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
-   connect(operazioniArmatura, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
-  //LAYOUT
+	connectSignalsArmatura();
+	connect(operazioniArmatura, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+	connect(operazioniArmatura, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+	
+	//LAYOUT
 	winLayout->addWidget(LblDifMagia, 2,0);
 	winLayout->addWidget(DifMagia, 2,1);
 	winLayout->addWidget(LblDifOscurita, 3,0);
@@ -89,4 +93,14 @@ void TabArmatura::setDifContundente(double d) {
 
 void TabArmatura::setDifAffondo(double d) {
 	armatura->SetDifesaAffondo(d);
+}
+
+void TabArmatura::connectSignalsArmatura() {
+	connect(DifMagia, SIGNAL(valueChanged(double)), this, SLOT(setDifMagia(double)));
+	connect(DifOscurita, SIGNAL(valueChanged(double)), this, SLOT(setDifOscurita(double)));
+	connect(DifFuoco, SIGNAL(valueChanged(double)), this, SLOT(setDifFuoco(double)));
+	connect(DifElettricita, SIGNAL(valueChanged(double)), this, SLOT(setDifElettricita(double)));
+	connect(DifTaglio, SIGNAL(valueChanged(double)), this, SLOT(setDifTaglio(double)));
+	connect(DifContundente, SIGNAL(valueChanged(double)), this, SLOT(setDifContundente(double)));
+	connect(DifAffondo, SIGNAL(valueChanged(double)), this, SLOT(setDifAffondo(double)));
 }
