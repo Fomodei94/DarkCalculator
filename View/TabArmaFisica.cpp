@@ -2,6 +2,11 @@
 
 TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArma(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
 	FinishInit();
+	if (playerNumber == 1){
+		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
+	}else{
+		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
+	}
 };
 
 void TabArmaFisica::FinishInit() {
@@ -26,11 +31,6 @@ void TabArmaFisica::FinishInit() {
 	ScalingDestrezza->addItem("B");
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
-	if (playerNumber == 1){
-		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
-	}else{
-		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
-	}
 	operazioniArmaFisica = new OperazioniArmaFisica(this, armaFisica, carP1);
 	//CONNECT
   connect(operazioniArmaFisica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
