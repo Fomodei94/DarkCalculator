@@ -17,7 +17,8 @@ private:
 		Arma* arma;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
-    OperazioniArma* operazioniArma;
+    //OperazioniArma* operazioniArma;
+    QWidget* operazioniArma;
     int playerNumber;
     QLabel* LblPeso;
     QLabel* LblUsura;
