@@ -12,7 +12,7 @@ Equipaggiamento::Equipaggiamento(double p, double u): peso(p), usura(u) {
 	if(p < 0.0) //Costruito oggetto con peso negativo
 	{
 		cerr << "Attenzione, costruito un Euipaggiamento con peso negativo. Peso riportato al valore di default 0." << endl;
-		peso = 0; 
+		peso = 0;
 	}
 }
 
@@ -42,6 +42,10 @@ double Equipaggiamento::Moltiplicatore(char s) const{
 			break;
 	}
 	return ret;
+}
+
+void notify(){
+    view->update();
 }
 
 //GETTER
