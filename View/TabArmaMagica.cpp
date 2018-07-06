@@ -42,10 +42,10 @@ void TabArmaMagica::FinishInit() {
 	}else{
 		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP2"))->second);
 	}
-	//operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
+	operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
 	//CONNECT
-  //connect(operazioniArmaMagica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
-  //connect(operazioniArmaMagica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
   connectSignalsArmaMagica();
   //LAYOUT
 	winLayout->addWidget(LblFuoco, 3,0);
@@ -60,7 +60,7 @@ void TabArmaMagica::FinishInit() {
 	winLayout->addWidget(ScalingIntelligenza, 7,1);
 	winLayout->addWidget(LblScalingFede, 8,0);
 	winLayout->addWidget(ScalingFede, 8,1);
-	//winLayout->addWidget(operazioniArmaFisica, 2,2,4,2);
+	winLayout->addWidget(operazioniArmaMagica, 2,2,5,2);
 	setLayout(winLayout);
 }
 //OVERRIDE SLOTS

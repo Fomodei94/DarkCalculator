@@ -20,6 +20,8 @@ TabWidget::TabWidget(QWidget *parent,  std::map<std::string, Equipaggiamento*>* 
     connect(tabArmaFisica, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
     connect(tabArma, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
     connect(tabArma, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
+    connect(tabArmaMagica, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
+    connect(tabArmaMagica, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
     connect(tabArmamento, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));
 		connect(tabArmamento, SIGNAL(MostraRisultatoNumerico2(double)), this, SIGNAL(MostraRisultatoNumerico3(double)));
 		connect(tabArmatura, SIGNAL(MostraRisultatoBooleano2(bool)), this, SIGNAL(MostraRisultatoBooleano3(bool)));

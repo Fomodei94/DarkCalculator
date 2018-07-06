@@ -1,39 +1,43 @@
-#ifndef OPERAZIONI_ARMAFISICA
-#define OPERAZIONI_ARMAFISICA
+#ifndef OPERAZIONI_ARMAMAGICA
+#define OPERAZIONI_ARMAMAGICA
 #include <QWidget>
 #include <QPushButton>
 #include <QLabel>
 #include <QGridLayout>
-#include "../Model/ArmaFisica.h"
+#include "../Model/ArmaMagica.h"
 #include"OperazioniArma.h"
 
-class OperazioniArmaFisica: public OperazioniArma{
+class OperazioniArmaMagica: public OperazioniArma{
         Q_OBJECT
 	private:
-	QPushButton *Raffina,
-							*Frantuma,
-							*Cristallizza,
-							*Riforgia;
-		ArmaFisica* armaFisicaIstanza;
+	QPushButton *Incanta,
+							*Infuoca,
+							*Benedici,
+							*Maledici,
+							*ArteMistica;
+		ArmaMagica* armaMagicaIstanza;
 		Caratteristiche* car;
   protected:
 		void connectSignalsOperazioniProprie();
 		
 	public:
-		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
+		OperazioniArmaMagica(QWidget* parent = nullptr, ArmaMagica* arma = nullptr, Caratteristiche* car=nullptr);
   
   signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(bool x);
+		
   public slots:
 		void CalcolaDannoEffettivo() override;
 		void CalcolaEfficacia() override;
 		void CalcolaUsabilita() override;
 		void CalcolaConfronto() override;
 		void CalcolaSomma() override;
-		void EseguiRaffina();
-		void EseguiCristallizza();
-		void EseguiRiforgia();
-		void CalcolaFrantuma();
+		void EseguiIncanta();
+		void EseguiInfuoca();
+		void EseguiBenedici();
+		void EseguiMaledici();
+		void CalcolaArteMistica();
 };
 #endif
+

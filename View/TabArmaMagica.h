@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QComboBox>
 #include<QDoubleSpinBox>
-//#include "OperazioniArmaMagica.h"
+#include "OperazioniArmaMagica.h"
 #include<QString>
 
 class TabArmaMagica: public TabArma{
@@ -24,7 +24,7 @@ class TabArmaMagica: public TabArma{
 										*Oscuro;
 		QComboBox *ScalingIntelligenza,
 							*ScalingFede;
-		//OperazioniArmaMagica* operazioniArmaMagica
+		OperazioniArmaMagica* operazioniArmaMagica;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 		int playerNumber;
