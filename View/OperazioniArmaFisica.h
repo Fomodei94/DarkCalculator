@@ -18,13 +18,14 @@ class OperazioniArmaFisica: public OperazioniArma{
 		Caratteristiche* car;
   protected:
 		void connectSignalsOperazioniProprie();
-		
+
 	public:
 		OperazioniArmaFisica(QWidget* parent = nullptr, ArmaFisica* arma = nullptr, Caratteristiche* car=nullptr);
-  
+
   signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(bool x);
+                void update();
   public slots:
 		void CalcolaDannoEffettivo() override;
 		void CalcolaEfficacia() override;

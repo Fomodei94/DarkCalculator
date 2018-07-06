@@ -12,9 +12,9 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -g -D_REENTRANT -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -g -D_REENTRANT -Wall -W -fPIC $(DEFINES)
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+CFLAGS        = -pipe -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
+CXXFLAGS      = -pipe -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 INCPATH       = -I. -I. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib64/qt5/bin/qmake
 DEL_FILE      = rm -f
@@ -37,7 +37,7 @@ COMPRESS      = gzip -9f
 DISTNAME      = DarkCalculator1.0.0
 DISTDIR = /home/penaz/DarkCalculator/.tmp/DarkCalculator1.0.0
 LINK          = g++
-LFLAGS        = 
+LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -L/usr/lib64 -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
@@ -226,13 +226,13 @@ DIST          = /usr/lib64/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib64/qt5/mkspecs/features/default_pre.prf \
 		/usr/lib64/qt5/mkspecs/features/resolve_config.prf \
 		/usr/lib64/qt5/mkspecs/features/default_post.prf \
+		/usr/lib64/qt5/mkspecs/features/warn_on.prf \
 		/usr/lib64/qt5/mkspecs/features/qt.prf \
 		/usr/lib64/qt5/mkspecs/features/resources.prf \
 		/usr/lib64/qt5/mkspecs/features/moc.prf \
 		/usr/lib64/qt5/mkspecs/features/unix/opengl.prf \
 		/usr/lib64/qt5/mkspecs/features/uic.prf \
 		/usr/lib64/qt5/mkspecs/features/unix/thread.prf \
-		/usr/lib64/qt5/mkspecs/features/warn_on.prf \
 		/usr/lib64/qt5/mkspecs/features/qmake_use.prf \
 		/usr/lib64/qt5/mkspecs/features/file_copies.prf \
 		/usr/lib64/qt5/mkspecs/features/testcase_targets.prf \
@@ -395,13 +395,13 @@ Makefile: DarkCalculator.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/li
 		/usr/lib64/qt5/mkspecs/features/default_pre.prf \
 		/usr/lib64/qt5/mkspecs/features/resolve_config.prf \
 		/usr/lib64/qt5/mkspecs/features/default_post.prf \
+		/usr/lib64/qt5/mkspecs/features/warn_on.prf \
 		/usr/lib64/qt5/mkspecs/features/qt.prf \
 		/usr/lib64/qt5/mkspecs/features/resources.prf \
 		/usr/lib64/qt5/mkspecs/features/moc.prf \
 		/usr/lib64/qt5/mkspecs/features/unix/opengl.prf \
 		/usr/lib64/qt5/mkspecs/features/uic.prf \
 		/usr/lib64/qt5/mkspecs/features/unix/thread.prf \
-		/usr/lib64/qt5/mkspecs/features/warn_on.prf \
 		/usr/lib64/qt5/mkspecs/features/qmake_use.prf \
 		/usr/lib64/qt5/mkspecs/features/file_copies.prf \
 		/usr/lib64/qt5/mkspecs/features/testcase_targets.prf \
@@ -512,13 +512,13 @@ Makefile: DarkCalculator.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/li
 /usr/lib64/qt5/mkspecs/features/default_pre.prf:
 /usr/lib64/qt5/mkspecs/features/resolve_config.prf:
 /usr/lib64/qt5/mkspecs/features/default_post.prf:
+/usr/lib64/qt5/mkspecs/features/warn_on.prf:
 /usr/lib64/qt5/mkspecs/features/qt.prf:
 /usr/lib64/qt5/mkspecs/features/resources.prf:
 /usr/lib64/qt5/mkspecs/features/moc.prf:
 /usr/lib64/qt5/mkspecs/features/unix/opengl.prf:
 /usr/lib64/qt5/mkspecs/features/uic.prf:
 /usr/lib64/qt5/mkspecs/features/unix/thread.prf:
-/usr/lib64/qt5/mkspecs/features/warn_on.prf:
 /usr/lib64/qt5/mkspecs/features/qmake_use.prf:
 /usr/lib64/qt5/mkspecs/features/file_copies.prf:
 /usr/lib64/qt5/mkspecs/features/testcase_targets.prf:
@@ -575,7 +575,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: /usr/lib64/qt5/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -dM -E -o moc_predefs.h /usr/lib64/qt5/mkspecs/features/data/dummy.cpp
+	g++ -pipe -O2 -Wall -W -dM -E -o moc_predefs.h /usr/lib64/qt5/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmaMagica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmatura.cpp moc_OperazioniScudo.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabScudo.cpp moc_TabWidget.cpp
 compiler_moc_header_clean:

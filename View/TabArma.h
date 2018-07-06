@@ -20,11 +20,8 @@ private:
     OperazioniArma* operazioniArma;
     int playerNumber;
     QLabel* LblPeso;
-    QDoubleSpinBox* peso;
     QLabel* LblUsura;
-    QDoubleSpinBox* usura;
     QLabel* LblDannoBase;
-    QDoubleSpinBox* DannoBase;
     QLabel* LblForzaRichiesta;
     QSpinBox* forzaRichiesta;
     QLabel* LblIntelligenzaRichiesta;
@@ -33,6 +30,9 @@ private:
  protected:
 	QGridLayout *winLayout;
 	std::map<std::string, Equipaggiamento*>* equipMap;
+        QDoubleSpinBox* peso;
+        QDoubleSpinBox* usura;
+        QDoubleSpinBox* DannoBase;
 	void connectSignals();
 
 public:
@@ -44,7 +44,7 @@ public:
 signals:
 	void MostraRisultatoNumerico2(double x);
 	void MostraRisultatoBooleano2(bool x);
-    
+
 public slots:
 	virtual void setPeso(double d);
 	virtual void setUsura(double d);

@@ -24,14 +24,14 @@ void TabArmatura::FinishInit() {
 	}else{
 		armatura = dynamic_cast<Armatura*>((equipMap->find("ArmaturaP2"))->second);
 	}
-	
+
 	operazioniArmatura = new OperazioniArmatura(this, armatura, carP1);
-	
+
 	//CONNECT
 	connectSignalsArmatura();
 	connect(operazioniArmatura, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
 	connect(operazioniArmatura, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
-	
+
 	//LAYOUT
 	winLayout->addWidget(LblDifMagia, 2,0);
 	winLayout->addWidget(DifMagia, 2,1);
@@ -49,6 +49,10 @@ void TabArmatura::FinishInit() {
 	winLayout->addWidget(DifAffondo, 4,3);
 	winLayout->addWidget(operazioniArmatura, 5,2,5,3);
 	setLayout(winLayout);
+}
+
+void TabArmatura::update(){
+    //Cose qui
 }
 //OVERRIDE SLOTS
 void TabArmatura::setPeso(double d){

@@ -38,7 +38,7 @@ public:
     TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
     virtual void FinishInit();
     ~TabArmamento() = default;
-    
+
 signals:
 	void MostraRisultatoNumerico2(double x);
 	void MostraRisultatoBooleano2(bool x);

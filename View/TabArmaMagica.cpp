@@ -63,6 +63,11 @@ void TabArmaMagica::FinishInit() {
 	winLayout->addWidget(operazioniArmaMagica, 2,2,5,2);
 	setLayout(winLayout);
 }
+
+void TabArmaMagica::update(){
+    //Cose qui
+}
+
 //OVERRIDE SLOTS
 void TabArmaMagica::setPeso(double d){
 	armaMagica->SetPeso(d);

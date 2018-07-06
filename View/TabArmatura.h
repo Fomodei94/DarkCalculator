@@ -29,13 +29,14 @@ class TabArmatura: public TabArmamento{
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 	int playerNumber;
-	
+
 	protected:
 		void connectSignalsArmatura();
-	
+
 	public:
 		TabArmatura(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		void FinishInit() override;
+                void update();
 	signals:
 		void MostraRisultatoBooleano2(bool x);
 		void MostraRisultatoNumerico2(double x);

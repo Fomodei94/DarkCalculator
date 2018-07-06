@@ -44,10 +44,6 @@ double Equipaggiamento::Moltiplicatore(char s) const{
 	return ret;
 }
 
-void notify(){
-    view->update();
-}
-
 //GETTER
 
 double Equipaggiamento::GetPeso() const {return peso;}

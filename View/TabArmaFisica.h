@@ -38,5 +38,6 @@ class TabArmaFisica: public TabArma{
 		void setTipoDanno(int i);
 		void setScalingForza(int i);
 		void setScalingDestrezza(int i);
+                void update();
 };
 #endif

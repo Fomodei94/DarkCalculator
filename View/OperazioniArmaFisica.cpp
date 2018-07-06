@@ -48,6 +48,7 @@ void OperazioniArmaFisica::CalcolaSomma(){
 
 void OperazioniArmaFisica::EseguiRaffina(){
 	armaFisicaIstanza->Raffina();
+        emit update();
 	//FUNZIONE PER AGGIORNARE GUI
 }
 

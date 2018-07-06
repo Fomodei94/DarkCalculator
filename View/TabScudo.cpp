@@ -19,15 +19,15 @@ void TabScudo::FinishInit() {
 	ScalingVigore->addItem("B");
 	ScalingVigore->addItem("A");
 	ScalingVigore->addItem("S");
-	
+
 	if (playerNumber == 1){
 		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP1"))->second);
 	}else{
 		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP2"))->second);
 	}
-	
+
 	operazioniScudo = new OperazioniScudo(this, scudo, carP1);
-	
+
 	//CONNECT
     connect(operazioniScudo, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
 	connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));

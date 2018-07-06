@@ -46,6 +46,54 @@ void TabArmaFisica::FinishInit() {
 	winLayout->addWidget(operazioniArmaFisica, 2,2,4,2);
 	setLayout(winLayout);
 }
+
+void TabArmaFisica::update(){
+    peso->setValue(armaFisica->GetPeso());
+    int i;
+    switch (armaFisica->GetScalingForza()){
+        case 'E':
+            i=0;
+            break;
+        case 'D':
+            i=1;
+            break;
+        case 'C':
+            i=2;
+            break;
+        case 'B':
+            i=3;
+            break;
+        case 'A':
+            i=4;
+            break;
+        case 'S':
+            i=5;
+            break;
+    }
+    ScalingForza->setCurrentIndex(i);
+    switch (armaFisica->GetScalingDestrezza()){
+        case 'E':
+            i=0;
+            break;
+        case 'D':
+            i=1;
+            break;
+        case 'C':
+            i=2;
+            break;
+        case 'B':
+            i=3;
+            break;
+        case 'A':
+            i=4;
+            break;
+        case 'S':
+            i=5;
+            break;
+    }
+    ScalingDestrezza->setCurrentIndex(i);
+}
+
 //OVERRIDE SLOTS
 void TabArmaFisica::setPeso(double d){
 	armaFisica->SetPeso(d);
@@ -140,4 +188,5 @@ void TabArmaFisica::connectSignalsArmaFisica(){
 	connect(TipoDanno, SIGNAL(currentIndexChanged(int)), this, SLOT(setTipoDanno(int)));
 	connect(ScalingForza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingForza(int)));
 	connect(ScalingDestrezza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingDestrezza(int)));
+        connect(operazioniArmaFisica, SIGNAL(update()), this, SLOT(update()));
 }
