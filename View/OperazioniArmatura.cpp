@@ -6,7 +6,7 @@ OperazioniArmatura::OperazioniArmatura(QWidget* parent, Armatura* armatura, Cara
 	Alleggerisci = new QPushButton("Alleggerisci", this);
 	CottaDiMaglia = new QPushButton("Cotta di Maglia", this);
 	Sopravvivenza = new QPushButton("Sopravvivenza", this);
-	connectSignalsOperazioniProprie();
+	connectSignalsOperazioniArmatura();
 	winLayout->addWidget(Appesantisci,3,0);
 	winLayout->addWidget(Alleggerisci,3,1);
 	winLayout->addWidget(CottaDiMaglia,4,0);
@@ -60,7 +60,7 @@ void OperazioniArmatura::CalcolaSopravvivenza() {
 	msg->show();
 }
 
-void OperazioniArmatura::connectSignalsOperazioniProprie(){
+void OperazioniArmatura::connectSignalsOperazioniArmatura(){
 	connect(Appesantisci, SIGNAL(clicked()), this, SLOT(CalcolaAppesantisci()));
 	connect(Alleggerisci, SIGNAL(clicked()), this, SLOT(CalcolaAlleggerisci()));
 	connect(CottaDiMaglia, SIGNAL(clicked()), this, SLOT(CalcolaCottaDiMaglia()));

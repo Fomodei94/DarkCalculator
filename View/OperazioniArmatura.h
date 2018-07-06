@@ -18,7 +18,7 @@ class OperazioniArmatura : public OperazioniArmamento{
 	Caratteristiche* car;
 	
 	protected:
-		void connectSignalsOperazioniProprie();
+		void connectSignalsOperazioniArmatura();
 
 	public:
 		OperazioniArmatura(QWidget* parent, Armatura* armatura, Caratteristiche* car);
