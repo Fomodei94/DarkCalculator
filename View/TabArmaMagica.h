@@ -49,9 +49,11 @@ class TabArmaMagica: public QWidget{
 	public:
 		TabArmaMagica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		void FinishInit();
+		
 	signals:
 		void MostraRisultatoNumerico2(double x);
 		void MostraRisultatoBooleano2(bool x);
+		
 	public slots:
 		void setPeso(double d);
 		void setUsura(double d);

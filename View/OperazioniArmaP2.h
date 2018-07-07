@@ -26,7 +26,6 @@ class OperazioniArmaP2: public QWidget{
 					*Sopravvivenza,
 					*HyperArmor,
 					*SpezzaGuardia;
-		std::map<std::string, Equipaggiamento*>* equipMap;
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
     Arma* arma;
@@ -35,6 +34,7 @@ class OperazioniArmaP2: public QWidget{
 		QLabel* label;
 		void connectSignalsOperazioni();
 		QGridLayout* winLayout;
+		std::map<std::string, Equipaggiamento*>* equipMap;
 
 	public:
 		OperazioniArmaP2(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, Caratteristiche* carP1 = nullptr, Caratteristiche* carP2 = nullptr);
