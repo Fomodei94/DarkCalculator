@@ -5,7 +5,7 @@ OperazioniArmaturaP2::OperazioniArmaturaP2(QWidget* parent, std::map<std::string
 	label->setText("<h4>Operazioni Armatura P2</h4>");
 }
 
-void OperazioniArmaturaP2::CalcolaConfrontaConArmamento {
+void OperazioniArmaturaP2::CalcolaConfrontaConArmamento() {
 	Armamento* inv = dynamic_cast<Armamento*>(equipMap->find("ArmamentoP1")->second);
   try 
   {
@@ -18,7 +18,7 @@ void OperazioniArmaturaP2::CalcolaConfrontaConArmamento {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaConfrontaConArmatura {
+void OperazioniArmaturaP2::CalcolaConfrontaConArmatura() {
 	Armatura* inv = dynamic_cast<Armatura*>(equipMap->find("ArmaturaP1")->second);
   try 
   {
@@ -31,7 +31,7 @@ void OperazioniArmaturaP2::CalcolaConfrontaConArmatura {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaConfrontaConScudo {
+void OperazioniArmaturaP2::CalcolaConfrontaConScudo() {
 	Scudo* inv = dynamic_cast<Scudo*>(equipMap->find("ScudoP1")->second);
   try 
   {
@@ -44,7 +44,7 @@ void OperazioniArmaturaP2::CalcolaConfrontaConScudo {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaEfficaciaConArma {
+void OperazioniArmaturaP2::CalcolaEfficaciaConArma() {
 	Arma* inv = dynamic_cast<Arma*>(equipMap->find("ArmaP1")->second);
 	try 
   {
@@ -57,7 +57,7 @@ void OperazioniArmaturaP2::CalcolaEfficaciaConArma {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaEfficaciaConArmaFisica {
+void OperazioniArmaturaP2::CalcolaEfficaciaConArmaFisica() {
 	ArmaFisica* inv = dynamic_cast<ArmaFisica*>(equipMap->find("ArmaFisicaP1")->second);
 	try 
   {
@@ -70,7 +70,7 @@ void OperazioniArmaturaP2::CalcolaEfficaciaConArmaFisica {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaEfficaciaConArmaMagica {
+void OperazioniArmaturaP2::CalcolaEfficaciaConArmaMagica() {
 	ArmaMagica* inv = dynamic_cast<ArmaMagica*>(equipMap->find("ArmaMagicaP1")->second);
 	try 
   {
@@ -83,7 +83,7 @@ void OperazioniArmaturaP2::CalcolaEfficaciaConArmaMagica {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaFrantuma {
+void OperazioniArmaturaP2::CalcolaFrantuma() {
 	ArmaFisica* inv = dynamic_cast<ArmaFisica*>(equipMap->find("ArmaFisicaP1")->second);
 	try 
   {
@@ -96,19 +96,19 @@ void OperazioniArmaturaP2::CalcolaFrantuma {
 	}
 }
 
-void OperazioniArmaturaP2::CalcolaSommaConArmamento {
+void OperazioniArmaturaP2::CalcolaSommaConArmamento() {
 	Armamento* inv = dynamic_cast<Armamento*>(equipMap->find("ArmamentoP1")->second);
 	double risultato = inv->operator+(*armaturaIstanza);
 	emit MostraRisultatoNumerico(risultato);
 }
 
-void OperazioniArmaturaP2::CalcolaSommaConArmatura{
+void OperazioniArmaturaP2::CalcolaSommaConArmatura(){
 	Armatura* inv = dynamic_cast<Armatura*>(equipMap->find("ArmaturaP1")->second);
 	double risultato = inv->operator+(*armaturaIstanza);
 	emit MostraRisultatoNumerico(risultato);
 }
 
-void OperazioniArmaturaP2::CalcolaSommaConScudo {
+void OperazioniArmaturaP2::CalcolaSommaConScudo() {
 	Scudo* inv = dynamic_cast<Scudo*>(equipMap->find("ScudoP1")->second);
 	double risultato = inv->operator+(*armaturaIstanza);
 	emit MostraRisultatoNumerico(risultato);

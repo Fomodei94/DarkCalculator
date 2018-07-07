@@ -26,12 +26,12 @@ class OperazioniArmamentoP2: public QWidget{
 					*ConfrontaConArmamento,
 					*ConfrontaConArmatura,
 					*ConfrontaConScudo;
-		std::map<std::string, Equipaggiamento*>* equipMap;
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
 		Armamento* armamento;
 
 	protected:
+		std::map<std::string, Equipaggiamento*>* equipMap;
 		QLabel* label;
 		void connectSignalsOperazioni();
 		QGridLayout* winLayout;
@@ -44,6 +44,7 @@ class OperazioniArmamentoP2: public QWidget{
 		void MostraRisultatoBooleano(bool x);
 
   public slots:
+  
 		virtual void CalcolaConfrontaConArmamento();
 		virtual void CalcolaConfrontaConArmatura();
 		virtual void CalcolaConfrontaConScudo();

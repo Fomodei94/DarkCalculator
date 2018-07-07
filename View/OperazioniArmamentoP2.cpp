@@ -17,19 +17,22 @@ OperazioniArmamentoP2::OperazioniArmamentoP2(QWidget* parent, std::map<std::stri
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(label, 0,0,1,2);
 	winLayout->addWidget(EfficaciaConArma, 1,0);
-	winLayout->addWidget(EfficaciaConArmaFisica,1,1);
-	winLayout->addWidget(EfficaciaConArmaMagica,2,0);
-	winLayout->addWidget(SommaConArmamento,2,1);
-	winLayout->addWidget(SommaConArmatura, 3,0);
-	winLayout->addWidget(SommaConScudo,3,1);
-	winLayout->addWidget(Frantuma,4,0);
-	winLayout->addWidget(ConfrontaConArmamento,4,1);
-	winLayout->addWidget(ConfrontaConArmatura,5,0);
-	winLayout->addWidget(ConfrontaConScudo,5,1);
+	winLayout->addWidget(ConfrontaConArmamento,1,1);
+	winLayout->addWidget(EfficaciaConArmaFisica,2,0);
+	winLayout->addWidget(ConfrontaConArmatura,2,1);
+	winLayout->addWidget(EfficaciaConArmaMagica,3,0);
+	winLayout->addWidget(ConfrontaConScudo,3,1);
+	winLayout->addWidget(SommaConArmamento,4,0);
+	winLayout->addWidget(SommaConArmatura, 4,1);
+	winLayout->addWidget(SommaConScudo,5,0);
+	winLayout->addWidget(Frantuma,5,1);
+
+
+
 	setLayout(winLayout);
 }
 
-void OperazioniArmamentoP2::CalcolaConfrontaConArmamento {
+void OperazioniArmamentoP2::CalcolaConfrontaConArmamento() {
 	Armamento* inv = dynamic_cast<Armamento*>(equipMap->find("ArmamentoP1")->second);
   try 
   {
@@ -42,7 +45,7 @@ void OperazioniArmamentoP2::CalcolaConfrontaConArmamento {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaConfrontaConArmatura {
+void OperazioniArmamentoP2::CalcolaConfrontaConArmatura() {
 	Armatura* inv = dynamic_cast<Armatura*>(equipMap->find("ArmaturaP1")->second);
   try 
   {
@@ -55,7 +58,7 @@ void OperazioniArmamentoP2::CalcolaConfrontaConArmatura {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaConfrontaConScudo {
+void OperazioniArmamentoP2::CalcolaConfrontaConScudo() {
 	Scudo* inv = dynamic_cast<Scudo*>(equipMap->find("ScudoP1")->second);
   try 
   {
@@ -68,7 +71,7 @@ void OperazioniArmamentoP2::CalcolaConfrontaConScudo {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaEfficaciaConArma {
+void OperazioniArmamentoP2::CalcolaEfficaciaConArma() {
 	Arma* inv = dynamic_cast<Arma*>(equipMap->find("ArmaP1")->second);
 	try 
   {
@@ -81,7 +84,7 @@ void OperazioniArmamentoP2::CalcolaEfficaciaConArma {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaEfficaciaConArmaFisica {
+void OperazioniArmamentoP2::CalcolaEfficaciaConArmaFisica() {
 	ArmaFisica* inv = dynamic_cast<ArmaFisica*>(equipMap->find("ArmaFisicaP1")->second);
 	try 
   {
@@ -94,7 +97,7 @@ void OperazioniArmamentoP2::CalcolaEfficaciaConArmaFisica {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaEfficaciaConArmaMagica {
+void OperazioniArmamentoP2::CalcolaEfficaciaConArmaMagica() {
 	ArmaMagica* inv = dynamic_cast<ArmaMagica*>(equipMap->find("ArmaMagicaP1")->second);
 	try 
   {
@@ -107,7 +110,7 @@ void OperazioniArmamentoP2::CalcolaEfficaciaConArmaMagica {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaFrantuma {
+void OperazioniArmamentoP2::CalcolaFrantuma() {
 	ArmaFisica* inv = dynamic_cast<ArmaFisica*>(equipMap->find("ArmaFisicaP1")->second);
 	try 
   {
@@ -120,19 +123,19 @@ void OperazioniArmamentoP2::CalcolaFrantuma {
 	}
 }
 
-void OperazioniArmamentoP2::CalcolaSommaConArmamento {
+void OperazioniArmamentoP2::CalcolaSommaConArmamento() {
 	Armamento* inv = dynamic_cast<Armamento*>(equipMap->find("ArmamentoP1")->second);
 	double risultato = inv->operator+(*armamento);
 	emit MostraRisultatoNumerico(risultato);
 }
 
-void OperazioniArmamentoP2::CalcolaSommaConArmatura{
+void OperazioniArmamentoP2::CalcolaSommaConArmatura(){
 	Armatura* inv = dynamic_cast<Armatura*>(equipMap->find("ArmaturaP1")->second);
 	double risultato = inv->operator+(*armamento);
 	emit MostraRisultatoNumerico(risultato);
 }
 
-void OperazioniArmamentoP2::CalcolaSommaConScudo {
+void OperazioniArmamentoP2::CalcolaSommaConScudo() {
 	Scudo* inv = dynamic_cast<Scudo*>(equipMap->find("ScudoP1")->second);
 	double risultato = inv->operator+(*armamento);
 	emit MostraRisultatoNumerico(risultato);
@@ -140,8 +143,8 @@ void OperazioniArmamentoP2::CalcolaSommaConScudo {
 
 void OperazioniArmamentoP2::connectSignalsOperazioni(){
 	connect(ConfrontaConArmamento, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmamento()));
-	connect(ConfrontaConArmatura, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmatura())));
-	connect(ConfrontaConScudo, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaMagica()));
+	connect(ConfrontaConArmatura, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmatura()));
+	connect(ConfrontaConScudo, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConScudo()));
 	connect(SommaConArmamento, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmamento()));
 	connect(SommaConArmatura, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmatura()));
 	connect(SommaConScudo, SIGNAL(clicked()), this, SLOT(CalcolaSommaConScudo()));

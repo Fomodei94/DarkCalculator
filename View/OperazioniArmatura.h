@@ -25,6 +25,7 @@ class OperazioniArmatura : public OperazioniArmamento{
 	signals:
 		void MostraRisultatoNumerico(double x);
 		void MostraRisultatoBooleano(bool x);
+		void update();
   public slots:
 		void CalcolaEquilibrio() override;
 		void CalcolaUsabilita() override;

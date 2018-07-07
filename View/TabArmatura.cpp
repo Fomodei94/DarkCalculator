@@ -6,11 +6,11 @@ TabArmatura::TabArmatura(QWidget* parent , std::map<std::string, Equipaggiamento
 		operazioniArmatura = new OperazioniArmatura(this, armatura, carP1);
 	}else{
 		armatura = dynamic_cast<Armatura*>((equipMap->find("ArmaturaP2"))->second);
-		operazioniArmatura = new OperazioniArmatura(this, armatura, carP1);
+		operazioniArmatura = new OperazioniArmaturaP2(this, equipMap, carP1, carP2);
 	}
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
-	LblUsura = new QLabel("Usura:", this);
+	LblUsura = new QLabel("Percentuale Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDifesa = new QLabel("Difesa:", this);
 	Difesa = new QDoubleSpinBox(this);
@@ -70,7 +70,14 @@ void TabArmatura::FinishInit() {
 }
 
 void TabArmatura::update(){
-    //Cose qui
+    peso->setValue(armatura->GetPeso());
+    DifMagia->setValue(armatura->GetDifesaMagia());
+    DifOscurita->setValue(armatura->GetDifesaOscurita());
+    DifFuoco->setValue(armatura->GetDifesaFuoco());
+    DifElettricita->setValue(armatura->GetDifesaElettricita());
+    DifContundente->setValue(armatura->GetDifesaContundente());
+    DifTaglio->setValue(armatura->GetDifesaTaglio());
+    DifAffondo->setValue(armatura->GetDifesaAffondo());
 }
 
 // SLOTS
@@ -119,6 +126,7 @@ void TabArmatura::setDifAffondo(double d) {
 }
 
 void TabArmatura::connectSignalsArmatura() {
+	connect(operazioniArmatura, SIGNAL(update()), this, SLOT(update()));
 	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
 	connect(usura, SIGNAL(valueChanged(double)), this, SLOT(setUsura(double)));
 	connect(Difesa, SIGNAL(valueChanged(double)), this, SLOT(setDifesa(double)));

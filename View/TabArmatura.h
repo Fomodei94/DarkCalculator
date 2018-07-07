@@ -9,6 +9,7 @@
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include "OperazioniArmatura.h"
+#include "OperazioniArmaturaP2.h"
 
 class TabArmatura: public QWidget {
 	Q_OBJECT
@@ -38,21 +39,20 @@ class TabArmatura: public QWidget {
 		QSpinBox* vigoreRichiesto;
 		QGridLayout *winLayout;
 		std::map<std::string, Equipaggiamento*>* equipMap;
-		OperazioniArmatura* operazioniArmatura;
+		QWidget* operazioniArmatura;
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
 		int playerNumber;
-
-	protected:
 		void connectSignalsArmatura();
 
 	public:
 		TabArmatura(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		void FinishInit();
-        void update();
+		
 	signals:
 		void MostraRisultatoBooleano2(bool x);
 		void MostraRisultatoNumerico2(double x);
+		
 	public slots:
 		void setPeso(double d);
 		void setUsura(double d);
@@ -65,6 +65,7 @@ class TabArmatura: public QWidget {
 		void setDifTaglio(double d);
 		void setDifContundente(double d);
 		void setDifAffondo(double d);
+		void update();
 };
 #endif
 

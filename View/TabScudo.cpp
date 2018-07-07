@@ -6,12 +6,12 @@ TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* eq
 		operazioniScudo = new OperazioniScudo(this, scudo, carP1);
 	}else{
 		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP2"))->second);
-		operazioniScudo = new OperazioniScudo(this, scudo, carP1);
+		operazioniScudo = new OperazioniScudoP2(this, equipMap, carP1, carP2);
 	}
 	
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
-	LblUsura = new QLabel("Usura:", this);
+	LblUsura = new QLabel("Percentuale Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDifesa = new QLabel("Difesa:", this);
 	Difesa = new QDoubleSpinBox(this);
@@ -64,7 +64,7 @@ void TabScudo::FinishInit() {
 	connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
 }
 
-//OVERRIDE SLOTS
+//SLOTS
 void TabScudo::setPeso(double d){
 	scudo->SetPeso(d);
 }
@@ -81,7 +81,6 @@ void TabScudo::setVigoreRichiesto(int i){
 	scudo->SetVigoreRichiesto(i);
 }
 
-//SLOTS SCUDO
 void TabScudo::setAssorbMagico(double d) {
 	scudo->SetAssorbimentoMagico(d);
 }

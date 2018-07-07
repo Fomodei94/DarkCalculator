@@ -41,18 +41,36 @@ void OperazioniArmatura::CalcolaSomma() {
 }
 
 void OperazioniArmatura::CalcolaAppesantisci() {
-	armaturaIstanza->Appesantisci();
-	//emit   FUNZIONE PER AGGIORNARE GUI
+	try {
+		armaturaIstanza->Appesantisci();
+		emit update();
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 }
 
 void OperazioniArmatura::CalcolaAlleggerisci() {
-	armaturaIstanza->Alleggerisci();
-	//emit   FUNZIONE PER AGGIORNARE GUI
+	try {
+		armaturaIstanza->Alleggerisci();
+		emit update();
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 }
 
 void OperazioniArmatura::CalcolaCottaDiMaglia() {
-	armaturaIstanza->CottaDiMaglia();
-	//emit   FUNZIONE PER AGGIORNARE GUI
+	try {
+		armaturaIstanza->CottaDiMaglia();
+		emit update();
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 }
 
 void OperazioniArmatura::CalcolaSopravvivenza() {

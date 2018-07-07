@@ -8,6 +8,7 @@
 #include <QDoubleSpinBox>
 #include "../Model/Armamento.h"
 #include "OperazioniArmamento.h"
+#include "OperazioniArmamentoP2.h"
 
 class TabArmamento : public QWidget
 {
@@ -27,17 +28,13 @@ private:
     QDoubleSpinBox* Difesa;
     QLabel* LblVigoreRichiesto;
     QSpinBox* vigoreRichiesto;
-
- protected:
 	QGridLayout *winLayout;
 	std::map<std::string, Equipaggiamento*>* equipMap;
 	void connectSignals();
 
 public:
-    TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
-    //TabArmamento(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
+    TabArmamento(QWidget *parent=nullptr, std::map<std::string, Equipaggiamento*>* equipMap=nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
     void FinishInit();
-    ~TabArmamento() = default;
 
 signals:
 	void MostraRisultatoNumerico2(double x);
