@@ -10,12 +10,14 @@
 #include <QComboBox>
 #include<QDoubleSpinBox>
 #include "OperazioniArmaMagica.h"
+#include "OperazioniArmaMagicaP2.h"
 #include<QString>
 
 class TabArmaMagica: public QWidget{
 	Q_OBJECT
 	private:
 		ArmaMagica* armaMagica;
+		QWidget* operazioniArmaMagica;
 		QLabel *LblPeso,
 						*LblUsura,
 						*LblDannoBase,
@@ -38,7 +40,6 @@ class TabArmaMagica: public QWidget{
 										*Oscuro;
 		QComboBox *ScalingIntelligenza,
 							*ScalingFede;
-		OperazioniArmaMagica* operazioniArmaMagica;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 		int playerNumber;

@@ -1,19 +1,19 @@
-#ifndef OPERAZIONI_ARMAFISICAP2
-#define OPERAZIONI_ARMAFISICAP2
+#ifndef OPERAZIONI_ARMAMAGICAP2
+#define OPERAZIONI_ARMAMAGICAP2
 
 #include"OperazioniArmaP2.h"
 
 
-class OperazioniArmaFisicaP2: public OperazioniArmaP2{
+class OperazioniArmaMagicaP2: public OperazioniArmaP2{
 	Q_OBJECT
 	
 	private:
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
-    ArmaFisica* armaFisicaIstanza;
+    ArmaMagica* armaMagicaIstanza;
 	
 	public:
-		OperazioniArmaFisicaP2(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, Caratteristiche* carP1 = nullptr, Caratteristiche* carP2 = nullptr);
+		OperazioniArmaMagicaP2(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, Caratteristiche* carP1 = nullptr, Caratteristiche* carP2 = nullptr);
 		
 	signals:
 		void MostraRisultatoNumerico(double x);
@@ -34,5 +34,3 @@ class OperazioniArmaFisicaP2: public OperazioniArmaP2{
 };
 
 #endif
-
-
