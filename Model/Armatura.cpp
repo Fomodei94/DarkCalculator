@@ -163,6 +163,10 @@ double Armatura::Equilibrio(const Caratteristiche& c) const{
 //METODI PROPRI
 
 void Armatura::Appesantisci(){
+	if(GetPeso()*5/4>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di peso (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
+	if(difesaContundente*3/2>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di Difesa Contundente (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
 	SetPeso(GetPeso()*5/4); //NB Aumenta il peso di 1/4
 	difesaContundente+=difesaContundente/2;
 	difesaFuoco-=difesaFuoco/4;
@@ -172,12 +176,18 @@ void Armatura::Appesantisci(){
 }
 
 void Armatura::Alleggerisci(){
+	if(difesaAffondo*4/3>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di Difesa Affondo (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
 	SetPeso(GetPeso()*3/4); //NB Diminuisce il peso di 1/4
 	difesaContundente-=difesaContundente/3;
 	difesaAffondo+=difesaAffondo/3;
 }
 
 void Armatura::CottaDiMaglia(){
+	if(GetPeso()*5/4>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di peso (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
+	if(difesaTaglio*4/3>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di Difesa Taglio (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
 	SetPeso(GetPeso()*5/4);
 	difesaAffondo-=difesaAffondo/3;
 	difesaTaglio+=difesaTaglio/3;
