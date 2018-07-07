@@ -1,7 +1,7 @@
 #include "TabArmaFisica.h"
 
 TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
-	if (playerNumber == 1){
+	if(playerNumber == 1){
 		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
 		operazioniArmaFisica = new OperazioniArmaFisica(this, armaFisica, carP1);
 	}else{
@@ -41,7 +41,6 @@ TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiam
 	ScalingDestrezza->addItem("B");
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
-	operazioniArmaFisica = new OperazioniArmaFisica(this, armaFisica, carP1);
   connectSignalsArmaFisica();
   //LAYOUT
   winLayout = new QGridLayout(this);
