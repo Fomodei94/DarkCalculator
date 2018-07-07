@@ -17,6 +17,7 @@ TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* eq
 	Difesa = new QDoubleSpinBox(this);
 	LblVigoreRichiesto = new QLabel("Vigore Richiesto:", this);
 	vigoreRichiesto = new QSpinBox(this);
+	vigoreRichiesto->setRange(5,99);
 	LblStabilita = new QLabel("Stabilità:", this);
 	LblAssorbMagico = new QLabel("Assorbimento Magico:", this);
 	LblAssorbFisico = new QLabel("Assorbimento Fisico:", this);

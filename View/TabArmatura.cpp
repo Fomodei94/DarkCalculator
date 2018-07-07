@@ -16,6 +16,7 @@ TabArmatura::TabArmatura(QWidget* parent , std::map<std::string, Equipaggiamento
 	Difesa = new QDoubleSpinBox(this);
 	LblVigoreRichiesto = new QLabel("Vigore Richiesto:", this);
 	vigoreRichiesto = new QSpinBox(this);
+	vigoreRichiesto->setRange(5,99);
 	LblDifMagia = new QLabel("Difesa Magia:", this);
 	LblDifOscurita = new QLabel("Difesa Oscurità:", this);
 	LblDifFuoco = new QLabel("Difesa Fuoco:", this);
