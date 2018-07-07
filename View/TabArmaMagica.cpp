@@ -3,10 +3,11 @@
 TabArmaMagica::TabArmaMagica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
 	if (playerNumber == 1){
 		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP1"))->second);
+		operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
 	}else{
 		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP2"))->second);
+		operazioniArmaMagica = new OperazioniArmaMagicaP2(this, equipMap, carP1, carP2);
 	}
-	operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
 	LblUsura = new QLabel("Usura:", this);

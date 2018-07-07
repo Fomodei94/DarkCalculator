@@ -65,6 +65,7 @@ SOURCES       = main.cpp \
 		View/OperazioniArmaFisica.cpp \
 		View/OperazioniArmaFisicaP2.cpp \
 		View/OperazioniArmaMagica.cpp \
+		View/OperazioniArmaMagicaP2.cpp \
 		View/OperazioniArmamento.cpp \
 		View/OperazioniArmaP2.cpp \
 		View/OperazioniArmatura.cpp \
@@ -81,6 +82,7 @@ SOURCES       = main.cpp \
 		moc_OperazioniArmaFisica.cpp \
 		moc_OperazioniArmaFisicaP2.cpp \
 		moc_OperazioniArmaMagica.cpp \
+		moc_OperazioniArmaMagicaP2.cpp \
 		moc_OperazioniArmamento.cpp \
 		moc_OperazioniArmaP2.cpp \
 		moc_OperazioniArmatura.cpp \
@@ -107,6 +109,7 @@ OBJECTS       = main.o \
 		OperazioniArmaFisica.o \
 		OperazioniArmaFisicaP2.o \
 		OperazioniArmaMagica.o \
+		OperazioniArmaMagicaP2.o \
 		OperazioniArmamento.o \
 		OperazioniArmaP2.o \
 		OperazioniArmatura.o \
@@ -124,6 +127,7 @@ OBJECTS       = main.o \
 		moc_OperazioniArmaFisica.o \
 		moc_OperazioniArmaFisicaP2.o \
 		moc_OperazioniArmaMagica.o \
+		moc_OperazioniArmaMagicaP2.o \
 		moc_OperazioniArmamento.o \
 		moc_OperazioniArmaP2.o \
 		moc_OperazioniArmatura.o \
@@ -375,6 +379,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		View/OperazioniArmaFisica.h \
 		View/OperazioniArmaFisicaP2.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/OperazioniArmamento.h \
 		View/OperazioniArmaP2.h \
 		View/OperazioniArmatura.h \
@@ -400,6 +405,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		View/OperazioniArmaFisica.cpp \
 		View/OperazioniArmaFisicaP2.cpp \
 		View/OperazioniArmaMagica.cpp \
+		View/OperazioniArmaMagicaP2.cpp \
 		View/OperazioniArmamento.cpp \
 		View/OperazioniArmaP2.cpp \
 		View/OperazioniArmatura.cpp \
@@ -898,8 +904,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/qt/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents Model/Arma.h Model/ArmaFisica.h Model/ArmaMagica.h Model/Armamento.h Model/Armatura.h Model/Caratteristiche.h Model/Equipaggiamento.h Model/Scudo.h View/Caratteristiche_gui.h View/MainWindow.h View/OperazioniArma.h View/OperazioniArmaFisica.h View/OperazioniArmaFisicaP2.h View/OperazioniArmaMagica.h View/OperazioniArmamento.h View/OperazioniArmaP2.h View/OperazioniArmatura.h View/OperazioniScudo.h View/TabArma.h View/TabArmaFisica.h View/TabArmaMagica.h View/TabArmamento.h View/TabArmatura.h View/TabScudo.h View/TabWidget.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp Model/Arma.cpp Model/ArmaFisica.cpp Model/ArmaMagica.cpp Model/Armamento.cpp Model/Armatura.cpp Model/Caratteristiche.cpp Model/Equipaggiamento.cpp Model/Scudo.cpp View/Caratteristiche_gui.cpp View/MainWindow.cpp View/OperazioniArma.cpp View/OperazioniArmaFisica.cpp View/OperazioniArmaFisicaP2.cpp View/OperazioniArmaMagica.cpp View/OperazioniArmamento.cpp View/OperazioniArmaP2.cpp View/OperazioniArmatura.cpp View/OperazioniScudo.cpp View/TabArma.cpp View/TabArmaFisica.cpp View/TabArmaMagica.cpp View/TabArmamento.cpp View/TabArmatura.cpp View/TabScudo.cpp View/TabWidget.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents Model/Arma.h Model/ArmaFisica.h Model/ArmaMagica.h Model/Armamento.h Model/Armatura.h Model/Caratteristiche.h Model/Equipaggiamento.h Model/Scudo.h View/Caratteristiche_gui.h View/MainWindow.h View/OperazioniArma.h View/OperazioniArmaFisica.h View/OperazioniArmaFisicaP2.h View/OperazioniArmaMagica.h View/OperazioniArmaMagicaP2.h View/OperazioniArmamento.h View/OperazioniArmaP2.h View/OperazioniArmatura.h View/OperazioniScudo.h View/TabArma.h View/TabArmaFisica.h View/TabArmaMagica.h View/TabArmamento.h View/TabArmatura.h View/TabScudo.h View/TabWidget.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp Model/Arma.cpp Model/ArmaFisica.cpp Model/ArmaMagica.cpp Model/Armamento.cpp Model/Armatura.cpp Model/Caratteristiche.cpp Model/Equipaggiamento.cpp Model/Scudo.cpp View/Caratteristiche_gui.cpp View/MainWindow.cpp View/OperazioniArma.cpp View/OperazioniArmaFisica.cpp View/OperazioniArmaFisicaP2.cpp View/OperazioniArmaMagica.cpp View/OperazioniArmaMagicaP2.cpp View/OperazioniArmamento.cpp View/OperazioniArmaP2.cpp View/OperazioniArmatura.cpp View/OperazioniScudo.cpp View/TabArma.cpp View/TabArmaFisica.cpp View/TabArmaMagica.cpp View/TabArmamento.cpp View/TabArmatura.cpp View/TabScudo.cpp View/TabWidget.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -931,9 +937,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/qt/mkspecs/features/data/dummy.cpp
 	g++ -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -Wall -W -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmaFisicaP2.cpp moc_OperazioniArmaMagica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmaP2.cpp moc_OperazioniArmatura.cpp moc_OperazioniScudo.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabScudo.cpp moc_TabWidget.cpp
+compiler_moc_header_make_all: moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmaFisicaP2.cpp moc_OperazioniArmaMagica.cpp moc_OperazioniArmaMagicaP2.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmaP2.cpp moc_OperazioniArmatura.cpp moc_OperazioniScudo.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabScudo.cpp moc_TabWidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmaFisicaP2.cpp moc_OperazioniArmaMagica.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmaP2.cpp moc_OperazioniArmatura.cpp moc_OperazioniScudo.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabScudo.cpp moc_TabWidget.cpp
+	-$(DEL_FILE) moc_Caratteristiche_gui.cpp moc_MainWindow.cpp moc_OperazioniArma.cpp moc_OperazioniArmaFisica.cpp moc_OperazioniArmaFisicaP2.cpp moc_OperazioniArmaMagica.cpp moc_OperazioniArmaMagicaP2.cpp moc_OperazioniArmamento.cpp moc_OperazioniArmaP2.cpp moc_OperazioniArmatura.cpp moc_OperazioniScudo.cpp moc_TabArma.cpp moc_TabArmaFisica.cpp moc_TabArmaMagica.cpp moc_TabArmamento.cpp moc_TabArmatura.cpp moc_TabScudo.cpp moc_TabWidget.cpp
 moc_Caratteristiche_gui.cpp: Model/Caratteristiche.h \
 		View/Caratteristiche_gui.h \
 		moc_predefs.h \
@@ -955,8 +961,10 @@ moc_MainWindow.cpp: View/Caratteristiche_gui.h \
 		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		View/OperazioniArmaFisica.h \
+		View/OperazioniArmaFisicaP2.h \
 		View/TabArmaMagica.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
@@ -990,7 +998,16 @@ moc_OperazioniArmaFisica.cpp: Model/ArmaFisica.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/OperazioniArmaFisica.h -o moc_OperazioniArmaFisica.cpp
 
-moc_OperazioniArmaFisicaP2.cpp: View/OperazioniArmaFisicaP2.h \
+moc_OperazioniArmaFisicaP2.cpp: View/OperazioniArmaP2.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/ArmaFisica.h \
+		Model/Armatura.h \
+		Model/Scudo.h \
+		Model/ArmaMagica.h \
+		View/OperazioniArmaFisicaP2.h \
 		moc_predefs.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/OperazioniArmaFisicaP2.h -o moc_OperazioniArmaFisicaP2.cpp
@@ -1007,6 +1024,20 @@ moc_OperazioniArmaMagica.cpp: Model/ArmaMagica.h \
 		moc_predefs.h \
 		/usr/bin/moc
 	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/mrfoxy/DarkCalculator -I/home/mrfoxy/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/OperazioniArmaMagica.h -o moc_OperazioniArmaMagica.cpp
+
+moc_OperazioniArmaMagicaP2.cpp: View/OperazioniArmaP2.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/ArmaFisica.h \
+		Model/Armatura.h \
+		Model/Scudo.h \
+		Model/ArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
+		moc_predefs.h \
+		/usr/bin/moc
+	/usr/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/home/luca/Desktop/DarkCalcGUI/DarkCalculator -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/7.3.1 -I/usr/include/c++/7.3.1/x86_64-pc-linux-gnu -I/usr/include/c++/7.3.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include-fixed -I/usr/include View/OperazioniArmaMagicaP2.h -o moc_OperazioniArmaMagicaP2.cpp
 
 moc_OperazioniArmamento.cpp: Model/Armamento.h \
 		Model/Equipaggiamento.h \
@@ -1075,6 +1106,9 @@ moc_TabArmaFisica.cpp: View/OperazioniArmaFisica.h \
 		Model/Armatura.h \
 		Model/Scudo.h \
 		View/OperazioniArma.h \
+		View/OperazioniArmaFisicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		moc_predefs.h \
 		/usr/bin/moc
@@ -1089,6 +1123,9 @@ moc_TabArmaMagica.cpp: Model/ArmaMagica.h \
 		Model/Scudo.h \
 		View/OperazioniArmaMagica.h \
 		View/OperazioniArma.h \
+		View/OperazioniArmaMagicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/ArmaFisica.h \
 		View/TabArmaMagica.h \
 		moc_predefs.h \
 		/usr/bin/moc
@@ -1142,8 +1179,10 @@ moc_TabWidget.cpp: View/TabArma.h \
 		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		View/OperazioniArmaFisica.h \
+		View/OperazioniArmaFisicaP2.h \
 		View/TabArmaMagica.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
@@ -1187,8 +1226,10 @@ main.o: main.cpp View/MainWindow.h \
 		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		View/OperazioniArmaFisica.h \
+		View/OperazioniArmaFisicaP2.h \
 		View/TabArmaMagica.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
@@ -1273,8 +1314,10 @@ MainWindow.o: View/MainWindow.cpp View/MainWindow.h \
 		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		View/OperazioniArmaFisica.h \
+		View/OperazioniArmaFisicaP2.h \
 		View/TabArmaMagica.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
@@ -1301,7 +1344,16 @@ OperazioniArmaFisica.o: View/OperazioniArmaFisica.cpp View/OperazioniArmaFisica.
 		View/OperazioniArma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperazioniArmaFisica.o View/OperazioniArmaFisica.cpp
 
-OperazioniArmaFisicaP2.o: View/OperazioniArmaFisicaP2.cpp View/OperazioniArmaFisicaP2.h
+OperazioniArmaFisicaP2.o: View/OperazioniArmaFisicaP2.cpp View/OperazioniArmaFisicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/ArmaFisica.h \
+		Model/Armatura.h \
+		Model/Scudo.h \
+		Model/ArmaMagica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperazioniArmaFisicaP2.o View/OperazioniArmaFisicaP2.cpp
 
 OperazioniArmaMagica.o: View/OperazioniArmaMagica.cpp View/OperazioniArmaMagica.h \
@@ -1314,6 +1366,18 @@ OperazioniArmaMagica.o: View/OperazioniArmaMagica.cpp View/OperazioniArmaMagica.
 		Model/Scudo.h \
 		View/OperazioniArma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperazioniArmaMagica.o View/OperazioniArmaMagica.cpp
+
+OperazioniArmaMagicaP2.o: View/OperazioniArmaMagicaP2.cpp View/OperazioniArmaMagicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/Arma.h \
+		Model/Equipaggiamento.h \
+		Model/Caratteristiche.h \
+		Model/Armamento.h \
+		Model/ArmaFisica.h \
+		Model/Armatura.h \
+		Model/Scudo.h \
+		Model/ArmaMagica.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperazioniArmaMagicaP2.o View/OperazioniArmaMagicaP2.cpp
 
 OperazioniArmamento.o: View/OperazioniArmamento.cpp View/OperazioniArmamento.h \
 		Model/Armamento.h \
@@ -1372,7 +1436,10 @@ TabArmaFisica.o: View/TabArmaFisica.cpp View/TabArmaFisica.h \
 		Model/Armamento.h \
 		Model/Armatura.h \
 		Model/Scudo.h \
-		View/OperazioniArma.h
+		View/OperazioniArma.h \
+		View/OperazioniArmaFisicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/ArmaMagica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabArmaFisica.o View/TabArmaFisica.cpp
 
 TabArmaMagica.o: View/TabArmaMagica.cpp View/TabArmaMagica.h \
@@ -1384,7 +1451,10 @@ TabArmaMagica.o: View/TabArmaMagica.cpp View/TabArmaMagica.h \
 		Model/Armatura.h \
 		Model/Scudo.h \
 		View/OperazioniArmaMagica.h \
-		View/OperazioniArma.h
+		View/OperazioniArma.h \
+		View/OperazioniArmaMagicaP2.h \
+		View/OperazioniArmaP2.h \
+		Model/ArmaFisica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TabArmaMagica.o View/TabArmaMagica.cpp
 
 TabArmamento.o: View/TabArmamento.cpp View/TabArmamento.h \
@@ -1430,8 +1500,10 @@ TabWidget.o: View/TabWidget.cpp View/TabWidget.h \
 		Model/ArmaMagica.h \
 		View/TabArmaFisica.h \
 		View/OperazioniArmaFisica.h \
+		View/OperazioniArmaFisicaP2.h \
 		View/TabArmaMagica.h \
 		View/OperazioniArmaMagica.h \
+		View/OperazioniArmaMagicaP2.h \
 		View/TabArmamento.h \
 		View/OperazioniArmamento.h \
 		View/TabArmatura.h \
@@ -1457,6 +1529,9 @@ moc_OperazioniArmaFisicaP2.o: moc_OperazioniArmaFisicaP2.cpp
 
 moc_OperazioniArmaMagica.o: moc_OperazioniArmaMagica.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_OperazioniArmaMagica.o moc_OperazioniArmaMagica.cpp
+
+moc_OperazioniArmaMagicaP2.o: moc_OperazioniArmaMagicaP2.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_OperazioniArmaMagicaP2.o moc_OperazioniArmaMagicaP2.cpp
 
 moc_OperazioniArmamento.o: moc_OperazioniArmamento.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_OperazioniArmamento.o moc_OperazioniArmamento.cpp
