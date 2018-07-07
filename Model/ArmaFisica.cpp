@@ -137,6 +137,8 @@ void ArmaFisica::Raffina(){
 }
 
 void ArmaFisica::Riforgia(){
+	if(GetPeso()*12/10>=100)
+		throw("Attenzione: L'operazione causerebbe il superamento del limite massimo di peso (99.99). Operazione non disponibile."); //NB Limitazione per versione GUI
 	SetPeso(GetPeso()*12/10); //NB Peso incrementato del 20%
 	scalingDestrezza='E';
 	switch(scalingForza)
@@ -172,6 +174,8 @@ void ArmaFisica::Cristallizza(){
 		double aux= (90.0- GetUsura())*2;
 		SetUsura(90);
 		double temp= GetDannoBase()+(GetDannoBase()*aux/100.0);
+		if(temp>500)
+			throw("Attenzione: L'operazione causerebbe il superamento del limite di danno (500). Operazione non disponibile."); //Limitazione per versione GUI
 		SetDannoBase(temp);
 	}
 	else

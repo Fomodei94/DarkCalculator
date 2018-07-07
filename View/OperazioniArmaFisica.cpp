@@ -52,8 +52,15 @@ void OperazioniArmaFisica::EseguiRaffina(){
 }
 
 void OperazioniArmaFisica::EseguiRiforgia(){
-	armaFisicaIstanza->Riforgia();
-	emit update();
+	try
+	{
+		armaFisicaIstanza->Riforgia();
+		emit update();
+	}
+	catch(const char*& exc){
+		QMessageBox* msg = new QMessageBox(QMessageBox::Warning, "OPERAZIONE NON VALIDA", QString::fromStdString(exc), QMessageBox::Ok, this);
+		msg->show();
+	}
 }
 
 void OperazioniArmaFisica::EseguiCristallizza(){

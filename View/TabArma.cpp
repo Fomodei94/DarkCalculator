@@ -10,10 +10,11 @@ TabArma::TabArma(QWidget* parent, std::map<std::string, Equipaggiamento*>* equip
   }
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
-	LblUsura = new QLabel("Usura:", this);
+	LblUsura = new QLabel("Percentuale Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDannoBase = new QLabel("Danno Base:", this);
 	DannoBase = new QDoubleSpinBox(this);
+	DannoBase->setRange(0,500);
 	LblForzaRichiesta = new QLabel("Forza Richiesta: ", this);
 	forzaRichiesta = new QSpinBox(this);
 	forzaRichiesta->setRange(5,99);
