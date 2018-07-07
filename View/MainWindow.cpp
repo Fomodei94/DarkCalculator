@@ -16,7 +16,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
     setCentralWidget(centralWidget);
     winLayout = new QGridLayout(centralWidget);
     mappaEquipaggiamenti = new std::map<std::string, Equipaggiamento*>();
-    //mappaEquipaggiamenti["ArmaP1"] = new Arma();
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaFisicaP1", new ArmaFisica()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaFisicaP2", new ArmaFisica()));
     mappaEquipaggiamenti->insert(std::pair<std::string, Equipaggiamento*>("ArmaP1", new Arma()));

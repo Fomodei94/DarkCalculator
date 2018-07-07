@@ -8,10 +8,9 @@ class OperazioniScudoP2: public OperazioniArmamentoP2{
 	Q_OBJECT
 	
 	private:
-		std::map<std::string, Equipaggiamento*>* equipMap;
 		Caratteristiche* carP1;
 		Caratteristiche* carP2;
-    Scudo* scudoIstanza;
+		Scudo* scudoIstanza;
 	
 	public:
 		OperazioniScudoP2(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, Caratteristiche* carP1 = nullptr, Caratteristiche* carP2 = nullptr);
