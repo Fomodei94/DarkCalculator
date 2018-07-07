@@ -137,3 +137,16 @@ void OperazioniArmamentoP2::CalcolaSommaConScudo {
 	double risultato = inv->operator+(*armamento);
 	emit MostraRisultatoNumerico(risultato);
 }
+
+void OperazioniArmamentoP2::connectSignalsOperazioni(){
+	connect(ConfrontaConArma, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArma()));
+	connect(ConfrontaConArmaFisica, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaFisica()));
+	connect(ConfrontaConArmaMagica, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaMagica()));
+	connect(SommaConArma, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArma()));
+	connect(SommaConArmaFisica, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmaFisica()));
+	connect(SommaConArmaMagica, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmaMagica()));
+	connect(Frantuma, SIGNAL(clicked()), this, SLOT(CalcolaFrantuma()));
+	connect(Sopravvivenza, SIGNAL(clicked()), this, SLOT(CalcolaSopravvivenza()));
+	connect(HyperArmor, SIGNAL(clicked()), this, SLOT(CalcolaHyperArmor()));
+	connect(SpezzaGuardia, SIGNAL(clicked()), this, SLOT(CalcolaSpezzaGuardia()));
+}
