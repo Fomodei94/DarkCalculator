@@ -139,14 +139,14 @@ void OperazioniArmamentoP2::CalcolaSommaConScudo {
 }
 
 void OperazioniArmamentoP2::connectSignalsOperazioni(){
-	connect(ConfrontaConArma, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArma()));
-	connect(ConfrontaConArmaFisica, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaFisica()));
-	connect(ConfrontaConArmaMagica, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaMagica()));
-	connect(SommaConArma, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArma()));
-	connect(SommaConArmaFisica, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmaFisica()));
-	connect(SommaConArmaMagica, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmaMagica()));
+	connect(ConfrontaConArmamento, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmamento()));
+	connect(ConfrontaConArmatura, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmatura())));
+	connect(ConfrontaConScudo, SIGNAL(clicked()), this, SLOT(CalcolaConfrontaConArmaMagica()));
+	connect(SommaConArmamento, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmamento()));
+	connect(SommaConArmatura, SIGNAL(clicked()), this, SLOT(CalcolaSommaConArmatura()));
+	connect(SommaConScudo, SIGNAL(clicked()), this, SLOT(CalcolaSommaConScudo()));
 	connect(Frantuma, SIGNAL(clicked()), this, SLOT(CalcolaFrantuma()));
-	connect(Sopravvivenza, SIGNAL(clicked()), this, SLOT(CalcolaSopravvivenza()));
-	connect(HyperArmor, SIGNAL(clicked()), this, SLOT(CalcolaHyperArmor()));
-	connect(SpezzaGuardia, SIGNAL(clicked()), this, SLOT(CalcolaSpezzaGuardia()));
+	connect(EfficaciaConArma, SIGNAL(clicked()), this, SLOT(CalcolaEfficaciaConArma()));
+	connect(EfficaciaConArmaFisica, SIGNAL(clicked()), this, SLOT(CalcolaEfficaciaConArmaFisica()));
+	connect(EfficaciaConArmaMagica, SIGNAL(clicked()), this, SLOT(CalcolaEfficaciaConArmaMagica()));
 }
