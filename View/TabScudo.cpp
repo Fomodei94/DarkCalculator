@@ -1,10 +1,22 @@
 #include "TabScudo.h"
 
-TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArmamento(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
-	FinishInit();
-};
-
-void TabScudo::FinishInit() {
+TabScudo::TabScudo(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
+	if (playerNumber == 1){
+		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP1"))->second);
+		operazioniScudo = new OperazioniScudo(this, scudo, carP1);
+	}else{
+		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP2"))->second);
+		operazioniScudo = new OperazioniScudo(this, scudo, carP1);
+	}
+	
+	LblPeso = new QLabel("Peso:",this);
+	peso = new QDoubleSpinBox(this);
+	LblUsura = new QLabel("Usura:", this);
+	usura = new QDoubleSpinBox(this);
+	LblDifesa = new QLabel("Difesa:", this);
+	Difesa = new QDoubleSpinBox(this);
+	LblVigoreRichiesto = new QLabel("Vigore Richiesto:", this);
+	vigoreRichiesto = new QSpinBox(this);
 	LblStabilita = new QLabel("Stabilità:", this);
 	LblAssorbMagico = new QLabel("Assorbimento Magico:", this);
 	LblAssorbFisico = new QLabel("Assorbimento Fisico:", this);
@@ -20,19 +32,19 @@ void TabScudo::FinishInit() {
 	ScalingVigore->addItem("A");
 	ScalingVigore->addItem("S");
 
-	if (playerNumber == 1){
-		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP1"))->second);
-	}else{
-		scudo = dynamic_cast<Scudo*>((equipMap->find("ScudoP2"))->second);
-	}
-
-	operazioniScudo = new OperazioniScudo(this, scudo, carP1);
-
 	//CONNECT
-    connect(operazioniScudo, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
-	connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
 	connectSignalsScudo();
+	
 	//LAYOUT
+	winLayout = new QGridLayout(this);
+	winLayout->addWidget(LblPeso, 0,0);
+	winLayout->addWidget(peso, 0,1);
+	winLayout->addWidget(LblUsura, 0,2);
+	winLayout->addWidget(usura, 0,3);
+	winLayout->addWidget(LblDifesa, 1,0);
+	winLayout->addWidget(Difesa, 1,1);
+	winLayout->addWidget(LblVigoreRichiesto, 1,2);
+	winLayout->addWidget(vigoreRichiesto, 1, 3);
 	winLayout->addWidget(LblStabilita, 2,0);
 	winLayout->addWidget(Stabilita, 2,1);
 	winLayout->addWidget(LblAssorbMagico, 3,0);
@@ -42,7 +54,14 @@ void TabScudo::FinishInit() {
 	winLayout->addWidget(LblScalingVigore, 5,0);
 	winLayout->addWidget(ScalingVigore, 5,1);
 	winLayout->addWidget(operazioniScudo, 2,2,4,3);
+	
+	FinishInit();
+};
+
+void TabScudo::FinishInit() {
 	setLayout(winLayout);
+	connect(operazioniScudo, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
+	connect(operazioniScudo, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
 }
 
 //OVERRIDE SLOTS
@@ -102,6 +121,10 @@ void  TabScudo::setScalingVigore(int i) {
 }
 
 void TabScudo::connectSignalsScudo() {
+	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	connect(usura, SIGNAL(valueChanged(double)), this, SLOT(setUsura(double)));
+	connect(Difesa, SIGNAL(valueChanged(double)), this, SLOT(setDifesa(double)));
+	connect(vigoreRichiesto, SIGNAL(valueChanged(int)), this, SLOT(setVigoreRichiesto(int)));
 	connect(AssorbMagico, SIGNAL(valueChanged(double)), this, SLOT(setAssorbMagico(double)));
 	connect(AssorbFisico, SIGNAL(valueChanged(double)), this, SLOT(setAssorbFisico(double)));
 	connect(Stabilita, SIGNAL(valueChanged(int)), this, SLOT(setStabilita(int)));

@@ -1,50 +1,63 @@
 #ifndef TABARMATURA_H
 #define TABARMATURA_H
-#include "TabArmamento.h"
+
 #include "../Model/Armatura.h"
 #include <QLabel>
+#include <QString>
+#include <QWidget>
+#include <QGridLayout>
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include "OperazioniArmatura.h"
 
-class TabArmatura: public TabArmamento{
+class TabArmatura: public QWidget {
 	Q_OBJECT
 	private:
 		Armatura* armatura;
-		QLabel  *LblDifMagia,
+		QLabel  	*LblPeso,
+						*LblUsura,
+						*LblDifesa,
+						*LblVigoreRichiesto,
+						*LblDifMagia,
 						*LblDifOscurita,
 						*LblDifFuoco,
 						*LblDifElettricita,
 						*LblDifTaglio,
 						*LblDifContundente,
 						*LblDifAffondo;
-		QDoubleSpinBox *DifMagia,
+		QDoubleSpinBox	*peso,
+								*usura,
+								*Difesa,
+								*DifMagia,
 								*DifOscurita,
 								*DifFuoco,
 								*DifElettricita,
 								*DifTaglio,
 								*DifContundente,
 								*DifAffondo;
-	OperazioniArmatura* operazioniArmatura;
-    Caratteristiche* carP1;
-    Caratteristiche* carP2;
-	int playerNumber;
+		QSpinBox* vigoreRichiesto;
+		QGridLayout *winLayout;
+		std::map<std::string, Equipaggiamento*>* equipMap;
+		OperazioniArmatura* operazioniArmatura;
+		Caratteristiche* carP1;
+		Caratteristiche* carP2;
+		int playerNumber;
 
 	protected:
 		void connectSignalsArmatura();
 
 	public:
 		TabArmatura(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber = 1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
-		void FinishInit() override;
-                void update();
+		void FinishInit();
+        void update();
 	signals:
 		void MostraRisultatoBooleano2(bool x);
 		void MostraRisultatoNumerico2(double x);
 	public slots:
-		virtual void setPeso(double d) override;
-		virtual void setUsura(double d) override;
-		virtual void setDifesa(double d) override;
-		virtual void setVigoreRichiesto(int i) override;
+		void setPeso(double d);
+		void setUsura(double d);
+		void setDifesa(double d);
+		void setVigoreRichiesto(int i);
 		void setDifMagia(double d);
 		void setDifOscurita(double d);
 		void setDifFuoco(double d);

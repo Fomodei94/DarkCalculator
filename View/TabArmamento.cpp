@@ -1,10 +1,14 @@
 #include "TabArmamento.h"
 
 TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
-	if(playerNumber == 1)
+	if(playerNumber == 1) {
 		armamento = dynamic_cast<Armamento*>((equipMap->find("ArmamentoP1"))->second);
-	else
+		operazioniArmamento = new OperazioniArmamento(this, armamento, carP1);
+	}
+	else {
 		armamento = dynamic_cast<Armamento*>((equipMap->find("ArmamentoP2"))->second);
+		//operazioniArmamento = new OperazioniArmamentoP2
+	}
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
 	//connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
@@ -15,7 +19,6 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	LblVigoreRichiesto = new QLabel("Vigore Richiesto: ", this);
 	vigoreRichiesto = new QSpinBox(this);
 	vigoreRichiesto->setRange(5,99);
-	operazioniArmamento = new OperazioniArmamento(this, armamento, carP1);
 	connectSignals();
 	winLayout = new QGridLayout(this);
 	winLayout->addWidget(LblPeso, 0,0);
@@ -30,7 +33,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	FinishInit();
 }
 
-TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber){
+/*TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber){
 	carP1=nullptr;
 	carP2=nullptr;
 	armamento=nullptr;
@@ -57,7 +60,7 @@ TabArmamento::TabArmamento(QWidget* parent, std::map<std::string, Equipaggiament
 	winLayout->addWidget(vigoreRichiesto, 1, 3);
 	setLayout(winLayout);
 }
-
+*/
 void TabArmamento::FinishInit(){
 	setLayout(winLayout);
 	connect(operazioniArmamento, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
