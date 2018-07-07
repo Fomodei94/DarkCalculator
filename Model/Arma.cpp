@@ -31,7 +31,7 @@ int Arma::GetIntelligenzaRichiesta() const {return intelligenzaRichiesta;}
 //SETTER
 
 void Arma::SetDannoBase(double x){
-	if(x>0)
+	if(x>=0)
 		dannoBase=x;
 	else
 		cerr << "Attenzione:  Inserito un valore negativo per il danno dell'Arma. Operazione non valida" << endl;
@@ -99,19 +99,20 @@ double Arma::ConfrontaDanno(const Caratteristiche& c, Arma* a) const{
 	if(!VerificaUsabilita(c)) //NB POLIMORFO
 		//{cerr << "Attenzione: Caratteristiche insufficienti per brandire la prima arma. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
 		throw("Attenzione: Caratteristiche insufficienti per brandire la prima arma. Operazione non valida");
-	else if(!a->VerificaUsabilita(c))
+	if(!a->VerificaUsabilita(c))
 		//{cerr << "Attenzione: Caratteristiche insufficienti per brandire la seconda arma. Operazione non valida." << endl; return 0;}VERSIONE DA RIGA DI COMANDO
 		throw("Attenzione: Caratteristiche insufficienti per brandire la seconda arma. Operazione non valida");
-	else //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
-	{
-		double x = DannoEffettivo(c) - a->DannoEffettivo(c); //NB POLIMORFO
-		/*if(x==0) VERSIONE DA RIGA DI COMANDO
-			cout << "Il danno e' pari" << endl;
-		else if(x>0)
-			cout<< "La prima arma ha un danno maggiore di " << x << " unita' rispetto alla seconda" << endl;
-		else
-			cout<< "La seconda arma ha un danno maggiore di " << (-1*x) << " unita' rispetto alla prima" << endl; 
-		*/ 
-		return x;
-	}	
+ //CARATTERISCHE SUFFICIENTI PER COMPIERE CORRETAMENTE L'OPERAZIONE
+	double x = DannoEffettivo(c) - a->DannoEffettivo(c); //NB POLIMORFO
+	/*if(x==0) VERSIONE DA RIGA DI COMANDO
+		cout << "Il danno e' pari" << endl;
+	else if(x>0)
+		cout<< "La prima arma ha un danno maggiore di " << x << " unita' rispetto alla seconda" << endl;
+	else
+		cout<< "La seconda arma ha un danno maggiore di " << (-1*x) << " unita' rispetto alla prima" << endl; 
+	*/ 
+	if(x<0)
+		x=-1*x;
+	return x;
 }
+

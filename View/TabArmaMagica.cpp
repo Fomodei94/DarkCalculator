@@ -1,10 +1,24 @@
 #include "TabArmaMagica.h"
 
-TabArmaMagica::TabArmaMagica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArma(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
-	FinishInit();
-};
-
-void TabArmaMagica::FinishInit() {
+TabArmaMagica::TabArmaMagica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
+	if (playerNumber == 1){
+		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP1"))->second);
+	}else{
+		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP2"))->second);
+	}
+	operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
+	LblPeso = new QLabel("Peso:",this);
+	peso = new QDoubleSpinBox(this);
+	LblUsura = new QLabel("Usura:", this);
+	usura = new QDoubleSpinBox(this);
+	LblDannoBase = new QLabel("Danno Base:", this);
+	DannoBase = new QDoubleSpinBox(this);
+	LblForzaRichiesta = new QLabel("Forza Richiesta: ", this);
+	forzaRichiesta = new QSpinBox(this);
+	forzaRichiesta->setRange(5,99);
+	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
+	intelligenzaRichiesta = new QSpinBox(this);
+	intelligenzaRichiesta->setRange(5,99);
 	LblFuoco = new QLabel("Percentuale Danno Fuoco:", this);
 	LblMagico = new QLabel("Percentuale Danno Magico:", this);
 	LblElettrico = new QLabel("Percentuale Danno Elettrico", this);
@@ -37,17 +51,20 @@ void TabArmaMagica::FinishInit() {
 	ScalingIntelligenza->addItem("B");
 	ScalingIntelligenza->addItem("A");
 	ScalingIntelligenza->addItem("S");
-	if (playerNumber == 1){
-		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP1"))->second);
-	}else{
-		armaMagica = dynamic_cast<ArmaMagica*>((equipMap->find("ArmaMagicaP2"))->second);
-	}
-	operazioniArmaMagica = new OperazioniArmaMagica(this, armaMagica, carP1);
-	//CONNECT
-  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
-  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
   connectSignalsArmaMagica();
   //LAYOUT
+  winLayout = new QGridLayout(this);
+	winLayout->addWidget(LblPeso, 0,0);
+	winLayout->addWidget(peso, 0,1);
+	winLayout->addWidget(LblUsura, 0,2);
+	winLayout->addWidget(usura, 0,3);
+	winLayout->addWidget(LblDannoBase, 1,0);
+	winLayout->addWidget(DannoBase, 1,1);
+	winLayout->addWidget(LblForzaRichiesta, 1,2);
+	winLayout->addWidget(forzaRichiesta, 1, 3);
+	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
+	winLayout->addWidget(intelligenzaRichiesta, 2,1);
+	winLayout->addWidget(operazioniArmaMagica, 2,2,5,2);
 	winLayout->addWidget(LblFuoco, 3,0);
 	winLayout->addWidget(Fuoco, 3,1);
 	winLayout->addWidget(LblMagico, 4,0);
@@ -60,8 +77,14 @@ void TabArmaMagica::FinishInit() {
 	winLayout->addWidget(ScalingIntelligenza, 7,1);
 	winLayout->addWidget(LblScalingFede, 8,0);
 	winLayout->addWidget(ScalingFede, 8,1);
-	winLayout->addWidget(operazioniArmaMagica, 2,2,5,2);
+	FinishInit();
+};
+
+void TabArmaMagica::FinishInit() {
 	setLayout(winLayout);
+	//CONNECT
+  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+  connect(operazioniArmaMagica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
 }
 
 void TabArmaMagica::update(){
@@ -72,7 +95,7 @@ void TabArmaMagica::update(){
 	usura->setValue(armaMagica->GetUsura());
 }
 
-//OVERRIDE SLOTS
+
 void TabArmaMagica::setPeso(double d){
 	armaMagica->SetPeso(d);
 }
@@ -162,6 +185,11 @@ void TabArmaMagica::setScalingFede(int i){
 }
 
 void TabArmaMagica::connectSignalsArmaMagica(){
+	connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	connect(usura, SIGNAL(valueChanged(double)), this, SLOT(setUsura(double)));
+	connect(DannoBase, SIGNAL(valueChanged(double)), this, SLOT(setDannoBase(double)));
+	connect(forzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setForzaRichiesta(int)));
+	connect(intelligenzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setIntelligenzaRichiesta(int)));
 	connect(Fuoco, SIGNAL(valueChanged(double)), this, SLOT(setFuoco(double)));
 	connect(Magico, SIGNAL(valueChanged(double)), this, SLOT(setMagico(double)));
 	connect(Elettrico, SIGNAL(valueChanged(double)), this, SLOT(setElettrico(double)));

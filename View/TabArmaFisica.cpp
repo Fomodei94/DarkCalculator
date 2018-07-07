@@ -8,7 +8,6 @@ TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiam
 	}
 	LblPeso = new QLabel("Peso:",this);
 	peso = new QDoubleSpinBox(this);
-	//connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
 	LblUsura = new QLabel("Usura:", this);
 	usura = new QDoubleSpinBox(this);
 	LblDannoBase = new QLabel("Danno Base:", this);
@@ -121,7 +120,7 @@ void TabArmaFisica::update(){
     DannoBase->setValue(armaFisica->GetDannoBase());
 }
 
-//OVERRIDE SLOTS
+
 void TabArmaFisica::setPeso(double d){
 	armaFisica->SetPeso(d);
 }

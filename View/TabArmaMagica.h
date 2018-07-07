@@ -1,6 +1,10 @@
 #ifndef TABARMAMAGICA_H
 #define TABARMAMAGICA_H
-#include "TabArma.h"
+
+#include<QWidget>
+#include<QGridLayout>
+#include<QLabel>
+#include<QSpinBox>
 #include "../Model/ArmaMagica.h"
 #include <QLabel>
 #include <QComboBox>
@@ -8,10 +12,20 @@
 #include "OperazioniArmaMagica.h"
 #include<QString>
 
-class TabArmaMagica: public TabArma{
+class TabArmaMagica: public QWidget{
 	Q_OBJECT
 	private:
 		ArmaMagica* armaMagica;
+		QLabel *LblPeso,
+						*LblUsura,
+						*LblDannoBase,
+						*LblForzaRichiesta,
+						*LblIntelligenzaRichiesta;
+    QDoubleSpinBox *peso,
+										*usura,
+										*DannoBase;
+		QSpinBox *forzaRichiesta,
+							*intelligenzaRichiesta;
 		QLabel *LblFuoco,
 						*LblMagico,
 						*LblElettrico,
@@ -28,20 +42,22 @@ class TabArmaMagica: public TabArma{
     Caratteristiche* carP1;
     Caratteristiche* carP2;
 		int playerNumber;
-	protected:
+		QGridLayout *winLayout;
+		std::map<std::string, Equipaggiamento*>* equipMap;
 		void connectSignalsArmaMagica();
+		
 	public:
 		TabArmaMagica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
-		virtual void FinishInit() override;
+		void FinishInit();
 	signals:
 		void MostraRisultatoNumerico2(double x);
 		void MostraRisultatoBooleano2(bool x);
 	public slots:
-		virtual void setPeso(double d) override;
-		virtual void setUsura(double d) override;
-		virtual void setDannoBase(double d) override;
-		virtual void setForzaRichiesta(int i) override;
-		virtual void setIntelligenzaRichiesta(int i) override;
+		void setPeso(double d);
+		void setUsura(double d);
+		void setDannoBase(double d);
+		void setForzaRichiesta(int i);
+		void setIntelligenzaRichiesta(int i);
 		void setFuoco(double d);
 		void setMagico(double d);
 		void setElettrico(double d);

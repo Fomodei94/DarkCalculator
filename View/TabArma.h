@@ -18,7 +18,6 @@ private:
 		Arma* arma;
     Caratteristiche* carP1;
     Caratteristiche* carP2;
-    //OperazioniArma* operazioniArma;
     QWidget* operazioniArma;
     int playerNumber;
     QLabel* LblPeso;
@@ -38,21 +37,19 @@ private:
 	void connectSignals();
 
 public:
-    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2);
-    TabArma(QWidget *parent, std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber);
-    virtual void FinishInit();
-    ~TabArma() = default;
+    TabArma(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
+    void FinishInit();
 
 signals:
 	void MostraRisultatoNumerico2(double x);
 	void MostraRisultatoBooleano2(bool x);
 
 public slots:
-	virtual void setPeso(double d);
-	virtual void setUsura(double d);
-	virtual void setDannoBase(double d);
-	virtual void setForzaRichiesta(int i);
-	virtual void setIntelligenzaRichiesta(int i);
+	void setPeso(double d);
+	void setUsura(double d);
+	void setDannoBase(double d);
+	void setForzaRichiesta(int i);
+	void setIntelligenzaRichiesta(int i);
 };
 
 #endif //  TABARMA_H

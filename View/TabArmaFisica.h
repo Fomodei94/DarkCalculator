@@ -36,12 +36,11 @@ class TabArmaFisica: public QWidget{
 		int playerNumber;
 		QGridLayout *winLayout;
 		std::map<std::string, Equipaggiamento*>* equipMap;
-	protected:
 		void connectSignalsArmaFisica();
+		
 	public:
 		TabArmaFisica(QWidget* parent = nullptr, std::map<std::string, Equipaggiamento*>* equipMap = nullptr, int playerNumber=1, Caratteristiche* carP1=nullptr, Caratteristiche* carP2=nullptr);
 		void FinishInit();
-		~TabArmaFisica() = default;
 	signals:
 		void MostraRisultatoNumerico2(double x);
 		void MostraRisultatoBooleano2(bool x);
