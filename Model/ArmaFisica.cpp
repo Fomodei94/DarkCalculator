@@ -162,6 +162,9 @@ void ArmaFisica::Riforgia(){
 }
 
 void ArmaFisica::Cristallizza(){
+	if(GetDannoBase()==0)
+		//cer<<"Attenzione: L'Arma deve avere un danno maggiore di 0. Operazione NON valida.";
+		throw("Attenzione: L'Arma deve avere un danno maggiore di 0. Operazione NON valida.");
 	scalingForza='E';
 	scalingDestrezza='E';
 	if(GetUsura()<90.0)
@@ -171,6 +174,9 @@ void ArmaFisica::Cristallizza(){
 		double temp= GetDannoBase()+(GetDannoBase()*aux/100.0);
 		SetDannoBase(temp);
 	}
+	else
+		//cer<<"Attenzione: L'Arma deve avere usura inferiore al 90%. Operazione NON valida.";
+		throw("Attenzione: L'arma deve avere usura inferiore al 90%. Operazione  NON valida");
 }
 
 double ArmaFisica::Frantuma(const Caratteristiche& c, Equipaggiamento* e) const{

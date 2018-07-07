@@ -1,15 +1,24 @@
 #include "TabArmaFisica.h"
 
-TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): TabArma(parent, equipMap, playerNumber), carP1(carP1), carP2(carP2){
-	FinishInit();
+TabArmaFisica::TabArmaFisica(QWidget* parent , std::map<std::string, Equipaggiamento*>* equipMap, int playerNumber, Caratteristiche* carP1, Caratteristiche* carP2): QWidget(parent), equipMap(equipMap), playerNumber(playerNumber), carP1(carP1), carP2(carP2){
 	if (playerNumber == 1){
 		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP1"))->second);
 	}else{
 		armaFisica = dynamic_cast<ArmaFisica*>((equipMap->find("ArmaFisicaP2"))->second);
 	}
-};
-
-void TabArmaFisica::FinishInit() {
+	LblPeso = new QLabel("Peso:",this);
+	peso = new QDoubleSpinBox(this);
+	//connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	LblUsura = new QLabel("Usura:", this);
+	usura = new QDoubleSpinBox(this);
+	LblDannoBase = new QLabel("Danno Base:", this);
+	DannoBase = new QDoubleSpinBox(this);
+	LblForzaRichiesta = new QLabel("Forza Richiesta: ", this);
+	forzaRichiesta = new QSpinBox(this);
+	forzaRichiesta->setRange(5,99);
+	LblIntelligenzaRichiesta = new QLabel("Intelligenza Richiesta:", this);
+	intelligenzaRichiesta = new QSpinBox(this);
+	intelligenzaRichiesta->setRange(5,99);
 	LblTipoDanno = new QLabel("Tipo Danno:", this);
 	LblScalingForza = new QLabel("Scaling Forza:", this);
 	LblScalingDestrezza = new QLabel("Scaling Destrezza", this);
@@ -32,11 +41,20 @@ void TabArmaFisica::FinishInit() {
 	ScalingDestrezza->addItem("A");
 	ScalingDestrezza->addItem("S");
 	operazioniArmaFisica = new OperazioniArmaFisica(this, armaFisica, carP1);
-	//CONNECT
-  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
-  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
   connectSignalsArmaFisica();
   //LAYOUT
+  winLayout = new QGridLayout(this);
+	winLayout->addWidget(LblPeso, 0,0);
+	winLayout->addWidget(peso, 0,1);
+	winLayout->addWidget(LblUsura, 0,2);
+	winLayout->addWidget(usura, 0,3);
+	winLayout->addWidget(LblDannoBase, 1,0);
+	winLayout->addWidget(DannoBase, 1,1);
+	winLayout->addWidget(LblForzaRichiesta, 1,2);
+	winLayout->addWidget(forzaRichiesta, 1, 3);
+	winLayout->addWidget(LblIntelligenzaRichiesta, 2,0);
+	winLayout->addWidget(intelligenzaRichiesta, 2,1);
+	winLayout->addWidget(operazioniArmaFisica, 2,2,3,2);
 	winLayout->addWidget(LblTipoDanno, 3,0);
 	winLayout->addWidget(TipoDanno, 3,1);
 	winLayout->addWidget(LblScalingForza, 4,0);
@@ -44,7 +62,14 @@ void TabArmaFisica::FinishInit() {
 	winLayout->addWidget(LblScalingDestrezza, 5,0);
 	winLayout->addWidget(ScalingDestrezza, 5,1);
 	winLayout->addWidget(operazioniArmaFisica, 2,2,4,2);
+	FinishInit();
+};
+
+void TabArmaFisica::FinishInit() {
 	setLayout(winLayout);
+	//CONNECT
+  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoNumerico(double)), this, SIGNAL(MostraRisultatoNumerico2(double)));
+  connect(operazioniArmaFisica, SIGNAL(MostraRisultatoBooleano(bool)), this, SIGNAL(MostraRisultatoBooleano2(bool)));
 }
 
 void TabArmaFisica::update(){
@@ -190,5 +215,10 @@ void TabArmaFisica::connectSignalsArmaFisica(){
 	connect(TipoDanno, SIGNAL(currentIndexChanged(int)), this, SLOT(setTipoDanno(int)));
 	connect(ScalingForza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingForza(int)));
 	connect(ScalingDestrezza, SIGNAL(currentIndexChanged(int)), this, SLOT(setScalingDestrezza(int)));
-        connect(operazioniArmaFisica, SIGNAL(update()), this, SLOT(update()));
+  connect(operazioniArmaFisica, SIGNAL(update()), this, SLOT(update()));
+  connect(peso, SIGNAL(valueChanged(double)), this, SLOT(setPeso(double)));
+	connect(usura, SIGNAL(valueChanged(double)), this, SLOT(setUsura(double)));
+	connect(DannoBase, SIGNAL(valueChanged(double)), this, SLOT(setDannoBase(double)));
+	connect(forzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setForzaRichiesta(int)));
+	connect(intelligenzaRichiesta, SIGNAL(valueChanged(int)), this, SLOT(setIntelligenzaRichiesta(int)));
 }

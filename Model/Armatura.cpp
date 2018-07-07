@@ -197,6 +197,9 @@ unsigned int Armatura::Sopravvivenza(const Caratteristiche& c1, Arma* a, const C
 	unsigned int ret=0;
 	unsigned int salute= c1.CalcolaSalute();
 	double danno= a->Efficacia(c2, const_cast<Armatura*>(this));
+	if(danno==0)
+		//cerr << "Attenzione: L'arma in questione non e' sufficientemente efficace. Sopravvivenza: Numero infinito di colpi dell'arma" << endl;
+		throw("Attenzione: L'arma in questione non e' sufficientemente efficace. Sopravvivenza: Numero infinito di colpi dell'arma");
 	ArmaFisica* temp= dynamic_cast<ArmaFisica*>(a);
 	while(salute>danno)
 	{
