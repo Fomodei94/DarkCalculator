@@ -86,8 +86,10 @@ double Arma::DannoEffettivo(const Caratteristiche& c) const{
 }
 
 double Arma::Efficacia(const Caratteristiche& c, Armamento* a) const{
-	if(VerificaUsabilita(c))
-		return DannoEffettivo(c) - (a->GetDifesa()-(a->GetDifesa()*a->GetUsura()/200));
+	if(VerificaUsabilita(c)) {
+		if(DannoEffettivo(c)>(a->GetDifesa()-(a->GetDifesa()*a->GetUsura()/200)))	return DannoEffettivo(c) - (a->GetDifesa()-(a->GetDifesa()*a->GetUsura()/200));
+		else return 0; 
+		}
 	else
 	{
 		//cerr << "Attenzione: Caratteristiche insufficienti per brandire l'arma in questione. Danno pari a 0" << endl; return 0; VERSIONE DA RIGA DI COMANDO
