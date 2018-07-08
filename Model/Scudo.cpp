@@ -116,6 +116,7 @@ double Scudo::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 			else
 				cout<< "I due Scudi hanno pari stabilita'." << endl;
 			*/
+			if(x<0) x=-1*x;
 			return x;
 		}
 		else

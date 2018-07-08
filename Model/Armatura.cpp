@@ -129,6 +129,7 @@ double Armatura::ConfrontaDifesa(const Caratteristiche& c, Armamento* a) const{
 			else
 				cout<<"Le due armature hanno pari difesa generale." << endl;
 			*/
+			if(z<0) z = -1*z;
 			return z;
 		}
 		else
