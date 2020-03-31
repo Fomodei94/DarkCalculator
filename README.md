@@ -8,6 +8,8 @@
 
 * **Design pattern:** Model-View
 
+Maggiori informazioni in [Documentazione](https://github.com/Fomodei94/DarkCalculator/blob/master/Docs/Federico_Omodei_doc.pdf)
+
 ## Collaboratori
 
 | Nome | Profilo Gitlab | Email |
